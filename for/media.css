@@ -1,0 +1,78 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 990px){
+	#packman {
+		margin-top: 100px;
+		margin-left: 100px;
+	}
+		#packman ul {
+			float: left;
+
+		margin-top: 0px;
+		margin-left: 0px;
+		display: inline-flex;
+		flex-direction: column;
+	}
+	#packman ul li p {
+		font-size: 3em;
+		color: #75C1C1;
+	}
+	#packman ul li:nth-child(1) p {
+		margin-top: 15px;
+			color: #61CBCB;
+			float: left;
+	}
+	#packman ul li:nth-child(1) {
+		border: 0px;
+		position: relative;
+		background-color:transparent;
+		height: auto;
+
+	} 
+	#packman ul li:nth-child(1):before {
+		left: 0;
+		display: none;
+	}
+
+#packman ul li:nth-child(2) p {
+	float: left;
+color: #61CBCB;
+margin-top: 1px;
+}
+	#packman ul li:nth-child(2) {
+		margin-top: 20px;
+	border: 0px;
+	background-color: transparent;
+	left: 0;
+	} 
+	#packman ul li:nth-child(2):before {
+	display: none;
+	left: 0;
+	}
+
+	#packman ul li:nth-child(3) p {
+		float: left;
+		margin-top: 1px;
+		color: #61CBCB;
+	}
+	#packman ul li:nth-child(3) {
+		margin-top: 60px;
+		border: 0px;
+		left: 0;
+
+	} 
+	#packman ul li:nth-child(3):before {
+	display: none;
+	left: 0;
+}
+
+	#packman ul li:nth-child(4) p {
+		float: left;
+		margin-top: 1px;
+		color: #4C4C4C;
+	}
+	#packman ul li:nth-child(4) {
+		margin-top: 60px;
+	border:0px;
+	left: 0;
+	
+	} 
+}
