@@ -35,7 +35,10 @@ html, body {
 	letter-spacing: 0.025em;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
-
+.block_video {
+	height: 650px;
+	background-color: #fff;
+}
 #form {
 	padding:50px 20px;
 	background: #fff;
