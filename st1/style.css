@@ -422,12 +422,24 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 }
+
 .calc {
-	height: 600px;
+	margin-top: 50px;
+	border: 7px solid #aeaeae;
+	padding: 20px 40px;
+}	
+#final_price {
+	font-size: 40px;
+	font-weight: 900;
 }
-.calc-img {
+.card-images {
+	padding-top: 50px;
 	width: 100%;
 }
-.calc-img img {
+.card-images img {
+	display: none;
 	width: 100%;
+}
+#card_1_0 {
+	display: inline-block;
 }

@@ -152,66 +152,69 @@
 	</div>
 </div>
 <div style="clear: both;"></div>
-
-<h2>Просчитать стоимость</h2>
-
-<div class="container">
-	<div class="row">
-	<div class="calc">
-		<div class="col-lg-6">
-		<div class="col-lg-3">
-		<h3>дизайн</h3>
-		 <label for="cbox1">
-        <input class="checkbox" type="checkbox" id="cbox1" value="0">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox1</span>
-      </label>
-      <label for="cbox11">
-        <input class="checkbox" type="checkbox" id="cbox11" value="5000">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox11</span>
-      </label>
-      <label for="cbox12">
-        <input class="checkbox" type="checkbox" id="cbox12" value="120000">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox12</span>
-      </label>
-      <label for="cbox13">
-        <input class="checkbox" type="checkbox" id="cbox13" value="60000">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox13</span>
-      </label>
-			
-		</div>
-		<div class="col-lg-3">
-		<h3>Програмирование</h3>
-		 <label for="cbox1">
-        <input class="checkbox" type="checkbox" id="cbox1" value="0">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox1</span>
-      </label>
-      <label for="cbox11">
-        <input class="checkbox" type="checkbox" id="cbox11" value="5000">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox11</span>
-      </label>
-      <label for="cbox12">
-        <input class="checkbox" type="checkbox" id="cbox12" value="120000">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox12</span>
-      </label>
-      <label for="cbox13">
-        <input class="checkbox" type="checkbox" id="cbox13" value="60000">
-        <span class="checkbox-custom"></span>
-        <span class="label">cbox13</span>
-      </label>
-			
-		</div>
-		</div>
-		<div class="col-lg-6"><div class="calc-img"><img src="../images/primer-1.png" alt=""></div></div>
-	</div>
-</div>
-</div>
+<h2></h2>
+<section id="main">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<div class="calc">
+    					<h2>Рассчет стоимости</h2>
+    					<label for="card_edition">Выберите тип сайта</label><br>
+    					<select class="form-control" name="edition" id="site_edition">
+    					
+                            <option data-color="1" value="250" >Сайт - визитка</option>
+                            <option data-color="2" value="350" >Landing-page</option>
+    						<option data-color="3" value="600" >Корпоративный сайт</option>
+    						<option data-color="4" value="900" >Интернет - магазин</option>
+    						<option data-color="5" value="500" >Сайт - портфолио</option>
+    						<option data-color="6" value="450" >Блог</option>
+    					</select>
+    					<br>
+    					<label for="card_paper">Дизайн</label>
+    					<select name="card_paper" id="site_design" class="form-control">
+    						<option value="100">Проcтой</option>
+    						<option value="200">Оригинальный</option>
+    						<option value="250">Свой (у вас уже есть дизайн)</option>
+    					</select>
+    					<br>
+    					<label for="card_color">Вёрстка</label>
+    					<select name="card_color" id="site_code" class="form-control">
+    						<option value="100">Фиксированная</option>
+    						<option value="150">Адаптивная</option>
+    						<option value="175">Резиновая</option>
+    					</select>
+    					<br>
+    					<label for="site_cms">Движок (CMS)</label>
+    					<select name="site_cmsss" id="site_cms" class="form-control">
+    						<option value="100">Чистый HTML/CSS</option>
+    						<option value="200">WordPress</option>
+    						<option value="250">OpenCart</option>
+    						<option value="250">Joomla</option>
+    						<option value="350">Другие</option>
+    					</select>
+    					<br>
+    					<h4>
+    						<small>Приблизительная</small> <br>
+    						Стоимость
+    					</h4>
+    					<p class="price">
+    						<span id="final_price">0</span>
+    						$.
+    					</p>
+    				</div>
+    			</div>
+    			<div class="col-sm-8">
+    				<div class="card-images text-center">
+    					<img src="../images/Slider1.png" alt="" id="card_1_0">
+    					<img src="../images/primer-2.png" alt="" id="card_1_1">
+    					<img src="../images/Slider3.png" alt="" id="card_4_0">
+    					<img src="../images/primer-1.png" alt="" id="card_4_1">
+    					<img src="../images/Slider2.png" alt="" id="card_4_4">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 <div class="footer">
 	<div class="container">
 		<div class="row">
