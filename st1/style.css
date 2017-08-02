@@ -35,10 +35,7 @@ html, body {
 	letter-spacing: 0.025em;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
-.block_video {
-	height: 650px;
-	background-color: #fff;
-}
+
 #form {
 	padding:50px 20px;
 	background: #fff;
@@ -422,24 +419,12 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 }
-
 .calc {
-	margin-top: 50px;
-	border: 7px solid #aeaeae;
-	padding: 20px 40px;
-}	
-#final_price {
-	font-size: 40px;
-	font-weight: 900;
+	height: 600px;
 }
-.card-images {
-	padding-top: 50px;
+.calc-img {
 	width: 100%;
 }
-.card-images img {
-	display: none;
+.calc-img img {
 	width: 100%;
-}
-#card_1_0 {
-	display: inline-block;
 }
