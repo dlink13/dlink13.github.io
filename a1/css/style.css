@@ -336,7 +336,8 @@ body {
 
 .c1 .cont .h2 {
 	margin-top: 50px;
-	width: 50%;
+
+
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -346,10 +347,27 @@ body {
 	line-height: 24px;
 	margin-bottom: 5px;
 }
+.c1 .cont .h2 span{
+	padding-top: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 .cont .consult {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
+}
+.utp1 {
+	padding-top: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.3em;
+}
+.utp1 span {
+	font-size: 1.4em;
+	color: #8e001c;
+
+
 }
 .c1 .cont .h1 {
 	font-family: 'agora_bold';
@@ -2094,7 +2112,8 @@ form .btn span {
 }
 
 #button_zakaz {
-
+border: 1px solid #8e001c;
+padding-bottom: 80px;
     height: 160px;
     width: 360px;
     margin-top: -30px;
@@ -2102,9 +2121,12 @@ form .btn span {
 
 #button_zakaz p{
       font-size: 1.5em;
-      padding-left: 15px;
+      text-align: center;
       padding-top: 15px;
       color: #8e001c;
+}
+.line .top-btn {
+margin-top: 10px !important;
 }
 .bannerblock {
 margin: 25px 0 50px 0;
