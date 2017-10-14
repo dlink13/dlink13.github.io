@@ -1,0 +1,215 @@
+.animated {
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.c9 .block .img,
+.c9 .block p {
+	opacity: 0;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.c12 .block {
+	opacity: 0;
+	position: relative;
+	left: -50px;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.c14 .block {
+	opacity: 0;
+	position: relative;
+	top: -50px;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@keyframes fadeTop
+{
+0%   {opacity: 0; top: -50px;}
+100% {opacity: 1; top: 0px;}
+}
+
+@-webkit-keyframes fadeTop
+{
+0%   {opacity: 0; top: -50px;}
+100% {opacity: 1; top: 0px;}
+}
+
+.animated.c14 .block {
+	-webkit-animation-name: fadeTop;
+	animation-name: fadeTop;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.animated.c14 .block.block2 {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+
+.animated.c14 .block.block3 {
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s;
+}
+
+@keyframes fadeLeft
+{
+0%   {opacity: 0; left: -50px;}
+100% {opacity: 1; left: 0px;}
+}
+
+@-webkit-keyframes fadeLeft
+{
+0%   {opacity: 0; left: -50px;}
+100% {opacity: 1; left: 0px;}
+}
+
+.animated.c12 .block {
+	-webkit-animation-name: fadeLeft;
+	animation-name: fadeLeft;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.animated.c12 .block.block2 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.animated.c12 .block.block3 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.animated.c12 .block.block4 {
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+
+.animated.c12 .block.block5 {
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s;
+}
+
+@keyframes fadeIn
+{
+0%   {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn
+{
+0%   {opacity: 0;}
+100% {opacity: 1;}
+}
+
+.animated.c9 .block .img,
+.animated.c9 .block p {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+}
+
+.animated.c9 .block.block1 .img,
+.animated.c9 .block.block1 p {
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s;
+}
+
+.animated.c9 .block.block2 .img,
+.animated.c9 .block.block2 p {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.animated.c9 .block.block5 .img,
+.animated.c9 .block.block5 p {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.animated.c9 .block.block3 .img,
+.animated.c9 .block.block3 p {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+}
+
+.animated.c9 .block.block6 .img,
+.animated.c9 .block.block6 p {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+}
+
+.animated.c9 .block.block9 .img,
+.animated.c9 .block.block9 p {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+}
+
+.animated.c9 .block.block4 .img,
+.animated.c9 .block.block4 p {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+
+.animated.c9 .block.block7 .img,
+.animated.c9 .block.block7 p {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+
+.animated.c9 .block.block10 .img,
+.animated.c9 .block.block10 p {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+
+.animated.c9 .block.block13 .img,
+.animated.c9 .block.block13 p {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+
+.animated.c9 .block.block8 .img,
+.animated.c9 .block.block8 p {
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+.animated.c9 .block.block11 .img,
+.animated.c9 .block.block11 p {
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+.animated.c9 .block.block14 .img,
+.animated.c9 .block.block14 p {
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+.animated.c9 .block.block12 .img,
+.animated.c9 .block.block12 p {
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s;
+}
+
+.animated.c9 .block.block15 .img,
+.animated.c9 .block.block15 p {
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s;
+}
+
+.animated.c9 .block.block16 .img,
+.animated.c9 .block.block16 p {
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
+}
