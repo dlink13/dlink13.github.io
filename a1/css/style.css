@@ -272,7 +272,12 @@ label.red input, label.red textarea {
 	text-decoration: none;
 	color: #fff;
 }
-
+.top_menu ul li a:hover {
+	color: #8e001c;
+}
+.top_menu ul li a:active {
+	color: #8e001c;
+}
 .top_menu ul li:last-child {
 	margin-top: -10px;
 	margin-right: 0px;
