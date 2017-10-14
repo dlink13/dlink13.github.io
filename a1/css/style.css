@@ -2198,7 +2198,7 @@ img.trash {
   display: inline-block;
 }
 span.raschet1 {
-background-color: #ff002b;
+color: #000;
   width: 200px;
   height: 60px;
  margin: 3px 6px 8px 0px;
@@ -2207,7 +2207,8 @@ background-color: #ff002b;
   display: inline-block;
 }
 span.raschet2 {
-color: #900018;
+background-color: #8e001c;
+color: #fff;
  text-transform: uppercase;
  font-weight: bold;
   width: 200px;
@@ -2219,6 +2220,8 @@ color: #900018;
 }
 a#calculate {
 background-color: #8e001c;
+text-transform: uppercase;
+font-weight: bold;
   color: #fff;
   box-shadow: 3px 2px 1px rgb(97, 1, 1);
   text-decoration: none;
@@ -2233,7 +2236,9 @@ top: -222px;
   float: left;
 }
 .block_h1a {
-  color: rgb(232, 76, 63);
+  color: #8e001c;
+  text-transform: uppercase;
+  margin-top: 20px;
   font-weight: bold;
   font-size: 20px;
 }
