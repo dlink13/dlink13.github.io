@@ -288,6 +288,7 @@ body {
 
 .c1 .wrapp {
 	height: inherit;
+	padding-bottom: 200px;
 	z-index: 2;
         min-width: 320px;
 }
@@ -300,9 +301,12 @@ body {
 	left: 0px;
 	top: 0px;
 	z-index: 1;
+
 }
 .bg .background{
 background-color: rgba(123, 117, 117, 0.35);
+padding-bottom: 50px;
+
 }
 .c1 .logo {
 	float: left;
@@ -328,7 +332,7 @@ background-color: rgba(123, 117, 117, 0.35);
 	margin-bottom: 10px;
 }
 .cont .h2 {
-	margin-top: 200px;
+	margin-top: 220px;
 }
 
 .c1 .phone_wrapp .btn {
@@ -364,7 +368,7 @@ background-color: rgba(123, 117, 117, 0.35);
 	justify-content: flex-end;
 }
 .utp1 {
-	padding-top: 50px;
+	padding-top: 100px;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.3em;
@@ -380,7 +384,10 @@ background-color: rgba(123, 117, 117, 0.35);
 	margin-top: 300px;
 
 }
-.top_down
+.top_down{
+	display: flex;
+	flex-direction: row;
+}
 .c1 .cont .h1 {
 	font-family: 'agora_bold';
 	font-size: 42px;
@@ -390,6 +397,8 @@ background-color: rgba(123, 117, 117, 0.35);
 	text-transform: uppercase;
 }
 .otvetchik  {
+	background-color: #fbfcfa;
+	width: 100%;
 	margin-top:50px; 
 	text-align: center;
 	font-weight: bold;
@@ -402,7 +411,7 @@ background-color: rgba(123, 117, 117, 0.35);
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.3em !important;
-	color: #fff !important;
+	color: #8e001c;
 }
 
 .c1 .cont p {
@@ -720,9 +729,9 @@ form .btn span {
 }
 
 .c5 .line li .li_icon {
-	width: 30px;
-	height: 30px;
-	background-color: #adacb4;
+	width: 40px;
+	height: 40px;
+	
 	position: absolute;
 	top: 3px;
 	left: -45px;
@@ -2144,7 +2153,7 @@ border: 1px solid #8e001c;
 padding-bottom: 80px;
 height: 160px;
 width: 360px;
-margin-top: 200px;
+margin-top:220px;
 position: absolute;
 background-color: rgba(123, 117, 117, 0.35);
 }
