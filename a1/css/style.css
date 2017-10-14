@@ -268,6 +268,10 @@ label.red input, label.red textarea {
 	margin: 0 28px 0 -2px;
 	cursor: pointer;
 }
+.top_menu ul li a {
+	text-decoration: none;
+	color: #fff;
+}
 
 .top_menu ul li:last-child {
 	margin-top: -10px;
@@ -310,7 +314,7 @@ body {
 }
 .bg .background{
 background-color: rgba(123, 117, 117, 0.35);
-padding-bottom: 50px;
+
 
 }
 .c1 .logo {
@@ -403,7 +407,7 @@ padding-bottom: 50px;
 	text-transform: uppercase;
 }
 .otvetchik  {
-	background-color: #fbfcfa;
+
 	width: 100%;
 	margin-top:50px; 
 	text-align: center;
@@ -417,7 +421,7 @@ padding-bottom: 50px;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.3em !important;
-	color: #8e001c;
+	color: #fff;
 }
 
 .c1 .cont p {
