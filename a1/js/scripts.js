@@ -104,39 +104,6 @@ $(document).ready(function() {
 	});
 });
 
-$(window).resize(function(){
-	var Mtop = -($('.activePopup').outerHeight() / 2) + 'px';
-	var Mleft = -($('.activePopup').outerWidth() / 2) + 'px';
-	$('.activePopup').css({
-		'margin-top' : Mtop,
-		'margin-left' : Mleft,
-		'left' : '50%',
-		'top' : '50%'
- 	});
-});
-
-function timer()
-{
-	var now = new Date();
-	var newDate = new Date((now.getMonth()+1)+"/"+now.getDate()+"/"+now.getFullYear()+" 23:59:59"); //var newDate = new Date("Feb,29,2014 23:59:00");
-	var totalRemains = (newDate.getTime()-now.getTime());
-	if (totalRemains>1)
-	{
-		var Days = (parseInt(parseInt(totalRemains/1000)/(24*3600)));
-		var Hours = (parseInt((parseInt(totalRemains/1000) - Days*24*3600)/3600));
-		var Min = (parseInt(parseInt((parseInt(totalRemains/1000) - Days*24*3600) - Hours*3600)/60));
-		var Sec = parseInt((parseInt(totalRemains/1000) - Days*24*3600) - Hours*3600) - Min*60;
-		if (Days<10){Days="0"+Days}
-		if (Hours<10){Hours="0"+Hours}
-		if (Min<10){Min="0"+Min}
-		if (Sec<10){Sec="0"+Sec}
-		$(".day").each(function() { $(this).text(Days); });
-		$(".hour").each(function() { $(this).text(Hours); });
-		$(".min").each(function() { $(this).text(Min); });
-		$(".sec").each(function() { $(this).text(Sec); });
-		setTimeout(timer, 1000);
-	}
-}
 
 function popup(id, form, h1, h2, btn) { //onClick="popup('callback', '', '', '', '');"
 	$('.popup_overlay').show();
@@ -278,7 +245,3 @@ function ipad_autoPlay() {
 	ipad_play(next);
 }
 
-function scrollTo(id) {
-	var to = $('#'+id).offset().top - 60;
-	$("html, body").animate({scrollTop: to}, 500);
-}

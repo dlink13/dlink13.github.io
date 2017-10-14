@@ -294,8 +294,7 @@ body {
 
 .bg {
 	
-	width: 100%;
-	
+	min-width: 1000px;	
 	background: url('../img/c1_bg1.jpg') center center no-repeat;
 
 	left: 0px;
@@ -508,7 +507,7 @@ background-color: rgba(123, 117, 117, 0.35);
 }
 
 .c3 {
-	width: 100%;
+	min-width: 1000px;
 	height: 591px;
 	background: url('../img/c3_bg.jpg') center center no-repeat;
 }
@@ -676,7 +675,7 @@ form .btn span {
 .c4 .block.block6 .block_icon {background: #fbfcfa url('../img/c4_icon6.png') center center no-repeat;}
 
 .c5 {
-	width: 100%;
+	min-width: 1000px;
 	height: 530px;
 	background: url('../img/c5_bg.jpg') center center no-repeat;
 }
@@ -938,7 +937,7 @@ form .btn span {
 }
 
 .c7 {
-	width: 100%;
+	min-width: 1000px;
 	height: 591px;
 	background: url('../img/c7_bg.jpg') center center no-repeat;
 }
@@ -992,7 +991,7 @@ form .btn span {
 }
 
 .c8 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #fbfcfa;
 }
 
@@ -1091,7 +1090,7 @@ form .btn span {
 }
 
 .c9 {
-	width: 100%;
+	min-width: 1000px;
 	height: 690px;
 	background: url('../img/c9_bg.jpg') center center no-repeat;
 }
@@ -1186,7 +1185,7 @@ form .btn span {
 }
 
 .c10 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #fbfcfa;
 	text-align: center;
 }
@@ -1265,7 +1264,7 @@ form .btn span {
 }
 
 .c11 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #e9e9e9;
 }
 
@@ -1488,7 +1487,7 @@ form .btn span {
 }
 
 .c12 {
-	width: 100%;
+	min-width: 1000px;
 	height: 720px;
 	overflow: hidden;
 	background: url('../img/c12_bg.jpg') center center no-repeat;
@@ -1617,7 +1616,7 @@ form .btn span {
 }
 
 .c13 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #fff;
 }
 
@@ -1802,7 +1801,7 @@ form .btn span {
 }
 
 .c14 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #fbfcfa;
 }
 
@@ -1874,7 +1873,7 @@ form .btn span {
 }
 
 .c15 {
-	width: 100%;
+	min-width: 1000px;
 	height: 591px;
 	background: url('../img/c15_bg.jpg') center center no-repeat;
 }
@@ -1928,7 +1927,7 @@ form .btn span {
 }
 
 .c16 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #fbfcfa;
 }
 
@@ -1995,7 +1994,7 @@ form .btn span {
 }
 
 .c17 {
-	width: 100%;
+	min-width: 1000px;
 	height: 520px;
 }
 
@@ -2004,7 +2003,7 @@ form .btn span {
 }
 
 .c18 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #f0f0e9;
 }
 
