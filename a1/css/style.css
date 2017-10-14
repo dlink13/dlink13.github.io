@@ -292,7 +292,7 @@ body {
 }
 
 .c1 .bg {
-	width: inherit;
+	width: 100%;
 	height: inherit;
 	background: url('../img/c1_bg1.jpg') center center no-repeat;
 	position: absolute;
@@ -358,7 +358,7 @@ body {
 	justify-content: flex-end;
 }
 .utp1 {
-	padding-top: 25px;
+	margin-top: -25px;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.3em;
