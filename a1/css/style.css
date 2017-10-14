@@ -2198,7 +2198,7 @@ img.trash {
   display: inline-block;
 }
 span.raschet1 {
-background-color: rgb(195, 195, 195);
+background-color: #ff002b;
   width: 200px;
   height: 60px;
  margin: 3px 6px 8px 0px;
@@ -2207,7 +2207,9 @@ background-color: rgb(195, 195, 195);
   display: inline-block;
 }
 span.raschet2 {
-  background-color: rgb(255, 255, 95);
+color: #900018;
+ text-transform: uppercase;
+ font-weight: bold;
   width: 200px;
    height: 60px;
    float:left;
@@ -2216,7 +2218,7 @@ span.raschet2 {
   display: inline-block;
 }
 a#calculate {
-background-color: #e84c3f;
+background-color: #8e001c;
   color: #fff;
   box-shadow: 3px 2px 1px rgb(97, 1, 1);
   text-decoration: none;
