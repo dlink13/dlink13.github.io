@@ -270,11 +270,13 @@ label.red input, label.red textarea {
 }
 
 .top_menu ul li:last-child {
+	margin-top: -10px;
 	margin-right: 0px;
 }
 
 body {
 	padding-top: 60px;
+	overflow: hidden;
 }
 
 .wrapp .c1 {
@@ -384,7 +386,8 @@ padding-bottom: 50px;
 	margin-top: 300px;
 
 }
-.top_down{
+.top_down{ 
+	min-width: 1000px;
 	display: flex;
 	flex-direction: row;
 }
@@ -603,7 +606,7 @@ form .btn span {
 }
 
 .c4 {
-	width: 100%;
+	min-width: 1000px;
 	background-color: #fbfcfa;
 }
 
