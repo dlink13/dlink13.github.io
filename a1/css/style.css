@@ -66,6 +66,7 @@ textarea {
 }
 
 .wrapp {
+	min-width: 320px;
 	width: 960px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -276,9 +277,9 @@ body {
 	padding-top: 60px;
 }
 
-.cont .c1 {
+.wrapp .c1 {
 	width: 100%;
-    min-width: 800px;
+    min-width: 1200px;
 	height: 1020px;
 	position: relative;
 	display: flex;
@@ -288,19 +289,22 @@ body {
 .c1 .wrapp {
 	height: inherit;
 	z-index: 2;
-        min-width: 800px;
+        min-width: 320px;
 }
 
-.c1 .bg {
+.bg {
+	
 	width: 100%;
-	height: inherit;
+	
 	background: url('../img/c1_bg1.jpg') center center no-repeat;
-	position: absolute;
+
 	left: 0px;
 	top: 0px;
 	z-index: 1;
 }
-
+.bg .background{
+background-color: rgba(123, 117, 117, 0.35);
+}
 .c1 .logo {
 	float: left;
 	width: 83px;
@@ -312,7 +316,7 @@ body {
 
 .c1 .phone_wrapp {
 	float: right;
-	margin: 25px 10px 165px 0;
+	margin: 25px 10px 10px 0;
 	text-align: right;
 	padding-top: 15px;
 }
@@ -324,18 +328,21 @@ body {
 	line-height: 27px;
 	margin-bottom: 10px;
 }
+.cont .h2 {
+	margin-top: 200px;
+}
 
 .c1 .phone_wrapp .btn {
 	float: right;
 }
 
 .c1 .cont {
-    margin-top: -70px;
+   
 	
 }
 
 .c1 .cont .h2 {
-	margin-top: 50px;
+
 
 
 	display: flex;
@@ -358,17 +365,23 @@ body {
 	justify-content: flex-end;
 }
 .utp1 {
-	margin-top: -25px;
+	padding-top: 50px;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.3em;
 }
 .utp1 span {
+	padding-top: 20px;
 	font-size: 1.4em;
-	color: #8e001c;
+	color: #fff;
 
 
 }
+.garantii {
+	margin-top: 300px;
+
+}
+.top_down
 .c1 .cont .h1 {
 	font-family: 'agora_bold';
 	font-size: 42px;
@@ -376,6 +389,21 @@ body {
 	line-height: 45px;
 	margin-bottom: 5px;
 	text-transform: uppercase;
+}
+.otvetchik  {
+	margin-top:50px; 
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	color: #8e001c;
+}
+.otvetchik  p {
+	
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.3em !important;
+	color: #fff !important;
 }
 
 .c1 .cont p {
@@ -454,6 +482,7 @@ body {
 }
 
 .c2 {
+	height: 930px;
 	width: 100%;
 	background: #fff;
 }
@@ -2114,21 +2143,22 @@ form .btn span {
 #button_zakaz {
 border: 1px solid #8e001c;
 padding-bottom: 80px;
-    height: 160px;
-    width: 360px;
-    margin-top: -30px;
+height: 160px;
+width: 360px;
+margin-top: 200px;
+position: absolute;
+background-color: rgba(123, 117, 117, 0.35);
 }
 
 #button_zakaz p{
-	padding-top: 20px;
 	text-align: center;
 	text-transform: uppercase;
 
       font-size: 1.2em;
-
+    padding: 20px;
     padding-bottom: 5px;
       padding-top: 15px;
-      color: #8e001c;
+      color: #fff;
 }
 .line .top-btn {
 margin-top: 10px !important;

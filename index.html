@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="a1/css/style.css" />
 	<link rel="stylesheet" href="a1/css/jquery.fancybox.css" />
 	<link rel="stylesheet" href="//cdn.callbackhunter.com/widget/tracker.css"> 
-    <script type="text/javascript" async src="http://app.comagic.ru/static/cs.min.js"></script>
+  
 
 </head>
 <body>
@@ -86,6 +86,7 @@
 			</label><br/>
 			<div data-name="request" class="button noselect btn">Заказать</div>
 		</form>
+	</form>
 	</div>
 	
 	<div class="popup" id="question">
@@ -132,10 +133,10 @@
 			</ul>
 		</div>
 	</div>
-	
-	<div class="c1">
 		<div class="bg">
-		</div>
+	<div class="c1 background">
+	
+		
 		<div class="wrapp">
 			<div class="cl" id="cooperation">
                 <div class="logo">
@@ -152,7 +153,7 @@
 				<span>Поможем взыскать страховые</span>
 				<span>выплаты по КАСКО и ОСАГО</span>
 				<span>с вашей страховой компании</span>
-				<span>в 3-х кратном размере!</span>
+				<span style="color: #fff;">в 3-х кратном размере!</span>
 				</div>
 
 				<div class="consult">
@@ -169,20 +170,29 @@
 										 </div>
 									</div></div></div>
                                 <br/>
-                                <p style="margin-top: -60px;"><i class="utp1">
-                                    100% гарантия результата.<br/>
-                                    Если мы не выиграем дело, <span>вернем деньги!</span>
+                                <div class="garantii">
+                                 <p class="utp1"> 
+                                 <span >100% гарантия результата.<br/></span>
+                                    <span>Если мы не выиграем дело, </span><br><span style="color: #fff; font-weight: bold;font-size: 1.5em">вернем деньги!</span></i></p>
+                                     </div>
        
-                                    <div style=" margin-top:80px;  height: 80px; "><p style="color:#8e001c; width: 100%; text-align:center;font-size:1em;"> сумма, которая была Вами оплачена за наше представительство, </p><p style="margin-top: 10px;font-weight: bold;font-size: 1.2em;text-align: center;width: 100%;color:#8e001c;font-weight: bold; ">взыскивается с Ответчика!</p></div>
+                                    <div class="otvetchik">
+                                    	<p>сумма, которая была Вами оплачена за наше представительство,<br></p>
+                                    	<p>взыскивается с Ответчика!</p></div>
                                     </div>
-                                    <div style="margin-top: 100px; float: left;">
-                                    <div class="left">
+                                   
+                                
+                      
+		</div></div></div></label></form></div>
+		              <div class="top_down">
+                                    	
+
 						<ul>
 							<li onClick="scrollTo('cooperation');"><span>«Представим Ваши интересы в суде»</span></li>
 							<li onClick="scrollTo('cooperation');"><span>«Выкупим страховые дела»</span></li>
 							
 						</ul>
-					</div>
+					
 					<div class="right">
 						<ul>
                                                         <li onClick="scrollTo('cooperation');"><span>«Отремонтируем Ваш<br>автомобиль»</span></li>
@@ -197,21 +207,13 @@
 						</ul>
 					</div>
                                     </div>
-				</div>
                                                                        
 			</div>
-			<div class="control" data-now="1">
-				<ul>
-					<li onClick="play(1);" class="li1 active"></li>
-					<li onClick="play(2);" class="li2"></li>
-					<li onClick="play(3);" class="li3"></li>
-					<!--<li onClick="play(4);" class="li4"></li>-->
-				</ul>
-			</div>
+			
 		</div>
 	</div>
+</div>
 
-	<div class="c2"> </div>
     <div class="c7">
 		    <div class="wrapp">
 			<div class="cl">
@@ -361,81 +363,6 @@
 	<div class="c5_5">
 	</div>
 	
-	<div class="c6" id="cooperation" style='display: none;'>
-		<div class="wrapp">
-			<div class="h1">Варианты работы с ALTHAUS</div>
-			<div class="cl">
-				<div class="block block1">
-					<div class="top">
-						<div class="top_h1">начало</div>
-					</div>
-					<ul>
-						<li>Юридическое лицо</li>
-						<li>Юридический адрес</li>
-						<li>Генеральный директор</li>
-						<li>Расчётный счёт</li>
-						<li>Бухгалтерское<br/>сопровождение<br/>в течение 3 месяцев</li>
-					</ul>
-					<div class="bot_wrapp">
-						<!-- <div class="price">30 000 рублей</div> -->
-						<div class="btn" onClick="popup('request', 'Вариант работы «Начало»', 'Узнать условия', 'Оставьте заявку,<br/>чтобы узнать об условиях сотрудничества', 'Узнать условия');">Узнать условия</div>
-					</div>
-				</div>
-				<div class="block block2">
-					<div class="top">
-						<div class="top_h1">Ничего лишнего</div>
-					</div>
-					<ul>
-						<li>Бухгалтерский учёт</li>
-						<li>Налоговый учёт</li>
-						<li>Зарплата и кадры</li>
-						<li>Отчетность</li>
-					</ul>
-					<div class="bot_wrapp">
-						<!-- <div class="price">50 000 рублей</div> -->
-						<div class="btn" onClick="popup('request', 'Вариант работы Ничего лишнего', 'Узнать условия', 'Оставьте заявку,<br/>чтобы узнать об условиях сотрудничества', 'Узнать условия');">Узнать условия</div>
-					</div>
-				</div>
-				<div class="block block3">
-					<div class="top">
-						<div class="top_h1">Бизнес<br/>под ключ</div>
-					</div>
-					<ul>
-						<li>Бухгалтерский учет</li>
-						<li>Налоговый учет</li>
-						<li>Зарплата и кадры</li>
-						<li>Юридические услуги</li>
-						<li>Налоговое<br/>сопровождение</li>
-						<li>Секретарское<br/>обслуживание</li>
-						<li>IT-поддержка</li>
-					</ul>
-					<div class="bot_wrapp">
-						<!-- <div class="price">80 000 рублей</div> -->
-						<div class="btn" onClick="popup('request', 'Вариант работы «Бизнес под ключ»', 'Узнать условия', 'Оставьте заявку,<br/>чтобы узнать об условиях сотрудничества', 'Узнать условия');">Узнать условия</div>
-					</div>
-				</div>
-				<div class="block block4">
-					<div class="top">
-						<div class="top_h1">Специальные<br/>услуги</div>
-					</div>
-					<ul>
-						<li>МСФО</li>
-						<li>Аудит</li>
-						<li>Управленческий учёт</li>
-						<li>Восстановление учёта</li>
-						<li>Оптимизация<br/>учётной политики</li>
-						<li>Прохождение<br/>налоговых проверок</li>
-						<li>Автоматизация<br/>учётных функций</li>
-						<li>Проверка эффективности<br/>работы бухгалтерии</li>
-					</ul>
-					<div class="bot_wrapp">
-						<div class="btn" onClick="popup('request', 'Вариант работы «Специальные услуги»', 'Узнать условия', 'Оставьте заявку,<br/>чтобы узнать об условиях сотрудничества', 'Узнать условия');ы">Узнать условия</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
     <div class="c3">
 		<div class="wrapp">
 			<div class="h1">Мы считаем минимум <br/><span>в 3 раза больше, чем Ваша страховая.</span></div>
@@ -471,7 +398,7 @@
 			<div class="h1">Истории наших клиентов,</div>
 			<div class="h1">которые уже получили выплаты от выигранных нами судов.</div>
 			<div class="bannerblock">
-			    <img class="trash" src="/a1/img/photos1.jpg" alt="#" />
+			    <img class="trash" src="a1/img/photos1.jpg" alt="#" />
 				<div class="img1">
 				<div class="block_h1">Land Rover Freelander 2
 				</div>
@@ -507,7 +434,7 @@
 			</div>
 				
 			<div class="bannerblock">
-			    <img class="trash" src="/a1/img/photos2.jpg" alt="#" />
+			    <img class="trash" src="a1/img/photos2.jpg" alt="#" />
 				<div class="img1">
 				<div class="block_h1">Ford Mondeo
 				</div>
@@ -535,7 +462,7 @@
 			</div>
 			
 				<div class="bannerblock">
-				    <img class="trash" src="/a1/img/photos3.jpg.jpg" alt="#" />
+				    <img class="trash" src="a1/img/photos3.jpg" alt="#" />
 					<div class="img1">
 					<div class="block_h1">Hyundai Solaris</div>
 				<p class="block_h2">Сумма ущебра: 263 659,03 р. 
@@ -567,7 +494,7 @@
 				</div>
 				
 				<div class="bannerblock">
-				    <img class="trash"src="/a1/img/photos4.jpg" alt="#" />
+				    <img class="trash" src=a1/img/photos4.jpg alt="#"/>
 					<div class="img1">
 					<div class="block_h1">Porsche Cayenne</div>
 				    <p class="block_h2">Сумма ущерба: 1 895 000 рублей.
@@ -1125,8 +1052,12 @@
             </div>
         </div>
     </div>
+      <script type="text/javascript" async src="http://app.comagic.ru/static/cs.min.js">
+      	
+      </script>
 	<script type="text/javascript" src="a1/js/jquery.min.js"></script>
 	<script type="text/javascript" src="a1/js/scripts.js"></script>
+
 	<script type="text/javascript" src="a1/js/validator.js"></script>
 	<script type="text/javascript" src="a1/js/jquery.fancybox.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
