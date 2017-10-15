@@ -244,4 +244,3 @@ function ipad_autoPlay() {
 		next = 1;
 	ipad_play(next);
 }
-
