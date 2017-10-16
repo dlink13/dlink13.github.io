@@ -112,7 +112,13 @@ form .btn{width:100%;min-width:320px;max-width:480px;width:320px;}
 }
 @media only screen
 and (min-width:479px)
-and (max-width:768px){.line .top-btn{margin:0 auto;margin-top:-30px !important;text-align:center;margin-right:50px !important;}
+and (max-width:768px){
+body {
+	padding-top: 0;
+}
+.mobile_menu {display: block;width: 100%;}
+.top_menu {display: none;}
+.line .top-btn{margin:0 auto;margin-top:-30px !important;text-align:center;margin-right:50px !important;}
 .bg{min-width:479px;max-width:768px;background:url('../img/mobile.jpg') center center no-repeat;left:0px;top:0px;z-index:1;padding-bottom:0px;}
 .c1 .wrapp{min-width:479px;max-width:768px;padding-bottom:0px;}
 #cooperation{min-width:479px;max-width:768px;display:flex;flex-direction:column;}
