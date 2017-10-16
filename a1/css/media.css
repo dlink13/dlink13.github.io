@@ -51,7 +51,7 @@ body {
 #logo_text{text-align:center;margin-top:20px;margin:0 auto;font-size:3em;font-weight:bold;text-transform:uppercase;color:#fff;}
 .c1 .logo{margin:0 auto;width:150px;height:150px;background:url('../img/c1_logo2.png') center center no-repeat;}
 .c1 .cont{min-width:320px;max-width:480px;margin-top:350px;}
-.c1 .cont .h2{margin-top:-250px;position:inherit;}
+.c1 .cont .h2{margin-top:-250px;position:inherit; font-size: 25px;color: #fff;}
 .cont .h2{margin-top:-250px;}
 .c1 .cont .h2{text-align:center;}
 .garantii{position:absolute;margin-top:-420px;width:100%;text-align:center;}
