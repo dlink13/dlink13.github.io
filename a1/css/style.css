@@ -64,6 +64,64 @@ html, body {
 textarea {
 	resize: none;
 }
+/*-----------mobile menu--------*/
+.mobile_menu {
+	display: none;
+	position: fixed;
+	right:0;
+	z-index: 50;
+	
+	background-color: #3D465E;
+
+}
+button.menu {
+	margin-left: 1px;
+}
+
+button.menu::before {
+	content: '\2261';
+	font-size: 2em;
+
+	
+}
+button.menu[aria-expanded="true"]::before {
+	content: '×';
+	
+
+
+}
+nav ul {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	left: 0;
+	padding: 0;
+	display: none;
+}
+nav ul li {
+	text-align: center;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+nav ul li a {
+	padding: .8em 1.5em;
+	color: #8e001c;
+	text-decoration: none;
+	display: block;	
+}
+nav ul li a:hover {
+	background-color: #ccc;;
+}
+nav ul li a:focus {
+	outline: thin dotted;
+	outline-offset: -2px;
+}
+[aria-hidden="false"] {
+	display: block;
+}
+
+
+
 
 .wrapp {
 	min-width: 320px;
