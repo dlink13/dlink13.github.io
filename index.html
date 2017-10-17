@@ -1,1195 +1,364 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html>
+<html>
 <head>
-	<!-- Google Analytics Content Experiment code -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>   </title>
+<!-- Load CSS -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 
-	<!-- End of Google Analytics Content Experiment code -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Взыскание страховых выплат по полисам КАСКО и ОСАГО</title>
-	<link rel="shortcut icon" href="a1/img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="a1/img/favicon.ico" type="image/x-icon">
-   
-	<link rel="stylesheet" href="a1/css/style.css" />
-	 <link rel="stylesheet" href="a1/css/media.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 
 </head>
 <body>
-	<input type="hidden" name="prefix" class="prefix" value="">
-	<input type="hidden" name="referer" value="">
-	<input type="hidden" name="ref_url" value="">
-	<input type="hidden" class="formname" name="formname" value="">
 
-	<div class="popup_overlay" onClick="popup_out();"></div>
-	
-	<div class="popup" id="thx">
-		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-		<div class="popup_h1">Спасибо за заявку</div>
-		<div class="popup_h2">Наш менеджер свяжется с вами в ближайшее время</div>
-		<!-- <div class="btn" onClick="popup_out();">закрыть</div> -->
-	</div>
-	
-	<div class="popup" id="callback">
-		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-		<div class="popup_h1">Заказать звонок</div>
-		<div class="popup_h2">
-			Оставьте заявку, и наш специалист свяжется<br/>
-			с вами, чтобы ответить на ваши вопросы.
-		</div>
-		<form>
-			<div class="desc">Ваше имя</div>
-			<label class="name required">
-				<input type="text" name="name" placeholder="Иван Иванов">
-			</label><br/>
-			<div class="desc">Ваш телефон</div>
-			<label class="phone required">
-				<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-			</label>
-			<label class="phone required">
-				<input type="text" name="phone2" maxlength="6" placeholder="123">
-			</label>
-			<label class="phone required">
-				<input type="text" name="phone3" maxlength="10" placeholder="4567890">
-			</label><br/>
-			<div data-name="callback" class="button noselect btn" onClick="formname('Блок «Заказать звонок»');">Заказать звонок</div>
-			<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
-		</form>
-	</div>
-	
-	<div class="popup" id="request">
-		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-		<div class="popup_h1">Оставьте заявку</div>
-		<div class="popup_h2">
-			Оставьте заявку, и наш специалист свяжется<br/>
-			с вами в ближайшее время.
-		</div>
-		<form>
-			<div class="desc">Ваше имя</div>
-			<label class="name required">
-				<input type="text" name="name" placeholder="Иван Иванов">
-			</label><br/>
-			<div class="desc">Ваш телефон</div>
-			<label class="phone required">
-				<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-			</label>
-			<label class="phone required">
-				<input type="text" name="phone2" maxlength="6" placeholder="123">
-			</label>
-			<label class="phone required">
-				<input type="text" name="phone3" maxlength="10" placeholder="4567890">
-			</label><br/>
-			<div class="desc">Ваш E-mail</div>
-			<label class="email required">
-		<form class="s_form" action="index1.php" method="POST"> 
- 		<input type="text" name="email" placeholder="ivanov@mail.ru">
-			</label><br/>
-			<div data-name="request" class="button noselect btn">Заказать</div>
-			<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
-		</form>
-	</form>
-	</div>
-	
-	<div class="popup" id="question">
-		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-		<div class="popup_h1">Задать вопрос</div>
-		<div class="popup_h2">
-			Заполните форму,<br/>
-			и&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;вами!
-		</div>
-		<form>
-			<div class="desc">Ваше имя</div>
-			<label class="name required">
-				<input type="text" name="name" placeholder="Иван Иванов">
-			</label><br/>
-			<div class="desc">Ваш телефон</div>
-			<label class="phone required">
-				<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-			</label>
-			<label class="phone required">
-				<input type="text" name="phone2" maxlength="6" placeholder="123">
-			</label>
-			<label class="phone required">
-				<input type="text" name="phone3" maxlength="10" placeholder="4567890">
-			</label><br/>
-			<div class="desc">Ваш E-mail</div>
-			<label class="email required">
-				<input type="text" name="email" placeholder="ivanov@mail.ru">
-			</label><br/>
-			<textarea class="ques" name="ques" placeholder="Ваш вопрос"></textarea><br/>
-			<div data-name="question" class="button noselect btn">Задать вопрос</div>
-			<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
-		</form>
-	</div>
-<div class="mobile_menu">
-
-	
-</nav>
-	<nav>
-		<nav style="padding: 5px;">
-	<a href="tel:+79154088877">
-		<span style="float:left; color:white;">Не платит страховая?</span><br/>
-         <span style="color:white;">Звоните:<b style="color:#e84c3f;">
-         +7 915 408-88-77</b></span></a>
-  <button class="menu"></button>
-  <ul>
-     <li><a href="#vigoda">Преимущества</a></li>
-	 <li><a href="#benefits">Сотрудничество</a></li>
-	 <li><a href="#istorii">Истории</a></li>
-	 <li><a href="#rabota">Работа с нами</a></li>
-	 <li><a href="#sotrud">Схема работы</a></li>
-	 <li><a href="#klienti">Отзывы</a></li>
-	 <li><a href="#kontakti">Контакты</a></li>
-    </ul>
-
-</nav></nav>
-
-</div>
-
-	<div class="top_menu" >
-		<div class="wrapp">
+		<header>
+			<div class="header_bg">
+				<div class="desc_menu">
+		<div class=" col-xs-12 col-sm-12 col-md-12  col-lg-12">	
 			<ul>
+				<li><a href="#">Преимущества</a></li>
+				<li><a href="">Сотрудничество</a></li>
+				<li><a href="">Истории</a></li>
+				<li><a href="">Работа с нами</a></li>
+				<li><a href="">Схема работы</a></li>
+				<li><a href="">Отызы</a></li>
+				<li><a href="">Контакты</a></li>
 
-				<li><a href="#vigoda">Преимущества</a></li>
-				<li><a href="#benefits">Сотрудничество</a></li>
-				<li><a href="#istorii">Истории</a></li>
-				<li><a href="#rabota">Работа с нами</a></li>
-				<li><a href="#sotrud">Схема работы</a></li>
-				<li><a href="#klienti">Отзывы</a></li>
-				<li><a href="#kontakti">Контакты</a></li>
-				<li class="num comagic_phone"></li>
 			</ul>
-			
 		</div>
 	</div>
-		<div class="bg">
-	<div class="c1 background">
-	
-		
-		<div class="wrapp">
-			<div class="cl" id="cooperation">
-                <div class="logo">
-				</div>
-                <div id="logo_text"><p>Юридическая компания<br/>«Титан-автоюрист»</p></div>
-			
-		    </div>
-			<div class="cont"><div class="h2">
-				<span>Поможем взыскать страховые</span>
-				<span>выплаты по КАСКО и ОСАГО</span>
-				<span>с вашей страховой компании</span>
-				<span style="color: #fff;">в 3-х кратном размере!</span>
-				</div>
 
-				<div class="consult">
-                                    <div id="button_zakaz">
-                                    <p>
-                                    Оставьте заявку и получите<br/>
-                                    бесплатную консультацию юриста<br/>
-                                    и расчёт вашей гарантированной выплаты
-                                    </p>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">	
+			<div class="logo">
+				<img src="img/c1_logo2.png" alt="">
+
+				<p>Юридическая компания<br/>«Титан-автоюрист»</p>
+				
+			</div>
+		
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-6   ">
+			<div class="logo_right">
+				<p>Не платит страховая?<br><span>Звоните: +7 915 408-88-77</span></p>
+			</div>
+			</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">	
+			<div class="vzisk">
+				<p>
+					Поможем взыскать страховые<br>
+					выплаты по КАСКО и ОСАГО<br>
+					<span>в 3-х кратном размере! </span>
+					
+				</p>
+			</div>
+			<div class="garantia">
+				<p>
+					<span>100%</span> гарантия результата.<br/>
+                    Если мы не выиграем дело, <span>вернем деньги!</span>
+				</p>
+			</div>
+		</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">	
+			<div class="header_zakaz">
+				<p>
+					Оставьте заявку и получите<br/>
+                    бесплатную консультацию юриста<br/>
+                    и расчёт вашей гарантированной выплаты
+				</p>
+				<div class="zakaz_button">
+				<a href="#" class="button" id="button">
+					Получить бесплатную <br/> консультацию и расчёт</a>
+					</div>
+			</div>
+		</div>
+
+
+
+</div>
+</div>
+<div class="container">
+<div class="otvetchik">сумма, которая была Вами оплачена за наше представительство, взыскивается с Ответчика!
                                     
-                                    <div class="line">
-									     <div style=" margin-right: 70px;font-weight: bold; text-transform: uppercase;
-									     padding-top: 10px;" class="btns top-btn" onClick="popup('request', 'Блок «Ваш главный бухгалтер»', 'Получить бесплатную<br/> консультацию и расчёт', 'Оставьте заявку,<br/>чтобы узнать о предлагаемых решениях', 'Получить бесплатную<br/> консультацию и расчёт');">Получить бесплатную<br/> консультацию и расчёт
-										 </div>
-									</div></div></div>
-                                <br/>
-                                <div class="garantii">
-                                 <p class="utp1"> 
-                                 <span >100% гарантия результата.<br/></span>
-                                    <span>Если мы не выиграем дело, </span><br><span style="color: #8e001c; font-weight: bold;font-size: 1.5em">вернем деньги!</span></i></p>
-                                     </div>
-                                                 
-		</div>
-		   <div class="top_down">
-		              	 <div class="otvetchik">
-         	<p>сумма, которая была Вами оплачена за наше представительство,<br></p>
-         	<p>взыскивается с Ответчика!</p></div>
-	</div>
-	</div>
-	</div>
-		         
-                                    </div>
-		              	<div class="c4" >
+</div>
+</div>
 
-		<div class="wrapp">
-			<div class="line">
-				<div class="block block1">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							
-							<div class="block_h1">«Представим Ваши интересы в суде»</div>
-							
-						</div>
+
+	</header>
+	<content>
+<div class="container">
+	<div class="else">
+		Что мы делаем:
+	</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-lg-4">
+			<div class="else_desc">
+
+				<p>«Представим Ваши интересы в суде»</p>
+
+				
+			</div>
+
+			<div class="else_desc">
+				
+				<p>«Выкупим страховые дела»</p>
+
+				
+			</div>
+
+			
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-4">
+			<div class="else_desc">
+
+				<p>«Отремонтируем Ваш автомобиль»</p>
+
+				
+			</div>
+
+			<div class="else_desc">
+				
+				<p>«Выплатим деньги на ремонт автомобиля»</p>
+
+				
+			</div>
+
+			
+		</div>
+				<div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+			<div class="else_desc">
+
+				<p>«Купим повержденный автомобиль»</p>
+
+				
+			</div>
+
+			<div class="else_desc">
+				
+				<p>«Произведём независимую экспертизу»</p>
+
+				
+			</div>
+
+			
+		</div>
+
+	</div>
+</div>
+</div>
+<div class="bg_content_2">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<div class="znan">
+				<div class="znan_in">
+					<div class="znan_in_1">
+					<p>Вы знаете, что 99% страховых компаний <span>занижают суммы</span><br>выплат по страховым случаям или же не выплачивают их вовсе?
 					</div>
-				</div>
-				<div class="block block2">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							
-							<div class="block_h1">«Выкупим страховые дела»</div>
-							
-						</div>
+					<div class="znan_in_2">
+						Мы знаем, что нужно сделать, чтобы Вы 
+						получили положенную выплату.
+						Знаем как рассчитать сумму, которая Вам 
+						действительно полагается. 
+						И как сформулировать претензии к страховой 
+						компании с максимальной выплатой.
+						Вам нужна наша помощь?
 					</div>
-				</div>
-				<div class="block block3">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							
-							<div class="block_h1">«Отремонтируем Ваш<br>автомобиль»</div>
-							
-						</div>
+					<div class="znan_in_3">
+						Чтобы воспользоваться предложением,<br>
+						заполните форму <span class="desc"> справа</span><span class="mob">снизу</span>
 					</div>
+
 				</div>
 			</div>
-			<div class="line">
-				<div class="block block4">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							
-							<div class="block_h1">«Выплатим деньги на ремонт автомобиля»</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="block block5">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							
-							<div class="block_h1">«Купим повержденный автомобиль»</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="block block6">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							
-							<div class="block_h1">«Произведём независимую экспертизу»</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
-	</div>
+			<div class="col-sm-12 col-md-6 col-lg-6" style="display: none;">
+				
+				<div class="zayavka_cont_2">
 
-
-    <div class="c7" id="vigoda">
-		    <div class="wrapp">
-			<div class="cl">
-				<div class="left">
-					<div class="h1" >
-						Вы знаете, что 99% страховых компаний <span>занижают суммы</span> <br/>
-	 выплат по страховым случаям<br/>
-						или же не выплачивают их вовсе?
-					</div>
-					<p>
-						Мы знаем, что нужно сделать, чтобы Вы <br/> получили положенную выплату.<br/>
-						Знаем как рассчитать сумму, которая Вам <br/> действительно полагается. <br/>
-						И как сформулировать претензии к страховой <br/> компании с максимальной выплатой.<br/> <span>Вам нужна наша помощь?</span>	</p>
-					<div class="desc">Чтобы воспользоваться предложением,<br/>заполните форму справа</div>
-				</div>
-				<div class="right">
 					<form>
 						<div class="desc">Имя</div>
 						<label class="name required">
-							<input type="text" name="name" placeholder="Иван Иванов">
+							<input type="text" name="name" placeholder="Иван Иванов" class="name">
 						</label><br/>
 						<div class="desc">Телефон</div>
-						<label class="phone required">
-							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
+						<label class="phone required" class="phone1">
+							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7" class="phone_1">
 						</label>
-						<label class="phone required">
-							<input type="text" name="phone2" maxlength="6" placeholder="123">
+						<label class="phone required" class="phone2">
+							<input type="text" name="phone2" maxlength="6" placeholder="123" class="phone_2">
 						</label>
-						<label class="phone required phone4">
-							<input type="text" name="phone3" maxlength="10" placeholder="4567890">
+						<label class="phone required phone3">
+							<input type="text" name="phone3" maxlength="10" placeholder="4567890" class="phone_2">
 						</label><br/>
 						<div class="desc">E-mail</div>
-						<label class="email required">
-							<input type="text" name="email" placeholder="ivanov@mail.ru">
+						<label class="email required" class="email1">
+							<input type="text" name="email" placeholder="ivanov@mail.ru" class="email">
 						</label><br/>
-						<div data-name="request" class="button noselect btn" onClick="formname('Блок «Уменьшение налога на прибыль»');">Воспользоваться предложением</div>
+						<div data-name="request" class="button_zayavka_cont_2 noselect btn" onClick="formname('Блок «Уменьшение налога на прибыль»');">Воспользоваться предложением</div>
 					</form>
+
 				</div>
 			</div>
-		</div>
-	</div>
-
-	
-	<div class="c4" id="benefits">
 		
-		<div class="wrapp">
-			<div class="h1">Почему вам выгодно работать с нами?</div>
-			<div class="line">
-				<div class="block block1">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							<div class="block_icon"></div>
-							<div class="block_h1">35 671 038 рублей</div>
-							<p>уже отсужено у страховых</p>
-						</div>
-					</div>
-				</div>
-				<div class="block block2">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							<div class="block_icon"></div>
-							<div class="block_h1">50</div>
-							<p>профессиональных<br/>юристов и их помощников</p>
-						</div>
-					</div>
-				</div>
-				<div class="block block3">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							<div class="block_icon"></div>
-							<div class="block_h1">11 лет</div>
-							<p>на рынке юридических<br/>услуг в России</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="line">
-				<div class="block block4">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							<div class="block_icon"></div>
-							<div class="block_h1">483</div>
-							<p>успешно выигранных<br/>дела в 2015 году</p>
-						</div>
-					</div>
-				</div>
-				<div class="block block5">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							<div class="block_icon"></div>
-							<div class="block_h1">5349</div>
-							<p>счастливых людей,<br/>получивших реальную<br/>выплату от страховой компании</p>
-						</div>
-					</div>
-				</div>
-				<div class="block block6">
-					<div class="block_wrapper">
-						<div class="block_wrapp">
-							<div class="block_icon"></div>
-							<div class="block_h1">99,2%</div>
-							<p>выигранных дел</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-	
-	<div class="c5">
-		<div class="wrapp">
-			<div class="h1">Ваша страховая компания:</div>
-			<div class="line">
-				<ul>
-					<li>
-						<div class="li_icon">?</div>
-						<p> Занижает положенную Вам выплату?</p>
-					</li>
-					<li>
-						<div class="li_icon">?</div>
-						<p>Отказывается Вам платить,<br/>не объясняя причин?</p>
-					</li>
-					<li>
-						<div class="li_icon">?</div>
-						<p>Не платит, т.к. лимит Вашей страховки<br/>не покрывает ущерб?</p>
-					</li>
-				</ul>
-			</div>
-			<div class="line">
-				<ul>
-					<li>
-						<div class="li_icon">?</div>
-						<p>У виновника нет страховки,<br/>а сам платить отказался?</p>
-					</li>
-					<li>
-						<div class="li_icon">?</div>
-						<p>У Вас нет времени и желания<br/>заниматься этим делом?</p>
-					</li>
-					<li>
-						<div class="li_icon">?</div>
-						<p>Лишилась лицензии<br/>и больше не будет платить?</p>
-					</li>
-				</ul>
-			</div>
-			<div class="h2">Какие решения мы предлагаем нашим клиентам?</div>
-			<div class="btn" onClick="popup('request', 'Блок «Ваш главный бухгалтер»', 'Узнать решения', 'Оставьте заявку,<br/>чтобы узнать о предлагаемых решениях', 'Узнать решения');">Узнать решения</div>
-		</div>
-	</div>
-	
-	<div class="c5_5">
-	</div>
-	
-    <div class="c3">
-		<div class="wrapp" >
-			
-			<div class="h1">Мы считаем минимум <br/><span>в 3 раза больше, чем Ваша страховая.</span></div>
- <div class="h1">	
-				Получите консультацию от профессионалов прямо сейчас:
-			</div>
-			<form>
-				<div class="desc">Имя</div>
-				<label class="name required">
-					<input type="text" name="name" placeholder="Иван Иванов">
-				</label><br/>
-				<div class="desc">Телефон</div>
-				<label class="phone required">
-					<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-				</label>
-				<label class="phone required">
-					<input type="text" name="phone2" maxlength="6" placeholder="123">
-				</label>
-				<label class="phone required">
-					<input type="text" name="phone3" maxlength="10" placeholder="4567890">
-				</label><br/>
-				<div class="desc">E-mail</div>
-				<label class="email required">
-					<input type="text" name="email" placeholder="ivanov@mail.ru">
-				</label><br/>
-				<div data-name="request" class="button noselect btn" onClick="formname('Блок «Получить бесплатную консультацию!»');">Получить бесплатную консультацию</div>
-			</form>
-		</div>
-	</div>
-
-	<div class="c8" id="istorii">
-		<div class="wrapp">
-			<div class="h1">Истории наших клиентов,</div>
-	
-			<div class="h1">которые уже получили выплаты от выигранных нами судов.</div>
-			<div class="bannerblock">
-			    <img class="trash" src="a1/img/photos1.jpg" alt="#" />
-				<div class="img1">
-				<div class="block_h1">Land Rover Freelander 2
-				</div>
-				<p class="block_h2">Сумма ущерба: 774056,40 рублей.
-				</p>
-				<span class="raschet1">Сумма начисленная страховой: ОТКАЗАНО В ВЫПЛАТЕ!</span>
-				<span class="raschet2">Сумма после обращения к нам:<br> 1 481 963,68 рублей</span>
-				
-				<ul>
-					<li>
-					Описание ситуации:<br/>
-					Автомобиль Land Rover Freelander 2 2009 г. в., застрахован <br/>
-					по КАСКО «Ресо Гарантия». На автомобиль упало огромное <br/>
-					дерево. По мнению «экспертов и юристов» «Ресо-Гарантия», <br/>
-					возмещения ущерба здесь не будет, так как это не страховой  <br/> 
-					случай. Наши юристы в суде доказали, что здесь именно <br/>
-					страховой случай! Отремонтировать данный авто можно за  <br/>
-					774 056,40 руб., что подтверждает заключение наших  <br/>
-					независимых экспертов (Заключение № 15-04-01).
-                    <br/>
-					</li>
-					<li>
-                    Результат: Решение суда о взыскании с СК "РЕСО-Гарантия"  <br/> 
-					774 056,40 р. <br/>
-					+ моральный вред 253 954 р.  <br/>
-					+ стоимость экспертизы 7 500 р.  <br/> 
-					+ услуги юристов 50 000 р.  <br/> + неустойка 396 453,28 р. 
-					<br/>
-					<div class="block_h1a"> Итого: 1 481 963,68 рублей.</div>
-					</li>
-				</ul>
-				</div>
-				<a id="calculate" class="btn btn1" onClick="popup('request', 'Вариант работы «Специальные услуги»', 'Расчитать мой случай', 'Оставьте заявку,<br/>чтобы расчитать мой случай', 'Расчитать мой случай');ы">Расчитать мой случай</a>
-			</div>
-				
-			<div class="bannerblock">
-			    <img class="trash" src="a1/img/photos2.jpg" alt="#" />
-				<div class="img1">
-				<div class="block_h1">Ford Mondeo
-				</div>
-				<p class="block_h2">Сумма ущерба: 53260 рублей.
-				</p>
-				<span class="raschet1">Сумма выплаты изначально: 10 359 рублей</span>
-				<span class="raschet2">Сумма после обращения к нам:<br> 101 019,90 рублей.</span>
-				<ul>
-					<li>
-					Описание ситуации: <br/>
-					Автомобиль Ford Mondeo 2011 г. в., застрахован по <br/> ОСАГО в СК «Росгосстрах». Выплата страховой <br/> компании составила 10 359 рублей. В действительности, <br/> стоимость ремонта автомобиля с учетом износа деталей <br/> составляет 53 260 руб., что подтверждает экспертиза <br/> наших независимых экспертов (Заключение № 14-11-95).<br/>
-					</li>
-					<li>
-                    Результат: Решение суда о взыскании с СК "Росгосстрах" <br/>
-					53 260 р. <br/>
-					+ моральный вред 16 357,25 р. <br/> 
-					+ стоимость экспертизы 7 500 р. <br/>  
-					+ услуги юристов 15 000 р. <br/> 
-					+ неустойка 8 902,65 р. <br/> 
-					<div class="block_h1a"> Итого: 101 019,90 рублей.
-					</div>		 
-	            </ul>
-			</div>
-			<a id="calculate" class="btn" onClick="popup('request', 'Вариант работы «Специальные услуги»', 'Расчитать мой случай', 'Оставьте заявку,<br/>чтобы расчитать мой случай', 'Расчитать мой случай');ы">Расчитать мой случай</a>
-			</div>
-			
-				<div class="bannerblock">
-				    <img class="trash" src="a1/img/photos3.jpg" alt="#" />
-					<div class="img1">
-					<div class="block_h1">Hyundai Solaris</div>
-				<p class="block_h2">Сумма ущебра: 263 659,03 р. 
-				</p>
-				<span class="raschet1">Сумма выплаты изначально: 72 490 рублей</span>
-				<span class="raschet2">Сумма после обращения к нам:<br> 525 076,39 рублей</span>
-					<ul>
-						<li>
-                        Описание ситуации:<br/>
-	                    Автомобиль Hyundai Solaris 2013 г. в., застрахован по <br/> 
-						ОСАГО в СК "Гута-Страхование". Выплата страховой <br/>
-						компании составила 72 490 р. В реальности же, <br/> 
-						стоимость ремонта автомобиля с учетом износа деталей <br/> 
-						составляет 263 659,03 р., что подтверждается заключением <br/>
-						наших независимых экспертов (Заключение № 14-12-65).
-						</li>
-						<li>
-	                    Результат: Решение суда о взыскании с СК "Гута-Страхование" <br/>
-	                    263 659,03 р.	<br/>
-						+ УТС 49 632 р. <br/> 
-						+ моральный вред 115 027,36 р. <br/> 
-						+ стоимость экспертизы 7 500 р. <br/>
-						+ услуги юристов 20 000 р. <br/> 
-						+ неустойка 69 258 р. <br/> 
-						<div class="block_h1a"> Итого: 525 076,39 рублей.</div>
-					</ul>
-				</div>
-				<a id="calculate" class="btn" onClick="popup('request', 'Вариант работы «Специальные услуги»', 'Расчитать мой случай', 'Оставьте заявку,<br/>чтобы расчитать мой случай', 'Расчитать мой случай');ы">Расчитать мой случай</a>
-				</div>
-				
-				<div class="bannerblock">
-				    <img class="trash" src=a1/img/photos4.jpg alt="#"/>
-					<div class="img1">
-					<div class="block_h1">Porsche Cayenne</div>
-				    <p class="block_h2">Сумма ущерба: 1 895 000 рублей.
-				    </p>
-				    <span class="raschet1">Сумма выплаты изначально: ОТКАЗАНО В ВЫПЛАТЕ!</span>
-				    <span class="raschet2">Сумма после обращения к нам:<br> 2 796 063,95 рублей</span>
-					<ul>
-						<li>
-							Автомобиль Porsche Cayenne 2012 г.в., застрахован по <br/>
-                            КАСКО в СК "Согласие". Во время стоянки автомобиль <br/> 
-							неожиданно загорелся и полностью сгорел внутри.<br/> 
-							"Эксперты и юристы" страховой компании "Согласие" <br/>
-							отказали в выплате, ссылаясь на то, что автомобиль <br/>
-							сгорел по вине владельца. Однако, согласно <br/>
-							возбужденному уголовному делу, поджог совершило <br/> 
-							неустановленное лицо. Нашими специалистами была <br/> 
-							проведена экспертиза (Заключение № 14-08-963), <br/> 
-							которая оценила ущерб в 1 895 000 руб.</li>
-						<li>
-							Результат: Решение суда о взыскании с СК "Согласие" <br/>
-                            1 895 000 р. <br/>
-                            + УТС 328 000 р.	<br/>
-                            + стоимость экспертизы 15 000 р. <br/>
-                            + услуги юристов 60 000 р. <br/>
-                            + неустойка 	498 063,95 р.<br/> 
-							<div class="block_h1a"> Итого: 2 796 063,95 рублей.	</div>
-						</li>
-					</ul>
-			    </div>
-				<a id="calculate" class="btn" onClick="popup('request', 'Вариант работы «Специальные услуги»', 'Расчитать мой случай', 'Оставьте заявку,<br/>чтобы расчитать мой случай', 'Расчитать мой случай');ы">Расчитать мой случай</a>
-				</div>
-				
-		    
-                </div>
-            <div class="photos"></div>
-    </div>
-	</div>
-	
-	<div class="c9 scroll animated">
-		<div class="wrapp">
-			<div class="h1">Мы уже успешно судились с этими страховыми компаниями:</div>
-			<div class="block_wrapp">
-				<div class="line">
-					<div class="block block1">
-                                            <center><div class="img img1"></div></center>
-						<p>Allianz Росно</p>
-					</div>
-					<div class="block block2">
-						<div class="img img2"></div>
-						<p>АльфаСтрахование</p>
-					</div>
-					<div class="block block3">
-						<div class="img img3"></div>
-						<p>ВТБ Страхование</p>
-					</div>
-					<div class="block block4">
-						<div class="img img4"></div>
-						<p>Росгосстрах</p>
-					</div>
-				</div>
-				<div class="line">
-					<div class="block block5">
-						<div class="img img5"></div>
-						<p>Согласие</p>
-					</div>
-					<div class="block block6">
-						<div class="img img6"></div>
-						<p>Гута-Страхование</p>
-					</div>
-					<div class="block block7">
-						<div class="img img7"></div>
-						<p>Ресо Гарантия</p>
-					</div>
-					<div class="block block8">
-						<div class="img img8"></div>
-						<p>Жасо</p>
-					</div>
-				</div>
-				<div class="line">
-					<div class="block block9">
-						<div class="img img9"></div>
-						<p>Ингосстрах</p>
-					</div>
-					<div class="block block10">
-						<div class="img img10"></div>
-						<p>Макс</p>
-					</div>
-					<div class="block block11">
-						<div class="img img11"></div>
-						<p>МСК-Стандарт</p>
-					</div>
-					<div class="block block12">
-						<div class="img img12"></div>
-						<p>Паритет-СК</p>
-					</div>
-				</div>
-				<div class="line">
-					<div class="block block13">
-						<div class="img img13"></div>
-						<p>Ренессанс</p>
-					</div>
-					<div class="block block14">
-						<div class="img img14"></div>
-						<p>СГ "Спасские ворота"</p>
-					</div>
-					<div class="block block15">
-						<div class="img img15"></div>
-						<p>Страховая группа МСК</p>
-					</div>
-					<div class="block block16">
-						<div class="img img16"></div>
-						<p>Югория</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="c10" id="rabota">
-		<div class="wrapp">
-		
-			<div class="h1">7 причин работать с нами</div>
-			<div class="cl">
-				<div class="left">
-					<ul>
-						<li class="item1">
-							<div class="img"></div>
-							<span>Гарантия результата</span>
-							<p>
-								Мы гарантируем, что мы <br/>
-								выиграем дело или <br/>
-								не берёмся за него совсем.
-							</p>
-						</li>
-						<li class="item3">
-							<div class="img"></div>
-							<span>Принцип «одного окна»</span>
-							<p>
-								С вами будет работать один специалист,<br/>
-								ответственный за решение ваших вопросов
-							</p>
-						</li>
-						<li class="item5">
-							<div class="img"></div>
-							<span>Конфиденциальность сведений</span>
-							<p>
-								Мы гарантируем 100% конфиденциальность<br/>
-								поступившей нам информации и защиту<br/>
-								персональных данных
-							</p>
-						</li>
-						<li class="item6">
-							<div class="img"></div>
-							<span>Пять в одном</span>
-							<p>
-								Мы привлекаем к работе над вашим<br/>
-								делом не только профессиональных юристов,<br/>
-								но и высококвалифицированных экспертов, <br/> оценщиков и
-								и других специалистов
-.							</p>
-						</li>
-					</ul>
-				</div>
-				<div class="right">
-					<ul>
-						<li class="item2">
-							<div class="img"></div>
-							<span>100% контроль качества</span>
-							<p>
-								Наша работа проходит 2 уровня<br/>
-								внутренней проверки, поэтому<br/>
-								вы можете быть полностью уверены<br/>
-								в качестве наших услуг
-							</p>
-						</li>
-						<li class="item4">
-							<div class="img"></div>
-							<span>Только лучшие профессионалы</span>
-							<p>
-								Мы просматриваем 1000 резюме<br/>
-								и проводим более 100 собеседований<br/>
-								в месяц, и лишь лучшие специалисты<br/>
-								становятся частью нашей команды
-							</p>
-						</li>
-						<li class="item6">
-							<div class="img"></div>
-							<span>Современные технологии</span>
-							<p>
-								В работе мы используем защищённые каналы<br/>
-								передачи информации, потоковый ввод<br/>
-								данных, электронный документооборот
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="btn" onClick="popup('request', 'Узнать все, полагающиеся Вам, преимущества', 'Узнать<br/>преимущества', 'Оставьте заявку,<br/>и наш специалист свяжется<br/>с вами и расскажет<br/>о всех преимуществах', 'Узнать преимущества');">Узнать все, полагающиеся Вам, преимущества.</div>
-		</div>
-	</div>
-	
-	<div class="c11">
-		<div class="wrapp">
-			<div class="h1">Наши благодарности</div>
-			<div class="slider_wrapp" data-now="1">
-				<div class="slider">
-					<div class="slide slide1">
-						<div class="img">
-							<div class="bage">
-												</div>
-						</div>
-						<p>
-							Управа района Кунцево выразила свою						благодарность за оказанную им поддержку и правовую помощь.</p>
-					</div>
-					<div class="slide slide2">
-						<div class="img"></div>
-						<p>
-Юридическая компания "Титан-Автоюрист" получила благодарность <br/>
- от Московского Государственного Технического Института!</p>
-					</div>
-					<div class="slide slide3">
-						<div class="img"></div>
-						<p>
-							"Титан-автоюрист" получила отзыв от довольного клиента.<br/>
-							Наши юристы помогли ему в тяжелом судебном разбирательстве.</p>
-					</div>
-				</div>
-				<div class="arrow noselect left_arrow" onClick="ipad_play_arrow(-1);"><span></span></div>
-				<div class="arrow noselect right_arrow" onClick="ipad_play_arrow(1);"><span></span></div>
-				<ul class="noselect">
-					<li onClick="ipad_play(1);" class="li1 active">
-
-					</li>
-					<li onClick="ipad_play(2);" class="li2">
-
-					</li>
-					<li onClick="ipad_play(3);" class="li3">
-
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	
-	<div class="c12 scroll animated" id="sotrud">
-		<div class="wrapp">
-		
-			<div class="h1">Схема работы</div>
-			<div class="block_wrapp">
-				<div class="block block1">
-					<div class="icon">
-						<div class="num">1</div>
-						<div class="arrow">
-							<ul>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-					<div class="block_h1">Ваша заявка</div>
-					<p>
-						Вы обращаетесь к нам,<br/>
-						мы изучаем Вашу ситуацию <br/>
-						и набор Ваших документов.		</p>
-				</div>
-				<div class="block block2">
-					<div class="icon">
-						<div class="num">2</div>
-						<div class="arrow">
-							<ul>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-					<div class="block_h1">Подписание договора</div>
-					<p>
-						Мы проводим независимую экспертизу<br/>
-					и готовим все необходимые документы. </p>
-				</div>
-				<div class="block block3">
-					<div class="icon">
-						<div class="num">3</div>
-					</div>
-					<div class="block_h1">Претензия</div>
-					<p>
-						Мы подаём претензию в Вашу <br/> страховую компанию. </p>
-				</div>
-				<div class="block block4">
-					<div class="icon">
-						<div class="num">4</div>
-						<div class="arrow">
-							<ul>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-					<div class="block_h1">Подача искового заявления.</div>
-					<p>
-						Мы обращаемся с исковым<br/>
-						заявлением в суд, если претензию не удовлетворяют.	</p>
-				</div>
-				<div class="block block5">
-					<div class="icon">
-						<div class="num">5</div>
-					</div>
-					<div class="block_h1">Получение исполнительного листа.</div>
-					<p>
-						Мы выигрываем Ваше дело,<br/>
-						получаем исполнительный лист и <br/>
-						взыскиваем денежные средства.</p>
-				</div>
-			</div>
-			<div class="btn" onClick="popup('request', 'Блок «Схема работы»', 'Оставить заявку', 'Оставьте заявку, чтобы записаться на встречу', 'Оставить заявку');">Оставить заявку</div>
-		</div>
-	</div>
-	<div style="clear: both;"></div>
-	<div class="c13" id="klienti">
-		<div class="wrapp">
-			<div class="h1">Наши довольные клиенты:</div>
-
-		</div>
-		<div class="block block1">
-			<div class="wrapp">
-				<div class="left">
-					<div class="video">
-					<iframe width="300" height="240" src="http://www.youtube.com/embed/WmZvYm9B2Xs?feature=player_detailpage&amp;rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" wmode="opaque">
-					</iframe>
-					</div>
-					<div class="sert">
-						<div class="desc">
-							За время нашего сотрудничества<br/>
-							компания "Титан-автоюрист"<br/>
-							зарекомендовала себя как<br/>
-							команда профессионалов,<br/>
-							оказывающая услуги на высоком<br/>
-							уровне
-						</div>
-					</div>
-			</div>
-				<div class="right">
-					<span>клиент:</span>
-					<p>Михаил Владимирович Ф.</p>
-					<span>Дело:</span>
-					<p>В январе попал в ДТП, повредил заднее крыло и бампер <br/></p> <span>Особенности:</span>
-					<ul>
-						<li>Страховая компания выплатила лишь 13 000 рублей.</li>
-						<li>После подписания договора с нами, клиент вообще никуда не ходил</li>
-						<li>Была написана претензия в страховую компанию</li>
-						
-					</ul>
-					<span>Результат:</span>
-					<p>
-						Выплата по судебному решению составила 45 000 рублей.</p>
-					<div class="btn" onClick="popup('request', 'Отзыв Sitronics(НИОКР)', 'Прочитать отзыв', 'Оставьте заявку,<br/>чтобы получить доступ к отзыву', 'Прочитать отзыв');">Прочитать отзыв</div>
-				</div>
-			</div>
-		</div>
-		<div class="block block2">
-			<div class="wrapp">
-				<div class="left">
-					<div class="video">
-					<iframe width="300" height="240" src="http://www.youtube.com/embed/km5PQ-BM_WI?feature=player_detailpage&amp;rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" wmode="opaque">
-					</iframe>
-					</div>
-					<div class="sert">
-						<div class="desc">
-							Специалисты компании были<br/>
-							привлечены для проведения<br/>
-							независимой экспертизы<br/>
-							и для представления моих интересов в суде.
-							</div>
-					</div>
-				</div>
-				<div class="right">
-					<span>Клиент:</span>
-					<p>Наталья Сергеевна К.</p>
-					<span>Дело:</span>
-					<p>
-						Попала в ДТП в ноябре 2014 года, повредила задний бампер, багажник, оба задних фонаря.
-					</p>
-					<span>Особенности:</span>
-					<ul>
-						<li>Страховая компания выплатила 16980 рублей.</li>
-						<li>Клиент - очень занятая бизнес-леди, времени на это дело у неё не было вообще.</li>
-						<li>Была подана претензия в страховую компанию</li>
-					</ul>
-					<span>Результат:</span>
-					<p>
-						Решение суда о взыскании со страховой компании 96 520 рублей <br/>
-						в пользу клиента. Наталья Сергеевна была очень рада.
-					</p>
-					<div class="btn" onClick="popup('request', 'Отзыв Aedas', 'Прочитать отзыв', 'Оставьте заявку,<br/>чтобы получить доступ к отзыву', 'Прочитать отзыв');">Прочитать отзыв
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="block block3">
-			<div class="wrapp">
-				<div class="left">
-					<div class="video">
-					<iframe width="300" height="240" src="http://www.youtube.com/embed/hb9b3I_teJQ?feature=player_detailpage&amp;rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" wmode="opaque">
-					</iframe>
-					</div>
-					<div class="sert">
-						<div class="desc">
-							За время сотрудничества<br/>
-							профессиональная команда<br/>
-							"Титан-автоюрист" помогла<br/>
-							мне получить<br/>
-							реальную выплату <br/>
-от страховой компании. </div>
-					</div>
-				</div>
-				<div class="right">
-					<div class="block_h1">
-	</div>
-					<span>Клиент:</span>
-					<p>Илья Иванович К.</p>
-					<span>Дело:</span>
-					<p>В декабре попал в ДТП, повредил капот, бампер, крыло, фару. </p>
-					<span>Особенности:</span>
-					<ul>
-						<li>Страховая компания выплатила 19 500 рублей.</li>
-						<li>После подписания договора клиент улетел отдыхать в Доминиканскую Республику</li>
-						<li>Мы собрали необходимые документы, подали претензию и через 10 дней сразу же в суд</li>
-			</ul>
-					<span>Результат:</span>
-					<p>
-						Решение суда о взыскании со страховой компании 75 000 рублей <br/>
-						в пользу клиента. Клиент вернулся из отпуска и был очень доволен.</p>
-					<div class="btn" onClick="popup('request', 'Отзыв «Земторг»', 'Прочитать отзыв', 'Оставьте заявку,<br/>чтобы получить доступ к отзыву', 'Прочитать отзыв');">Прочитать отзыв</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="c14 scroll animated">
-		<div class="wrapp">
-			<div class="h1">Опыт наших специалистов, которым мы гордимся</div>
-			<div class="block_wrapp">
-				<div class="block block1">
-					<div class="logo"></div>
-					<div class="desc">Государственная корпорация<br/>атомной энергетики</div>
-					<!-- <div class="block_h1">опыт наших специалистов</div> -->
-					<p>
-Сотрудники этой государственной корпорации неоднократно <br/> попадали в ДТП и в связи с этим обращались за помощь в нашу компанию и получали <br/> только положительные результаты. </p>
-				</div>
-				<div class="block block2">
-					<div class="logo"></div>
-					<div class="desc">Продуктовый ритейл<br/><br/></div>
-					<!-- <div class="block_h1">опыт наших специалистов</div> -->
-					<p>
-					Автомобили этого гиганта бизнеса
-                    <br/> очень часто попадают в ДТП. <br/>
-                    Наши профессионалы всегда приходят<br/>
-                    на помощь компании Х5 Retail Group.
-					</p>
-				</div>
-				<div class="block block3">
-					<div class="logo"></div>
-					<div class="desc">Информационно-аналитические<br/>услуги</div>
-					<!-- <div class="block_h1">опыт наших специалистов</div> -->
-					<p>
-						Более 7 лет полного<br/>
-						юридического обслуживания автомобилей  на высоком уровне, <br/> как корпоративных, так и личных.	</p>
-					<p>
-						Представление интересов<br/>
-						в различных органах и инстанциях.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="c15">
-		<div class="wrapp">
-			<div class="cl">
-				<div class="left">
-					<div class="h1">
-						Понятия <span>«дорого»</span><br/>
-						у нас <span>не существует!</span>
-					</div>
-					<p>
-						Заставлять вас переплачивать за ненужные<br/>
-						услуги &mdash; не в наших интересах. Мы подберём для<br/>
-						вас именно тот вариант сотрудничества, который<br/>
-						будет вписываться в рамки вашего бюджета.
-					</p>
-					<div class="desc">Чтобы воспользоваться предложением, заполните форму</div>
-				</div>
-				<div class="right">
-					<form>
-						<div class="desc">Имя</div>
-						<label class="name required">
-							<input type="text" name="name" placeholder="Иван Иванов">
-						</label><br/>
-						<div class="desc">Телефон</div>
-						<label class="phone required">
-							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-						</label>
-						<label class="phone required">
-							<input type="text" name="phone2" maxlength="6" placeholder="123">
-						</label>
-						<label class="phone required">
-							<input type="text" name="phone3" maxlength="10" placeholder="4567890">
-						</label><br/>
-						<div class="desc">E-mail</div>
-						<label class="email required">
-							<input type="text" name="email" placeholder="ivanov@mail.ru">
-						</label><br/>
-						<div data-name="request" class="button noselect btn" onClick="formname('Получить скидку');">Получить скидку</div>
-						<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="c16" id="kontakti">
-		<div class="wrapp">
-			<div class="h1">Контакты</div>
-			
-			<div class="cl">
-				<div class="left">
-					<span>Адрес:</span>
-					<p>228375, г. Москва, </p>
-					<span>Tелефон:</span>
-					<p class="comagic_phone">+7 915 408-88-77</p>
-					<span>E-mail:</span>
-					<p>avto-titan@yandex.ru</p>
-				</div>
-				<div class="right">
-					<div class="text">Остались <span>вопросы?</span></div>
-					<div class="text_btn" onClick="popup('question', '');">Задайте их менеджеру</div>
-				</div>
-			</div>
-		</div>
-	</div> 
-	
-	<div class="c17">
-		<div id="map"></div>
-	</div>
-	
-	<div class="c18">
-		<div class="wrapp">
-			<div class="cl">
-				<div class="phone_wrapp cl">
-					<div class="num comagic_phone">+7 915 408-88-77</div>
-					<div class="btn" onClick="popup('callback', '', 'Заказать звонок', 'Оставьте заявку, и наш менеджер<br/>свяжется с вами в ближайшее<br/>время и ответит на все ваши вопросы');">Заказать звонок</div>
-					<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
-				</div>
-				<!-- <a href="../conf.pdf"><div class="conf">пользовательское соглашение</div></a> -->
-            </div>
-        </div>
-    </div>
-      <script type="text/javascript" async src="http://app.comagic.ru/static/cs.min.js">
-      	
-      </script>
-    <link rel="stylesheet" href="//cdn.callbackhunter.com/widget/tracker.css"> 
-    <link rel="stylesheet" href="a1/css/fonts.css" />
-	<script type="text/javascript" src="a1/js/jquery.min.js"></script>
-	<script type="text/javascript" src="a1/js/scripts.js"></script>
-
-	<script type="text/javascript" src="a1/js/validator.js"></script>
-	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-	<script type="text/javascript" src="a1/js/ymaps.js"></script>
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	var google_conversion_id = 964495195;
-	var google_custom_params = window.google_tag_params;
-	var google_remarketing_only = true;
-	/* ]]> */
-	</script>
-	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-	</script>
-	<noscript>
-	<div style="display:inline;">
-	<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/964495195/?value=0&amp;guid=ON&amp;script=0"/>
 </div>
 </div>
-</p>
+<div class="container">
+	<div class="else">
+		Почему вам выгодно работать с нами?
 	</div>
-	</noscript>
-	<!-- Yandex.Metrika informer -->
-<a href="https://metrika.yandex.ru/stat/?id=30354232&amp;from=informer"
-target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/30354232/1_1_FFFFD2FF_FFE4B2FF_0_pageviews"
-style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" /></a>
-<!-- /Yandex.Metrika informer -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-lg-4">
+			<div class="else_desc">
+<div class="smallimg1"></div>
+				<p>35 671 038 рублей<br>
+					<span>уже отсужено у страховых</span>
+				</p>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter30354232 = new Ya.Metrika({id:30354232,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
+				
+			</div>
 
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+			<div class="else_desc">
+				<div class="smallimg2"></div>
+				<p>50<br>
+					<span>профессиональных юристов и их помощников</span>
+					
+				</p>
+										
 
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/30354232" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-	
+				
+			</div>
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = '8flZ7Pe72I';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
-<!-- {/literal} END JIVOSITE CODE -->
+			
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-4">
+			<div class="else_desc">
+<div class="smallimg3"></div>
+				<p>11 лет<br>
+					<span>на рынке юридических
+						услуг в России</span>
+				</p>
+
+				
+			</div>
+
+			<div class="else_desc">
+				<div class="smallimg4"></div>
+				<p>483<br>
+					<span>успешно выигранных
+					дела в 2015 году</span>
+				</p>
+
+				
+			</div>
+
+			
+		</div>
+				<div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+			<div class="else_desc">
+<div class="smallimg5"></div>
+				<p>5349<br><span>счастливых людей,
+получивших реальную
+выплату от страховой компании</span></p>
+
+				
+			</div>
+
+			<div class="else_desc">
+				<div class="smallimg6"></div>
+				<p>99,2%<br><span>выигранных дел</span>
+				</p>
+
+				
+			</div>
+
+			
+		</div>
+
+	</div>
+</div>
+</div>
+<div class="content_bg3">
+<div class="container">
+	<div class="else">
+		Ваша страховая компания:
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+			<div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+				<div class="utp">
+				<p><span>?</span>Занижает положенную Вам выплату?</p>
+				</div>
+				<div class="utp">
+				<p><span>?</span>У виновника нет страховки,а сам платить отказался?</p>
+				</div>
+			</div>
+				
+			
+			<div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+				<div class="utp">
+				<p><span>?</span>Отказывается Вам платить,	не объясняя причин?</p>
+				</div><div class="utp">
+				<p><span>?</span>У Вас нет времени и желания заниматься этим делом?</p>
+				</div>
+				
+			</div>
+			<div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+				<div class="utp">
+				<p><span>?</span>Не платит, т.к. лимит Вашей страховки не покрывает ущерб?</p>
+				</div><div class="utp">
+				<p><span>?</span>Лишилась лицензии и больше не будет платить?</p>
+				</div>
+				
+			</div>
+
+</div>
+<div class="else_btn"><p>Какие решения мы предлагаем нашим клиентам?<br></p><p><a href="">Узнать решения</a></p></div>
+</div>
+
+</div>
+
+
+
+		<div class="content_bg4">
+<div class="container">
+	<div class="else_4">
+		<p>Мы считаем минимум <br>
+<span> В 3 РАЗА БОЛЬШЕ, ЧЕМ ВАША СТРАХОВАЯ.</span><br>
+Получите консультацию от профессионалов прямо сейчас:</p>
+	</div></div>
+
+
+
+
+
+
+</div>
+	</content>
+
+
+
+	<footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script src="https://use.fontawesome.com/f0e19940a7.js"></script>
+	</footer>
+
+
 </body>
 </html>

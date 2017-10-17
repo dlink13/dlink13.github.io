@@ -1,0 +1,538 @@
+/******************************************************************
+	This is the CSS Reset
+******************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	background-color: #F5F6F8;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	width: 100%;
+	letter-spacing: 0.025em;
+	line-height: 1.75;
+	
+	opacity: 1; 
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+/******************************************************************
+	This is the CSS Reset
+******************************************************************/
+@font-face {
+	font-family: 'agora_light';
+	src: url('../fonts/pfagorasanspro-light-webfont.eot');
+	src: url('../fonts/pfagorasanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-light-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_black';
+	src: url('../fonts/pfagorasanspro-black-webfont.eot');
+	src: url('../fonts/pfagorasanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-black-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-black-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_bold';
+	src: url('../fonts/pfagorasanspro-bold-webfont.eot');
+	src: url('../fonts/pfagorasanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-bold-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_regular';
+	src: url('../fonts/pfagorasanspro-reg-webfont.eot');
+	src: url('../fonts/pfagorasanspro-reg-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-reg-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-reg-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_medium';
+	src: url('../fonts/pfagorasanspro-medium-webfont.eot');
+	src: url('../fonts/pfagorasanspro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-medium-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-medium-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_light_italic';
+	src: url('../fonts/pfagorasanspro-lightital-webfont.eot');
+	src: url('../fonts/pfagorasanspro-lightital-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-lightital-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-lightital-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_thin';
+	src: url('../fonts/pfagorasanspro-thin-webfont.eot');
+	src: url('../fonts/pfagorasanspro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-thin-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-thin-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #e1e1e1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	opacity: 1;
+	color: #e1e1e1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #e1e1e1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	opacity: 1;
+	color: #e1e1e1;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { opacity:1; }
+input::-moz-placeholder,
+textarea::-moz-placeholder { opacity:1; }
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { opacity:0; }
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { opacity:0; }
+
+
+/*-------Header-------*/
+
+
+
+.container{
+	width: 100%;
+}
+header {
+	padding-top: 50px;
+	background: url(../img/c1_bg1.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+.header_bg{
+	background-color: rgba(123, 117, 117, 0.35);width: 100%;
+}
+
+.desc_menu {
+	top: 0;
+	width: 100%;
+	position: fixed;
+	background-color: #3D465E;
+	z-index: 50;
+
+}
+.desc_menu ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+}
+.desc_menu ul li {
+	left: 0;
+	right:0;
+	margin: auto;
+}
+.desc_menu ul li a {
+	color: #fff;
+	text-decoration: underline;
+}
+.logo {display:flex; margin-top: 50px; justify-content: center;}
+.logo p {padding-top: 5%;padding-left: 5%;font-size: 2em;color: #fff;}
+.logo_right {
+	margin-top: 80px;
+	width: 100%;
+
+}
+.logo_right p {
+
+	color: #fff;
+	/*color: #8e001c;*/
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 5%;
+
+}
+.logo_right p span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.3em
+}
+.vzisk {
+margin-top: 100px;
+}
+.vzisk p {text-align: center; font-weight: bold;text-transform: uppercase;color: #8e001c; font-size: 2.1em;}
+.vzisk p span {
+	color: #fff;font-size: 1.2em;
+}
+.garantia {
+	width: 100%;
+	margin-top: 50px;
+}
+.garantia p {
+	font-size: 1.2em;
+	color: #fff;
+	text-align: center;
+}
+.garantia p span {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.header_zakaz {
+	margin-top: 200px;
+	width: 100%;
+	background-color: rgba(123, 117, 117, 0.35);
+	padding-bottom: 50px;
+}
+.header_zakaz p {
+	padding: 30px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 80px;
+}
+.zakaz_button {
+margin-top: 150px;
+padding: 15px;
+	width: 45%;
+	border-radius: 10px;
+
+	
+	background-color: #8e001c;
+	text-align: center;
+	margin: auto;
+}
+.zakaz_button a {
+		color: #fff;
+		text-decoration: none;
+		
+		font-weight: bold;
+		font-size: 1em;
+		text-transform: uppercase;
+
+		text-align: center;
+}
+.zakaz_button a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.otvetchik {
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding-bottom: 100px;
+}
+
+
+/*--------------Content1------------*/
+
+.else {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	color:#8e001c;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 2em;
+
+}
+.else_desc {
+	margin-top: 50px;
+	height: 200px;
+	margin-bottom: 10px;
+	border:2px solid #ccc;
+	width: 100%;
+	text-align: center;
+	color: #8e001c;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+.else_desc p {
+	padding: 50px;
+}
+.else_desc span {
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	font-size: 0.8em;
+}
+/*--------content2---------*/
+
+.bg_content_2 {
+margin-top: 50px;
+	background: url(../img/c9_bg.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.znan {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	vertical-align: middle;
+	
+	width: 100%;
+	border: 2px solid #ACAFB9;
+	margin-left: 3%;
+}
+.znan_in{
+	width: 80%;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.znan_in_1 {
+	
+	font-size: 1.8em;
+	color: #fff;
+	padding-bottom: 50px;
+	border-bottom: 2px solid #fff;
+}
+.znan_in_2{
+	border-top: 1.3px solid #fff;
+	margin-top: 5px;
+	padding-top: 50px;
+	color: #fff;
+	font-size: 1.3em;
+	padding-bottom: 30px;
+	border-bottom: 1.3px solid #fff;
+}
+.znan_in_3 {
+	margin-top: 20px;
+	font-style: italic;
+	font-size: 0.8em;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.znan_in_3 .mob {
+	display: none;
+}
+.zayavka_cont_2 {
+	width: 100%;
+	height: 600px;
+	margin-top: 25%;
+	
+
+}
+.desc {
+	color: #fff;
+	font-size: 1em;
+}
+.zayavka_cont_2 form {
+	width: 100%;
+	padding-left:20%;
+}
+.zayavka_cont_2 form .name{
+	width: 100%;
+	height: 40px;
+}
+.zayavka_cont_2 form .name textarea
+
+.zayavka_cont_2 .button_zayavka_cont_2{
+	text-align: center;
+	width: 100%;
+	background-color: #8E001C;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 15px;
+}
+.zayavka_cont_2 form input {
+	background-color: rgba(255,255,255,0.4);
+	border: 1px solid transparent;
+	margin-bottom: 15px;
+	font-family: 'agora_regular';
+	font-size: 18px;
+	color: #000;
+	padding: 0 10px;
+}
+
+.zayavka_cont_2 form input.phone1 {
+	width: 10%;
+}
+.zayavka_cont_2 form input.phone_1,{
+width: 10%;
+}
+
+.smallimg1 {
+	margin-top: -25px !important;
+	margin: 0 auto;
+	background: url(../img/c4_icon1.png)center center no-repeat;;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+}
+.smallimg2 {
+	margin-top: -25px !important;
+	margin: 0 auto;
+	margin-top: -30px;
+	background-repeat: no-repeat;
+	background: url(../img/c4_icon4.png) center center no-repeat;
+	width:40px;
+	height: 40px;
+	background-color: #fff;
+}
+.smallimg3 {
+		margin-top: -25px !important;
+	margin: 0 auto;
+	background: url(../img/c4_icon2.png)center center no-repeat;;
+	width: 40px;
+	height: 40px;
+		-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #fff;
+}
+.smallimg4 {
+	margin-top: -25px !important;
+	margin: 0 auto;
+	margin-top: -30px;
+	background: url(../img/c4_icon5.png)center center no-repeat;;
+	width: 40px;
+	height: 40px;
+		-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #fff;
+}
+.smallimg5 {
+	margin-top: -25px !important;
+	margin: 0 auto;
+	margin-top: -30px;
+	background: url(../img/c4_icon3.png)center center no-repeat;;
+	width: 40px;
+	height: 40px;
+		-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #fff;
+}
+.smallimg6 {
+	margin-top: -25px !important;
+	margin: 0 auto;
+	margin-top: -30px;
+	background: url(../img/c4_icon6.png)center center no-repeat;
+	width: 40px;
+	height: 40px;
+		-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #fff;
+}
+.content_bg3 {
+	background: url(../img/c5_bg.jpg) center center no-repeat;margin-top: 50px;-webkit-background-size: cover;
+	background-size: cover;
+}
+.utp {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 25px;
+}
+.utp p {
+	text-align: left;
+	font-size: 1em;
+}
+.utp p span {
+	margin-right: 35px;
+	background-color: #ccc;
+	color: #8E001C;
+	font-size: 	2em;
+	float: left;
+}
+.else_btn {
+	text-align: center;
+}
+.else_btn {
+text-align: center;
+margin-top: 25px;
+margin-bottom: 50px;
+}
+.else_btn p {
+	margin-top: 30px;
+	font-size: 1em;
+}
+.else_btn a {
+margin-top: 50px;
+		padding: 14px;
+	background-color: #8E001C;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.else_4 {width: 100%;
+	margin-top: 50px;
+	text-align: center
+	font-size:1.8em;
+	color: #fff;
+}
+.else_4 p {
+	font-size: 1.8em;
+}
+.else_4 span {
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-bottom: 10px;
+}
+.content_bg4 {
+text-align: center;
+background: url(../img/c9_bg.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 650px;
+}
