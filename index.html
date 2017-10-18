@@ -8,11 +8,17 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
 
 
 </head>
-<input type="hidden" name="prefix" class="prefix" value="">
+
+<body>
+	<input type="hidden" name="prefix" class="prefix" value="">
 	<input type="hidden" name="referer" value="">
 	<input type="hidden" name="ref_url" value="">
 	<input type="hidden" class="formname" name="formname" value="">
@@ -49,7 +55,7 @@
 				<input type="text" name="phone3" maxlength="10" placeholder="4567890">
 			</label><br/>
 			<div data-name="callback" class="button noselect btn" onClick="formname('Блок «Заказать звонок»');">Заказать звонок</div>
-			<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
+			
 		</form>
 	</div>
 	
@@ -81,10 +87,11 @@
  		<input type="text" name="email" placeholder="ivanov@mail.ru">
 			</label><br/>
 			<div data-name="request" class="button noselect btn">Заказать</div>
-			<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
+			
 		</form>
 	</form>
 	</div>
+	
 	<div class="popup" id="question">
 		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
 		<div class="popup_h1">Задать вопрос</div>
@@ -113,10 +120,9 @@
 			</label><br/>
 			<textarea class="ques" name="ques" placeholder="Ваш вопрос"></textarea><br/>
 			<div data-name="question" class="button noselect btn">Задать вопрос</div>
-			<a href="#" target="_blank" style="width: 100%;padding-left: 50px;">Политика конфиденциальности</a>
+			
 		</form>
 	</div>
-<body>
 
 		<header>
 			<div class="header_bg">
@@ -178,9 +184,8 @@
                     бесплатную консультацию юриста<br/>
                     и расчёт вашей гарантированной выплаты
 				</p>
-				<div class="zakaz_button">
-				<a href="" class="button" id="button" onClick="popup('request', 'Блок «Ваш главный бухгалтер»', 'Получить бесплатную<br/> консультацию и расчёт', 'Оставьте заявку,<br/>чтобы узнать о предлагаемых решениях', 'Получить бесплатную<br/> консультацию и расчёт');">
-					Получить бесплатную <br/> консультацию и расчёт</a>
+				<div class="btns" onClick="popup('request', 'Блок «Ваш главный бухгалтер»', 'Получить бесплатную<br/> консультацию и расчёт', 'Оставьте заявку,<br/>чтобы узнать о предлагаемых решениях', 'Получить бесплатную<br/> консультацию и расчёт');">Получить бесплатную<br/> консультацию и расчёт
+
 					</div>
 			</div>
 		</div>
@@ -429,7 +434,7 @@
 			</div>
 
 </div>
-<div class="else_btn"><p>Какие решения мы предлагаем нашим клиентам?<br></p><p><a href="" onClick="popup('request', 'Блок «Ваш главный бухгалтер»', 'Узнать решения', 'Оставьте заявку,<br/>чтобы узнать о предлагаемых решениях', 'Узнать решения');">Узнать решения</a></p></div>
+<div class="else_btn"><p>Какие решения мы предлагаем нашим клиентам?<br></p><div class="btn" onClick="popup('request', 'Блок «Ваш главный бухгалтер»', 'Узнать решения', 'Оставьте заявку,<br/>чтобы узнать о предлагаемых решениях', 'Узнать решения');">Узнать решения</div></div>
 </div>
 
 </div>
@@ -441,7 +446,7 @@
 	<div class="else_4">
 		<p>Мы считаем минимум <br>
 <span> В 3 РАЗА БОЛЬШЕ, ЧЕМ ВАША СТРАХОВАЯ.</span><br>
-Получите консультацию от профессионалов прямо сейчас:</p>
+Получите консультацию от профессионалов прямо сейчас:</p></div>
 <form>
 				<div class="desc">Имя</div>
 				<label class="name required">
@@ -932,13 +937,15 @@
 						получаем исполнительный лист и <br/>
 						взыскиваем денежные средства.</p>
 				</div>
+
 			</div>
 
 			</div>
-			</div>
 				<div class="prichini_btn" onClick="popup('request', 'Блок «Схема работы»', 'Оставить заявку', 'Оставьте заявку, чтобы записаться на встречу', 'Оставить заявку');">
-					<p><a href="">Оставить заявку</a></p>
-				</div>
+					<p><a >Оставить заявку</a></p>
+				</div>	
+			</div>
+			
 		</div>
 
 </div>
@@ -1120,7 +1127,7 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 col-md-4 col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 				<div class="opit">
 								<div class="block block1">
 					<div class="logo"></div>
@@ -1131,7 +1138,7 @@
 				</div>
 				</div>
 			</div>
-			<div class="col-sm-8 col-md-4 col-lg-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 				<div class="opit">
 						<div class="block block2">
 					<div class="logo"></div>
@@ -1145,7 +1152,7 @@
 					</p>
 				</div>
 				</div></div>
-				<div class="col-sm-6  col-md-4 col-lg-4 ">
+				<div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 ">
 				<div class="opit">
 					<div class="block block3">
 					<div class="logo"></div>
@@ -1187,31 +1194,31 @@
 				</div>
 			</div>
 		</div>
-			<div class="col-sm-12 col-md-6 col-lg-6" style="display: none;">
+			<div class="col-sm-12 col-md-6 col-lg-6"">
 				
 				<div class="zayavka_cont_2">
 
 					<form>
-						<div class="desc">Имя</div>
-						<label class="name required">
-							<input type="text" name="name" placeholder="Иван Иванов" class="name">
-						</label><br/>
-						<div class="desc">Телефон</div>
-						<label class="phone required" class="phone1">
-							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7" class="phone_1">
-						</label>
-						<label class="phone required" class="phone2">
-							<input type="text" name="phone2" maxlength="6" placeholder="123" class="phone_2">
-						</label>
-						<label class="phone required phone3">
-							<input type="text" name="phone3" maxlength="10" placeholder="4567890" class="phone_2">
-						</label><br/>
-						<div class="desc">E-mail</div>
-						<label class="email required" class="email1">
-							<input type="text" name="email" placeholder="ivanov@mail.ru" class="email">
-						</label><br/>
-						<div data-name="request" class="button_zayavka_cont_2 noselect btn" onClick="formname('Блок «Уменьшение налога на прибыль»');">Воспользоваться предложением</div>
-					</form>
+				<div class="desc">Имя</div>
+				<label class="name required">
+					<input type="text" name="name" placeholder="Иван Иванов">
+				</label><br/>
+				<div class="desc">Телефон</div>
+				<label class="phone required">
+					<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
+				</label>
+				<label class="phone required">
+					<input type="text" name="phone2" maxlength="6" placeholder="123">
+				</label>
+				<label class="phone required">
+					<input type="text" name="phone3" maxlength="10" placeholder="4567890">
+				</label><br/>
+				<div class="desc">E-mail</div>
+				<label class="email required">
+					<input type="text" name="email" placeholder="ivanov@mail.ru">
+				</label><br/>
+				<div data-name="request" class="button noselect btn" onClick="formname('Блок «Получить бесплатную консультацию!»');">Получить бесплатную консультацию</div>
+			</form>
 
 				</div>
 			</div>
@@ -1260,23 +1267,13 @@
 
 <link rel="stylesheet" href="//cdn.callbackhunter.com/widget/tracker.css"> 
     <link rel="stylesheet" href="css/fonts.css" />
-	<script type="text/javascript" src="js/scripts.js"></script>
+	
 
 	<script type="text/javascript" src="js/validator.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 	<script type="text/javascript" src="js/ymaps.js"></script>
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script type="text/javascript" src="js/custom.js"></script>
-
-<script src="https://use.fontawesome.com/f0e19940a7.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	/* <![CDATA[ */
 	var google_conversion_id = 964495195;

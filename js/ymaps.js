@@ -12,7 +12,7 @@
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: prefix+'a1/img/c17_map_marker.png',
+            iconImageHref: prefix+'img/c17_map_marker.png',
             // Размеры метки.
             iconImageSize: [40, 46],
             // Смещение левого верхнего угла иконки относительно
