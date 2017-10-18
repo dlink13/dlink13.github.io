@@ -1105,7 +1105,7 @@ and (max-device-width:5000px){
 }
 .c17 #map {
 	height: 360px;
-	height: inherit;
+	
 }
 .popup {
 	border: 3px solid #596073;
