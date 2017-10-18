@@ -772,3 +772,15 @@ and (max-device-width:5000px){
 .prichini .item5 .img {background: url('../img/c10_icons.png') -400px 0px no-repeat;}
 .prichini .item6 .img {background: url('../img/c10_icons.png') -500px 0px no-repeat;}
 .prichini .item7 .img {background: url('../img/c10_icons.png') -600px 0px no-repeat;}
+
+.prichini_btn{
+	margin-top: 25px;
+	text-align: center;
+}
+.prichini_btn p a {
+	padding: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color:#8e001c;
+	color: #fff;
+}
