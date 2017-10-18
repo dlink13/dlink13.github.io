@@ -1104,6 +1104,7 @@ and (max-device-width:5000px){
 	height: 360px;
 }
 .c17 #map {
+	height: 360px;
 	height: inherit;
 }
 .popup {
