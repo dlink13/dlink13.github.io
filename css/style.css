@@ -641,7 +641,9 @@ and (max-device-width:5000px){
 }
 .content_bg_6 {
 	width: 100%;
-	background: url(../img/c9_bg.jpg);
+	background: url(../img/c9_bg.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .content_bg_6 .else {
 	color: #fff;
@@ -892,6 +894,43 @@ and (max-device-width:5000px){
 	top: -7px;
 	right: -12px;
 }
-.block5 {
+.content_6 {
+	width: 100%;
+	margin-top: 50px;
+}
+.content_6 .else {
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+.videi_img {
+	width: 100%;
+}
+.videi_img .left .video {
+	width: inherit;
+	height: 240px;
+	margin-bottom: 20px;
+}
 
+.videi_img .left .sert {
+	width: 228px;
+	height: 313px;
+	position: relative;
+}
+
+.videi_img .block1 .left .sert {background: url('../img/c13_sert1.png') left top no-repeat;}
+.videi_img .block2 .left .sert {background: url('../img/c13_sert2.png') left top no-repeat;}
+.videi_img .block3 .left .sert {background: url('../img/c13_sert3.png') left top no-repeat;}
+.videi_img .block4 .left .sert {background: url('../img/c13_sert4.png') left top no-repeat;}
+
+.videi_img .left .sert .desc {
+	padding: 20px;
+	position: absolute;
+	top: 245px;
+	left: 45px;
+	background-color: #e4e4e4;
+	font-family: 'agora_regular';
+	font-size: 14px;
+	color: #333333;
+	line-height: 17px;
+	width: 215px;
 }
