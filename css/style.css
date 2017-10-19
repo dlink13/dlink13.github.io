@@ -1285,7 +1285,9 @@ and (max-device-width:992px){
 	color: #000;
 	padding: 5px;
 }
-
+.popup .button {
+	width: 100%;
+}
 .popup .popup_close {
 	position: absolute;
 	width: 45px;

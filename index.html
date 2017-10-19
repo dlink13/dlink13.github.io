@@ -56,7 +56,9 @@
 			</label><br/>
 			<div data-name="callback" class="button noselect btn" onClick="formname('Блок «Заказать звонок»');">Заказать звонок</div>
 			
+			
 		</form>
+		<div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
 	</div>
 	
 	<div class="popup" id="request">
@@ -88,10 +90,56 @@
 			</label><br/>
 			<div data-name="request" class="button noselect btn">Заказать</div>
 			
+			
 		</form>
+		<div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
 	</form>
 	</div>
 	
+	<div class="popup" id="politika">
+		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+		<div class="popup_h1"><div>Политика Конфеденциальности</div></div>
+		<div class="popup_h2">
+			
+		</div>
+		Соглашение об обработке персональных данных titan-dtp.ru
+
+от 05 января 2017 года.
+
+titan-dtp.ru (далее–Сайт) стремится всеми доступными способами обеспечить безопасность пользования Сайтом. Настоящим Соглашением Сайт информирует Пользователей Сайта о том, какие сведения о Пользователе могут быть доступны Сайту, а также о том, каким образом используется полученная Сайтом информация.
+
+Присоединяясь к настоящему Соглашению и оставляя свои данные на Сайте, путем заполнения полей онлайн-заявки (регистрации), пользователь:
+
+• подтверждает, что все указанные им данные принадлежат лично ему;
+
+• подтверждает и признает, что им внимательно и в полном объёме прочитано данное Соглашение и условия обработки его персональных данных, указываемых им в полях онлайн-заявки (регистрации), текст соглашения и условия обработки персональных данных ему понятны;
+
+• даёт согласие на обработку Сайтом предоставляемых в составе информации персональных данных в целях заключения между ним и Сайтом настоящего Соглашения, а также его последующего исполнения;
+
+• выражает согласие с условиями обработки персональных данных без оговорок и ограничений.
+
+Пользователь даёт свое согласие на обработку его персональных данных, а именно совершение действий, предусмотренных п.3 ч.1 ст.3 Федерального закона от 27.07.2006 года No152-ФЗ "О персональных данных", и подтверждает, что, давая такое согласие, он действует свободно, своей волей и в своём интересе.
+
+Согласие Пользователя на обработку персональных данных является конкретным, информированным и сознательным.
+
+Настоящее согласие Пользователя признаётся исполненным в простой письменной форме, на обработку следующих персональных данных: фамилии, имени, отчества; года рождения; места пребывания (город, область); номерах телефонов; адресах электронной почты (E-mail). Пользователь предоставляет Сайту право осуществлять следующие действия (операции) с персональными данными:
+
+• сбор и накопление;
+
+• хранение в течение установленных нормативными документами сроков хранения отчетности, но не менее трех лет, с момента даты прекращения пользования услуг Пользователем;
+
+• уточнение (обновление, изменение);
+
+• использование;
+
+• уничтожение;
+
+• обезличивание;
+
+• передача по требованию суда, в том числе третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного доступа.
+
+Сайт не осуществляет сбор информации, направленной на идентификацию (определение) конкретных физических лиц—Пользователей Сайта.
+	</div>
 	<div class="popup" id="question">
 		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
 		<div class="popup_h1">Задать вопрос</div>
@@ -120,8 +168,11 @@
 			</label><br/>
 			<textarea class="ques" name="ques" placeholder="Ваш вопрос"></textarea><br/>
 			<div data-name="question" class="button noselect btn">Задать вопрос</div>
+
 			
 		</form>
+		<div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
+		
 	</div>
 
 		<header>
@@ -146,7 +197,6 @@
       <ul class="nav navbar-nav">
     
        			<li class="active"><a href="#">Преимущества</a></li>
-				<li><a href="">Сотрудничество</a></li>
 				<li><a href="">Истории</a></li>
 				<li><a href="">Работа с нами</a></li>
 				<li><a href="">Схема работы</a></li>
@@ -162,13 +212,12 @@
 				<div class="desc_menu">
 		<div class=" col-xs-12 col-sm-12 col-md-12  col-lg-12">	
 			<ul>
-				<li><a href="#">Преимущества</a></li>
-				<li><a href="">Сотрудничество</a></li>
-				<li><a href="">Истории</a></li>
-				<li><a href="">Работа с нами</a></li>
-				<li><a href="">Схема работы</a></li>
-				<li><a href="">Отызы</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="#preimushestvo">Преимущества</a></li>
+				<li><a href="#isorii">Истории</a></li>
+				<li><a href="#prichini">Работа с нами</a></li>
+				<li><a href="#shema">Схема работы</a></li>
+				<li><a href="#otzivi">Отызы</a></li>
+				<li><a href="#contakti">Контакты</a></li>
 
 			</ul>
 		</div>
@@ -355,7 +404,7 @@
 	</div>
 </div>
 </div>
-<div class="container">
+<div class="container" id="preimushestvo">
 	<div class="else">
 		Почему вам выгодно работать с нами?
 	</div>
@@ -434,7 +483,7 @@
 <div class="content_bg3">
 <div class="container">
 	<div class="else">
-		7 причин работать с нами:
+		ВАША СТРАХОВАЯ КОМПАНИЯ:
 	</div>
 </div>
 <div class="container">
@@ -565,7 +614,7 @@
 
 </div>
 </div>
-<div class="container">
+<div class="container" id="isorii">
 	<div class="else">
 		<p>Истории наших клиентов,<br>
 которые уже получили выплаты от выигранных нами судов.</p>
@@ -894,9 +943,9 @@
 	</div>
 </div>
 </div>
-<div class="container">
+<div class="container"  id="prichini">
 			<div class="else">
-		Ваша страховая компания:
+		7 причин работать с нами
 	</div>
 <div class="container">
 	<div class="row">
@@ -953,7 +1002,7 @@
 				</div>
 
 </div></div>
-<div class="content_bg_6">
+<div class="content_bg_6" id="shema">
 	<div class="container">
 			<div class="else">
 	Схема работы
@@ -1052,7 +1101,7 @@
 </div>
 
 </div>
-<div class="content_6">
+<div class="content_6" id="otzivi">
 <div class="container">
 			<div class="else">
 	Наши довольные клиенты:
@@ -1329,7 +1378,7 @@
 </div>
 	</content>
 	<footer>
-<div class="foter_bg">
+<div class="foter_bg" id="contakti">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-lg-6">
@@ -1349,7 +1398,9 @@
 					<div class="right">
 					<div class="text">Остались <span>вопросы?</span></div>
 					<div class="text_btn" onClick="popup('question', '');">Задайте их менеджеру</div>
+					<div class="div" style="margin-top: 20px"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
 				</div>
+
 				</div></div>
 		</div>
 	</div>
