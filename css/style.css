@@ -144,7 +144,130 @@ input:focus::-moz-placeholder,
 textarea:focus::-moz-placeholder { opacity:0; }
 
 
+
+/*---------media------*/
+@media only screen
+and (min-device-width:319px)
+and (max-device-width:767px)
+{
+	.desc_menu {
+		display: none!important;
+	}
+	.mobile_menu {
+		width: 100%;
+		z-index: 50;
+		position: fixed;
+		top: 0;
+		display: block !important;
+	}
+}
+@media only screen
+and (min-device-width:319px)
+and (max-device-width:650px){
+.content_bg4 form {
+	margin: 0!important;
+}
+.shema .block .icon .arrow {
+	right:-40px!important;
+}
+.else_desc span {
+	font-size: 0.7em !important;
+}
+.c9 .block p {
+	font-size: 0.9em !important;
+}
+
+}
+@media only screen
+and (min-device-width:651px)
+and (max-device-width:992px){
+.content_bg4 form {
+	margin: 0 auto!important;
+}
+.zayavka_cont_2 form {
+	width: 60% !important;
+}
+}
+@media only screen
+and (min-device-width:319px)
+and (max-device-width:992px){
+
+	.isor_btn_md_lg {
+		display: none;
+	}
+	.zayavka_cont_2{
+	margin-top: 10px !important;
+}
+	.znan_in_3 .desc  {
+		display: none!important;
+	}
+	.znan_in_3 .mob {
+		display: block!important;
+	}
+.btn {
+	font-size: 1em!important;
+}
+.zayavka_cont_2 form {
+	padding-left: 0!important;
+}
+.zayavka_cont_2  .btn {
+	font-size: 1.2em !important;
+}
+.isor_btn_mobile {
+	display: block!important;
+}
+.isor_btn_mobile {
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.isor_btn_mobile p a {
+	padding: 20px;font-size: 0.8em;
+	background-color: #8E001C;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.prichini_btn {
+	font-size: 0.5em !important;
+}
+
+.istor_text_nazv_mobile  {
+	display: block!important;
+}
+.istor_text_nazv {
+	display: none;
+}
+.istor_text_nazv_mobile {
+	font-size: 1.2em;
+		color: #2c2c2c;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.istor_text_nazv_mobile span {
+	color: #8E001C;
+	font-size: 0.9em;
+	text-transform: none;
+	font-weight:normal;
+}
+.istor_img {
+	margin-top: 10px!important;
+}
+}
+
+
 /*-------Header-------*/
+.istor_text_nazv_mobile  {
+	display: none;
+}
+
+.isor_btn_mobile {
+	display: none;
+}
+.mobile_menu {
+	display: none;
+}
 
 a {
 	text-decoration: none;
@@ -542,7 +665,7 @@ background: url(../img/c9_bg.jpg) center center no-repeat;
 and (min-device-width:990px)
 and (max-device-width:1920px){
 	.istor {
-		height: 750px;
+		height: 900px;
 	}
 }
 @media only screen
@@ -1355,16 +1478,17 @@ form input[name="phone2"] {
 }
 
 form input[name="phone3"] {
-	width: 178px;
+	width: 230px;
 	margin-right: -2px;
 }
 
 form .btn {
 	font-family: 'agora_regular';
-	font-size: 18px;
+	font-size: 1.2em;
 	text-align: center;
-	padding: 20px 0;
+	padding: 20px;
 	margin-top: 20px;
+	font-weight: bold;
 }
 
 form .btn span {
@@ -1374,7 +1498,8 @@ form .btn span {
 
 .btn {
 	font-family: 'agora_thin';
-	font-size: 14px;
+	font-size: 1.1em!important;
+	font-weight: bold!important;
 	color: #fff;
 	padding: 10px 15px;
 	background-color: #900018;
@@ -1440,4 +1565,41 @@ form .btn span {
 	background: -ms-linear-gradient(top,  #902235 0%,#90051c 100%);
 	background: linear-gradient(to bottom,  #902235 0%,#90051c 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#902235', endColorstr='#90051c',GradientType=0 );
+}
+h3{
+    margin: 0;     
+    color:#8e001c!important;
+  
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item {
+	height: 600px;
+}
+.item_slide1{
+	width: 100%;
+    background: url(../img/slide1/img1.jpg) center center no-repeat;    
+    text-align: center;
+    height: 400px !important;
+}
+.carousel{
+ 
+}
+.item_slide2{
+    background: url(../img/slide2/img1.png) center center no-repeat; 
+       
+    text-align: center;
+    height: 400px !important;
+}
+.item_slide3{
+    background: url(../img/slide3/img1.jpg) center center no-repeat;    
+    text-align: center;
+    height: 400px !important;
+}
+.carousel-control {
+color:#8e001c !important; 
+background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,.0001) 100%) !important;
+}
+.carousel-caption {
+	padding-bottom: 20px !important;
 }
