@@ -495,7 +495,7 @@ margin-top: 50px;
 }
 .zayavka_cont_2 {
 	width: 100%;
-	height: 600px;
+	padding-bottom: 50px;
 	margin-top: 25%;
 	
 
@@ -664,6 +664,7 @@ text-align: center;
 background: url(../img/c9_bg.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	padding-bottom: 50px;
 
 }
 
@@ -1286,7 +1287,7 @@ and (max-device-width:992px){
 	padding: 5px;
 }
 .popup .button {
-	width: 100%;
+	width: 100%
 }
 .popup .popup_close {
 	position: absolute;
