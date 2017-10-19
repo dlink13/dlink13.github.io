@@ -2,7 +2,7 @@
     ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.780481, 37.589859],
-            zoom: 15
+            zoom: 16
         }),
         myPlacemark = new ymaps.Placemark([55.780481, 37.589859], {
             // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
