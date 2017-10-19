@@ -151,6 +151,9 @@ textarea:focus::-moz-placeholder { opacity:0; }
 and (min-device-width:319px)
 and (max-device-width:767px)
 {
+	.header_zakaz {
+		margin-top: 50px;
+	}
 	.desc_menu {
 		display: none!important;
 	}
@@ -165,6 +168,9 @@ and (max-device-width:767px)
 @media only screen
 and (min-device-width:319px)
 and (max-device-width:650px){
+	.popup {
+		overflow: scroll !important;
+	}
 .content_bg4 form {
 	margin: 0!important;
 }
@@ -1348,6 +1354,9 @@ textarea::-moz-placeholder {
 }
 
 .popup {
+	width: 50%;
+
+	width: 80%;
 	position: fixed;
 	display: none;
 	z-index: 11;
