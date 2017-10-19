@@ -14,6 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
+	font-family: 'agora_regular';
 	line-height: 1;
 	background-color: #F5F6F8;
 }
@@ -1587,7 +1588,7 @@ h3{
 }
 .item_slide2{
     background: url(../img/slide2/img1.png) center center no-repeat; 
-       
+
     text-align: center;
     height: 400px !important;
 }
@@ -1599,7 +1600,4 @@ h3{
 .carousel-control {
 color:#8e001c !important; 
 background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,.0001) 100%) !important;
-}
-.carousel-caption {
-	padding-bottom: 20px !important;
 }
