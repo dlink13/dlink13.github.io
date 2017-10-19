@@ -1,7 +1,7 @@
 ﻿$(document).ready(function(){
     ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [55.766025, 37.58729],
+            center: [55.780481, 37.589859],
             zoom: 15
         }),
         myPlacemark = new ymaps.Placemark([55.780481, 37.589859], {
