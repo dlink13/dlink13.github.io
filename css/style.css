@@ -1,0 +1,200 @@
+/******************************************************************
+	This is the CSS Reset
+******************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	font-family: 'agora_regular';
+	line-height: 1;
+	background-color: #F5F6F8;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	width: 100%;
+	letter-spacing: 0.025em;
+	line-height: 1.75;
+	
+	opacity: 1; 
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+/******************************************************************
+	This is the CSS Reset
+******************************************************************/
+@font-face {
+	font-family: 'agora_light';
+	src: url('../fonts/pfagorasanspro-light-webfont.eot');
+	src: url('../fonts/pfagorasanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-light-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_black';
+	src: url('../fonts/pfagorasanspro-black-webfont.eot');
+	src: url('../fonts/pfagorasanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-black-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-black-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_bold';
+	src: url('../fonts/pfagorasanspro-bold-webfont.eot');
+	src: url('../fonts/pfagorasanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-bold-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*---------------------------*/
+body {
+	margin-top: -60px;
+}
+.left_menu {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	color: #fff;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 15px;
+}
+.left_menu img{
+	width: 30%;
+	height: 30%;
+
+}
+.left_menu p {
+	padding-top: 3%;
+}
+.left_menu p span{
+	color: #ff0000;
+}
+.menu_desc{
+	z-index: 50;
+	width: 100%;
+	position: fixed;
+
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: row;
+}
+.menu_desc ul {
+	margin-top: 2%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+.menu_desc ul li {
+
+	text-align: center;
+	margin: 0 auto
+}
+.menu_desc ul li a {
+		white-space: nowrap;
+	text-decoration: none;
+	color: #fff;
+	
+
+}
+.right_menu {
+	white-space: nowrap;
+	margin-top: 5%;
+	text-align: right;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+.content {
+width: 100%;
+height: 100%;
+position: fixed;
+}
+
+.content .slider_1 {
+width: 100%;
+	height: 100%;
+	position: fixed;
+}
+.content .slider_1 .item {
+width: 100%;
+	height: 100%;
+	position: fixed;
+}
+.item_slide1 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: url(../img/glav2.jpg)center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+h3 {
+	color: #fff;
+	margin: 0 auto;
+}
+.item_slide2{
+width: 100%;
+	height: 100%;
+	position: fixed;
+	background: url(../img/glav1.jpg)center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.item_slide3{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: url(../img/glav3.jpg)center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.h{
+	position:absolute;
+	color: #fff;
+	z-index: 50;
+}
+.carousel-control.left {
+	height: 95%!important;
+	position: fixed!important;
+}
+.carousel-control.right {
+	height: 95%!important;
+	position: fixed!important;
+}
+.footer{
+	position: absolute;
+	width: 100%;
+	height: 8%;
+	background-color: tomato;
+	left:0; 
+	bottom: 0;
+}
