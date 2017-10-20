@@ -219,6 +219,16 @@ overflow: auto;
 	margin-top: 2%;
 	text-align: center;
 }
+.button p a{
+	padding: 2px 30px 2px 30px;
+	border: 2px solid #ff0000;
+	color: #fff;
+	text-decoration: none;
+} 
+.button p a:hover {
+	background-color: #ff0000;
+	color: #fff;
+}
 
 .carousel-control.left {
 	height: 95%!important;
