@@ -259,3 +259,75 @@ overflow: auto;
 	text-align: right;
 	color: #fff;
 }
+.content_o_kompnii {
+	width: 100%;
+height: 100%;
+position: fixed;
+background: url(../img/about.jpg) center center no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+.O_kompanii {
+	margin-top: 15%;
+}
+.O_kompanii h1 {
+	color: #fff;
+}
+.O_kompanii p {
+
+	margin-top: 40px;
+	color: #fff;
+	text-align: left;
+	line-height: 3em;
+	
+	font-size: 18px;
+}
+.content_uslugi {
+width: 100%;
+height: 100%;
+position: fixed;
+background: url(../img/uslugi.jpg) center center no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+.link{
+	margin-top: 15%;
+}
+.text-1 {
+	margin-top: 20%;
+	color: #fff;
+}
+.text-2 {
+	margin-top: 20%;
+	color: #fff;
+}
+.text-3 {
+	margin-top: 40%;
+	color: #fff;
+}
+.open-content {
+	color: #fff;
+	font-size: 27px;
+
+
+}
+.open-content:link {
+	color: #fff;
+}
+.open-content:hover {
+	color: #fff;
+}
+.open-content:active {
+	color: #fff;
+}
+.open-content:visited {
+color: #fff;
+}
+.button-2 {
+	margin-top: 5%;
+	width: 40% !important;
+	text-align: center;
+    font-size: 16px;
+    color: white;
+    border: 2px solid #ff0000;
+}
