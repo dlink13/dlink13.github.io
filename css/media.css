@@ -308,4 +308,7 @@ and (max-device-width : 1023px){
 	.right_menu {
 		font-size: 0.9em;
 	}
+	.klienti_block{
+		height: 200px;
+	}
 }
