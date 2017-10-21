@@ -3,6 +3,13 @@
 and (min-device-width : 320px) 
 and (max-device-width : 425px) {
 /* Styles */
+.navbar-brand {
+	width: 60%;
+}
+.navbar .left_menu img {
+	width: 40%;
+}
+
 .main_footer {
 	position: absolute!important;
 	background-color:rgba(0,0,0,0.5)!important;
@@ -133,10 +140,23 @@ width: 100%;
 .klienti_block {
 	height: 150px;
 }
+.mobile_menu {
+	display: block;
 }
+.menu_desc {
+	display: none
+}
+}
+
 @media only screen 
 and (min-device-width : 426px) 
 and (max-device-width : 767px){
+	.navbar-brand {
+	width: 50%;
+}
+.navbar .left_menu img {
+	width: 25%;
+}
 .main_footer {
 	position: absolute!important;
 	background-color:rgba(0,0,0,0.5)!important;
@@ -274,6 +294,12 @@ and (max-device-width : 767px){
 }
 .klienti_block {
 	height: 270px;
+}
+.mobile_menu {
+	display: block;
+}
+.menu_desc {
+	display: none
 }
 }
 
