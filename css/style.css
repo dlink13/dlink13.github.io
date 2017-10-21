@@ -77,6 +77,19 @@ html, body {
 body {
 	margin-top: -60px;
 }
+#kon .button-2 {
+	background-color: #EDCDA5;
+	width:  65%!important;
+}
+.name-form{
+
+            font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 60%;
+    border: none;
+    background-color: #EDCDA5;
+}
 .left_menu {
 	width: 100%;
 	display: flex;

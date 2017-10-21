@@ -95,7 +95,7 @@
 		Научим обрабатывать первичные документы, начислять зарплату, считать налоги, формировать баланс, заполнять декларации.</br><br>
 		С удовольствием окажем Вам помощь на начальной стадии Вашей самостоятельной бухгалтерской деятельности. </br><br>
 		Мы знаем ответы даже на те вопросы, на которые Вам не ответил Интернет.</p></br>
-			 <div class="button"><p><a href="#contact_form_pop" rel="nofollow">Заказать консультацию</a></p></div>
+			 <div class="button"><p><a href="#contact_form_pop" rel="nofollow" data-fancybox class="fancybox">Заказать консультацию</a></p></div>
 		</div>
 		
 	</div>
@@ -135,6 +135,39 @@
     <button type="button" onclick="send(info@toscana-finance.com);"  class="button-2 butt-form">Заказать консультацию</button> 
 </form></div></div>
 	</div>
+	
+  <script type="text/javascript">
+            $(document).ready(function () {
+				$( "#kon button" ).click(function() {
+ 					 $.ajax({
+						'url': "send.php",
+						'type': "POST",
+						'dataType': "html",
+						'data': $('#kon').serialize(), 
+						'success': function(html) {
+							$('#kon .FormInfo').html(html).fadeIn();	
+						}
+					});
+				});
+				
+                $("#content").fancybox({
+                    'titlePosition': 'inside',
+                    'transitionIn': 'none',
+                    'transitionOut': 'none'
+                });
+            });
+        </script>
+          <script>
+            $(function () {
+                $("[data-fancybox]").fancybox();
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("a.gallery").fancybox();
+            });
+        </script>
 	<script>
 $( "#kon button" ).click(function() {
  					 $.ajax({
@@ -147,4 +180,5 @@ $( "#kon button" ).click(function() {
 						}
 					});
 				});
+
 </script>
