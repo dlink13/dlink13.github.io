@@ -344,8 +344,11 @@ background: url(../img/clients.jpg) center center no-repeat;
 -webkit-background-size: cover;
 background-size: cover;
 }
+.content_klienti .cont-h {
+	margin-top: 10%;
+}
 .klienti_container {
-	margin-top: 15%;
+	margin-top: 5%;
 }
 .klienti_block {
 	height: 270px;
