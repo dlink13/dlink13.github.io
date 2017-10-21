@@ -455,4 +455,7 @@ background-size: 100%;
 	color: #fff;
 	font-size: 25px;
 }
+.mobile_footer {
+	display: none;
+}
 

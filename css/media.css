@@ -1,0 +1,173 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.main_footer {
+	position: absolute!important;
+	background-color:rgba(0,0,0,0.5)!important;
+}
+.item_slide3 .center .zaglav p {
+	font-size: 1em;
+	
+
+}
+.item_slide3 .center .zaglav {
+	margin-top: 25%;
+}
+.center .zaglav p {
+	font-size: 1.5em;
+}
+.description {
+	font-size: 0.8em;
+}
+.content_o_kompnii {
+	position: relative;
+}
+.O_kompanii {
+	margin-top: 30%;
+}
+.O_kompanii p {
+	line-height: 1.5em;
+}
+.content_uslugi {
+	position: relative;
+
+}
+.link {
+	margin-top: 30%;
+}
+.link .button-2 {
+	width: 70%!important;
+}
+.content_klienti {
+	position: relative;
+}
+.klienti_container {
+	margin-top: 0;
+}
+.klienti_block {
+	margin-bottom: 5px;
+	margin-top: 10%;
+}
+.content_klienti .cont-h {
+	margin-top: 30%;
+
+}
+.klienti_block  {
+width: 100%;
+}
+.content_obuchenie {
+	position: relative;
+}
+.content_obuchenie .O_kompanii {
+	margin-top: 30%;
+}
+.content_contakti {
+	position: relative;
+}
+.content_contakti .cont-h {
+	margin-top: 30%;
+}
+.obertka .button_2 {
+	margin-bottom: 5%;
+}
+.obertka .first {
+	font-size: 16px;
+}
+.mobile_footer{
+	display: block;
+	width: 100%;
+}
+.mobile_footer h1 {
+	width: 100%;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 5px;
+	color: #fff;
+}
+.mobile_footer h2 {
+	width: 100%;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 5px;
+	color: #fff;
+}
+.emeil_mobile {
+	display: none;
+}
+.emeil_mobile{
+	display: none;
+}
+.third {
+	display: none;
+}
+.fourth {
+	display: none;
+}
+.prava {
+	width: 100%;
+	font-size: 10px;
+	text-align: center;
+}
+.obertka {
+	margin-bottom: 50px;
+}
+.footer {
+	position: relative;
+	height: auto;
+	background-color: #000;
+}
+.svitok {
+	margin: 0 auto;
+	padding: 0;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+/* viewport size <= 320px ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
