@@ -36,9 +36,15 @@ and (max-device-width : 425px) {
 
 }
 .link {
+	text-align: center;
 	margin-top: 30%;
+	margin-bottom: 60%;
+}
+.text-3, .text-2, .text-1 {
+	margin-top: 0;
 }
 .link .button-2 {
+	margin-left: 15%;
 	width: 70%!important;
 }
 .content_klienti {
@@ -271,50 +277,18 @@ and (max-device-width : 767px){
 }
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-/* Styles */
-}
 
-/* Smartphones (portrait) ----------- */
-/* viewport size <= 320px ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
+and (max-device-width : 1023px){
+	.O_kompanii p {
+		line-height: 1.5em;
+    font-size: 14px;
+	}
+	.open-content {
+		font-size: 20px;
+	}
+	.text-2 {
+		font-size: 13px;
+	}
 }

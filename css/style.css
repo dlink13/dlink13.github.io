@@ -257,6 +257,7 @@ overflow: auto;
 	width: 100%;
 	text-align: center;
 	color: #fff;
+	white-space: nowrap;
 }
 .emeil {
 	margin-top: 5px;
