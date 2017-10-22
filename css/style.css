@@ -29,13 +29,13 @@ font-style: normal;
 
 font-family: 'Raleway';
 
-src: url('../fonts/Raleway-Regular.eot');
+src: url('../fonts/RalewayRegular.eot');
 
-src: url('../fonts/Raleway-Regular.eot?iefix') format('eot');
+src: url('../fonts/RalewayRegular.eot?iefix') format('eot');
 
-src: url('../fonts/Raleway-Regular.woff') format('woff');
+src: url('../fonts/RalewayRegular.woff') format('woff');
 
-src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+src: url('../fonts/RalewayRegular.ttf') format('truetype');
 
 font-weight: normal;
 
