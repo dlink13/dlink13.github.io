@@ -7,23 +7,7 @@ blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 html, body{width:100%;letter-spacing:0.025em;line-height:1.75;opacity:1;-webkit-font-smoothing:subpixel-antialiased;}
 body{margin-top:-60px;}
-@font-face{
 
-font-family: 'Raleway';
-
-src: url('../fonts/Raleway-Regular.eot');
-
-src: url('../fonts/Raleway-Regular.eot?iefix') format('eot');
-
-src:url('../fonts/Raleway-Regular.woff') format('woff');
-
-src:url('../fonts/Raleway-Regular.ttf') format('truetype');
-
-font-weight: normal;
-
-font-style: normal;
-
-}
 @font-face{
 
 font-family: 'Century';
@@ -43,14 +27,14 @@ font-style: normal;
 }
 @font-face{
 
-font-family: 'Raleway-Bold';
+font-family: 'RalewayBold';
 
-src: url('../fonts/Raleway-Bold.eot');
+src: url('../fonts/RalewayBold.eot');
 
-src: url('../fonts/Raleway-Bold.eot?iefix') format('eot');
+src: url('../fonts/RalewayBold.eot?iefix') format('eot');
 
-src:url('../Raleway-Bold.woff') format('woff'),;
-src:url('../Raleway-Bold.ttf') format('truetype');
+src:url('../RalewayBold.woff') format('woff'),;
+src:url('../RalewayBold.ttf') format('truetype');
 
 font-weight: normal;
 
