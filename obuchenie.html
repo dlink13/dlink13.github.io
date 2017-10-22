@@ -122,7 +122,8 @@
 			<div class="col-md-4"> <div class="emeil emeil_mobile">info@toscana-finance.com</div></div>
 		</div>
 	</div>
-<div class="col-lg-4 svitok fancybox-hidden col-sm-4 col-md-4"  style="display:none" id="#feedback">
+
+		<div class="col-lg-4 svitok fancybox-hidden col-sm-4 col-md-4"  style="display:none" id="#feedback">
 	<div class="" id="contact_form_pop" style="text-align: center;">
 		<h2 class="first">Оставьте свой номер</h2>
 		<p class="second"><b>И мы проконсультируем Вас по любому вопросу</b></p>
@@ -132,12 +133,17 @@
 	<div class='FormInfo' style='display:none'></div>
     <input type="name" name="name"  placeholder="Имя" class="name-form"> </br>
     <input type="phone" name="phone"   placeholder="Телефон" class="tel1"> </br>
-    <button type="button" onclick="send(info@toscana-finance.com);"  class="button-2 butt-form">Заказать консультацию</button> 
-</form></div></div>
-	</div>
+    <button type="button" onclick="send();"  class="button-2 butt-form">Заказать консультацию</button> 
+</form>
 
-  <script type="text/javascript">
-            $(document).ready(function () {
+</div></div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="jquery.fancybox.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
 				$( "#kon button" ).click(function() {
  					 $.ajax({
 						'url': "send.php",
@@ -157,7 +163,9 @@
                 });
             });
         </script>
-          <script>
+        <script src='/js/jquery.fancybox.min.js'></script>
+
+        <script>
             $(function () {
                 $("[data-fancybox]").fancybox();
             });
@@ -168,3 +176,5 @@
                 $("a.gallery").fancybox();
             });
         </script>
+
+</body>
