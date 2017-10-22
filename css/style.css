@@ -1,515 +1,149 @@
-/******************************************************************
-	This is the CSS Reset
-******************************************************************/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+body{font-family:'Raleway';line-height:1;background-color:#F5F6F8;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+html, body{width:100%;letter-spacing:0.025em;line-height:1.75;opacity:1;-webkit-font-smoothing:subpixel-antialiased;}
+body{margin-top:-60px;font-family:'Raleway', sans-serif;}
+@font-face{
 
-body {
-	font-family: 'agora_regular';
-	line-height: 1;
-	background-color: #F5F6F8;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-html, body {
-	width: 100%;
-	letter-spacing: 0.025em;
-	line-height: 1.75;
-	
-	opacity: 1; 
-	-webkit-font-smoothing: subpixel-antialiased;
-}
+font-family: 'Raleway';
 
-/******************************************************************
-	This is the CSS Reset
-******************************************************************/
-/*---------------------------*/
-body {
-	margin-top: -60px;
-font-family: 'Raleway', sans-serif ;
-}
-#kon .button-2 {
-	background-color: #EDCDA5;
-	width:  65%!important;
-}
-.name-form{
+src: url('../fonts/Raleway-Regular.eot');
 
-            font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    margin-bottom: 10px;
-    width: 60%;
-    border: none;
-    background-color: #EDCDA5;
-}
-.left_menu {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	color: #fff;
-	white-space: nowrap;
-	font-weight: bold;
-	font-size: 15px;
-}
-.left_menu img{
-	width: 80px;
-	height: 30%;
+src: url('../fonts/Raleway-Regular.eot?iefix') format('eot'),
+
+url('../fonts/Raleway-Regular.woff') format('woff'),
+
+url('../fonts/Raleway-Regular.ttf') format('truetype'),
+
+font-weight: normal;
+
+font-style: normal;
 
 }
-.left_menu p {
-	padding-top: 3%;
-}
-.left_menu p span{
-	color: #ff0000;
-}
-.menu_desc{
-	z-index: 50;
-	width: 100%;
-	position: fixed;
+@font-face{
 
-	background-color: rgba(0,0,0,0.5);
-	display: flex;
-	flex-direction: row;
-}
-.menu_desc ul {
-	white-space: nowrap;
-	margin-top: 2%;
-	width: 100%;
-text-align: center;
-	font-size: 16px;
-}
-.menu_desc ul li {
+font-family: 'Century';
 
-	display: inline;
-	text-align: center;
-	padding-right: 2%;
-	margin: 0 auto
-}
-.menu_desc ul li:last-child {
-	padding-right: 0;
-}
-.menu_desc ul li a {
-		white-space: nowrap;
-	text-decoration: none;
-	color: #fff;
-	
+src: url('../fonts/8483.eot');
+
+src: url('../fonts/8483.eot?iefix') format('eot'),
+
+url('../fonts/8483.woff') format('woff'),
+
+url('../fonts/8483.ttf') format('truetype'),
+
+font-weight: normal;
+
+font-style: normal;
 
 }
-.menu_desc ul li a:hover{
-	color: #ff0000;
-}
-.right_menu {
-	white-space: nowrap;
-	margin-top: 5%;
-	text-align: right;
-	color: #fff;
-	font-weight: bold;
-	font-size: 18px;
-}
-.content {
-width: 100%;
-height: 100%;
-position: fixed;
-}
+@font-face{
 
-.content .slider_1 {
-width: 100%;
-	height: 100%;
-	position: fixed;
-}
-.content .slider_1 .item {
-width: 100%;
-	height: 100%;
-	position: fixed;
-}
-.item_slide1 {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	background: url(../img/glav2.jpg)center center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
+font-family: 'Raleway-Bold';
 
-.item_slide2{
-width: 100%;
-	height: 100%;
-	position: fixed;
-	background: url(../img/glav1.jpg)center center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.item_slide3{
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	background: url(../img/glav3.jpg)center center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.center{
-color: #fff;
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-overflow: auto;
-}
-.center .zaglav{
+src: url('../fonts/Raleway-Bold.eot');
 
-	 width:100%;
-    height: 250px;
-    position: absolute;
-    top:0;
-    
-    bottom: 6%;
-    
-    margin: auto;
-}
-.center .zaglav p {
-	   max-width: 100%;
-	   text-align: center;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: none;
-        	font-weight: bold;
-	font-size: 2em;
-    }
-}
+src: url('../fonts/Raleway-Bold.eot?iefix') format('eot'),
 
-.zaglav {
-	font-weight: bold;
-	font-size: 2em;
-}
-.description {
-	margin-top: 2%;
-	font-weight: bold;
-	font-size: 0.6em;
-}
-.button {
-	margin-top: 2%;
-	text-align: center;
-}
-.button p a{
-	padding: 2px 30px 2px 30px;
-	border: 2px solid #ff0000;
-	color: #fff;
-	text-decoration: none;
-} 
-.button p a:hover {
-	background-color: #ff0000;
-	color: #fff;
-}
+url('../Raleway-Bold.woff') format('woff'),
 
-.carousel-control.left {
-	height: 95%!important;
-	position: fixed!important;
-}
-.carousel-control.right {
-	height: 95%!important;
-	position: fixed!important;
-}
+url('../Raleway-Bold.ttf') format('truetype'),
 
-.footer{
-	position: absolute;
-	width: 100%;
-	height: 30px;
-	background-color:rgba(0,0,0,0.5);
-	left:0; 
-	bottom: 0;
-} 
-.prava {
-	margin-top: 5px;
-	width: 100%;
-	text-align: center;
-	color: #fff;
-	white-space: nowrap;
-}
-.emeil {
-	margin-top: 5px;
-	width: 100%;
-	text-align: right;
-	color: #fff;
-}
-.content_o_kompnii {
-	width: 100%;
-height: 100%;
-position: fixed;
-background: url(../img/about.jpg) center center no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-}
-.O_kompanii {
-	margin-top: 15%;
-}
-.O_kompanii h1 {
-	color: #fff;
-}
-.O_kompanii p {
+font-weight: normal;
 
-	margin-top: 40px;
-	color: #fff;
-	text-align: left;
-	line-height: 3em;
-	
-	font-size: 18px;
-}
-.content_uslugi {
-width: 100%;
-height: 100%;
-position: fixed;
-background: url(../img/uslugi.jpg) center center no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-}
-.link{
-	margin-top: 15%;
-}
-.text-1 {
-font-size: 1.1em;
-	margin-top: 20%;
-	color: #fff;
-}
-.text-2 {
-font-size: 1.1em;
-	margin-top: 20%;
-	color: #fff;
-}
-.text-3 {
-	font-size: 1.1em;
-	margin-top: 40%;
-	color: #fff;
-}
-.open-content {
-	color: #fff;
-	font-size: 27px;
-
+font-style: normal;
 
 }
-.open-content:link {
-	color: #fff;
+#kon .button-2{font-family: 'Raleway';background-color:#EDCDA5;width:65%!important;}
+.name-form{font-family:'Raleway', sans-serif;font-size:12px;margin-bottom:10px;width:60%;border:none;background-color:#EDCDA5;}
+.left_menu{font-family: 'Raleway';width:100%;display:flex;flex-direction:row;color:#fff;white-space:nowrap;font-weight:bold;font-size:15px;}
+.left_menu img{width:80px;height:30%;}
+.left_menu p{padding-top:3%;}
+.left_menu p span{color:#ff0000;}
+.menu_desc{z-index:50;width:100%;position:fixed;background-color:rgba(0,0,0,0.5);display:flex;flex-direction:row;}
+.menu_desc ul{white-space:nowrap;margin-top:2%;width:100%;text-align:center;font-size:16px;}
+.menu_desc ul li{font-family: 'Raleway';display:inline;text-align:center;padding-right:2%;margin:0 auto}
+.menu_desc ul li:last-child{padding-right:0;}
+.menu_desc ul li a{white-space:nowrap;text-decoration:none;color:#fff;}
+.menu_desc ul li a:hover{color:#ff0000;}
+.right_menu{font-family: 'Century';white-space:nowrap;margin-top:5%;text-align:right;color:#fff;font-weight:bold;font-size:18px;}
+.content{font-family: 'Raleway';width:100%;height:100%;position:fixed;}
+.content .slider_1{width:100%;height:100%;position:fixed;}
+.content .slider_1 .item{width:100%;height:100%;position:fixed;}
+.item_slide1{width:100%;height:100%;position:fixed;background:url(../img/glav2.jpg)center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.item_slide2{width:100%;height:100%;position:fixed;background:url(../img/glav1.jpg)center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.item_slide3{width:100%;height:100%;position:fixed;background:url(../img/glav3.jpg)center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.center{color:#fff;width:100%;height:100%;position:absolute;top:0;left:0;overflow:auto;}
+.center .zaglav{font-family: 'Raleway';width:100%;height:250px;position:absolute;top:0;bottom:6%;margin:auto;}
+.center .zaglav p{max-width:100%;text-align:center;height:auto;display:block;margin:0 auto;border:none;font-weight:bold;font-size:2em;}
 }
-.open-content:hover {
-	color: #fff;
-}
-.open-content:active {
-	color: #fff;
-}
-.open-content:visited {
-color: #fff;
-}
-.button-2 {
-	margin-top: 5%;
-	width: 40% !important;
-	text-align: center;
-    font-size: 16px;
-    color: white;
-    border: 2px solid #ff0000;
-}
-.button-2:hover {
-	background-color:#ff0000 ;
-}
-#kon .button-2:hover {
-	background-color:#ff0000 ;
-}
-.content_klienti {
-width: 100%;
-height: 100%;
-position: fixed;
-background: url(../img/clients.jpg) center center no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-}
-.content_klienti .cont-h {
-	margin-top: 10%;
-	color: #fff;
-}
-.klienti_container {
-	margin-top: 18%;
-}
-.klienti_block {
-	height: 270px;
-	margin-bottom: 5%;
-	width: 80%;
-	padding-bottom: 40px;
-}
-.klienti_block img {
-	width: 100%;
-	height: auto;
-	
-	vertical-align: middle;
-}
-.klienti_block img:hover {
-width: 110%;
-}
+.zaglav{font-weight:bold;font-size:2em;}
+.description{font-family: 'Raleway';margin-top:2%;font-weight:bold;font-size:0.6em;}
+.button{font-family: 'Raleway';margin-top:2%;text-align:center;}
+.button p a{padding:2px 30px 2px 30px;border:2px solid #ff0000;color:#fff;text-decoration:none;}
+.button p a:hover{background-color:#ff0000;color:#fff;}
+.carousel-control.left{height:95%!important;position:fixed!important;}
+.carousel-control.right{height:95%!important;position:fixed!important;}
+.footer{font-family: 'Raleway';position:absolute;width:100%;height:30px;background-color:rgba(0,0,0,0.5);left:0;bottom:0;}
+.prava{font-family: 'Raleway';margin-top:5px;width:100%;text-align:center;color:#fff;white-space:nowrap;}
+.emeil{font-family: 'Raleway';margin-top:5px;width:100%;text-align:right;color:#fff;}
+.content_o_kompnii{font-family: 'Raleway';width:100%;height:100%;position:fixed;background:url(../img/about.jpg) center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.O_kompanii{margin-top:15%;}
+.O_kompanii h1{color:#fff;}
+.O_kompanii p{margin-top:40px;color:#fff;text-align:left;line-height:3em;font-size:18px;}
+.content_uslugi{font-family: 'Raleway';width:100%;height:100%;position:fixed;background:url(../img/uslugi.jpg) center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.link{margin-top:15%;}
+.text-1{font-family: 'Raleway';font-size:1.1em;margin-top:20%;color:#fff;}
+.text-2{font-family: 'Raleway';font-size:1.1em;margin-top:20%;color:#fff;}
+.text-3{font-family: 'Raleway';font-size:1.1em;margin-top:40%;color:#fff;}
+.open-content{font-family: 'Raleway';color:#fff;font-size:27px;}
+.open-content:link{color:#fff;}
+.open-content:hover{color:#fff;}
+.open-content:active{color:#fff;}
+.open-content:visited{color:#fff;}
+.button-2{font-family: 'Raleway';margin-top:5%;width:40% !important;text-align:center;font-size:16px;color:white;border:2px solid #ff0000;}
+.button-2:hover{background-color:#ff0000;}
+#kon .button-2:hover{background-color:#ff0000;}
+.content_klienti{font-family: 'Raleway';width:100%;height:100%;position:fixed;background:url(../img/clients.jpg) center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.content_klienti .cont-h{font-family: 'Raleway';margin-top:10%;color:#fff;}
+.klienti_container{font-family: 'Raleway';margin-top:18%;}
+.klienti_block{font-family: 'Raleway';height:270px;margin-bottom:5%;width:80%;padding-bottom:40px;}
+.klienti_block img{width:100%;height:auto;vertical-align:middle;}
+.klienti_block img:hover{width:110%;}
+.klienti_block img{width:100%;}
+.content_obuchenie{font-family: 'Raleway';width:100%;height:100%;position:fixed;background:url(../img/train.jpg) center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.content_obuchenie .O_kompanii{font-family: 'Raleway';margin-top:20%;}
+.content_obuchenie .O_kompanii p{font-family: 'Raleway';line-height:1.5em;}
+.content_contakti{font-family: 'Raleway';width:100%;height:100%;position:fixed;background:url(../img/contacts.jpg) center center no-repeat;-webkit-background-size:cover;background-size:cover;}
+.content_contakti .cont-h{margin-top:10%;}
+.content_contakti h1{font-family: 'Raleway';color:#fff;}
+.third{font-family: 'Century';}
+.third_footer{font-family: 'Century';}
 
-.klienti_block img {
-	width: 100%;
-}
-.content_obuchenie {
-width: 100%;
-height: 100%;
-position: fixed;
-background: url(../img/train.jpg) center center no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-}
-.content_obuchenie .O_kompanii {
-	margin-top: 20%;
-}
-.content_obuchenie .O_kompanii p{
-	line-height: 1.5em;
-}
-.content_contakti {
-	width: 100%;
-height: 100%;
-position: fixed;
-background: url(../img/contacts.jpg) center center no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-}
-.content_contakti .cont-h {
-	margin-top: 10%;
-}
-.content_contakti h1 {
-	color: #fff;
-}
-.cont-slide {
-	margin-top: 5%;
-}
-.svitok {
-	margin-top: 50px;
-
-}
-.obertka {
-	width: 100%;
-	background: url(../img/svitok.png) center center no-repeat;
--webkit-background-size: 100%;
-background-size: 100%;
-	
-	text-align: center;
-}
-.obertka .first{
-	padding-top: 12%;
-	font-size: 15px;
-	font-weight: bold;
-	padding-top: 12px;
-	color: #000;
-
-}
-.obertka .second {
-	font-size: 12px;
-	color: #000;
-	width: 70%;
-	margin-left: 15%;
-}
-.obertka .name-form,.tel1{
-	    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    margin-bottom: 10px;
-    width: 60%;
-    border: none;
-    background-color: #EDCDA5;
-}
-.obertka .button_2{
-	margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 16px!important;
-    color: black;
-    border: 2px solid red!important;
-    background-color: #edcda3!important;
-    width: 65%!important;
-    margin-left: 0!important;
-}
-.third {
-	
-	font-size: 36px;
-	margin-top: 25%;
-}
-.fourth {
-	
-	color: #fff;
-	font-size: 25px;
-}
-.mobile_footer {
-	display: none;
-}
-
-.mobile_menu {
-	display: none;
-}
-.mobile_menu {
-	z-index: 50!important;
-	width: 100%!important;
-	position: fixed!important;
-}
-.navbar {
-	background-color:#000000!important;
-}
-.navbar .left_menu {
-
-	width: 100%;
-	margin-top: 0;
-	padding-top: 0;
-
-}
-.navbar-brand {
-	width: 40%;
-
-	margin-top: 0;
-	padding-top: 0!important;
-}
-.navbar ul li {
-	text-align: center;
-	color: #fff;
-	font-weight: bold;
-	color: #fff;
-}
-.navbar-default {
-	border-color: #000!important;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-		background-color:transparent!important;
-		color: #fff;
-}
-.navbar-default .navbar-toggle {
-	border:1.5px solid #fff!important;
-	border-radius: 50px;
-	padding: 13px 10px ;
-}
-.navbar-default .navbar-toggle .icon-bar {
-	color: #fff!important;
-	background-color: #fff!important;
-}
-.navbar-toggle .icon-bar {
-	height: 2.5px!important;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-	background-color: transparent!important;
-}
-.navbar-default .navbar-nav>li>a {
-	color: #fff!important;
-}
+.cont-slide{font-family: 'Raleway';margin-top:5%;}
+.svitok{font-family: 'Raleway';margin-top:50px;}
+.obertka{font-family: 'Raleway';width:100%;background:url(../img/svitok.png) center center no-repeat;-webkit-background-size:100%;background-size:100%;text-align:center;}
+.obertka .first{font-family: 'Raleway';padding-top:12%;font-size:15px;font-weight:bold;padding-top:12px;color:#000;}
+.obertka .second{font-family: 'Raleway';font-size:12px;color:#000;width:70%;margin-left:15%;}
+.obertka .name-form,.tel1{font-family:'Raleway', sans-serif;font-size:12px;margin-bottom:10px;width:60%;border:none;background-color:#EDCDA5;}
+.obertka .button_2{font-family: 'Raleway';margin-top:40px;margin-bottom:40px;text-align:center;font-size:16px!important;color:black;border:2px solid red!important;background-color:#edcda3!important;width:65%!important;margin-left:0!important;}
+.third{font-family: 'Raleway';font-size:36px;margin-top:25%;}
+.fourth{font-family: 'Raleway';color:#fff;font-size:25px;}
+.mobile_footer{font-family: 'Raleway';display:none;}
+.mobile_menu{display:none;}
+.mobile_menu{font-family: 'Raleway';z-index:50!important;width:100%!important;position:fixed!important;}
+.navbar{background-color:#000000!important;}
+.navbar .left_menu{width:100%;margin-top:0;padding-top:0;}
+.navbar-brand{width:40%;margin-top:0;padding-top:0!important;}
+.navbar ul li{text-align:center;color:#fff;font-weight:bold;color:#fff;}
+.navbar-default{border-color:#000!important;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{background-color:transparent!important;color:#fff;}
+.navbar-default .navbar-toggle{border:1.5px solid #fff!important;border-radius:50px;padding:13px 10px;}
+.navbar-default .navbar-toggle .icon-bar{color:#fff!important;background-color:#fff!important;}
+.navbar-toggle .icon-bar{height:2.5px!important;}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color:transparent!important;}
+.navbar-default .navbar-nav>li>a{color:#fff!important;}
