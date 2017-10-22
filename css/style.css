@@ -44,38 +44,10 @@ html, body {
 /******************************************************************
 	This is the CSS Reset
 ******************************************************************/
-@font-face {
-	font-family: 'agora_light';
-	src: url('../fonts/pfagorasanspro-light-webfont.eot');
-	src: url('../fonts/pfagorasanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/pfagorasanspro-light-webfont.woff') format('woff'),
-		 url('../fonts/pfagorasanspro-light-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'agora_black';
-	src: url('../fonts/pfagorasanspro-black-webfont.eot');
-	src: url('../fonts/pfagorasanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/pfagorasanspro-black-webfont.woff') format('woff'),
-		 url('../fonts/pfagorasanspro-black-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'agora_bold';
-	src: url('../fonts/pfagorasanspro-bold-webfont.eot');
-	src: url('../fonts/pfagorasanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/pfagorasanspro-bold-webfont.woff') format('woff'),
-		 url('../fonts/pfagorasanspro-bold-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 /*---------------------------*/
 body {
 	margin-top: -60px;
+font-family: 'Raleway', sans-serif ;
 }
 #kon .button-2 {
 	background-color: #EDCDA5;
@@ -100,7 +72,7 @@ body {
 	font-size: 15px;
 }
 .left_menu img{
-	width: 30%;
+	width: 80px;
 	height: 30%;
 
 }
@@ -142,6 +114,9 @@ text-align: center;
 	color: #fff;
 	
 
+}
+.menu_desc ul li a:hover{
+	color: #ff0000;
 }
 .right_menu {
 	white-space: nowrap;
@@ -313,14 +288,17 @@ background-size: cover;
 	margin-top: 15%;
 }
 .text-1 {
+font-size: 1.1em;
 	margin-top: 20%;
 	color: #fff;
 }
 .text-2 {
+font-size: 1.1em;
 	margin-top: 20%;
 	color: #fff;
 }
 .text-3 {
+	font-size: 1.1em;
 	margin-top: 40%;
 	color: #fff;
 }
@@ -349,6 +327,12 @@ color: #fff;
     font-size: 16px;
     color: white;
     border: 2px solid #ff0000;
+}
+.button-2:hover {
+	background-color:#ff0000 ;
+}
+#kon .button-2:hover {
+	background-color:#ff0000 ;
 }
 .content_klienti {
 width: 100%;
@@ -429,7 +413,8 @@ background-size: 100%;
 }
 .obertka .first{
 	padding-top: 12%;
-	font-size: 12px;
+	font-size: 15px;
+	font-weight: bold;
 	padding-top: 12px;
 	color: #000;
 

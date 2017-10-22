@@ -91,20 +91,26 @@ width: 100%;
 .obertka .first {
 	font-size: 16px;
 }
+.content_contakti .svitok .obertka .button_2 {
+margin-top: 10px;
+font-size: 0.9em!important;
+}
 .mobile_footer{
 	display: block;
 	width: 100%;
 }
 .mobile_footer h1 {
+	font-weight: bold;
 	width: 100%;
-	font-size: 10px;
+	font-size: 11px;
 	text-align: center;
 	margin-top: 5px;
 	color: #fff;
 }
 .mobile_footer h2 {
+	font-weight: bold;
 	width: 100%;
-	font-size: 10px;
+	font-size: 11px;
 	text-align: center;
 	margin-top: 5px;
 	color: #fff;
@@ -253,14 +259,14 @@ and (max-device-width : 767px){
 }
 .mobile_footer h1 {
 	width: 100%;
-	font-size: 10px;
+	font-size: 13.5px;
 	text-align: center;
 	margin-top: 5px;
 	color: #fff;
 }
 .mobile_footer h2 {
 	width: 100%;
-	font-size: 10px;
+	font-size: 13.5px;
 	text-align: center;
 	margin-top: 5px;
 	color: #fff;
@@ -334,6 +340,9 @@ and (max-device-width : 1023px){
 		padding-top: 0;
 		font-size: 0.9em;
 	}
+	.left_menu img {
+		width: 60px;
+	}
 	.right_menu {
 		font-size: 0.9em;
 	}
@@ -342,3 +351,22 @@ and (max-device-width : 1023px){
 	}
 }
 
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 4200px) {
+.klienti_block {
+height: 200px;
+}
+.klienti_container {
+	margin-top: 15%;
+}
+.O_kompanii p {
+line-height: 2em;
+}
+.content_obuchenie .O_kompanii p {
+	line-height: 1em;
+}
+.link{
+	margin-top: 16%;
+}
+}
