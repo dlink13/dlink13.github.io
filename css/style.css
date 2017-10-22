@@ -63,7 +63,7 @@ font-style: normal;
 .left_menu{font-family: 'Raleway';width:100%;display:flex;flex-direction:row;color:#fff;white-space:nowrap;font-weight:bold;font-size:15px;}
 .left_menu img{width:80px;height:30%;}
 .left_menu p{font-family: 'RalewayBold';padding-top:3%;}
-.left_menu p span{font-family: 'RalewayBold';color:#ff0000;}
+.left_menu p span{font-weight: bold;font-family: 'RalewayBold';color:#ff0000;}
 .menu_desc{z-index:50;width:100%;position:fixed;background-color:rgba(0,0,0,0.5);display:flex;flex-direction:row;}
 .menu_desc ul{white-space:nowrap;margin-top:2%;width:100%;text-align:center;font-size:16px;}
 .menu_desc ul li{font-family: 'Raleway';display:inline;text-align:center;padding-right:2%;margin:0 auto}
