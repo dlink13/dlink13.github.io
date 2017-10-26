@@ -219,12 +219,12 @@ border-radius: 10px;
 }
 
 .b2 .img1 {
-    vertical-align: bottom;
+    width: 100%;
     float: left;
 }
 
 .b2 .info {
-    width: 1020px;
+    width: 100%;
 }
 .b2 .info span {
     color: #00B60C;
@@ -654,7 +654,7 @@ padding-bottom: 3%;
 }
 
 .b7 .form  {
-    width: 950px;
+    width: 100%;
     font-family: 'Open-Sans-Regular';
     color: #5e5e60;
     font-size: 12px;
