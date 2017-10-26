@@ -472,6 +472,7 @@ color: #00B60C;;
 }
 
 .butt1:hover {
+    cursor: pointer;
 	opacity: 0.9;
     color: #00B60C;
     text-decoration: none;
