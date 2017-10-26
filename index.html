@@ -7,9 +7,11 @@
      
        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="css/style.css" tppabs="css/style.css">
-       
+
+         <link rel="stylesheet" href="css/jquery.fancybox.css" tppabs="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    </head>
    <body>
@@ -204,19 +206,15 @@
           <div class="container">
               <div class="row">
                   <h3>Часто задаваемые вопросы?</h3>
+                  <div class="h7">Нажмите на вопрос, чтобы узнать</div>
+                  <div class="h7_mobile">Нажмите на вопрос, чтобы узнать. Он откроется снизу</div>
                   <div class="col-md-6">
-                    <div class="vopros">
-                      <p>1. Вопрос Вопросов</p>
-                    </div>
-                    <div class="vopros">
-                      <p>1. Вопрос Вопросов</p>
-                    </div>
-                    <div class="vopros">
-                      <p>1. Вопрос Вопросов</p>
-                    </div>
-                    <div class="vopros">
-                      <p>1. Вопрос Вопросов</p>
-                    </div>
+                    <a class="open-content" href="javascript:collapsElement('opencontent')" title="" rel="nofollow"><p>И все таки! Почему вода будет течь в горшок? Это же нарушает 
+               закон сообщающихся сосудов
+                  </p></a></br>
+                    <a class="open-content" href="javascript:collapsElement('opencontent2')" title="" rel="nofollow"><p>Требует ли система автополива обслуживания?</p></a></br>
+                    <a class="open-content" href="javascript:collapsElement('opencontent3')" title="" rel="nofollow"><p>Мне, например нужно уехать. А месяц она проработает?</p></a><br>
+                     <a class="open-content" href="javascript:collapsElement('opencontent4')" title="" rel="nofollow"><p>Есть какие-нибудь ограничения для использования автополива Garden?</p></a><br>
                      <div class="vopros svoy_vopros">
                      <p><a href="#win1" class="butt2">Задать свой вопрос</a></p>
                     </div>
@@ -224,7 +222,27 @@
                   </div>
                   <div class="col-md-6">
                     <div class="otvet">
-                      <p>1. Ответ Ответов Ответ Ответов Ответ Ответов Ответ Ответов Ответ Ответов Ответ Ответов</p>
+                    <div id="opencontent" style="display: none">
+<p class="text-1">
+Нарушения закона НЕТ. Дело в том, что система автополива работает на  другом принципе. А дело вот в чем! Уникальность системы  в том, что используется специально обработанная глина, которая при
+ высыхании конуса «морковки» создает РАЗРЯЖЕНИЕ и ВЫСАСЫВАЕТ 
+воду из емкости. Но система должна быть полностью заполнена водой.
+
+</p>
+</div>
+
+<div id="opencontent2" style="display: none">
+<p class="text-2">
+Как правило нет. Но! Нужно следить чтобы сосуд с водой не «цвел» и не засасывал грязь в питающую трубку. При засорении питающих трубок их необходимо продуть и вновь заполнить водой. 
+</p>
+</div>
+
+<div id="opencontent3" style="display: none">
+<p class="text-3">Проработает и год и два. Все зависит от того, какого объема емкость с водой вы используете. Объем подбирается и рассчитывается индивидуально для каждого растения. </p>
+</div>
+<div id="opencontent4" style="display: none">
+<p class="text-3">Да есть! Нельзя ставить для полива сиккулентов (род кактусов) и любых сортов орхидей. </p>
+</div>
                       
                     </div>
                      
@@ -372,6 +390,7 @@
               </div>
           </div>
       </div>
+  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/validator.js"></script>
    </body>
 </html>
