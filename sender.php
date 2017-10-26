@@ -14,16 +14,15 @@ $ref = filter_input(INPUT_POST, 'ref' );
 $utm = filter_input(INPUT_POST, 'utm' );
 
 // список получателей(в нашем случае - один)
-$recepient  = "zakaz@titan-dtp.ru";
+$recepient  = "denja-93@mail.ru";
 
 // Тема сообщения
-$subject = "Заявка с сайта titan-dtp";
+$subject = "Заявка с сайта";
 
 // Сообщение для более менее приглядного вида в HTML
 $message =   "Имя: " . $name . "\n";
 $message .=   "Телефон: " . $phone . "\n";
 $message .=   "Почта: " . $email . "\n";
-$message .=   "Вопрос: " . $ques . "\n";
 $message .=   "Имя формы: " . $formname . "\n";
 
 $headers = "Content-Type: text/plain; charset=utf-8\r\n";

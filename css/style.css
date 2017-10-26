@@ -319,7 +319,7 @@ form .btn span {
     font-weight: bold!important;
     color: #fff;
     padding: 10px 15px;
-    background-color: #900018;
+    background-color: #00B60C;
 }
 
 .btn:hover {
@@ -335,7 +335,7 @@ form .btn span {
 }
 
 .btn:active {
-    background: #902235;
+    background: #00B60C;
     background: -moz-linear-gradient(top,  #902235 0%, #90051c 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#902235), color-stop(100%,#90051c));
     background: -webkit-linear-gradient(top,  #902235 0%,#90051c 100%);
@@ -408,24 +408,6 @@ ol, ul {
 header{    
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .menu {
     position: fixed;
     z-index: 50;
@@ -1161,3 +1143,34 @@ footer a {
   and (orientation: portrait) {
 
 }
+.img_mobile {
+    display: none;
+}
+.mobile_menu {
+    display: none;
+
+   position: fixed;
+    z-index: 50;
+        background: #090909;    
+    height: 75px;
+    width: 100%;
+}
+.mobile_sistema {
+    display: none;
+        text-align: center;
+    font-family: 'Roboto-Condensed-Bold';
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 46px;
+    text-transform: uppercase;
+    margin: 0px 0px 25px 0px;
+}
+.navbar{background-color:#000000!important;}
+.navbar ul li{text-align:center;color:#fff;font-weight:bold;color:#fff;}
+.navbar-default{border-color:#000!important;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{background-color:transparent!important;color:#fff;}
+.navbar-default .navbar-toggle{border:1.5px solid #fff!important;border-radius:50px;padding:13px 10px;}
+.navbar-default .navbar-toggle .icon-bar{color:#fff!important;background-color:#fff!important;}
+.navbar-toggle .icon-bar{height:2.5px!important;}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color:transparent!important;}
+.navbar-default .navbar-nav>li>a{color:#fff!important;}
