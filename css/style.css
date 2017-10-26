@@ -245,11 +245,26 @@ border-radius: 10px;
 
 .b2 .info p{
     font-weight: bold;
-    padding-top: 3%;
-    font-size: 1.8em;
+    padding-top: 1%;
+    font-size: 1.5em;
     color: #fff;
 }
 
+.info .butt2 {
+      font-family: 'Open-Sans-Regular';
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 49px;
+    text-align: center;
+    text-decoration: none;
+    width: 204px;
+    height: 49px;
+    background: #27aa00;
+    float: left;
+    text-transform: uppercase;
+    margin-top: 1.5%;
+
+}
 .b2 .line {
     width: 867px;
     height: 40px;
@@ -267,17 +282,61 @@ border-radius: 10px;
     text-align: center;
     margin: 0px 0px 90px 0px;
 }
-
+.why {
+    background: url(../img/why_bg.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.why_bg {
+    padding-top: 3%;
+  background-color: rgba(42, 40, 40, 0.67);
+  height: auto;
+  padding-bottom: 3%;
+}
+.why_block {
+   padding-top: 5%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 7%;
+}
+.why_block2 {
+       padding-top: 5%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 7%;
+}
+.why_bg h3 {
+    text-transform: uppercase;
+font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+}
+.why_bg h3 span {
+    color: #00B60C;
+}
+.why_block p {
+    padding-top: 1%;
+}
+.why_block2 p {
+    margin-left: 10%;
+}
 .why h4{
     color: #fff;
     font-size: 32px;
     margin: 32px 0;
-}
 
+}
+.why h4 span {
+    color: #00B60C;
+}
+.glyphicon-remove {
+    color: red;
+}
 .why p{
+    text-align: left;
     color: #fff;
     font-size: 20px;
-    margin: 15px 0
+  
 }
 
 .why .glyphicon-ok{
@@ -290,8 +349,27 @@ border-radius: 10px;
     height: 470px;
 }
 
+.desc2 {
+    padding-top: 5%;
+    border-top: 2px solid #00B60C;
+}
+.desc2 .butt2{
+      font-family: 'Open-Sans-Regular';
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    width: 204px;
+    height: 49px;
+    background: #27aa00;
+    float: left;
+    text-transform: uppercase;
+    margin-top: 1.5%;
 
-
+}
+}
 .desc2 .options b{
     color: #fff;
     font-size: 32px;
@@ -301,6 +379,9 @@ border-radius: 10px;
     color: #fff;
     font-size: 18px;
     margin: 30px 0 30px;
+}
+.desc2 img {
+    width: 100%;
 }
 
 .b3{
