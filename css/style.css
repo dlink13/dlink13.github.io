@@ -28,7 +28,7 @@ header{
 
 .menu ul li {
 	font-family: 'Open-Sans-Semibold';
-	color: #ff6600;
+color: #00B60C;;
 	font-size: 17px;
 	line-height: 75px;
 	display: inline-block;
@@ -64,7 +64,7 @@ header{
 	text-decoration: none;
 	width: 174px;
 	height: 35px;
-	border: 2px solid #ff6600;
+	border: 2px solid #00B60C;;
 	border-radius: 20px;
 	margin: 18px 0px 0px 0px;
 	float: right;
@@ -369,6 +369,9 @@ font-size: 2.5em;
     margin-top: 1.5%;
 
 }
+.desc2.izgot {
+    color: #fff;
+    font-size: 32px;
 }
 .desc2 .options b{
     color: #fff;
@@ -409,6 +412,7 @@ font-size: 2.5em;
     display: block;
     margin: 0 auto 30px;
     color: #fff;
+
 }
 
 .b3 p i{
@@ -417,6 +421,8 @@ font-size: 2.5em;
 }
 
 .b3 b{
+    margin-left: 3%;
+    font-style: italic;
     color: #fff;
 }
 
@@ -432,12 +438,67 @@ font-size: 2.5em;
     width: 470px;
     height: 470px;
 }
+.b4 {
+    padding-top: 4%;
+ border-top: 2px solid #00B60C;
 
+}
 .b4 h3{
     text-align: center;
     font-size: 54px;
 }
+.b4 .vopros p{
+    text-align: left;
+padding: 1.5%;
+color: #fff;
+ border-bottom: 1px solid #00B60C;
+ text-decoration: underline;
+}
+.b4 .otvet {
+    margin-top: 5%;
+}
+.b4 .otvet p{
+text-align: right;
+padding: 1.5%;
+color: #fff;
+ border-bottom: 1px solid #00B60C;
+}
 
+.b4 .butt2 {
+    font-family: 'Open-Sans-Regular';
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    width: 220px;
+    height: 49px;
+    background: #27aa00;
+    float: left;
+    text-transform: uppercase;
+    margin-top: 1.5%;
+}
+.svoy_vopros p{
+    border-bottom: none!important;
+}
+
+
+.b3 .butt2 {
+    font-family: 'Open-Sans-Regular';
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    width: 215px;
+    height: 49px;
+    background: #27aa00;
+    float: left;
+    text-transform: uppercase;
+    margin-top: 1.5%;
+}
 .b5{
     width: 100%;
     background: url(../img/bg6.jpg) top center no-repeat;
@@ -445,7 +506,7 @@ font-size: 2.5em;
     -moz-background-size: cover;
     background-size: cover;
     padding: 60px 0px 80px 0px;
-    margin: -10px 0px 0px 0px;
+    margin: -10px 0px 30px 0px;
 }
 
 .b5 h3{
@@ -459,9 +520,10 @@ font-size: 2.5em;
     color: #fff;
     font-size: 24px;
     text-align: center;
-    width: 700px;
+    width: 60%;
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
+padding-bottom: 3%;
 }
 
 .b6{
@@ -529,10 +591,10 @@ font-size: 2.5em;
 }
 
 .b7 .butt3{
-    background-color: rgb(245, 124, 185);
+    background-color:#00B60C;
     border-radius: 25px;
     border: 2px solid;
-    border-color: rgb(240, 55, 148);
+    
     padding: 6px 14px 7px;
     font-size: 15px;
     font-weight: bold;
@@ -547,12 +609,48 @@ font-size: 2.5em;
 
 .b8{
     text-align: center;
-    height: 250px;
-    border: 20px solid black;
+
+}
+.item {
+    height: 600px;
+}
+.item_slide1{
+    width: 100%;
+    background: url(../img/bg6.jpg) center center no-repeat;  
+    -webkit-background-size: cover;
+      background-size: cover;  
+    text-align: center;
+    height: 600px !important;
+}
+.carousel{
+ 
+}
+.carousel-caption h3 {
+    color: #00B60C;
+}
+.item_slide2{
+    background: url(../img/bg6.jpg) center center no-repeat; 
+    -webkit-background-size: cover;
+    background-size: cover;
+ width: 100%;
+    text-align: center;
+    height: 600px !important;
+}
+.item_slide3{
+    background: url(../img/bg6.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+        background-size: cover;    
+    text-align: center;
+    height: 600px !important;
+     width: 100%;
 }
 
 .b8 h3{
     font-size: 54px;
+    padding-bottom: 2%;
+}
+.b8 h3 span {
+    color: #00B60C;
 }
 
 .b7 .form  {
