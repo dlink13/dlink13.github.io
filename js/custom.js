@@ -52,7 +52,7 @@ $(document).ready(function() {
     
     $('.button').click(function() {
         $('body').find('form:not(this)').children('label').removeClass('red');
-        var request_url = '\n'+$('input[name="ref_url"]').val().toString().replace(/&/g, '\n');
+        var request_url = '\n'+$('input[name="ref_url"]');
 
         var answer = checkForm($(this).parent().get(0));
         if(answer != false)
@@ -162,4 +162,4 @@ function thx() {
 function scrollTo(id) {
     var to = $('#'+id).offset().top - 60;
     $("html, body").animate({scrollTop: to}, 500);
-}
+};

@@ -22,8 +22,6 @@ $subject = "Заявка с сайта";
 // Сообщение для более менее приглядного вида в HTML
 $message =   "Имя: " . $name . "\n";
 $message .=   "Телефон: " . $phone . "\n";
-$message .=   "Почта: " . $email . "\n";
-$message .=   "Имя формы: " . $formname . "\n";
 
 $headers = "Content-Type: text/plain; charset=utf-8\r\n";
 
