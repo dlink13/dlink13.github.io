@@ -418,11 +418,20 @@ header{
 .menu .logo {
 	width: 155px;
 	height: 108px;
-	background-image: url(../img/logo.jpg);
+	background-color: #00B60C;
+
 	margin: 0px 40px 0px 0px;
 	float: left;
 }
-
+.menu .logo p {
+        color: #fff;
+        padding-top: 15%;
+     font-size: 40px;
+     font-weight: bold;
+     width: 100%;
+     text-align: center;
+     vertical-align: middle;
+}
 .menu ul {
     float: left;
 }
