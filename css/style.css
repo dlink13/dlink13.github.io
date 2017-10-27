@@ -1275,9 +1275,9 @@ margin-bottom: 3%;
 
 .rabota .block .block_h1 {
     color: #00B60C;
-    font-family: 'agora_bold';
+    font-style: normal;
     font-size: 13px;
-
+font-weight: bold;
     line-height: 16px;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -1355,12 +1355,14 @@ margin-bottom: 3%;
 .otziv_img img {
     border: 1px solid #00B60C;
     border-radius: 50px;
+   width: 100px;
+    height: 100px;
 }.otziv_verh_text{
     margin-top: 3.5%;
     padding-left: 1%;
     font-weight: bold;
     font-size: 30px;
-    color: #fff;
+    color:#00B60C;
 }
 .otziv_text {
     color: #fff;
