@@ -1221,7 +1221,8 @@ footer a {
 .navbar-default .navbar-nav>li>a{color:#fff!important;}
 
 .rabota {
-
+margin-top: 3%;
+margin-bottom: 3%;
 }
 .rabota .h1 {
     font-family: 'agora_light';
@@ -1333,4 +1334,30 @@ footer a {
     position: absolute;
     top: -7px;
     right: -12px;
+}
+.otziv {
+    margin-top: 3%;
+    width: 100%;
+    border-bottom: 1px solid #00B60C;
+}
+.otviv_verh {
+    display: flex;
+    flex-direction: row;
+}
+.otziv_img {
+    padding: 1%;
+}
+.otziv_img img {
+    border: 1px solid #00B60C;
+    border-radius: 50px;
+}.otziv_verh_text{
+    margin-top: 3.5%;
+    padding-left: 1%;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+.otziv_text {
+    color: #fff;
+    font-size: 25px;
 }
