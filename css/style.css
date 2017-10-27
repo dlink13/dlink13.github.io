@@ -1184,15 +1184,8 @@ footer a {
 .img_mobile {
     display: none;
 }
-.mobile_menu {
-    display: none;
-
-   position: fixed;
-    z-index: 50;
-        background: #090909;    
-    height: 75px;
-    width: 100%;
-}
+.mobile_menu{display:none;}
+.mobile_menu{font-family: 'Raleway';z-index:50!important;width:100%!important;position:fixed!important;}
 .mobile_sistema {
     display: none;
         text-align: center;
@@ -1211,6 +1204,8 @@ footer a {
     display: none;
 }
 .navbar{background-color:#000000!important;}
+.navbar .left_menu{width:100%;margin-top:0;padding-top:0;}
+.navbar-brand{width:40%;margin-top:0;padding-top:0!important;}
 .navbar ul li{text-align:center;color:#fff;font-weight:bold;color:#fff;}
 .navbar-default{border-color:#000!important;}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{background-color:transparent!important;color:#fff;}
