@@ -179,12 +179,57 @@ font-size: 25px;
       .b2 .info h2 {
       	display: none;
       }
+         .top_block_left {
+      	width: 100%;
+      }
+      .top_block_right {
+      	width: 100%;
+      	min-height: 500px;
+      }
+      .top_block {
+      	flex-direction: column;
+      }
+      .desc1 {
+      	min-height: 1200px;
+      }
+      .top_block_right .promo {
+      	min-height: 550px;
+      }
+      .top_block_right .promo .gift {
+      	margin: auto;
+      }
+      .desc1 .info {margin-top: 15%;}
+      .top_block_left .info h2 {
+      	display: none;
+      }
 }
 @media only screen 
 and (min-device-width : 480px) 
 and (max-device-width : 768px)
 and (-webkit-min-device-pixel-ratio: 2)	
-{
+{           .top_block_left {
+      	width: 100%;
+      }
+      .top_block_right {
+      	width: 100%;
+      	min-height: 500px;
+      }
+      .top_block {
+      	flex-direction: column;
+      }
+      .desc1 {
+      	min-height: 1200px;
+      }
+      .top_block_right .promo {
+      	min-height: 550px;
+      }
+      .top_block_right .promo .gift {
+      	margin: auto;
+      }
+      .desc1 .info {margin-top: 15%;}
+      .top_block_left .info h2 {
+      	display: none;
+      }
 	.mobile_sistema{
 		display: block;
 	}
@@ -361,12 +406,19 @@ font-size: 25px;
       .b3 .h3{
           font-size: 46px;
       }
+      .top_block_left {
+      	width: 100%;
+      }
+      .top_block_right {
+      	width: 100%;
+      }
 }
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 997px)
 and (-webkit-min-device-pixel-ratio: 2)	
 {
+
 	.b1 {
 	background: url(../img/bg1-mobile.jpg) center center no-repeat;
 }

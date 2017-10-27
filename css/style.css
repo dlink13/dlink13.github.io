@@ -1198,10 +1198,14 @@ footer a {
         text-align: center;
     font-family: 'Roboto-Condensed-Bold';
     color: #ffffff;
-    font-size: 25px;
+    font-size: 28px;
     line-height: 46px;
     text-transform: uppercase;
-    margin: 0px 0px 25px 0px;
+    margin: 100px 0px 25px 0px;
+}
+.mobile_sistema span {
+    color: #00B60C;font-weight: bold;
+    font-size: 28px;
 }
 .navbar{background-color:#000000!important;}
 .navbar ul li{text-align:center;color:#fff;font-weight:bold;color:#fff;}
