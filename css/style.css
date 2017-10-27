@@ -1255,6 +1255,8 @@ margin-bottom: 3%;
     border: 3px solid rgba(0, 0, 0, 0);
     margin-bottom: 23px;
     position: relative;
+    margin: 0 auto;
+
 }
 
 .rabota .block .icon .num {
@@ -1272,12 +1274,14 @@ margin-bottom: 3%;
 }
 
 .rabota .block .block_h1 {
+    color: #00B60C;
     font-family: 'agora_bold';
     font-size: 13px;
-    color: #fff;
+
     line-height: 16px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .rabota .block1,
@@ -1296,6 +1300,7 @@ margin-bottom: 3%;
     font-size: 14px;
     color: #fff;
     line-height: 17px;
+    text-align: center;
 }
 
 .rabota .block1 .icon {background: url('../img/c12_icon1.png') center center no-repeat;}

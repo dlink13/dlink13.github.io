@@ -213,7 +213,10 @@ font-size: 25px;
       	width: 50%;
       }
       .rabota .block .icon .arrow {
-      	right:-50px;
+      	right:-35px;
+      }
+      .b7 h3 {
+      	font-size: 40px;
       }
 }
 @media only screen 
@@ -222,7 +225,8 @@ and (max-device-width : 768px)
 and (-webkit-min-device-pixel-ratio: 2)	
 {
 	    .rabota .block {
-      	width: 50%;
+      	width: 40%;
+      	margin: 0 auto;
       }
       .rabota .block .icon .arrow {
       	right:-50px;
@@ -440,12 +444,15 @@ font-size: 25px;
       .top_block_right {
       	width: 100%;
       }
+
 }
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 997px)
 and (-webkit-min-device-pixel-ratio: 2)	
-{
+{.rabota .block {
+	width: 50%;
+}
 	   .b4{
       	display: none;
       }
