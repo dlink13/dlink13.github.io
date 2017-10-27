@@ -1207,6 +1207,9 @@ footer a {
     color: #00B60C;font-weight: bold;
     font-size: 28px;
 }
+.b4_mobile {
+    display: none;
+}
 .navbar{background-color:#000000!important;}
 .navbar ul li{text-align:center;color:#fff;font-weight:bold;color:#fff;}
 .navbar-default{border-color:#000!important;}
@@ -1216,3 +1219,118 @@ footer a {
 .navbar-toggle .icon-bar{height:2.5px!important;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color:transparent!important;}
 .navbar-default .navbar-nav>li>a{color:#fff!important;}
+
+.rabota {
+
+}
+.rabota .h1 {
+    font-family: 'agora_light';
+    font-size: 36px;
+    color: #fff;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rabota .block_wrapp {
+    text-align: center;
+    position: relative;
+    right: -100px;
+}
+
+.rabota .block {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow:none;
+    width: 25%;
+    margin: 0 -2px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.rabota .block .icon {
+    width: 64px;
+    height: 64px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    margin-bottom: 23px;
+    position: relative;
+}
+
+.rabota .block .icon .num {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    font-family: 'agora_bold';
+    font-size: 18px;
+    color: #1c2232;
+    line-height: 25px;
+    text-align: center;
+}
+
+.rabota .block .block_h1 {
+    font-family: 'agora_bold';
+    font-size: 13px;
+    color: #fff;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.rabota .block1,
+.rabota .block2,
+.rabota .block3 {
+    margin-bottom: 50px;
+}
+
+.rabota .block4,
+.rabota .block5 {
+    margin-bottom: 30px;
+}
+
+.rabota .block p {
+    font-family: 'agora_regular';
+    font-size: 14px;
+    color: #fff;
+    line-height: 17px;
+}
+
+.rabota .block1 .icon {background: url('../img/c12_icon1.png') center center no-repeat;}
+.rabota .block2 .icon {background: url('../img/c12_icon2.png') center center no-repeat;}
+.rabota .block3 .icon {background: url('../img/c12_icon3.png') center center no-repeat;}
+.rabota .block4 .icon {background: url('../img/c12_icon4.png') center center no-repeat;}
+.rabota .block5 .icon {background: url('../img/c12_icon5.png') center center no-repeat;}
+
+.rabota .block .icon .arrow {
+    position: absolute;
+    right: -135px;
+    top: 30px;
+}
+
+.rabota .block .icon .arrow ul {
+    list-style: none;
+}
+
+.rabota .block .icon .arrow ul li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.4);
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.rabota .block .icon .arrow:after {
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: -12px;
+}
