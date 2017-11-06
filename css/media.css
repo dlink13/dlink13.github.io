@@ -1,13 +1,26 @@
 @media only screen 
-and (min-device-width : 320px) 
+and (min-device-width : 0px) 
 and (max-device-width : 480px)
-and (-webkit-min-device-pixel-ratio: 2)	
+
 {
+  .b7 .form  button {
+    width: 100%;
+  }
+  .b7 .form  input {
+    width: 100%;
+  }
 	.popup {
 	width: 90%;
 	height: 90%;
 	top: ;
 	z-index: 80!important;
+}
+.b5 h3 {
+  font-size: 30px;
+}
+.b7 h3 {font-size: 30px;}
+.b4 .butt2 {
+  width: 100%;
 }
 .popup .popup_close {
 	position: relative!important;
@@ -216,7 +229,7 @@ font-size: 25px;
       	right:-35px;
       }
       .b7 h3 {
-      	font-size: 40px;
+      	font-size: 25px;
       }
       .otviv_verh {
       	flex-direction: column;
@@ -225,7 +238,7 @@ font-size: 25px;
 @media only screen 
 and (min-device-width : 480px) 
 and (max-device-width : 767px)
-and (-webkit-min-device-pixel-ratio: 2)	
+
 {
 	    .rabota .block {
       	width: 40%;
@@ -452,7 +465,7 @@ font-size: 25px;
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 997px)
-and (-webkit-min-device-pixel-ratio: 2)	
+
 {.rabota .block {
 	width: 50%;
 }
@@ -528,7 +541,6 @@ display: none;
 @media only screen 
 and (min-device-width : 998px) 
 and (max-device-width : 1200px)
-and (-webkit-min-device-pixel-ratio: 2)	
 {
 .b1 .promo .price {
 	margin-top: 5%;
