@@ -241,7 +241,7 @@ color: #fff;
 margin-top: 100px;
 margin-bottom: 200px;
 }
-.vzisk p {text-align: center; font-weight: bold;text-transform: uppercase;color: #E4E159; font-size: 2.5em;}
+.vzisk p { font-weight: bold;text-transform: uppercase;color: #E4E159; font-size: 2em;}
 .vzisk p span {
 	color: #fff;font-size: 1.2em;
 }
@@ -1035,3 +1035,6 @@ text-align: center;
 .otziv-text {text-align: center;font-size: 1.2em;width: 80%;margin: 0 auto;}
 #preimushestvo{margin-top: 5%;margin-bottom: 5%;}
 #preimushestvo .else {margin-bottom: 5%;}
+.vzisk-2 {margin-top: 35%;text-align: center!important;}
+.vzisk{text-align: left;}
+.uvel {padding-top: 5%;}
