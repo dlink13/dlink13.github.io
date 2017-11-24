@@ -239,7 +239,7 @@ color: #fff;
 }
 .vzisk {
 margin-top: 100px;
-margin-bottom: 200px;
+margin-bottom: 50px;
 }
 .vzisk p { font-weight: bold;text-transform: uppercase;color: #E4E159; font-size: 2em;}
 .vzisk p span {
@@ -262,11 +262,12 @@ margin-bottom: 200px;
 	margin-top: 100px;
 	width: 100%;
 	padding-bottom: 50px;
+	margin-bottom: 100px;
 }
 .header_zakaz p {
 	padding: 30px;
 	text-transform: uppercase;
-	font-size: 1.2em;
+	font-size: 2em;
 	text-align: center;
 	color: #fff;
 	padding-bottom: 80px;
@@ -277,6 +278,7 @@ margin-bottom: 200px;
 	text-align: center;
 	height: auto;
 	width: 45%;
+	font-size: 1.5em;
 	margin-left: 30%;
 	background-color: #E4E159;
 	font-weight: bold;
