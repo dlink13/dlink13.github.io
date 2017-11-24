@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'agora_light';
+	src: url('../fonts/pfagorasanspro-light-webfont.eot');
+	src: url('../fonts/pfagorasanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-light-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_black';
+	src: url('../fonts/pfagorasanspro-black-webfont.eot');
+	src: url('../fonts/pfagorasanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-black-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-black-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_bold';
+	src: url('../fonts/pfagorasanspro-bold-webfont.eot');
+	src: url('../fonts/pfagorasanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-bold-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_regular';
+	src: url('../fonts/pfagorasanspro-reg-webfont.eot');
+	src: url('../fonts/pfagorasanspro-reg-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-reg-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-reg-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_medium';
+	src: url('../fonts/pfagorasanspro-medium-webfont.eot');
+	src: url('../fonts/pfagorasanspro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-medium-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-medium-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_light_italic';
+	src: url('../fonts/pfagorasanspro-lightital-webfont.eot');
+	src: url('../fonts/pfagorasanspro-lightital-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-lightital-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-lightital-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'agora_thin';
+	src: url('../fonts/pfagorasanspro-thin-webfont.eot');
+	src: url('../fonts/pfagorasanspro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pfagorasanspro-thin-webfont.woff') format('woff'),
+		 url('../fonts/pfagorasanspro-thin-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

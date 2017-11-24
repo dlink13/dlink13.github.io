@@ -1,278 +1,121 @@
-
 <!DOCTYPE html>
-<html lang="ru">
-   <head>
-      <meta charset="UTF-8">
-      <title>Garden - система автополива</title>
-     
-       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="css/style.css" tppabs="css/style.css">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<title>LED-ламп в России</title>
+<!-- Load CSS -->
 
-            <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-               <script type="text/javascript" src="js/jquery.min.js"></script>
-         <link rel="stylesheet" href="css/jquery.fancybox.css" tppabs="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/media.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
- 
-   </head>
-   <body>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" async src="http://app.comagic.ru/static/cs.min.js"></script>
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
 
 
 
-    <div class="popup_overlay" onClick="popup_out();"></div>
-  
-  <div class="popup" id="thx">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Спасибо за заявку</div>
-    <div class="popup_h2">Наш менеджер свяжется с вами в ближайшее время</div>
-    <!-- <div class="btn" onClick="popup_out();">закрыть</div> -->
-  </div>
 
-<div class="popup" id="callback" >
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Заказать звонок</div>
-    <div class="popup_h2">
-      Оставьте заявку, и наш специалист свяжется<br/>
-      с вами, чтобы ответить на ваши вопросы.
-    </div>
-    <form>
-      <div class="desc">Ваше имя</div>
-      <label class="name required">
-        <input type="text" name="name" placeholder="Иван Иванов">
-      </label><br/>
-      <div class="desc">Ваш телефон</div>
-      <label class="phone required">
-        <input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-      </label>
-      <label class="phone required">
-        <input type="text" name="phone2" maxlength="6" placeholder="123">
-      </label>
-      <label class="phone required">
-        <input type="text" name="phone3" maxlength="10" placeholder="4567890">
-      </label><br/>
-      <div data-name="callback" class="button noselect btn" onClick="formname('Блок «перезвоните»');">Заказать звонок</div>
-      
-      
-    </form>
-    <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
-  </div>
+</head>
 
+<body>
+	<input type="hidden" name="prefix" class="prefix" value="">
+	<input type="hidden" name="referer" value="">
+	<input type="hidden" name="ref_url" value="">
+	<input type="hidden" class="formname" name="formname" value="">
 
-
-  <div class="popup" id="zakaz">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Оформление заявки</div>
-    <div class="popup_h2">
-      Оставьте заявку, и наш специалист свяжется<br/>
-      с вами, чтобы оформить заявку.
-    </div>
-    <form>
-     <div class="desc">Имя</div>
-            <label class="name required">
-              <input type="text" name="name" placeholder="Иван Иванов">
-            </label><br/>
-            <div class="desc">Телефон</div>
-            <label class="phone required phone1">
-              <input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-            </label>
-            <label class="phone required phone2">
-              <input type="text" name="phone2" maxlength="6" placeholder="123">
-            </label>
-            <label class="phone required phone4">
-              <input type="text" name="phone3" maxlength="10" placeholder="4567890">
-            </label><br/>
-            <div class="desc">E-mail</div>
-            <label class="email required">
-              <input type="text" name="email" placeholder="ivanov@mail.ru">
-            </label><br/>
-      <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div>
-      
-      
-    </form>
-    <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
-  </div>
-
-<div class="popup" id="uznat">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Заказать звонок</div>
-    <div class="popup_h2">
-      Оставьте заявку, и наш специалист свяжется<br/>
-      с вами, чтобы рассказать больше.
-    </div>
-    <form>
-     <div class="desc">Имя</div>
-            <label class="name required">
-              <input type="text" name="name" placeholder="Иван Иванов">
-            </label><br/>
-            <div class="desc">Телефон</div>
-            <label class="phone required phone1">
-              <input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-            </label>
-            <label class="phone required phone2">
-              <input type="text" name="phone2" maxlength="6" placeholder="123">
-            </label>
-            <label class="phone required phone4">
-              <input type="text" name="phone3" maxlength="10" placeholder="4567890">
-            </label><br/>
-            <div class="desc">E-mail</div>
-            <label class="email required">
-              <input type="text" name="email" placeholder="ivanov@mail.ru">
-            </label><br/>
-      <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать узнать»');">Заказать звонок</div>
-      
-      
-    </form>
-    <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
-  </div>
-
-  <div class="popup" id="skidka">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Заказать звонок</div>
-    <div class="popup_h2">
-      Оставьте заявку, и наш специалист свяжется<br/>
-      с вами, чтобы оформить заявку  со скидкой 53%.
-    </div>
-    <form>
-     <div class="desc">Имя</div>
-            <label class="name required">
-              <input type="text" name="name" placeholder="Иван Иванов">
-            </label><br/>
-            <div class="desc">Телефон</div>
-            <label class="phone required phone1">
-              <input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-            </label>
-            <label class="phone required phone2">
-              <input type="text" name="phone2" maxlength="6" placeholder="123">
-            </label>
-            <label class="phone required phone4">
-              <input type="text" name="phone3" maxlength="10" placeholder="4567890">
-            </label><br/>
-            <div class="desc">E-mail</div>
-            <label class="email required">
-              <input type="text" name="email" placeholder="ivanov@mail.ru">
-            </label><br/>
-      <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div>
-      
-      
-    </form>
-    <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
-  </div>
-
-  <div class="popup" id="soveti">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Заказать звонок</div>
-    <div class="popup_h2">
-      Оставьте заявку, и наш специалист свяжется<br/>
-      с вами, чтобы дать 5 важных советов.
-    </div>
-    <form>
-     <div class="desc">Имя</div>
-            <label class="name required">
-              <input type="text" name="name" placeholder="Иван Иванов">
-            </label><br/>
-            <div class="desc">Телефон</div>
-            <label class="phone required phone1">
-              <input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-            </label>
-            <label class="phone required phone2">
-              <input type="text" name="phone2" maxlength="6" placeholder="123">
-            </label>
-            <label class="phone required phone4">
-              <input type="text" name="phone3" maxlength="10" placeholder="4567890">
-            </label><br/>
-            <div class="desc">E-mail</div>
-            <label class="email required">
-              <input type="text" name="email" placeholder="ivanov@mail.ru">
-            </label><br/>
-      <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div>
-      
-      
-    </form>
-    <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
-  </div>
-
-  <div class="popup" id="callback">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Заказать звонок</div>
-    <div class="popup_h2">
-      Оставьте заявку, и наш специалист свяжется<br/>
-      с вами, чтобы ответить на ваши вопросы.
-    </div>
-    <form>
-      <div class="desc">Имя</div>
-            <label class="name required">
-              <input type="text" name="name" placeholder="Иван Иванов">
-            </label><br/>
-            <div class="desc">Телефон</div>
-            <label class="phone required phone1">
-              <input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-            </label>
-            <label class="phone required phone2">
-              <input type="text" name="phone2" maxlength="6" placeholder="123">
-            </label>
-            <label class="phone required phone4">
-              <input type="text" name="phone3" maxlength="10" placeholder="4567890">
-            </label><br/>
-            <div class="desc">E-mail</div>
-            <label class="email required">
-              <input type="text" name="email" placeholder="ivanov@mail.ru">
-            </label><br/>
-      <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div>
-      
-      
-    </form>
-    <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
-  </div>
-
-  <div class="popup" id="vopros">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Заказать звонок</div>
-    <div class="popup_h2">
-      Оставьте заявку, и наш специалист свяжется<br/>
-      с вами, чтобы ответить на ваши вопросы.
-    </div>
-    <form>
-     <div class="desc">Имя</div>
-            <label class="name required">
-              <input type="text" name="name" placeholder="Иван Иванов">
-            </label><br/>
-            <div class="desc">Телефон</div>
-            <label class="phone required phone1">
-              <input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
-            </label>
-            <label class="phone required phone2">
-              <input type="text" name="phone2" maxlength="6" placeholder="123">
-            </label>
-            <label class="phone required phone4">
-              <input type="text" name="phone3" maxlength="10" placeholder="4567890">
-            </label><br/>
-            <div class="desc">E-mail</div>
-            <label class="email required">
-              <input type="text" name="email" placeholder="ivanov@mail.ru">
-            </label><br/>
-      <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div>
-      
-      
-    </form>
-    <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
-  </div>
-
-
-<div class="popup" id="politika">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1"><div>Политика Конфеденциальности</div></div>
-    <div class="popup_h2">
-      
-    </div>
-    Соглашение об обработке персональных данных сайтом
+	<div class="popup_overlay" onClick="popup_out();"></div>
+	
+	<div class="popup" id="thx">
+		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+		<div class="popup_h1">Спасибо за заявку</div>
+		<div class="popup_h2">Наш менеджер свяжется с вами в ближайшее время</div>
+		<!-- <div class="btn" onClick="popup_out();">закрыть</div> -->
+	</div>
+	
+	<div class="popup" id="callback">
+		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+		<div class="popup_h1">Заказать звонок</div>
+		<div class="popup_h2">
+			Оставьте заявку, и наш специалист свяжется<br/>
+			с вами, чтобы ответить на ваши вопросы.
+		</div>
+		<form>
+						<div class="desc">Имя</div>
+						<label class="name required">
+							<input type="text" name="name" placeholder="Иван Иванов">
+						</label><br/>
+						<div class="desc">Телефон</div>
+						<label class="phone required phone1">
+							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
+						</label>
+						<label class="phone required phone2">
+							<input type="text" name="phone2" maxlength="6" placeholder="123">
+						</label>
+						<label class="phone required phone4">
+							<input type="text" name="phone3" maxlength="10" placeholder="4567890">
+						</label><br/>
+						<div class="desc">E-mail</div>
+						<label class="email required">
+							<input type="text" name="email" placeholder="ivanov@mail.ru">
+						</label><br/>
+			<div data-name="callback" class="button noselect btn" onClick="formname('Блок «Заказать звонок»');">Заказать звонок</div>
+			
+			
+		</form>
+		<div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
+	</div>
+	
+	<div class="popup" id="request">
+		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+		<div class="popup_h1">Оставьте заявку</div>
+		<div class="popup_h2">
+			Оставьте заявку, и наш специалист свяжется<br/>
+			с вами в ближайшее время.
+		</div>
+		<form>
+						<div class="desc">Имя</div>
+						<label class="name required">
+							<input type="text" name="name" placeholder="Иван Иванов">
+						</label><br/>
+						<div class="desc">Телефон</div>
+						<label class="phone required phone1">
+							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
+						</label>
+						<label class="phone required phone2">
+							<input type="text" name="phone2" maxlength="6" placeholder="123">
+						</label>
+						<label class="phone required phone4">
+							<input type="text" name="phone3" maxlength="10" placeholder="4567890">
+						</label><br/>
+						<div class="desc">E-mail</div>
+						<label class="email required">
+							<input type="text" name="email" placeholder="ivanov@mail.ru">
+						</label><br/>
+			<div data-name="request" class="button noselect btn">Заказать</div>
+			
+			
+		</form>
+		<div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
+	</form>
+	</div>
+	
+	<div class="popup" id="politika">
+		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+		<div class="popup_h1"><div>Политика Конфеденциальности</div></div>
+		<div class="popup_h2">
+			
+		</div>
+		Соглашение об обработке персональных данных titan-dtp.ru
 
 от 05 января 2017 года.
 
-сайт (далее–Сайт) стремится всеми доступными способами обеспечить безопасность пользования Сайтом. Настоящим Соглашением Сайт информирует Пользователей Сайта о том, какие сведения о Пользователе могут быть доступны Сайту, а также о том, каким образом используется полученная Сайтом информация.
+titan-dtp.ru (далее–Сайт) стремится всеми доступными способами обеспечить безопасность пользования Сайтом. Настоящим Соглашением Сайт информирует Пользователей Сайта о том, какие сведения о Пользователе могут быть доступны Сайту, а также о том, каким образом используется полученная Сайтом информация.
 
 Присоединяясь к настоящему Соглашению и оставляя свои данные на Сайте, путем заполнения полей онлайн-заявки (регистрации), пользователь:
 
@@ -305,576 +148,607 @@
 • передача по требованию суда, в том числе третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного доступа.
 
 Сайт не осуществляет сбор информации, направленной на идентификацию (определение) конкретных физических лиц—Пользователей Сайта.
-  </div>
+	</div>
+	<div class="popup" id="question">
+		<div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+		<div class="popup_h1">Задать вопрос</div>
+		<div class="popup_h2">
+			Заполните форму,<br/>
+			и&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;вами!
+		</div>
+		<form>
+			<div class="desc">Ваше имя</div>
+			<label class="name required">
+				<input type="text" name="name" placeholder="Иван Иванов">
+			</label><br/>
+			<div class="desc">Ваш телефон</div>
+			<label class="phone required">
+				<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
+			</label>
+			<label class="phone required">
+				<input type="text" name="phone2" maxlength="6" placeholder="123">
+			</label>
+			<label class="phone required">
+				<input type="text" name="phone3" maxlength="10" placeholder="4567890">
+			</label><br/>
+			<div class="desc">Ваш E-mail</div>
+			<label class="email required">
+				<input type="text" name="email" placeholder="ivanov@mail.ru">
+			</label><br/>
+			<textarea class="ques" name="ques" placeholder="Ваш вопрос"></textarea><br/>
+			<div data-name="question" class="button noselect btn">Задать вопрос</div>
 
-  <div class="mobile_menu">
-          <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-      <a class="navbar-brand" href="#"><span style="color:#00B60C;padding: 15px;text-transform: uppercase;font-weight: bold;">garden</span></a></div>  </a>
-  
+			
+		</form>
+		<div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
+		
+	</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"> <a href="#m2" onclick="return anchorScroller(this)">Почему</a></li>
-        <li><a href="#m3" onclick="return anchorScroller(this)">Советы</a></li>
-        <li><a href="#m4" onclick="return anchorScroller(this)">Вопросы</a></li>
-        <li><a href="#m5" onclick="return anchorScroller(this)">Отзывы</a></li>
-        <li><a href="#m6" onclick="return anchorScroller(this)">Цены</a></li>
-      
-      </ul></div></div></nav></div>
-     
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav></div>
+		<header>
+			<div class="header_bg">
 
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">	
+			<div class="logo">
+				
 
-
-
-      <header class="hidden-xs">
-                    <div class="menu">
-                       <div class="container">
-                             <div class="row">
-
-                  <div class="logo"><p>Garden</p></div>
-                  <nav id="nav-wrap" class="nav">
-                     <ul id="nav">
-                        <li class="laptop">
-                           Garden
-                        </li>
-                        <li>
-                           <a href="#m2" onclick="return anchorScroller(this)">Почему</a>
-                        </li>
-                        <li>
-                           <a href="#m3" onclick="return anchorScroller(this)">Советы</a>
-                        </li>
-                        <li>
-                           <a href="#m4" onclick="return anchorScroller(this)">Вопросы</a>
-                        </li>
-                        <li>
-                           <a href="#m5" onclick="return anchorScroller(this)">Отзывы</a>
-                        </li>
-                        <li>
-                           <a href="#m6" onclick="return anchorScroller(this)">Цены</a>
-                        </li>
-                     </ul>
-                         <a  class="butt1" onClick="popup('callback','Блок «перезвоните»');">Перезвоните <span class="laptop">мне</span></a>
-                  </nav>
-
-               </div>
-        
-               
-            </div>
-         </div>
-      </header>
-      <div class="top_block">
-
-        <div class="top_block_left">
-
-      <div class="desc1">
-                            <div class="col-xs-12 col-sm-12  col-md-6 ">
-                              <h2 class="mobile_sistema">Система автоматического полива домашних цветов <span>GARDEN</span> </h2>
-                              <img src="img/img1.png" tppabs="img/img1.png" class="img1" alt="Портативная акустическая система"></div>
-                                                            <div class="col-md-6 col-xs-12">
-                                                            <div class="info">
-                                  <h2>Система автоматического полива домашних цветов <span>GARDEN</span> </h2>
-                                  <p><strong><span>⦁</span> Не требует электричества и батареек.</strong></p>
-                                  <p><span>⦁</span> Влажность контролируется 24 часы/сутки и 365 дней/году</p>
-                                   <p><span>⦁</span>  Простая и надежная система  увлажнения  корней растений.</p>
-                                  
-                                  
-                              </div></div>
-                                                    
-                          </div>
-                  </div>
-              <div class="top_block_right">
-                          <div class="promo">
-                                 <div class="gift">
-                              Успей заказать до
-                              <script type="text/javascript">
-      d = new Date(); p = new Date(d.getTime() +  1*86400000);
-      monthA = 'января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(',');
-      document.write(p.getDate() + ' ' + monthA[p.getMonth()]);   
-    </script> и получи
-                         <br>
-                         <span>скидку 53%!</span>
-                          </div>
-                     
-                       
-                          <div class="price">
-                               <a href="#win1" class="butt2" onClick="popup('zakaz','Блок «заказ»');">Сделать заказ</a>
-                              <div class="old">
-                                  Всего за
-                                  <b>498<span>р</span></b>
-                                  <i></i>
-                              </div>
-                              <div class="new">
-                                  252
-                                  <span>р</span>
-                              </div>
-                          </div>
-                  
-                      </div>
-              </div> 
-
-            </div>
-    
-    
-      
-      <a href="#m2" onclick="return anchorScroller(this)" class="mouse"></a>
-     
-                          <a name="m2"></a>
-                          <div class="why">
-                            <div class="why_bg">
-
-                             <h3>Почему <span>Garden</span></h3>   
-                             <div class="container">
-                               
-                            <div class="row">
-                                  <div class="col-md-6 col-xs-12">
-                                    <div class="why_block">
-                                     <h4>Обычный полив</h4>
-                                     <p><span class="glyphicon glyphicon-remove"></span> Ежедневный контроль влажности</p>
-                                      <p><span class="glyphicon glyphicon-remove"></span> Забыли полить цветы</p>
-                                     <p><span class="glyphicon glyphicon-remove"></span> Водопроводной воде необходимо отстояться</p>
-                                     <p><span class="glyphicon glyphicon-remove"></span> Проблема добавлять удобрения</p>
-                                     <p><span class="glyphicon glyphicon-remove"></span> Повышенный расход воды (испарение с поверхности)</p>
-                                     <p><span class="glyphicon glyphicon-remove"></span> Срочно уехали и забыли про цветы</p>
-                                     <p><span class="glyphicon glyphicon-remove"></span> Можно «Залить» цветы</p>
-                                     </div> 
-                                  </div>
-                                  <div class="col-md-6 col-xs-12">
-                                     <div class="why_block2">
-                                     <h4><span>GARDEN</span></h4>
-                                      
-                                         <p><span class="glyphicon glyphicon-ok"></span> Сам контролирует  влажность</p>
-                                         <p><span class="glyphicon glyphicon-ok"></span> Работает 24 часа/сутки</p>
-                                         <p><span class="glyphicon glyphicon-ok"></span> Вода уже отстоялась в расходной емкости</p>
-                                         <p><span class="glyphicon glyphicon-ok"></span> Удобрения доставляются прямо к корням</p>
-                                         <p><span class="glyphicon glyphicon-ok"></span> Увлажняется только корень</p>
-                                         <p><span class="glyphicon glyphicon-ok"></span> Работает без батареек 365 дней/году</p>
-                                         <p><span class="glyphicon glyphicon-ok"></span> Дозированный полив. </p>
-                                          </div>
-                                  </div>
-                          </div>
-                                <div class="desc2">
-                              <div class="options">
-                                  <div class="row">
-                                      <div class="col-md-6 col-xs-12">
-                                          <b class="izgot">Из чего сделан автополив GARDEN?</b>
-                                           <div class="col-md-6 col-xs-12 img_mobile">
-                                          <img src="img/img2.jpg" tppabs="img/img2.jpg" class="img2" alt="автополив GARDEN">
-                                      </div>
-                                          <p>Конический корпус в виде морковки выполнен из специально обработанной глины. Эта      глина является натуральным и естественным датчиком влажности почвы.</p>
-                                         <p>На конус (в виде крышки) установлен колпачок с уплотнением, для заполнения системы водой.</p>
-                                         <p>Трубка служит для подачи воды из расходной емкости</p>
-                                         <p>Утяжелитель на конце трубки не дает ей всплывать.</p>
-                                           <a href="#win1" class="butt2" onClick="popup('skidka','Блок «скидка»');">Заказать со скидкой</a>
-                                          
-                                      </div>
-                                      <div class="col-md-6 col-xs-12 img_desct">
-                                          <img src="img/img2.jpg" tppabs="img/img2.jpg" class="img2" alt="автополив GARDEN">
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          </div>
-                            </div>
-                          </div>
-                    
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <a name="m3"></a>
-      <div class="b3">
-       
-          <h3>Советы по использованию системы корневого полива. <span>ВАЖНО!</span></h3>
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6 col-xs-12">
-                      <img src="img/img3.jpg" tppabs="img/img3.jpg" alt="" class="img-responsive">
-                  </div>
-                      <div class="col-md-6 col-xs-12">
-                          <p>- Установить автополив ближе к корню растения.</p>
-                          <p>- Корпус конуса должен полностью быть в грунте!</p>
-                          <p>- Проследить, чтобы вода полностью заполняла всю систему, и в трубках 
-  не было пузырьков.
-</p>
-                          <p>- Заливать растение приспособление автополива  может по причинам:<br>
-                          <b>*если часть конуса находится над поверхностью или нет контакта с грунтом, то это «сигнал к поливу».</b><br>
-                          <b>*Если в почве содержится много песка, либо земля слишком рыхлая и гигроскопичная.</b>
-                          
-                          </p>
-                          <p>- Поддерживать уровень воды в расходной емкости.</p>
-                          <p>- При попадании воздуха в систему придется вновь заполнить ее водой. Иначе вода не будет поступать.</p>
-                           <a href="#win1" class="butt2" onClick="popup('soveti','Блок «советы»');">Ещё 5 важных советов</a>
-                      </div>                  
-              </div>
-          </div>
-      </div>
-     
-      <div class="b5">
-          <div class="container">
-              <div class="row">
-                <a name="m4"></a>
-                  <h3>Как работает?</h3>
-                  <p>При контакте с почвой вода проникает через пористую структуру глины и  попадает в почву. <br> При необходимом и достаточном увлажнении почвы в  месте контакта возникает поверхностное натяжение и автополив прекращается. <br> Как только земля в цветочном  горшке подсыхает устройство автополивалки начинает дозировано подавать воду к корням растений. <br> Все гениальное просто.
-</p>
-              </div>
-
-               <div class="b4">
-          <div class="container">
-            
-              <div class="row">
-                  <h3>Часто задаваемые вопросы?</h3>
-                  <div class="h7">Нажмите на вопрос, чтобы узнать</div>
-                  <div class="h7_mobile">Нажмите на вопрос, чтобы узнать. Ответ откроется снизу</div>
-                  <div class="col-md-6">
-                    <a class="open-content" href="javascript:collapsElement('opencontent')" title="" rel="nofollow"><p>И все таки! Почему вода будет течь в горшок? Это же нарушает 
-               закон сообщающихся сосудов
-                  </p></a></br>
-                    <a class="open-content" href="javascript:collapsElement('opencontent2')" title="" rel="nofollow"><p>Требует ли система автополива обслуживания?</p></a></br>
-                    <a class="open-content" href="javascript:collapsElement('opencontent3')" title="" rel="nofollow"><p>Мне, например нужно уехать. А месяц она проработает?</p></a><br>
-                     <a class="open-content" href="javascript:collapsElement('opencontent4')" title="" rel="nofollow"><p>Есть какие-нибудь ограничения для использования автополива Garden?</p></a><br>
-                     <div class="vopros svoy_vopros">
-                     <p><a href="#win1" class="butt2" onClick="popup('vopros','Блок «вопрос»');">Задать свой вопрос</a></p>
-                    </div>
-                        
-                  </div>
-                  <div class="col-md-6">
-                    <div class="otvet">
-                    <div id="opencontent" style="display: none">
-<p class="text-1">
-Нарушения закона НЕТ. Дело в том, что система автополива работает на  другом принципе. А дело вот в чем! Уникальность системы  в том, что используется специально обработанная глина, которая при
- высыхании конуса «морковки» создает РАЗРЯЖЕНИЕ и ВЫСАСЫВАЕТ 
-воду из емкости. Но система должна быть полностью заполнена водой.
-
-</p>
+				<p>LED-Автосвет<br/><span>Дистрибьютер автомобильных <br> LED-ламп в России.</span>
+				</p>
+				
+			</div>
+		
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-6   ">
+			<div class="logo_right">
+				<p>
+				 <span style="color: #E4E159;">8 495 166 2615</span><br>
+				 <a href="#">заказать звонок</a></p>
+			</div>
+			</div>
+	</div>
 </div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">	
+			<div class="vzisk">
+				<p>
+					Повысь свою безопасность<br>
+					вождения в темное время суток<br>
+					<span>всего 4700руб. за комплект!</span>
+					
+				</p>
+				<div class="header_zakaz">
+				
+				<div class="btns" onClick="popup('request', 'Блок «Ваш главный бухгалтер»', 'Получить бесплатную<br/> консультацию и расчёт', 'Оставьте заявку,<br/>чтобы узнать о предлагаемых решениях', 'Получить бесплатную<br/> консультацию и расчёт');">Подобрать лампу
 
-<div id="opencontent2" style="display: none">
-<p class="text-2">
-Как правило нет. Но! Нужно следить чтобы сосуд с водой не «цвел» и не засасывал грязь в питающую трубку. При засорении питающих трубок их необходимо продуть и вновь заполнить водой. 
-</p>
-</div>
+					</div>
+			</div>
+			</div>
+			
 
-<div id="opencontent3" style="display: none">
-<p class="text-3">Проработает и год и два. Все зависит от того, какого объема емкость с водой вы используете. Объем подбирается и рассчитывается индивидуально для каждого растения. </p>
-</div>
-<div id="opencontent4" style="display: none">
-<p class="text-3">Да есть! Нельзя ставить для полива сиккулентов (род кактусов) и любых сортов орхидей. </p>
-</div>
-                      
-                    </div>
-                     
-                  </div>
-
-              </div>
-          </div>
-      </div>
-      <div class="b4 b4_mobile">
-          <div class="container">
-            
-              <div class="row">
-                  <h3>Часто задаваемые вопросы?</h3>
-                  <div class="h7">Нажмите на вопрос, чтобы узнать</div>
-                  <div class="h7_mobile">Нажмите на вопрос, чтобы узнать. Ответ откроется снизу</div>
-                  <div class="col-md-6">
-                    <a class="open-content" href="javascript:collapsElement('opencontent_mobile1')" title="" rel="nofollow"><p>И все таки! Почему вода будет течь в горшок? Это же нарушает 
-               закон сообщающихся сосудов
-                  </p></a></br>
-                  <div id="opencontent_mobile1" style="display: none">
-<p class="text-2">
-Как правило нет. Но! Нужно следить чтобы сосуд с водой не «цвел» и не засасывал грязь в питающую трубку. При засорении питающих трубок их необходимо продуть и вновь заполнить водой. 
-</p>
-</div>
-                    <a class="open-content" href="javascript:collapsElement('opencontent_mobile2')" title="" rel="nofollow"><p>Требует ли система автополива обслуживания?</p></a></br>
-
-<div id="opencontent_mobile2" style="display: none">
-<p class="text-2">
-Как правило нет. Но! Нужно следить чтобы сосуд с водой не «цвел» и не засасывал грязь в питающую трубку. При засорении питающих трубок их необходимо продуть и вновь заполнить водой. 
-</p>
-</div>
-                    <a class="open-content" href="javascript:collapsElement('opencontent_mobile3')" title="" rel="nofollow"><p>Мне, например нужно уехать. А месяц она проработает?</p></a><br>
-                    <div id="opencontent_mobile3" style="display: none">
-<p class="text-3">Проработает и год и два. Все зависит от того, какого объема емкость с водой вы используете. Объем подбирается и рассчитывается индивидуально для каждого растения. </p>
-</div>
-
-                     <a class="open-content" href="javascript:collapsElement('opencontent_mobile4')" title="" rel="nofollow"><p>Есть какие-нибудь ограничения для использования автополива Garden?</p></a><br>
-                     <div id="opencontent_mobile4" style="display: none">
-<p class="text-3">Да есть! Нельзя ставить для полива сиккулентов (род кактусов) и любых сортов орхидей. </p>
-</div>
-                     <div class="vopros svoy_vopros">
-                     <p><a href="#win1" class="butt2" onClick="popup('vopros','Блок «вопрос»');">Задать свой вопрос</a></p>
-                    </div>
-                        
-                  </div>
-                    </div>
-                     
-                  </div>
-
-              </div>
-          </div>
-      </div>
-          </div>
-
-      </div>
-      <div class="b6">
-          <div class="container">
-              <div class="row">
-                  <h3>Подготовка к работе.</h3>
-                  <img src="img/601.png" tppabs="img/601.png" alt="" class="img-responsive">
-              </div>
-          </div>          
-      </div> 
-       <div class="container">
-              <div class="row">
-               
-      <div class="b8">
-
-          <h3><span>Garden</span> в действии</h3>
 </div>
 </div></div>
-<div class="slider_1">
-  <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-  <!-- Индикаторы для карусели -->
-  <ol class="carousel-indicators">
-    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>   
-  <!-- Слайды карусели -->
-  <div class="carousel-inner">
-    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-    <div class="active item">
-      <div class="item_slide1"></div>
-      <div class="carousel-caption">
-        <h3>Как известно, ошибки при поливе случаются довольно часто. Многие переоценивают потребность растений в воде: либо переливают, либо не доливают. Доверьтесь поливу Системы  Garden и ваши растения никогда не испытают на себе ни засуху, ни залив! </h3>
-    
-      </div>
-    </div>
-    <!-- Слайд №2 -->
-    <div class="item">
-      <div class="item_slide2"></div>
-      <div class="carousel-caption">
-        <h3>Система  Garden позволит вашим растениям самостоятельно решать, какое количество воды ему необходимо в данный момент. Система Garden сама рассчитает точное количество воды и сам же его и польет. Таким образом, вы не сможете ни перелить, ни пересушить вашего питомца.</h3>
-      
-      </div>
-    </div>
-    <!-- Слайд №3 -->
-    <div class="item">
-     <div class="item_slide3"></div>
-      <div class="carousel-caption">
-        <h3>Так же, большим испытанием для наших «питомцев», выращиваемых в помещении, является промежуточный период - когда время полива, казалось бы, еще не пришло, а земля уже начинает высыхать и растения при этом начинают испытывать недостаток влаги.</h3>
-       
-      </div>
-    </div>
-  </div>
-  <!-- Навигация для карусели -->
-  <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
+
+
+
+	</header>
+	<content>
+
+<div class="bg_content_2">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<div class="znan">
+				<div class="znan_in">
+					<div class="znan_in_1">
+					<p>Вы знаете, что <span> 90%</span> LED-ламп <span>продают бракованными</span><br>не тестируя  их вовсе?
+					</div>
+					<div class="znan_in_2">
+						Мы знаем, что нужно сделать, чтобы Вы 
+						получили качественный товар.
+						Знаем как провести тестирование, которое  
+						действительно полагается. 
+						
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+			<div class="col-sm-12 col-md-6 col-lg-6">
+
+				<div class="zayavka_cont_2">
+<div class="zayavka_cont_2_desc">ОСТАВЬТЕ ЗАЯВКУ,<br>
+						<span>чтобы подобрать LED-лампу<br> для вашего авто</span></div>
+					<form>
+						<div class="desc">Имя</div>
+						<label class="name required">
+							<input type="text" name="name" placeholder="Иван Иванов">
+						</label><br/>
+						<div class="desc">Телефон</div>
+						<label class="phone required phone1">
+							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
+						</label>
+						<label class="phone required phone2">
+							<input type="text" name="phone2" maxlength="6" placeholder="123">
+						</label>
+						<label class="phone required phone4">
+							<input type="text" name="phone3" maxlength="10" placeholder="4567890">
+						</label><br/>
+						<div class="desc">E-mail</div>
+						<label class="email required">
+							<input type="text" name="email" placeholder="ivanov@mail.ru">
+						</label><br/>
+						<div data-name="request" class="button noselect btn" onClick="formname('Блок «Уменьшение налога на прибыль»');">Воспользоваться предложением</div>
+					</form>
+
+				</div>
+			</div>
+		
+	</div>
 </div>
 </div>
-</div></div>
-      </div>
-   
-      <div class="b7">
-         <h3>Как мы работаем</h3>
-   <div class="rabota">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="block block1">
-          <div class="icon">
-            <div class="num">1</div>
-            <div class="arrow">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-          <div class="block_h1">ЗАПОЛНЯЕТЕ ФОРМУ </div>
-          <p>
-             </p>
-        </div>
-        <div class="block block2">
-          <div class="icon">
-            <div class="num">2</div>
-            <div class="arrow">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-          <div class="block_h1">ЗВОНОК МЕНЕДЖЕРА</div>
-          <p>
-            УТОЧНЕНИЕ КОЛ-ВА ЗАКАЗА <br/>
-         И АДРЕСА ДОСТАВИ</p>
-        </div>
-        <div class="block block3">
-          <div class="icon">
-            <div class="num">3</div>
-             <div class="arrow">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-          <div class="block_h1">ОТПРАВКА ТОВАРА</div>
-          <p>
-            </p>
-        </div>
-        <div class="block block4">
-          <div class="icon">
-            <div class="num">4</div>
-           
-          </div>
-          <div class="block_h1">ПОЛУЧЕНИЕ НА ПОЧТЕ РОССИИ</div>
-          
-        </div>
+<div class="test-oglav"><p>Чем мы тестируем</p></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="test-item">
+				<div class="test-item-oglav">Спектрометр, люксметр, USB тепловизор</div>
+				<div class="test-item-img"><img src="img/pribor1.jpg" alt=""></div>
+			</div>
+			<div class="test-item">
+				<div class="test-item-oglav">Линзы H11</div>
+				<div class="test-item-img"><img src="img/pribor2.jpg" alt=""></div>
+			</div>
+
+			
+		</div>
+		<div class="col-md-4">
+			<div class="test-item">
+				<div class="test-item-oglav">Линзы H7</div>
+				<div class="test-item-img"><br><br><br><br><img src="img/pribor3.jpg" alt=""></div>
+			</div>
+			<div class="test-item">
+				<div class="test-item-oglav">Линзы H1</div>
+				<div class="test-item-img"><img src="img/pribor4.jpg" alt=""></div>
+			</div>
+
+			
+		</div>
+		<div class="col-md-4">
+			<div class="test-item">
+				<div class="test-item-oglav">Фотометрическая сфера</div>
+				<div class="test-item-img"><br><br><img src="img/pribor5.jpg" alt=""></div>
+			</div>
+			<div class="test-item">
+				<div class="test-item-oglav">Оборудование</div>
+				<div class="test-item-img"><img src="img/pribor6.jpg" alt=""></div>
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+
+<div class="istor_bg">
+<div class="container" id="isorii">
+	<div class="else">
+		<p>Наш ассортимент <br>
+Led-Ламп</p>
+	</div>
+	<div class="container">
+	<div class="istor">
+
+		<div class="col-md-6 col-lg-6">
+			<div class="istor_img">
+			
+				<img src="img/5.jpg" alt="">
+				
+			</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="istor_text">
+			<div class="istor_text_nazv">
+				Land Rover Freelander 2<br>
+				<span>Сумма ущерба: 774056,40 рублей.</span>
+			</div>
+			<div class="istor_text_summa">
+				<p class="posle">Комплект светодиодных ламп <br>
+				<span> К6 (H4) </span></p>
+			</div>
+			<div class="istor_text_text">
+				<ul>
+	
+					<li>
+						<span>Характеристики: </span><br>
+						
+<span>1. </span>Без вентилятора.<br>
+<span>2. </span> LED чип :<span> Philips Lumileds Luxeon Z ES</span><br>
+<span>3. </span>Мощность :<span> 22 Вт</span> <br>
+<span>4. </span>Напряжение :<span> 6-32В </span><br>
+<span>5. </span>Материал :<span> Алюминий 6063 </span><br>
+<span>6. </span>Срок службы :<span> 30000 Часов </span><br>
+<span>7. </span>Световой поток : <span> 2000/2000 lm  </span><br>
+<span>8. </span> Гарантия :<span> 12 месяцев </span><br>
+					</li>
+					<li><span>5 900 руб./комплект</span></li>
+				</ul>
+				
+			</div>
+			<div class="isor_btn_md_lg">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+                    <div class="isor_btn_mobile ">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+		</div>
+	</div>
+
+	
+</div>
 
 
-            </div>
-          </div>
-        </div>
-      </div>
-        <a name="m6"></a>
-          <div class="container">
-              <div class="row">
-                 <h3>Цены</h3>
-                  <div class="col-md-4 col-xs-12">
-                      <div class="block">
-                          <span style="  font-size: 20px; ">2 штук</span>
-                          <div style="background: #fcfcfc;">
-                              <img src="img/price.png" tppabs="img/price.png">
-                              <span  class="new">315 руб/шт. </span><br>
-                            
-                              <span style="font-size: 26px;">+ доставка по тарифам почты</span><br>
-                              <div class="margin_20">
-                                  <a href="#win2" class="butt3" style="" onClick="popup('zakaz','Блок «Заказ низ»');">Перезвоните мне</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-xs-12">
-                      <div class="block">
-                          <span style="  font-size: 20px; ">5 штук</span>
-                          <div style="background: #fcfcfc;">
-                              <img src="img/price.png" tppabs="img/price.png">
-                              
-                              <span class="new">283 руб/шт. </span><br>
-                              <span style="font-size: 26px;">+ доставка по тарифам почты</span><br>
-                              <div class="margin_20">
-                                  <a href="#win2" class="butt3" style="" onClick="popup('zakaz','Блок «Заказ низ»');">Перезвоните мне</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-xs-12">
-                      <div class="block">
-                          <span style="  font-size: 20px; ">10 штук</span>
-                          <div style="background: #fcfcfc;">
-                              <img src="img/price.png" tppabs="img/price.png">
-                         
-                              <span class="new">252 руб/шт. </span><br>
-                              <span style="font-size: 26px;">+ БЕСПЛАТНАЯ ДОСТАВКА</span>
-                              <div class="margin_20">
-                                  <a href="#win2" class="butt3" onClick="popup('zakaz','Блок «Заказ низ»');">Перезвоните мне</a>
-                              </div>
-                           
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                  <div class="row">
-                      
-                         <div class="col-xs-12">
-                             <h4>Успей заказать до 
-                             <script type="text/javascript">
-                                     d = new Date(); p = new Date(d.getTime() +  1*86400000);
-                                     monthA = 'января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(',');
-                                     document.write(p.getDate() + ' ' + monthA[p.getMonth()]);   
-                                 </script> и получи<br>скидку 53%</h4>
-                         </div></div>
+<div class="istor">
 
-              </div>
-     <div class="why">
-     <div class="why_bg">
-      <a name="m5"></a>
-      <div class="container">
-            <div class="col-md-12">
-               <h3>Отзывы наших покупателей</h3>
-              <div class="otziv">
-                <div class="otviv_verh">
-                  <div class="otziv_img"><img src="img/otziv1.jpg" alt="Довольный клиент"></div>
-                  <div class="otziv_verh_text">Андреева Елена. г.Тула 42 года.</div> 
-                  
-                </div>
-                <div class="otziv_text"><p>Решила оставить отзыв и сказать спасибо за нужную систему...<br>Увидела эту систему у Гали, подруги по работе. Зашла к ней вечером, а она мне давай нахваливать "автополивалку" - так она ее назвала. Gardner я и себе купила и теперь не страшно уехжать надолго, и не надо беспокоиться о цветах в горшках. Я уезжала в отпуск, на 2 недели, к родителям в Украину, и поставила 3-х литровую банку воды на каждый цветок. Правда попросила соседку поглявывать за цветами. По приезду соседка сказала, что даже не подливала воды за все время , что меня не было. Вода даже осталась. Поэтому можно и меньше посуду ставить или все трубки опустить в одну большую посуду</p></div>
-              </div>
-              <div class="otziv">
-                <div class="otviv_verh">
-                  <div class="otziv_img"><img src="img/otziv2.jpg" alt="Довольный клиент"></div>
-                  <div class="otziv_verh_text">Ляпичев Валерий. 54 года г.Краснодар</div> 
-                  
-                </div>
-                <div class="otziv_text"><p>Купил сие устройство 2 недели назад. На пробу 5 шт. А написать данный отзыв меня заставили некоторые события, которыми хочу поделиться с Вами, чтобы Вы указали их на сайте. После монтажа, хотя все делал по инструкции, ничего не заработало. Просшло 2 дня, но полива не было (земля высохла). Разобравшись в чем дело, выяснил, что не плотно село уплотнение при закрытии крышечки на самой "морковке" и видимо подсасывался воздух. Проблема была решена и в течении контролируемого периода (5 дней) земля увлажнялась. Уж думал возвращать обратно товар.</p></div>
-              </div>
-              <div class="otziv">
-                <div class="otviv_verh">
-                  <div class="otziv_img"><img src="img/otziv3.jpg" alt="Довольный клиент"></div>
-                  <div class="otziv_verh_text">Хисамова Ольга. г. Уфа 1970 г.р.</div> 
-                  
-                </div>
-                <div class="otziv_text"><p>Здравствуйте, меня зовут Ольга. Я из Башкирии. Работаю в РЖД проводницей . Рекламу капельного полива увидела в интернете. Как оказалось таких систем полива много и Я не знала какую выбрать. Почитав отзывы об этих системах пришла к выводу, что ни одной из них не могу отдать предпочтение и выбор сделала исходя из цены. Взяла сразу 10 шт. , что бы хватило на цветы в 2-х комнатах на окнах. Ни разу не пожалела о покупке. По специфике работы часто бываю в разъездах и эта система полива меня ни разу не подвела. Спасибо, что продаете нужные вещи.</p></div>
-              </div>
-              
+		<div class="col-md-6 col-lg-6">
+			<div class="istor_img">
+			
+				<img src="img/5.jpg" alt="">
+				
+			</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="istor_text">
+			<div class="istor_text_nazv">
+				Land Rover Freelander 2<br>
+				<span>Сумма ущерба: 774056,40 рублей.</span>
+			</div>
+			<div class="istor_text_summa">
+				<p class="posle">Комплект светодиодных ламп <br>
+				<span> К6 (H4) </span></p>
+			</div>
+			<div class="istor_text_text">
+				<ul>
+	
+					<li>
+						<span>Характеристики: </span><br>
+						
+<span>1. </span>Без вентилятора.<br>
+<span>2. </span> LED чип :<span> Philips Lumileds Luxeon Z ES</span><br>
+<span>3. </span>Мощность :<span> 22 Вт</span> <br>
+<span>4. </span>Напряжение :<span> 6-32В </span><br>
+<span>5. </span>Материал :<span> Алюминий 6063 </span><br>
+<span>6. </span>Срок службы :<span> 30000 Часов </span><br>
+<span>7. </span>Световой поток : <span> 2000/2000 lm  </span><br>
+<span>8. </span> Гарантия :<span> 12 месяцев </span><br>
+					</li>
+					<li><span>5 900 руб./комплект</span></li>
+				</ul>
+				
+			</div>
+			<div class="isor_btn_md_lg">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+                    <div class="isor_btn_mobile ">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+		</div>
+	</div>
 
-                          <div class="col-xs-12">
-                              <form class="form">
-                                  <input type="text" name="name" placeholder="Введите ФИО" required="" class="form_input">
-                                  <input type="text" name="phone" placeholder="Введите ваш телефон" required="" class="form_input">
-                                  <button onClick="formname('Блок «перезвоните»');">Перезвонить</button>
-                              </form>
-                               <div class="div" style="width: 100%;text-align: center;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div><p style="text-align: center;">Email : info@8x6.ru</p>
-                          </div></div></div></div>
-                      
-                
-       <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-      <script type="text/javascript" src="js/validator.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
-  
-   </body>
+	
+</div>
+<div class="istor">
+
+		<div class="col-md-6 col-lg-6">
+			<div class="istor_img">
+			
+				<img src="img/5.jpg" alt="">
+				
+			</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="istor_text">
+			<div class="istor_text_nazv">
+				Land Rover Freelander 2<br>
+				<span>Сумма ущерба: 774056,40 рублей.</span>
+			</div>
+			<div class="istor_text_summa">
+				<p class="posle">Комплект светодиодных ламп <br>
+				<span> К6 (H4) </span></p>
+			</div>
+			<div class="istor_text_text">
+				<ul>
+	
+					<li>
+						<span>Характеристики: </span><br>
+						
+<span>1. </span>Без вентилятора.<br>
+<span>2. </span> LED чип :<span> Philips Lumileds Luxeon Z ES</span><br>
+<span>3. </span>Мощность :<span> 22 Вт</span> <br>
+<span>4. </span>Напряжение :<span> 6-32В </span><br>
+<span>5. </span>Материал :<span> Алюминий 6063 </span><br>
+<span>6. </span>Срок службы :<span> 30000 Часов </span><br>
+<span>7. </span>Световой поток : <span> 2000/2000 lm  </span><br>
+<span>8. </span> Гарантия :<span> 12 месяцев </span><br>
+					</li>
+					<li><span>5 900 руб./комплект</span></li>
+				</ul>
+				
+			</div>
+			<div class="isor_btn_md_lg">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+                    <div class="isor_btn_mobile ">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+		</div>
+	</div>
+
+	
+</div>
+<div class="istor">
+
+		<div class="col-md-6 col-lg-6">
+			<div class="istor_img">
+			
+				<img src="img/5.jpg" alt="">
+				
+			</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="istor_text">
+			<div class="istor_text_nazv">
+				Land Rover Freelander 2<br>
+				<span>Сумма ущерба: 774056,40 рублей.</span>
+			</div>
+			<div class="istor_text_summa">
+				<p class="posle">Комплект светодиодных ламп <br>
+				<span> К6 (H4) </span></p>
+			</div>
+			<div class="istor_text_text">
+				<ul>
+	
+					<li>
+						<span>Характеристики: </span><br>
+						
+<span>1. </span>Без вентилятора.<br>
+<span>2. </span> LED чип :<span> Philips Lumileds Luxeon Z ES</span><br>
+<span>3. </span>Мощность :<span> 22 Вт</span> <br>
+<span>4. </span>Напряжение :<span> 6-32В </span><br>
+<span>5. </span>Материал :<span> Алюминий 6063 </span><br>
+<span>6. </span>Срок службы :<span> 30000 Часов </span><br>
+<span>7. </span>Световой поток : <span> 2000/2000 lm  </span><br>
+<span>8. </span> Гарантия :<span> 12 месяцев </span><br>
+					</li>
+					<li><span>5 900 руб./комплект</span></li>
+				</ul>
+				
+			</div>
+			<div class="isor_btn_md_lg">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+                    <div class="isor_btn_mobile ">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+		</div>
+	</div>
+
+	
+</div>
+<div class="istor">
+
+		<div class="col-md-6 col-lg-6">
+			<div class="istor_img">
+			
+				<img src="img/5.jpg" alt="">
+				
+			</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="istor_text">
+			<div class="istor_text_nazv">
+				Land Rover Freelander 2<br>
+				<span>Сумма ущерба: 774056,40 рублей.</span>
+			</div>
+			<div class="istor_text_summa">
+				<p class="posle">Комплект светодиодных ламп <br>
+				<span> К6 (H4) </span></p>
+			</div>
+			<div class="istor_text_text">
+				<ul>
+	
+					<li>
+						<span>Характеристики: </span><br>
+						
+<span>1. </span>Без вентилятора.<br>
+<span>2. </span> LED чип :<span> Philips Lumileds Luxeon Z ES</span><br>
+<span>3. </span>Мощность :<span> 22 Вт</span> <br>
+<span>4. </span>Напряжение :<span> 6-32В </span><br>
+<span>5. </span>Материал :<span> Алюминий 6063 </span><br>
+<span>6. </span>Срок службы :<span> 30000 Часов </span><br>
+<span>7. </span>Световой поток : <span> 2000/2000 lm  </span><br>
+<span>8. </span> Гарантия :<span> 12 месяцев </span><br>
+					</li>
+					<li><span>5 900 руб./комплект</span></li>
+				</ul>
+				
+			</div>
+			<div class="isor_btn_md_lg">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+                    <div class="isor_btn_mobile ">
+					<p><a id="request" onClick="popup('request', 'Вариант работы «Специальные услуги»',  'Оставьте заявку', );">Заказать</a></p>
+				</div>
+		</div>
+	</div>
+
+	
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container" id="preimushestvo">
+	<div class="else">
+		Почему вам выгодно заказывать у нас?
+	</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-lg-4">
+			<div class="else_desc">
+<div class="smallimg1"></div>
+				<p>экономия<br>
+					<span>покупая заведомо качественный<br>товар вы избавляетесь<br> от лишних затрат </span>
+				</p>
+
+				
+			</div>
+
+		
+
+			
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-4">
+			<div class="else_desc">
+<div class="smallimg3"></div>
+				<p>3 года<br>
+					<span>на рынке</span>
+				</p>
+
+				
+			</div>
+
+
+			
+		</div>
+				<div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+			<div class="else_desc">
+<div class="smallimg5"></div>
+				<p>3385<br><span>продаж</span></p>
+
+				
+			</div>
+
+
+			
+		</div>
+
+	</div>
+</div>
+</div>
+
+
+
+<div class="bg_content_2">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<div class="znan">
+				<div class="znan_in">
+					<div class="znan_in_1">
+					<p>Понятия<span> «дорого»</span><br>у нас <span>не существует!</span>
+					</div>
+					<div class="znan_in_2">
+						Заставлять вас переплачивать за ненужные
+услуги — не в наших интересах. Мы подберём для
+вас именно тот вариант сотрудничества, который
+будет вписываться в рамки вашего бюджета.
+					</div>
+					<div class="znan_in_3">
+						Чтобы воспользоваться предложением,<br>
+						заполните форму <span class="desc"> справа</span><span class="mob">снизу</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+			<div class="col-sm-12 col-md-6 col-lg-6"">
+				
+				<div class="zayavka_cont_2">
+<form>
+						<div class="desc">Имя</div>
+						<label class="name required">
+							<input type="text" name="name" placeholder="Иван Иванов">
+						</label><br/>
+						<div class="desc">Телефон</div>
+						<label class="phone required phone1">
+							<input type="text" name="phone1" maxlength="5" placeholder="+7" value="+7">
+						</label>
+						<label class="phone required phone2">
+							<input type="text" name="phone2" maxlength="6" placeholder="123">
+						</label>
+						<label class="phone required phone4">
+							<input type="text" name="phone3" maxlength="10" placeholder="4567890">
+						</label><br/>
+						<div class="desc">E-mail</div>
+						<label class="email required">
+							<input type="text" name="email" placeholder="ivanov@mail.ru">
+						</label><br/>
+				<div data-name="request" class="button noselect btn" onClick="formname('Блок «Получить бесплатную консультацию!»');">Получить бесплатную консультацию</div>
+			</form>
+
+				</div>
+			</div>
+		
+	</div>
+</div>
+</div>
+	</content>
+	<footer>
+<div class="foter_bg" id="contakti">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-6">
+				<div class="foot">
+					<div class="left">
+					<span>Адрес:</span>
+					<p>г. Москва,</p>
+					<span>Tелефон:</span>
+					<p class="comagic_phone">8 495 166 2615</p>
+					<span>E-mail:</span>
+					<p></p>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6">
+				<div class="foot">
+					<div class="right">
+					<div class="text">Остались <span>вопросы?</span></div>
+					<div class="text_btn" onClick="popup('question', '');">Задайте их менеджеру</div>
+					<div class="div" style="margin-top: 20px;"><a style="text-align: center;" onClick="popup('politika')";> Политика конфеденциальности </a></div>
+				</div>
+
+				</div></div>
+		</div>
+	</div>
+</div>
+
+<div class="c17">
+	<div class="container"><div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div id="map"></div>
+		</div>
+	</div></div>
+		
+	</div>
+
+
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/validator.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+	<script type="text/javascript" src="js/ymaps.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</footer>
+
+
+</body>
 </html>
