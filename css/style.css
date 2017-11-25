@@ -1052,3 +1052,9 @@ text-align: center;
 .bg_content_preimushestvo .container{padding-bottom: 3%;}
 
 .container .preimushestvo-oglav {color: #666;}
+.dostavka{margin-top: 10%;margin-bottom: 30%;}
+.dostavka-text{width: 100%; margin-bottom: 5%; font-weight: bold;font-size: 1.5em; color: #666;text-align: center;}
+.dostavka-text span{color: #000;}
+.dostavka-sroki p {font-weight: bold;font-size: 1.5em;text-align: center;padding-bottom: 5%;}
+.dostavka-sroki ol {list-style-type: circle; width: 40%; margin: 0 auto}
+.dostavka-sroki ol li {padding: 1%;font-weight: bold;font-size: 1.2em;}
