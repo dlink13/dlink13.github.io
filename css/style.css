@@ -213,8 +213,9 @@ header {
 .logo p {font-size: 2.5em;color: #E4E159;}
 .logo p span {color:#fff; font-size: 0.5em;}
 .logo_right {
-	margin-top: 80px;
+	margin-top: 50px;
 	width: 100%;
+	margin-bottom: 110px;
 
 }
 .logo_right p a {
@@ -228,7 +229,7 @@ color: #fff;
 	/*color: #8e001c;*/
 	font-size: 1.5em;
 	text-align: right;
-	margin-top: 5%;
+	margin-top: 1%;
 
 }
 .logo_right p span {
@@ -1058,3 +1059,10 @@ text-align: center;
 .dostavka-sroki p {font-weight: bold;font-size: 1.5em;text-align: center;padding-bottom: 5%;}
 .dostavka-sroki ol {list-style-type: circle; width: 40%; margin: 0 auto}
 .dostavka-sroki ol li {padding: 1%;font-weight: bold;font-size: 1.2em;}
+.logo_right i {padding-left: 1%; padding-right: 2%;}
+.logo_right .fa-vk {font-size: 1.3em;margin-right: 10%;}
+.logo_right .fa-vk:hover {color: #507299;}
+.logo_right .fa-instagram {font-size: 1.3em;margin-right: 10%;}
+.logo_right .fa-instagram:hover {color: #E4E159}
+.logo_right .btns {background:none; font-size: 1.5em;margin-top: 1%;padding-top: 1%;}
+.logo_right .btns:hover {background:none; text-decoration: underline;}
