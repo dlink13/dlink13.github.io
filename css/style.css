@@ -588,6 +588,7 @@ background: url(../img/c9_bg.jpg) center center no-repeat;
 }
 .istor_img img{
 	width: 100%;
+	height: 200px;
 }
 .isor_btn_md_lg {
 	margin-top: 50px;
@@ -1066,3 +1067,6 @@ text-align: center;
 .logo_right .fa-instagram:hover {color: #E4E159}
 .logo_right .btns {background:none; font-size: 1.5em;margin-top: 1%;padding-top: 1%;}
 .logo_right .btns:hover {background:none; text-decoration: underline;}
+#isorii {
+	margin-top: 5%;
+}

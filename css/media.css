@@ -16,6 +16,7 @@ and (max-device-width : 480px) {
 	.header_zakaz .btns{font-size: 1em;}
 	.logo_right p{text-align: center;}
 	.logo_right .btns{margin-right: 25%;} 
+	.test-item .test-item-img img{height: auto;}
 	.znan {
 
 		margin-left: 0 !important;
@@ -735,6 +736,8 @@ background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,
 	font-size: 0.8em;
 }
 .vzisk{text-align: center;}
+	.test-item{height: auto;}
+	.istor_img img{height: auto;}
 }
 
 
@@ -744,7 +747,8 @@ background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,
 @media only screen 
 and (min-device-width : 480px) 
 and (max-device-width : 767px) {
-/* Styles */
+/* Styles */.istor_img img{height: auto;}
+.test-item .test-item-img img{height: auto;}
 .vzisk{text-align: center;}
 	.preimushestvo-text span{font-size: 1em;}
 	.header_zakaz .btns{font-size: 1em;}
@@ -1478,12 +1482,14 @@ background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,
 .else_desc p {
 	font-size: 0.8em;
 }
-
+	.test-item{height: auto;}
 }
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 991px) {
 /* Styles */
+.istor_img img{height: auto;}
+.test-item .test-item-img img{height: auto;}
 .vzisk{text-align: center;}
 	.preimushestvo-text span{font-size: 1em;}
 	.header_zakaz .btns{font-size: 1em;}
@@ -2212,6 +2218,7 @@ background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,
 		min-height: 760px!important;
 		
 	}
+		.test-item{height: auto;}
 }
 @media only screen 
 and (min-device-width : 992px) 
@@ -2220,6 +2227,7 @@ and (max-device-width : 5000px){
 		min-height: 760px;
 		
 	}
+	.test-item{height: auto;}
 	.zayavka_cont_2 {
 		height: auto!important;
 	}
