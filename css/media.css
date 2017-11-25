@@ -3,6 +3,8 @@
 and (min-device-width : 220px) 
 and (max-device-width : 480px) {
 /* Styles */
+.otziv-img {width: 100%;}
+.otziv-img img {margin-left: 20%;}
 .preimushestvo-img img {height: 120px;width: 120px;}
 .logo {
 	display: block;

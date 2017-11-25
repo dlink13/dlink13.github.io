@@ -1034,8 +1034,8 @@ text-align: center;
 .otziv{margin-top: 10%;margin-bottom: 10%;}
 .otziv-oglav {width: 100%;text-align: center;margin-top: 10%;margin-bottom: 5%;}
 .otziv-oglav p {color: #000; font-weight: bold; text-transform: uppercase;font-size: 2em;}
-.otziv-img {width: 50%;margin: 0 auto; margin-top: 3%;margin-bottom: 5%;}
-.otziv-img img{width: 100%; border-radius: 50%;}
+.otziv-img {width: 30%;margin: 0 auto; margin-top: 3%;margin-bottom: 5%;}
+.otziv-img img{width: 200px;height: 200px; border-radius: 50%;margin:0 auto;}
 .otziv-text {text-align: center;font-size: 1.2em;width: 80%;margin: 0 auto;}
 #preimushestvo{margin-top: 5%;margin-bottom: 5%;}
 #preimushestvo .else {margin-bottom: 5%;}
