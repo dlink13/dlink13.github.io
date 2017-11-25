@@ -209,8 +209,8 @@ header {
 	color: #fff;
 	text-decoration: underline;
 }
-.logo {display:flex; margin-top: 50px; justify-content: center;}
-.logo p {padding-top: 5%;padding-left: 5%;font-size: 2.5em;color: #E4E159;}
+.logo {display:flex; margin-top: 50px; justify-content: left;}
+.logo p {font-size: 2.5em;color: #E4E159;}
 .logo p span {color:#fff; font-size: 0.5em;}
 .logo_right {
 	margin-top: 80px;
@@ -227,7 +227,7 @@ color: #fff;
 	color: #fff;
 	/*color: #8e001c;*/
 	font-size: 1.5em;
-	text-align: center;
+	text-align: right;
 	margin-top: 5%;
 
 }
