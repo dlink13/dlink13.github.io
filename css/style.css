@@ -175,13 +175,13 @@ a:hover {
 }
 header {
 
-	background: url(../img/c1_bg1.jpg) top center no-repeat;
+	background: url(../img/c1_bg1.png) top center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 
 }
 .header_bg{
-	background-color: rgba(31, 30, 30, 0.56);width: 100%;
+	background-color: rgba(31, 30, 30, 0.88);width: 100%;
 }
 
 .desc_menu {
@@ -1055,7 +1055,7 @@ text-align: center;
 .preimushestvo-text p {border-top: 1px solid #666}
 
 .preimushestvo-text span { text-transform: uppercase;font-weight: bold;font-size: 1.3em;padding-bottom: 10%;}
-.bg_content_preimushestvo .container{padding-bottom: 3%; border-bottom: 0.5px solid #CCC;}
+.bg_content_preimushestvo .container{padding-bottom: 3%;}
 
 .container .preimushestvo-oglav {color: #666;}
 .dostavka{margin-top: 10%;margin-bottom: 30%;}
@@ -1152,3 +1152,13 @@ text-align: center;
     top: 50px;
     right: -34px;
 }
+.bg-1 {width: 100%;background: url(../img/bg1.png) center center no-repeat; -webkit-background-size: cover;
+background-size: cover;}
+.bg-1-bg {background: rgba(31, 30, 30, 0.88);}
+#preimushestvo h2 {color: #fff;}
+#preimushestvo  .else_desc .else-underl {color: #fff;}
+#preimushestvo .else_desc p {color: #fff;}
+.bg-1-bg #block-3  h2 {color: #fff;}
+.bg-1-bg #block-3  .col-lg-2 h2 {color: #fff;}
+.bg-1-bg #block-3  .col-lg-2 h6 {color: #fff;}
+.bg-1-bg #block-3  .col-lg-2 p  {color: #fff;}
