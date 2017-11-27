@@ -175,13 +175,13 @@ a:hover {
 }
 header {
 
-	background: url(../img/c1_bg1.jpg) top right no-repeat;
+	background: url(../img/c1_bg1.jpg) top center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 
 }
 .header_bg{
-	background-color: rgba(31, 30, 30, 0.88);width: 100%;
+	background-color: rgba(31, 30, 30, 0.56);width: 100%;
 }
 
 .desc_menu {
