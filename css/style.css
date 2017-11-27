@@ -223,6 +223,7 @@ text-transform: uppercase;
 font-weight: bold;
 color: #E4E159;
 }
+.logo_right p a:hover{color: #fff;}
 .logo_right p {
 
 	color: #fff;
@@ -232,6 +233,7 @@ color: #E4E159;
 	margin-top: 1%;
 
 }
+.logo_right .btns:hover{color: #E4E159;}
 .logo_right p span {
 	text-transform: uppercase;
 	font-weight: bold;
