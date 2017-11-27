@@ -3,6 +3,7 @@
 and (min-device-width : 220px) 
 and (max-device-width : 480px) {
 /* Styles */
+#block-3 h2{text-align: center;width: 100%; font-size: 2em;}
 .otziv-img {width: 100%;}
 .otziv-img img {margin-left: 20%;}
 .preimushestvo-img img {height: 120px;width: 120px;}
@@ -1487,6 +1488,7 @@ background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,
 	font-size: 0.8em;
 }
 	.test-item{height: auto;}
+		#block-3 h2{text-align: center;width: 100%;}
 }
 @media only screen 
 and (min-device-width : 768px) 
@@ -2224,10 +2226,12 @@ background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,
 		
 	}
 		.test-item{height: auto;}
+			#block-3 h2{text-align: center;width: 100%;}
 }
 @media only screen 
 and (min-device-width : 992px) 
 and (max-device-width : 5000px){
+	#block-3 h2{text-align: center;width: 100%;}
 .istor {
 		min-height: 760px;
 		

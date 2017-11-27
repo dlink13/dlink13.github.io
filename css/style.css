@@ -1117,6 +1117,7 @@ text-align: center;
 #block-3 hr{
     width: 23%;
     display: inline-block;
+
     margin-bottom: 30px;
     height: 2px;
     background-color: #E4E159;
@@ -1162,3 +1163,8 @@ background-size: cover;}
 .bg-1-bg #block-3  .col-lg-2 h2 {color: #fff;}
 .bg-1-bg #block-3  .col-lg-2 h6 {color: #fff;}
 .bg-1-bg #block-3  .col-lg-2 p  {color: #fff;}
+.asort hr { width: 25% !important;
+}
+.asort1 hr { width: 30% !important;
+}
+.isor_btn_md_lg p a:hover{background-color: #E4E159;}
