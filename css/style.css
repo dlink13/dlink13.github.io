@@ -1039,7 +1039,7 @@ text-align: center;
 .otziv-img {width: 30%;margin: 0 auto; margin-top: 3%;margin-bottom: 5%;}
 .otziv-img img{width: 200px;height: 200px; border-radius: 50%;margin:0 auto;}
 .otziv-text {text-align: center;font-size: 1.2em;width: 80%;margin: 0 auto;}
-#preimushestvo{margin-top: 5%;margin-bottom: 5%;}
+#preimushestvo{;margin-bottom: 5%;}
 #preimushestvo .else {margin-bottom: 5%;}
 .vzisk-2 {margin-top: 3%; font-size: 1.1em;}
 .vzisk{text-align: left;}
@@ -1055,7 +1055,7 @@ text-align: center;
 .preimushestvo-text p {border-top: 1px solid #666}
 
 .preimushestvo-text span { text-transform: uppercase;font-weight: bold;font-size: 1.3em;padding-bottom: 10%;}
-.bg_content_preimushestvo .container{padding-bottom: 3%;}
+.bg_content_preimushestvo .container{padding-bottom: 3%; border-bottom: 0.5px solid #CCC;}
 
 .container .preimushestvo-oglav {color: #666;}
 .dostavka{margin-top: 10%;margin-bottom: 30%;}
