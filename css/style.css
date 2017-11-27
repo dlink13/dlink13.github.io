@@ -314,7 +314,7 @@ margin-bottom: 50px;
 	margin-top: 50px;
 	height: 200px;
 	margin-bottom: 10px;
-	border:2px solid #ccc;
+
 	width: 100%;
 	text-align: center;
 	color: #000;
@@ -322,9 +322,11 @@ margin-bottom: 50px;
 	text-transform: uppercase;
 	font-size: 1.5em;
 }
+.else_desc .fa{ font-size: 2.5em; color: #E4E159}
 .else_desc p {
-	padding: 50px;
+margin-top: 10px;
 }
+.else_desc .else-underl{border-bottom: 0.5px solid #ccc;padding-bottom: 5px;}
 .else_desc span {
 	font-style: normal;
 	font-weight: normal;
@@ -582,7 +584,7 @@ background: url(../img/c9_bg.jpg) center center no-repeat;
 }
 
 .istor_img{
-	margin-top: 150px;
+	margin-top: 2%;
 	width: 100%;
 
 }
@@ -1039,17 +1041,19 @@ text-align: center;
 .otziv-text {text-align: center;font-size: 1.2em;width: 80%;margin: 0 auto;}
 #preimushestvo{margin-top: 5%;margin-bottom: 5%;}
 #preimushestvo .else {margin-bottom: 5%;}
-.vzisk-2 {margin-top: 20%;text-align: center!important; font-size: 0.9em;}
+.vzisk-2 {margin-top: 3%; font-size: 0.9em;}
 .vzisk{text-align: left;}
 .uvel {padding-top: 5%;}
 .vzisk-top{width: 100%;}
 .vzisk-top .vzisk{margin-top: 1%;}
 .vzisk-top .vzisk p{text-align: center;margin-top: ;}
 .preimushestvo-oglav{text-align: center;font-weight: bold;font-size: 2em; margin-top: 2.5%;margin-bottom: 2.5%;}
-.preimushestvo {height: 250px; width: 100%;display: flex;flex-direction: row;margin-top: 10%;margin-bottom: 5%;}
+.preimushestvo {height: 250px; width: 100%;display: flex;flex-direction: row;margin-top: 2%;margin-bottom: 5%;}
 .preimushestvo-img{width: 45%;margin-top: 5%;}
 .preimushestvo-img img{width:130px;height: 130px; border: 0.5px solid #ccc;border-radius: 50%;}
-.preimushestvo-text {width: 55%;font-size: 1.2em;padding-left: 5%;}
+.preimushestvo-text {width: 55%;font-size: 1.2em;}
+.preimushestvo-text p {border-top: 1px solid #666}
+
 .preimushestvo-text span { text-transform: uppercase;font-weight: bold;font-size: 1.3em;padding-bottom: 10%;}
 .bg_content_preimushestvo .container{padding-bottom: 3%;}
 
@@ -1070,3 +1074,9 @@ text-align: center;
 #isorii {
 	margin-top: 5%;
 }
+.istor-block{margin-bottom: 10%;padding: 4%;background: #fff; padding-bottom: 8%;border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+#isorii {padding-bottom: 5%;}
+.preimush-img{width: 100%;margin-top: 25%;}
+.preimush-img img {width: 100%;}
+.right-img {width: 100%;}
+.right-img img {width: 100%;margin-top: 20%;
