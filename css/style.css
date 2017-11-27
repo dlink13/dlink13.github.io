@@ -622,8 +622,7 @@ background: url(../img/c9_bg.jpg) center center no-repeat;
 }
 .istor_text_summa {
 	margin-top: 25px;
-	display: flex;
-	flex-direction: row;
+	
 
 
 }
