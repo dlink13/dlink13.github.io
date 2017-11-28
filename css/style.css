@@ -213,9 +213,9 @@ header {
 .logo p {font-size: 2em;color: #E4E159;}
 .logo p span {color:#fff; font-size: 0.5em;}
 .logo_right {
-	margin-top: 50px;
+	margin-top: 10%;
 	width: 100%;
-	margin-bottom: 110px;display: flex;flex-direction: row;
+	margin-bottom: 15%;display: flex;flex-direction: row;
 
 }
 .logo-right-nomber{width: 100%;}
@@ -225,9 +225,9 @@ font-weight: bold;
 color: #fff;
 text-align: right;
 width: 100%;
-margin-top: 50px;
+margin-top: 10%;
     width: 100%;
-    margin-bottom: 110px;
+    margin-bottom: 15%;
 }
 .preimush-img-mobile{display: none;}
 .logo_right-soc-mobile {display: none;}
