@@ -215,24 +215,41 @@ header {
 .logo_right {
 	margin-top: 50px;
 	width: 100%;
-	margin-bottom: 110px;
+	margin-bottom: 110px;display: flex;flex-direction: row;
 
 }
-.logo_right p a {
+.logo-right-nomber{width: 100%;}
+.logo_right-soc  {
 text-transform: uppercase;
 font-weight: bold;
 color: #fff;
+text-align: right;
+width: 100%;
+margin-top: 50px;
+    width: 100%;
+    margin-bottom: 110px;
 }
-.logo_right p a:hover{color: #fff;}
+
+.logo_right-soc a{font-size: 1.5em;color: #fff; margin-right: 25%;}
+.logo_right a {
+
+text-transform: uppercase;
+font-weight: bold;
+color: #fff;
+text-align: right;
+}
+
+.logo_right  a:hover{color: #fff;}
 .logo_right p {
 
 	color: #fff;
 	/*color: #8e001c;*/
 	font-size: 1.5em;
-	text-align: right;
+	text-align: left;
 	margin-top: 1%;
 
 }
+.logo_right .btns {}
 .logo_right .btns:hover{color: #E4E159;}
 .logo_right p span {
 	text-transform: uppercase;
@@ -1070,7 +1087,7 @@ text-align: center;
 .logo_right .fa-vk:hover {color: #507299;}
 .logo_right .fa-instagram {font-size: 1.3em;margin-right: 10%;}
 .logo_right .fa-instagram:hover {color: #E4E159}
-.logo_right .btns {background:none; font-size: 1.5em;margin-top: 1%;padding-top: 1%;}
+.logo_right .btns {background:none; font-size: 1.5em;margin-top: 1%;padding-top: 1%; float: none;left: 0}
 .logo_right .btns:hover {background:none; text-decoration: underline;}
 #isorii {
 	margin-top: 5%;border-bottom: 0.5px solid #ccc;
