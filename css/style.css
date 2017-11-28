@@ -229,6 +229,7 @@ margin-top: 50px;
     width: 100%;
     margin-bottom: 110px;
 }
+.preimush-img-mobile{display: none;}
 .logo_right-soc-mobile {display: none;}
 .logo_right-soc a{font-size: 1.5em;color: #fff; margin-right: 25%;}
 .logo_right a {
