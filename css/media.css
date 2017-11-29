@@ -2901,6 +2901,8 @@ background-image:linear-gradient(to right,rgba(250, 250, 250, 0.5) 0,rgba(0,0,0,
 #politika {
 	
 	height: 1000px !important;
+	max-width: 800px;
+
 }
 .else_desc p {
 	font-size: 0.8em;
