@@ -1187,3 +1187,5 @@ background-size: cover;}
 .asort1 hr { width: 30% !important;
 }
 .isor_btn_md_lg p a:hover{background-color: #E4E159;}
+.right-img-mobile{display: none;width: 100%;}
+.right-img-mobile img {width: 100%;}
