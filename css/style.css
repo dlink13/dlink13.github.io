@@ -1062,7 +1062,7 @@ text-align: center;
 	margin-top: 5%;border-bottom: 0.5px solid #ccc;
 }
 .istor-block{margin-bottom: 10%;padding: 4%;background: #fff; padding-bottom: 8%;border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
-.istor-block:hover {background:#f2efef;}
+.istor-block:hover { box-shadow: 0 0 25px rgba(0,0,0,0.5);}
 #isorii {padding-bottom: 5%;}
 .preimush-img{width: 100%;margin-top: 25%;}
 .preimush-img img {width: 100%;}
