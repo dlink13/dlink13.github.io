@@ -232,4 +232,4 @@ function ipad_autoPlay() {
 function scrollTo(id) {
 	var to = $('#'+id).offset().top - 60;
 	$("html, body").animate({scrollTop: to}, 500);
-}
+};

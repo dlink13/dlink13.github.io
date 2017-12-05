@@ -137,7 +137,7 @@ background-size: cover;}
 .header-right-block p {text-align: center;}
 .header-right-block-timer h2{text-align: center;}
 .header-right-block-timer ol {display: flex;flex-direction: row;}
-.header-right-block-timer ol li {padding: 10px 5px 10px 5px; background: #FEA200; color: #fff;margin-right: 5px;font-size: 30px;}
+.header-right-block-timer ol li {padding:8px; background: #FEA200; color: #fff;margin-right: 5px;font-size: 18px;}
 .header-right-block-timer ol .dvoet {background: transparent; color: #000;}
 .header-right-block-form form {width: 100%; margin-top: 35px;}
 .header-right-block-form form .name {width: 45%; margin-right: 7.5%;}
@@ -214,3 +214,122 @@ footer {margin-top: 90px;padding-bottom: 75px;}
 .foot-block-2 ol li {margin-top: 5px;}
 .foot-block-2 ol li a{color: #000; text-decoration: underline;}
 .foot-block-3 h2 {margin-top: 0;}
+.content-block-1-container-ssilki .dv {margin-bottom: 25px;text-align: center;width: 23%; margin-left: 10px;}
+.content-block-1-container-ssilki .dv a p{width: 100%; padding: 15px;}
+.content-block-1-container-ssilki {display: flex;flex-direction: row;}
+.content-block-1-container-ssilki .dv a p{background: #ccc;}
+.content-block-1-container-ssilki .dv a p:visited {background: #fff;}
+  
+        
+        .tabs {
+            min-width: 320px;
+            
+            padding: 0px;
+            margin: 0 auto;
+        }
+        /* Стили секций с содержанием */
+        
+        .tabs > section {
+            display: none;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            max-width: 980px;
+        }
+        
+  animation-name: fadeIn;
+        }
+        /* Описываем анимацию свойства opacity */
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Прячем чекбоксы */
+        
+        .tabs > input {
+            display: none;
+            position: absolute;
+        }
+        /* Стили переключателей вкладок (табов) */
+        
+        .tabs > label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            margin-right: 20px;
+            padding: 15px 84px;
+            font-weight: 600;
+            text-align: center;
+            color: #000;
+            border: 0px solid #ddd;
+            border-width: 1px 1px 1px 1px;
+            background: #F8F8F8;
+            border-radius: 3px 3px 0 0;
+        }
+     
+        /* Изменения стиля переключателей вкладок при наведении */
+        
+        .tabs > label:hover {
+            color: #888;
+            cursor: pointer;
+        }
+        /* Стили для активной вкладки */
+        
+        .tabs > input:checked + label {
+            color: #555;
+            
+            border-bottom: 1px solid #fff;
+            background: #fff;
+        }
+        /* Активация секций с помощью псевдокласса :checked */
+        
+        #tab1:checked ~ #content-tab1,
+        #tab2:checked ~ #content-tab2,
+        #tab3:checked ~ #content-tab3,
+        #tab4:checked ~ #content-tab4 {
+            display: block;
+        }    
+        @media screen and (max-width: 680px) {
+            .tabs > label {
+                font-size: 0;
+            }
+            .tabs > label:before {
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .tabs > label {
+                padding: 15px;
+            }
+        }
+.container-bl {margin-bottom: 100px;}
+.container-in {margin-bottom: 50px;margin-top: 30px;}
+.ffff {display: flex;flex-direction: row}
+.timer {text-align: center;}<div class="timer">
+  <span id="days"></span>
+  <span id="delimiter">:</span><br><span id="desc">Дней</span></div>
+  <div class="timer">
+  <span id="hours"></span>
+  <span id="delimiter">:</span><br><span id="desc">Часов</span></div>
+    <div class="timer">
+  <span id="minutes"></span>
+  <span id="delimiter">:</span><br><span id="desc">Минут</span></div>
+    <div class="timer">
+  <span id="seconds"></span><br><span id="desc">Секунд</span></div>
+</div>
