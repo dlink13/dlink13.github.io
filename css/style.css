@@ -152,14 +152,14 @@ background-size: cover;}
 
 .content-block-1 {width: 100%}
 .content-block-1 h2 {text-align: center; margin-top: 10%;font-weight: bold;font-size: 2.5em;margin-bottom: 10%;}
-
+.content-block-1-container-block-1-img {margin-top: 50px;}
 .content-block-1-container-block-1-img img {width: 100%;}
-.content-block-1-container-block-1-text {width: 100%;font-size: 1.2em;}
+.content-block-1-container-block-1-text {width: 100%;font-size: 1.2em; margin-top: 50px;}
 .content-block-1-container-block-1-text h3 {font-weight: bold;font-size: 1.5em;margin-top: 0;}
 .content-block-1-container-block-1-ssilka {margin-bottom: 25px;width: 20%;text-align: center;}
 .content-block-1-container-block-1-ssilka a {color: #000; text-align: center;}
 .content-block-1-container-block-1 {margin-bottom: 50px;}
-.content-block-1-container-block-1-text .button {margin-left:50%;padding:15px 0 15px 0; text-align: center; background:#FFA300;color: #fff;font-size: 1.5em;width: 50%;margin-top: 5%;}
+.content-block-1-container-block-1-text .button {margin-left:50%; text-align: center; background:#FFA300;color: #fff;font-size: 1.5em;width: 40%;margin-top: 5%;}
 .bg-container-2 {background: url(../img/bg-2.png) center center no-repeat;-webkit-background-size: cover;
 background-size: cover; width: 100%;}
 .bg-container-2 h2 {margin-top: 90px;margin-bottom: 70px;}
@@ -167,8 +167,8 @@ background-size: cover; width: 100%;}
 .content-block-2 h2 {text-align: center;}
 .content-block-2 .content-block-2-form form input {width: 90%; font-size: 1.5em; color:#fff; border: none;background: transparent;border-bottom: 1px solid #fff;}
 .content-block-2 .content-block-2-form form .name {color: #fff;}
-.content-block-2 .content-block-2-form form label {width: 35%;color: #fff;}
-.content-block-2 .content-block-2-form .button {width: 20%;padding:10px 0 10px 0; text-align: center; background:#FFA300;color: #fff;font-size: 1.5em;}
+.content-block-2 .content-block-2-form form label {width: 30%;color: #fff;}
+.content-block-2 .content-block-2-form .button {width: 25%; text-align: center; background:#FFA300;color: #fff;font-size: 1.5em;}
 .container-vibor h2 {text-align: center;margin-top: 120px;margin-bottom: 20px;}
 .container-vibor {margin-bottom: 100px;}
 .vibor-img{width: 20%;margin: 0 auto;margin-bottom: 30px;}
@@ -221,13 +221,12 @@ footer {margin-top: 90px;padding-bottom: 75px;}
 .content-block-1-container-ssilki {display: flex;flex-direction: row;}
 .content-block-1-container-ssilki .dv a p{background: #ccc;}
 .content-block-1-container-ssilki .dv a p:visited {background: #fff;}
-  
-        
-        .tabs {
-            min-width: 320px;
-            
-            padding: 0px;
-            margin: 0 auto;
+
+.tabs {
+    min-width: 320px;
+    
+    padding: 0px;
+    margin: 0 auto;
         }
         /* Стили секций с содержанием */
         
@@ -236,7 +235,8 @@ footer {margin-top: 90px;padding-bottom: 75px;}
             padding: 15px;
             background: #fff;
             border: 1px solid #ddd;
-            max-width: 980px;
+            height:auto;
+           
         }
         
   animation-name: fadeIn;
@@ -321,7 +321,7 @@ footer {margin-top: 90px;padding-bottom: 75px;}
             }
         }
 .container-bl {margin-bottom: 100px;}
-.container-in {margin-bottom: 50px;margin-top: 30px;}
+
 
 
 .countdownHolder{
