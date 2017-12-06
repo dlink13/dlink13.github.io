@@ -28,7 +28,7 @@ $(document).ready(function() {
 				data: "name="+name+"&phone="+phone+"&"+sbt+"="+submit+"&email="+"&ques="+ques+"&formname="+formname+"&ref="+ref+"&utm="+request_url
 			}).always(function() {
 				thx();
-				//метрики
+			
 			
 			});
 		}
