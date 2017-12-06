@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width">
-<title>Boston</title>
+<title>Веб-студия «Бостон»</title>
 <!-- Load CSS -->
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -17,14 +17,41 @@
 <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-
-
-
-
 </head>
 
 <body>
+  <div class="popup_overlay" onClick="popup_out();"></div>
+  
+  <div class="popup" id="thx">
+    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+    <div class="popup_h1">Спасибо за заявку</div>
+    <div class="popup_h2">Наш менеджер свяжется с вами в ближайшее время</div>
+    <!-- <div class="btn" onClick="popup_out();">закрыть</div> -->
+  </div>
+
+<div class="popup" id="skidka">
+    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+    <div class="popup_h1">Оставить заявку</div>
+      <div class="header-right-block-form">
+				<form>
+						
+						<label class="name required">
+							<input type="text" name="name" placeholder="Ваше имя">
+						</label>
+						
+				
+						<label class="phone required phone">
+							<input type="text" name="phone" maxlength="20" placeholder="Номер Телефона">
+						</label>
+					
+						<label class="text">
+							<input type="text" name="ques" placeholder="Ваша задача">
+						</label><br/>
+      					  <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div></form>
+ 
+  
+  </div></div>
+
 		<header>
 
 			
@@ -90,13 +117,13 @@
 						
 				
 						<label class="phone required phone">
-							<input type="text" name="phone3" maxlength="15" placeholder="Номер Телефона">
+							<input type="text" name="phone" maxlength="15" placeholder="Номер Телефона">
 						</label>
 					
 						<label class="text">
 							<input type="text" name="text" placeholder="Ваша задача">
 						</label><br/>
-						<div data-name="request" class="button noselect btn" onClick="formname">Оставить заявку</div>
+						<div data-name="request" class="button noselect btn" onClick="formname"">Оставить заявку</div>
 					</form>
 			</div>
 			</div>		
@@ -121,13 +148,13 @@
 				<div class="col-md-10 col-md-offset-1">
 <div class="tabs">
             <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" title="Wordpress">Разработка дизайна </label>
+            <label for="tab1" title="Разработка дизайна">Разработка дизайна </label>
             <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" title="Windows">Создание сайта</label>
+            <label for="tab2" title="Создание сайта">Создание сайта</label>
             <input id="tab3" type="radio" name="tabs">
-            <label for="tab3" title="HTML5">Привлечение клиентов</label>
+            <label for="tab3" title="Привлечение клиентов">Привлечение клиентов</label>
             <input id="tab4" type="radio" name="tabs">
-            <label for="tab4" title="CSS3">А кроме того</label>
+            <label for="tab4" title="А кроме того">А кроме того</label>
             <section id="content-tab1">
             			<div class="content-inside">
 					<div class="content-block-1-container-block-1-img">
@@ -151,7 +178,7 @@
 						- Разработка фирменного стиля.
 						</p>
 
-<div data-name="request" class="button noselect btn" onClick="formname">Заказать</div></div></div>
+<div class="button noselect btn" onClick="popup('skidka','Блок «скидка»');">Заказать</div></div></div>
             </section>
             <section id="content-tab2">
               			<div class="content-inside">
@@ -174,7 +201,7 @@
 
 						<p>
 						- Разработка интернет-магазина.
-						</p><div data-name="request" class="button noselect btn" onClick="formname">Заказать</div></div></div>
+						</p><div class="button noselect btn" onClick="popup('skidka','Блок «скидка»');">Заказать</div></div></div>
             </section>
             <section id="content-tab3">
                	<div class="content-inside">
@@ -194,7 +221,7 @@
 						- Контекстная реклама в Google и Яндекс.
 						
 						</p>
-<div data-name="request" class="button noselect btn" onClick="formname">Заказать</div></div></div>
+<div class="button noselect btn" onClick="popup('skidka','Блок «скидка»');">Заказать</div></div></div>
             </section>
             <section id="content-tab4">
                	<div class="content-inside">
@@ -210,7 +237,7 @@
 						- Перевод сайта на иностранные языки.
 						
 						</p>
-						<div data-name="request" class="button noselect btn" onClick="formname">Заказать</div></div></div>
+						<div class="button noselect btn" onClick="popup('skidka','Блок «скидка»');">Заказать</div></div></div>
 						
             </section>
         </div>
@@ -320,42 +347,42 @@
 		<div class="col-md-4">
 			<div class="raboti-bg">
 				<div class="raboti-text">
-					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
+					<a onClick="popup('skidka','Блок «скидка»');"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="raboti-bg raboti-bg1">
 				<div class="raboti-text">
-					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
+					<a onClick="popup('skidka','Блок «скидка»');"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="raboti-bg raboti-bg2">
 				<div class="raboti-text">
-					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
+					<a onClick="popup('skidka','Блок «скидка»');"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="raboti-bg raboti-bg3">
 				<div class="raboti-text">
-					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
+					<a onClick="popup('skidka','Блок «скидка»');"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="raboti-bg raboti-bg4">
 				<div class="raboti-text">
-					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
+					<a onClick="popup('skidka','Блок «скидка»');"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="raboti-bg raboti-bg5">
 				<div class="raboti-text">
-					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
+					<a onClick="popup('skidka','Блок «скидка»');"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis laboriosam reprehenderit voluptatum, facere voluptatibus necessitatibus rerum officiis, neque dignissimos nostrum repudiandae veritatis eum, ex sapiente commodi, recusandae sint! Repellat.</p></a>
 				</div>
 			</div>
 		</div>
