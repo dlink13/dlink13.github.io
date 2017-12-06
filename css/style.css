@@ -214,7 +214,7 @@ background-size: cover;}
 .row-down {width: 10%; margin: 0 auto; margin-top: 100px;}
 
 .content-block-1 {width: 100%}
-.content-block-1 h2 {text-align: center; margin-top: 10%;font-weight: bold;font-size: 2.5em;margin-bottom: 10%;}
+.content-block-1 h2 {text-align: center; margin-top: 5%;font-weight: bold;font-size: 2.5em;margin-bottom: 5%;}
 .content-block-1-container-block-1-img {margin-top: 50px;width: 60%;margin-bottom: 80px;}
 .content-block-1-container-block-1-img img {width: 100%;}
 .content-block-1-container-block-1-text {width: 100%;font-size: 1.2em; margin-top: 50px;margin-left: 35px;}
@@ -233,7 +233,7 @@ background-size: cover; width: 100%;}
 .content-block-2 .content-block-2-form form .name {color: #fff;}
 .content-block-2 .content-block-2-form form label {width: 30%;color: #fff;}
 .content-block-2 .content-block-2-form .button {width: 25%; text-align: center; background:#FFA300;color: #fff;font-size: 1.5em;}
-.container-vibor h2 {text-align: center;margin-top: 120px;margin-bottom: 20px;}
+.container-vibor h2 {text-align: center;margin-top: 60px;margin-bottom: 20px;}
 .container-vibor {margin-bottom: 100px;}
 .vibor-img{width: 20%;margin: 0 auto;margin-bottom: 30px;}
 .vibor-img img {width: 100%;}
@@ -383,7 +383,7 @@ animation-name: fadeIn;
                 padding: 15px;
             }
         }
-.container-bl {margin-bottom: 100px;}
+.container-bl {margin-bottom: 50px;}
 .foot-block-4 i {color:#FEA200;padding-right: 10px;}
 .button:hover {background: #704646;color: #fff!important;}
 .btn:hover{background: #704646;color: #fff!important;}
