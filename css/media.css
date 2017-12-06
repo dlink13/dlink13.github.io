@@ -9,3 +9,5 @@ and (min-device-width : 992px)
 and (max-device-width : 1199px) {
 	.tabs > label {padding: 15px 10px; margin-right: 1px;}
 }
+.button:hover {background: #704646;color: #fff!important;}
+.btn:hover{background: #704646;color: #fff!important;}
