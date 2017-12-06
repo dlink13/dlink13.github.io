@@ -148,7 +148,7 @@ background-size: cover;}
 .header-right-block-form form .text input {width: 100%;}
 .header-right-block-form form .button {margin-bottom: -60px;padding:15px 0 15px 0; text-align: center; background:#FFA300; width: 100%;color: #fff;font-size: 1.5em;}
 .header-right-block-form form input {border: none;background: transparent;border-bottom: 1px solid #000;}
-.row-down {width: 20%; margin: 0 auto; margin-top: 100px;}
+.row-down {width: 10%; margin: 0 auto; margin-top: 100px;}
 
 .content-block-1 {width: 100%}
 .content-block-1 h2 {text-align: center; margin-top: 10%;font-weight: bold;font-size: 2.5em;margin-bottom: 10%;}
@@ -163,19 +163,21 @@ background-size: cover;}
 .bg-container-2 {background: url(../img/bg-2.png) center center no-repeat;-webkit-background-size: cover;
 background-size: cover; width: 100%;}
 .bg-container-2 h2 {margin-top: 90px;margin-bottom: 70px;}
-.content-block-2 {color: #fff; padding-bottom: 90px;}
+.content-block-2 {color: #fff;}
+.content-block-2 h2 {text-align: center;}
 .content-block-2 .content-block-2-form form input {width: 90%; font-size: 1.5em; color:#fff; border: none;background: transparent;border-bottom: 1px solid #fff;}
 .content-block-2 .content-block-2-form form .name {color: #fff;}
 .content-block-2 .content-block-2-form form label {width: 35%;color: #fff;}
 .content-block-2 .content-block-2-form .button {width: 20%;padding:10px 0 10px 0; text-align: center; background:#FFA300;color: #fff;font-size: 1.5em;}
 .container-vibor h2 {text-align: center;margin-top: 120px;margin-bottom: 20px;}
+.container-vibor {margin-bottom: 100px;}
 .vibor-img{width: 20%;margin: 0 auto;margin-bottom: 30px;}
 .vibor-img img {width: 100%;}
 .vibor {margin-top: 70px;}
 .vibor-text {text-align: center;}
 .container-raboti {margin-bottom: 30px;}
 .container-raboti h2 {text-align: center;}
-
+.content-block-2-form {margin-bottom: 100px;}
 .raboti-bg{
     position:relative;
    width: 100%;background: url(../img/rab-1.png) center center no-repeat; height: 300px; margin-top: 35px;}
@@ -203,7 +205,7 @@ height: 300px;
 .raboti-bg3 {background: url(../img/rab-4.png) center center no-repeat;}
 .raboti-bg4 {background: url(../img/rab-5.png) center center no-repeat;}
 .raboti-bg5 {background: url(../img/rab-6.png) center center no-repeat;}
-.bg-container-2-down .content-block-2-form{width: 60%; margin: 0 auto;}
+.bg-container-2-down .content-block-2-form{width: 60%; margin: 0 auto; margin-bottom: 100px;}
 .bg-container-2-down .phone {width: 45%!important;}
 .bg-container-2-down .name {width: 49%!important;}
 .bg-container-2-down .text {width: 100%!important;}
@@ -271,7 +273,7 @@ footer {margin-top: 90px;padding-bottom: 75px;}
             display: inline-block;
             margin: 0 0 -1px;
             margin-right: 20px;
-            padding: 15px 84px;
+            padding: 15px 35.2px;
             font-weight: 600;
             text-align: center;
             color: #000;
@@ -320,16 +322,74 @@ footer {margin-top: 90px;padding-bottom: 75px;}
         }
 .container-bl {margin-bottom: 100px;}
 .container-in {margin-bottom: 50px;margin-top: 30px;}
-.ffff {display: flex;flex-direction: row}
-.timer {text-align: center;}<div class="timer">
-  <span id="days"></span>
-  <span id="delimiter">:</span><br><span id="desc">Дней</span></div>
-  <div class="timer">
-  <span id="hours"></span>
-  <span id="delimiter">:</span><br><span id="desc">Часов</span></div>
-    <div class="timer">
-  <span id="minutes"></span>
-  <span id="delimiter">:</span><br><span id="desc">Минут</span></div>
-    <div class="timer">
-  <span id="seconds"></span><br><span id="desc">Секунд</span></div>
-</div>
+
+
+.countdownHolder{
+	width:450px;
+	margin:0 auto;
+	font: 40px/1.5 'Open Sans Condensed',sans-serif;
+	text-align:center;
+	letter-spacing:-3px;
+}
+
+.position{
+	display: inline-block;
+	height: 1.6em;
+	overflow: hidden;
+	position: relative;
+	width: 1.05em;
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:1em;
+	background-color: #FEA200;
+	border-radius:0.2em;
+	text-align:center;
+	color:#fff;
+	letter-spacing:-1px;
+}
+
+.digit.static{
+background-color: #FEA200;
+}
+
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+	display:inline-block;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#000;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}

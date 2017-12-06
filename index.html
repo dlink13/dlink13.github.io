@@ -13,6 +13,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" async src="http://app.comagic.ru/static/cs.min.js"></script>
+<script src="js/jquery.countdown.js"></script>
 <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -54,7 +55,7 @@
 		<div class="col-md-4 col-md-offset-1">
 			<div class="header-text">
 				<div class="header-text-top">
-					<h1>Веб-студия <<Бостон>></h1>
+					<h1>Веб-студия «Бостон»</h1>
 				</div>
 				<div class="header-text-mid">
 				<ol> Мы создаём:
@@ -73,25 +74,12 @@
 			
 			<div class="header-right-block">
 				<div class="header-right-block-text">
-					<h2>sdfgsdgsdg</h2><br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repellendus voluptate cupiditate ullam temporibus nesciunt impedit perferendis libero, optio, facere, ratione. Dolor ex ea, accusantium harum minima nemo fuga commodi.</p>
+					<h2>Скидка 10% + Подарок</h2><br>
+					<p>В честь Нового Года, скидка 10% на ВСЕ услуги веб-студии Бостон + бесплатный анализ Вашей ниши и подробный план по продвижению Вашего бизнеса в интеренете</p>
 				</div>
 				<div class="header-right-block-timer">
-					<h2>sdfsdgsdgsdggs</h2>
-					<ol>
-						<li id="days">0</li>
-						
-
-						<li class="dvoet">:</li>
-						<li id="hours">0</li>
-						<li id="hours">0</li>
-						<li class="dvoet">:</li>
-						<li id="minutes">0</li>
-						<li>0</li>
-						<li class="dvoet">:</li>
-						<li id="seconds">0</li>
-						<li>0</li>
-					</ol>
+					<h2>Успейте оставить заявку</h2>
+					<div id="countdown"></div>
 				</div>
 				<div class="header-right-block-form">
 				<form>
@@ -133,13 +121,13 @@
 				<div class="col-md-11 col-md-offset-1">
 <div class="tabs">
             <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" title="Wordpress">Wordpress</label>
+            <label for="tab1" title="Wordpress">Сделать Вашу компанию узнаваемой</label>
             <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" title="Windows">Windows</label>
+            <label for="tab2" title="Windows">Запустить сайт</label>
             <input id="tab3" type="radio" name="tabs">
-            <label for="tab3" title="HTML5">HTML5</label>
+            <label for="tab3" title="HTML5">Привлечь новых клиентов</label>
             <input id="tab4" type="radio" name="tabs">
-            <label for="tab4" title="CSS3">CSS3</label>
+            <label for="tab4" title="CSS3">lorem</label>
             <section id="content-tab1">
                <div class="container container-in">
 						<div class="row">
@@ -148,7 +136,7 @@
 						<img src="img/block1.png" alt=""></div></div>
 						<div class="col-md-5">
 						<div class="content-block-1-container-block-1-text">
-							<h3>sdfsdfdef</h3>
+							<h3>Сделать Вашу компанию узнаваемой</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptate porro aperiam nihil quidem repudiandae? Omnis neque, odio cupiditate tenetur. Tempora et quisquam quo nisi, illo provident adipisci. Illo, aut.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum asperiores et voluptates, nemo id tempora quasi modi delectus sapiente ipsam soluta, aliquam nesciunt impedit velit, corrupti maiores. Amet, earum!</p><div data-name="request" class="button noselect btn" onClick="formname('Блок «Уменьшение налога на прибыль»');">Заказать</div></div>
 
@@ -213,8 +201,8 @@
 <div class="container">
 	<div class="row">
 		<div class="content-block-2">
-			<div class="col-md-9 col-md-offset-2">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta velit necessitatibus suscipit vero </h2></div>
+			<div class="col-md-10 col-md-offset-1">
+			<h2>Остались вопросы? Не нашли что искали?<br> Оставьте заявку и мы предложим Вам<br> индивидуальные условия сотрудничества!</h2></div>
 			<div class="col-md-9 col-md-offset-2">
 			<div class="content-block-2-form">
 				<form>
@@ -238,41 +226,41 @@
 <div class="container container-vibor">
 	<div class="row">
 		<div class="col-md-12">
-			<h2>Gfdkgj fdsf fysf</h2>
+			<h2>Почему выбирают именно нас?</h2>
 			<div class="col-md-4">
 				<div class="vibor">
 					<div class="vibor-img"><img src="img/brill.png" alt=""></div>
-					<div class="vibor-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, officia. Voluptatibus vel modi similique nisi ab placeat aspernatur accusamus ipsam perspiciatis nam, dolorem nesciunt magnam unde. Dicta et, recusandae beatae!</p></div>
+					<div class="vibor-text"><p>Мы не беремся за проекты,<br> в которых не видим потенциала</p></div>
 					
 				</div>
 			</div>
 				<div class="col-md-4">
 				<div class="vibor">
-					<div class="vibor-img"><img src="img/brill.png" alt=""></div>
-					<div class="vibor-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, officia. Voluptatibus vel modi similique nisi ab placeat aspernatur accusamus ipsam perspiciatis nam, dolorem nesciunt magnam unde. Dicta et, recusandae beatae!</p></div>
+					<div class="vibor-img"><img src="img/fing.png" alt=""></div>
+					<div class="vibor-text"><p>Работаем официально<br> по договору</p></div>
 					
 				</div>
 			</div>
 				<div class="col-md-4">
 				<div class="vibor">
-					<div class="vibor-img"><img src="img/brill.png" alt=""></div>
-					<div class="vibor-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, officia. Voluptatibus vel modi similique nisi ab placeat aspernatur accusamus ipsam perspiciatis nam, dolorem nesciunt magnam unde. Dicta et, recusandae beatae!</p></div>
+					<div class="vibor-img"><img src="img/cup.png" alt=""></div>
+					<div class="vibor-text"><p>Работаем не по шаблону, нам важно,<br> что бы Вы обошли конкурентов</p></div>
 					
 				</div>
 			</div>
 				<div class="col-md-4 col-md-offset-2">
 				
 				<div class="vibor">
-					<div class="vibor-img"><img src="img/brill.png" alt=""></div>
-					<div class="vibor-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, officia. Voluptatibus vel modi similique nisi ab placeat aspernatur accusamus ipsam perspiciatis nam, dolorem nesciunt magnam unde. Dicta et, recusandae beatae!</p></div>
+					<div class="vibor-img"><img src="img/deg.png" alt=""></div>
+					<div class="vibor-text"><p>Наш первостепеный интерес —<br> успех Вашего бизнеса</p></div>
 					
 				
 			</div>
 			</div>
 				<div class="col-md-4">
 				<div class="vibor">
-					<div class="vibor-img"><img src="img/brill.png" alt=""></div>
-					<div class="vibor-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, officia. Voluptatibus vel modi similique nisi ab placeat aspernatur accusamus ipsam perspiciatis nam, dolorem nesciunt magnam unde. Dicta et, recusandae beatae!</p></div>
+					<div class="vibor-img"><img src="img/rocket.png" alt=""></div>
+					<div class="vibor-text"><p>Оказываем любые услуги<br> по продвижению Вашего бизнеса <br> в интернете</p></div>
 					
 				</div>
 			</div>
@@ -283,7 +271,8 @@
 <div class="container">
 	<div class="row">
 		<div class="content-block-2">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta velit necessitatibus suscipit vero </h2>
+			<h2>Готовы к сотрудничеству? Оставьте заявку <br> и мы предложим наилучшее решение<br> по развитию именно Вашего бизнеса в интернете</h2>
+			<div class="col-md-9 col-md-offset-2">
 			<div class="content-block-2-form">
 				<form>
 						
@@ -301,11 +290,12 @@
 					</form>
 			</div>
 		</div>
+		</div>
 	</div>
 </div></div>
 <div class="container container-raboti">
 	<div class="row">
-		<h2>sdfgfsdg sdfgsdfg sdgsdg</h2>
+		<h2>Наши лучшие работы</h2>
 		<div class="col-md-4">
 			<div class="raboti-bg">
 				<div class="raboti-text">
@@ -358,7 +348,7 @@
 <div class="container">
 	<div class="row">
 		<div class="content-block-2">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta velit necessitatibus suscipit vero </h2>
+			<h2>Всего 30 секунд, потраченных на заполнение формы,<br> отделяют Вас от нового этапа развития Вашего бизнеса!</h2>
 			<div class="content-block-2-form">
 				<form>
 						
@@ -421,15 +411,10 @@
 	</div>
 </div>
 </footer>
-
-
-
  <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script type="text/javascript" src="js/validator.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-	<script type="text/javascript" src="js/ymaps.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
