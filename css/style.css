@@ -175,11 +175,15 @@ background-size: cover;}
 .header-menu ol {display: flex;flex-direction: row;}
 .header-menu ol li {text-align: center; margin: 0 auto;}
 .header-menu ol li a{text-decoration: underline; color: #fff}
+.header-menu ol li a:hover{color: #FEA200}
+.header-menu ol li a:active{color: #FEA200}
 .header-tel {text-align: center;}
 .header-tel a {margin: 0 auto;text-align: center;}
 .header-tel a {color: #fff;}
+.header-tel a:hover{color: #FEA200}
 .header-tel-btn{text-align: center}
 .header-tel-btn a {color: #AF7B27}
+.header-tel-btn a:hover {color:#fff;}
 .header-text-top h1 {color: #fff;font-weight: bold;}
 .container-header-mid {margin-top: 115px;padding-bottom: 100px;}
 .header-text-mid {color: #fff;}
@@ -279,7 +283,7 @@ footer {margin-top: 90px;padding-bottom: 75px;}
 .content-block-1-container-ssilki .dv a p:visited {background: #fff;}
 
 .tabs {
-    min-width: 320px;
+
     
     padding: 0px;
     margin: 0 auto;
