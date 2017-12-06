@@ -185,9 +185,9 @@ background-size: cover;}
 .header-tel-btn a {color: #AF7B27}
 .header-tel-btn a:hover {color:#fff;}
 .header-text-top h1 {color: #fff;font-weight: bold;}
-.container-header-mid {margin-top: 115px;padding-bottom: 100px;}
-.header-text-mid {color: #fff;}
-.header-text-mid ol li {display: flex;flex-direction: row;margin-top: 40px;}
+.container-header-mid {margin-top: 60px;padding-bottom: 100px;}
+.header-text-mid {color: #fff;margin-top: 50px; font-size: 1.6em;}
+.header-text-mid ol li {display: flex;flex-direction: row;margin-top: 40px;font-size: 0.7em;margin-left: 25px;}
 .header-text-mid ol li img {}
 .header-text-mid ol li p {margin:10px 0 0 10px; font-weight: bold;}
 .header-text-mid ol li p span {font-weight: bold;text-transform: uppercase;}
@@ -202,15 +202,15 @@ background-size: cover;}
 .header-right-block-timer ol li {padding:8px; background: #FEA200; color: #fff;margin-right: 5px;font-size: 18px;}
 .header-right-block-timer ol .dvoet {background: transparent; color: #000;}
 .header-right-block-form form {width: 100%; margin-top: 35px;}
-.header-right-block-form form .name {width: 45%; margin-right: 7.5%;}
+.header-right-block-form form .name {width: 40%; margin-right: 17%;}
 .header-right-block-form form .name input {width: 100%;}
-.header-right-block-form form .phone {width: 45%;}
+.header-right-block-form form .phone {width: 40%;}
 .header-right-block-form form .phone input {width: 100%;}
 .header-right-block-form form .text  {width: 99%;}
 .header-right-block-form form .text input {width: 100%;}
 .header-right-block-form form .button {margin-bottom: -60px;padding:15px 0 15px 0; text-align: center; background:#FFA300; width: 100%;color: #fff;font-size: 1.5em;}
 .header-right-block-form form .button:hover{background: #704646;}
-.header-right-block-form form input {border: none;background: transparent;border-bottom: 1px solid #000;}
+.header-right-block-form form input {border: none;background: transparent;border-bottom: 1px solid #8b8888;}
 .row-down {width: 10%; margin: 0 auto; margin-top: 100px;}
 
 .content-block-1 {width: 100%}
@@ -218,6 +218,7 @@ background-size: cover;}
 .content-block-1-container-block-1-img {margin-top: 50px;width: 60%;margin-bottom: 80px;}
 .content-block-1-container-block-1-img img {width: 100%;}
 .content-block-1-container-block-1-text {width: 100%;font-size: 1.2em; margin-top: 50px;margin-left: 35px;}
+.content-block-1-container-block-1-text p {font-size: 1.5em;font-weight: bold;margin-top: 10px;padding-top: 15px;}
 .content-block-1-container-block-1-text h3 {font-weight: bold;font-size: 1.5em;margin-top: 0;}
 .content-block-1-container-block-1-ssilka {margin-bottom: 25px;width: 20%;text-align: center;}
 .content-block-1-container-block-1-ssilka a {color: #000; text-align: center;}
