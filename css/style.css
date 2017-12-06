@@ -189,9 +189,11 @@ background-size: cover;}
 .header-text-mid {color: #fff;}
 .header-text-mid ol li {display: flex;flex-direction: row;margin-top: 40px;}
 .header-text-mid ol li img {}
-.header-text-mid ol li p {margin:10px 0 0 10px}
+.header-text-mid ol li p {margin:10px 0 0 10px; font-weight: bold;}
+.header-text-mid ol li p span {font-weight: bold;text-transform: uppercase;}
 .header-text-down {text-align: center; width: 70%;}
 .header-text-down a { color: #fff; text-decoration: underline;}
+.header-text-down a:hover {color: #FEA200}
 .header-right-block {background:#e2e2e1db;padding: 15px; }
 .header-right-block h2 {font-weight: bold;text-align: center;}
 .header-right-block p {text-align: center;}
