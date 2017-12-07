@@ -436,8 +436,8 @@ background-size: cover; width: 100%;}
 .content-block-2-form {margin-bottom: 50px;}
 .raboti-bg{
     position:relative;
-   width: 100%;background: url(../img/rab-1.png) center center no-repeat;-webkit-background-size: contain;
-   background-size: contain; height: 300px; margin-top: 35px;}
+   width: 100%;background: url(../img/rab-1.png) center center no-repeat;-webkit-background-size: cover;
+   background-size: cover; height: 300px; margin-top: 50px;margin-bottom: 50px;}
 .raboti-text h2 {font-family: lato-black;}
 .raboti-text{
 	font-family: roboto-light;
@@ -449,7 +449,7 @@ height: 300px;
 z-index: 99;
 }
 .raboti-text a p{
-	padding-top: 30%;color: #fff;text-decoration: none;
+	padding-top: 25%;padding-bottom: 10%;color: #fff;text-decoration: none;height: 300px;text-align: center
 }
 .raboti-text a:hover{text-decoration: none; cursor: pointer;
 }
@@ -457,11 +457,11 @@ z-index: 99;
     display:block;
     z-index:9999;
 }
-.raboti-bg1 {background: url(../img/rab-2.png) center center no-repeat;background-size: contain;}
-.raboti-bg2 {background: url(../img/rab-3.png) center center no-repeat;background-size: contain;}
-.raboti-bg3 {background: url(../img/rab-4.png) center center no-repeat;background-size: contain;}
-.raboti-bg4 {background: url(../img/rab-5.png) center center no-repeat;background-size: contain;}
-.raboti-bg5 {background: url(../img/rab-6.png) center center no-repeat;background-size: contain;}
+.raboti-bg1 {background: url(../img/rab-2.png) center center no-repeat;background-size: cover;}
+.raboti-bg2 {background: url(../img/rab-3.png) center center no-repeat;background-size: cover;}
+.raboti-bg3 {background: url(../img/rab-4.png) center center no-repeat;background-size: cover;}
+.raboti-bg4 {background: url(../img/rab-5.png) center center no-repeat;background-size: cover;}
+.raboti-bg5 {background: url(../img/rab-6.png) center center no-repeat;background-size: cover;}
 .bg-container-2-down .content-block-2-form{width: 60%; margin: 0 auto; margin-bottom: 50px;}
 .bg-container-2-down .phone {width: 45%!important;margin-top: 15px;}
 .bg-container-2-down .name {width: 49%!important;margin-top: 15px;}

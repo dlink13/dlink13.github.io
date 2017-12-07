@@ -16,7 +16,7 @@ $(document).ready(function() {
 				name = $('input[name="name"]', $form).val(),
 				phone = $('input[name="phone"]', $form).val(),
 				
-				ques = $('textarea[name="ques"]', $form).val(),
+				ques = $('input[name="ques"]', $form).val(),
 				sbt = $('.btn', $form).attr("data-name"),
 				submit = $('.btn', $form).text();
 			var ref = $('input[name="referer"]').val();
