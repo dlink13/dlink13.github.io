@@ -516,5 +516,14 @@ flex-direction: row;
 .raboti-img img {width: 100%;}
 .rab-text {text-align: center;}
 .rab-knopka a p {padding: 15px 10px; background:#FEA200; text-align: center;}
-
-
+#skidka .header-right-block-form {width: 70%;margin: 0 auto}
+#skidka .header-right-block-form form {width: 100%; margin-top: 15px;}
+#skidka .header-right-block-form form .name {width: 40%; margin-right: 12%; margin-top: 20px;}
+#skidka .header-right-block-form form .name input {width: 100%;}
+#skidka .header-right-block-form form .phone {width: 45%; margin-top: 20px;}
+#skidka .header-right-block-form form .phone input {width: 100%;}
+#skidka .header-right-block-form form .text  {width: 99%; margin-top: 20px;}
+#skidka .header-right-block-form form .text input {width: 100%;}
+#skidka .header-right-block-form form .button { margin: 0 auto;margin-bottom: 10px;margin-top: 10px; padding:10px 0 10px 0; text-align: center; background:#FFA300; width:100%;color: #fff;font-size: 1.5em;}
+#skidka .header-right-block-form form .button:hover{background: #704646;}
+#skidka .header-right-block-form form input {border: none;background: transparent;border-bottom: 1px solid #8b8888;}
