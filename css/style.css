@@ -293,7 +293,7 @@ background-size: cover;}
 .header-tel a {color: #fff;}
 .header-tel a:hover{color: #FEA200}
 .header-tel-btn{text-align: center}
-.header-tel-btn a {color: #AF7B27}
+.header-tel-btn a {color: #AF7B27;cursor: pointer;}
 .header-tel-btn a:hover {color:#fff;}
 .header-text-top h1 {color: #fff;font-weight: bold;}
 .container-header-mid {margin-top: 60px;padding-bottom: 100px;}
@@ -305,7 +305,7 @@ background-size: cover;}
 .header-text-down {text-align: center; width: 70%;}
 .header-text-down a { color: #fff; text-decoration: underline;}
 .header-text-down a:hover {color: #FEA200}
-.header-right-block {background:#e2e2e1db;padding: 15px; margin-bottom: 50px;}
+.header-right-block {background:rgba(216, 216, 216, 0.8);padding: 15px; margin-bottom: 50px;}
 .header-right-block h2 {font-weight: bold;text-align: center;}
 .header-right-block p {text-align: center;}
 .header-right-block-timer h2{text-align: center; font-size: 1.5em;}
@@ -345,6 +345,7 @@ background-size: cover; width: 100%;}
 .content-block-2 .content-block-2-form form .name {color: #fff;}
 .content-block-2 .content-block-2-form form label {width: 30%;color: #fff;}
 .content-block-2 .content-block-2-form .button {width: 25%; text-align: center; background:#FFA300;color: #fff;font-size: 1.5em;}
+.content-block-2 .content-block-2-form .button:hover {background: #704646;}
 .container-vibor h2 {text-align: center;margin-top: 60px;margin-bottom: 20px;}
 .container-vibor {margin-bottom: 50px;}
 .vibor-img{width: 20%;margin: 0 auto;margin-bottom: 30px;}
@@ -359,7 +360,7 @@ background-size: cover; width: 100%;}
    width: 100%;background: url(../img/rab-1.png) center center no-repeat; height: 300px; margin-top: 35px;}
 .raboti-text{
 display:none;
-background: #000000bf;
+background: rgba(43, 40, 40, 0.78);
 padding-left: 30px;padding-right: 30px;
 padding-bottom: 30px;
 height: 300px;
@@ -368,7 +369,7 @@ z-index: 99;
 .raboti-text a p{
 	padding-top: 50%;color: #fff;text-decoration: none;
 }
-.raboti-text a:hover{text-decoration: none;
+.raboti-text a:hover{text-decoration: none; cursor: pointer;
 }
 .raboti-bg:hover .raboti-text{
     display:block;
