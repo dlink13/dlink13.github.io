@@ -55,6 +55,7 @@ and (max-device-width : 767px) {
 and (min-device-width : 220px) 
 and (max-device-width : 425px){
 	.popup {max-width:75%;max-height: 400px;overflow: scroll;}
+	.content-block-1-container-block-1-ssilka{margin: 0 auto; width:100%;}
 }
 @media only screen 
 and (min-device-width : 425px) 
@@ -62,6 +63,7 @@ and (max-device-width : 768px)
 {.popup {max-width:75%;max-height: 400px;overflow: scroll;}
 	.content-block-1-container-block-1-img {width: 50%;margin-bottom: 60px;margin: 0 auto;margin-top: 50px;}
 	.content-block-1-container-block-1-text {margin:0 auto;}
+	.content-block-1-container-block-1-ssilka{margin: 0 auto; width:100%;}
 
 }
 @media only screen 
