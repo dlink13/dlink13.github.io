@@ -377,7 +377,7 @@ background-size: cover;}
 .header-text-mid ol li img {}
 .header-text-mid ol li p {margin:10px 0 0 10px;}
 .header-text-mid ol li p span {font-weight: bold;text-transform: uppercase;}
-.header-text-down {text-align: center; width: 70%;}
+.header-text-down {text-align: center; width: 70%;margin-top: 35px;}
 .header-text-down a { color: #fff; text-decoration: underline;}
 .header-text-down a:hover {color: #FEA200}
 .header-right-block {background:rgba(216, 216, 216, 0.8);margin-top: 30px; padding: 15px; margin-bottom: 50px;}
