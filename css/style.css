@@ -373,7 +373,6 @@ z-index: 99;
 .raboti-bg:hover .raboti-text{
     display:block;
     z-index:9999;
-   
 }
 .raboti-bg1 {background: url(../img/rab-2.png) center center no-repeat;}
 .raboti-bg2 {background: url(../img/rab-3.png) center center no-repeat;}
@@ -478,21 +477,7 @@ animation-name: fadeIn;
         #tab4:checked ~ #content-tab4 {
             display: block;
         }    
-        @media screen and (max-width: 680px) {
-            .tabs > label {
-                font-size: 0;
-            }
-            .tabs > label:before {
-                margin: 0;
-                font-size: 18px;
-            }
-        }
-        
-        @media screen and (max-width: 400px) {
-            .tabs > label {
-                padding: 15px;
-            }
-        }
+      
 .container-bl {margin-bottom: 50px;}
 .foot-block-4 i {color:#FEA200;padding-right: 10px;}
 .button:hover {background: #704646;color: #fff!important;}
@@ -526,4 +511,10 @@ flex-direction: row;
 .vrem {display: inline-flex; margin: 0 auto;width: 100%;}
 .opi{display: flex;flex-direction: row;margin: 0 auto;}
 .opi p {text-align: center;width: 100%;margin-left: 30%;}
+.raboti {max-width: 800px;}
+.raboti-img {width: 50%; margin: 0 auto;}
+.raboti-img img {width: 100%;}
+.rab-text {text-align: center;}
+.rab-knopka a p {padding: 15px 10px; background:#FEA200; text-align: center;}
+
 
