@@ -64,6 +64,9 @@ and (max-device-width : 768px)
 	.content-block-1-container-block-1-img {width: 50%;margin-bottom: 60px;margin: 0 auto;margin-top: 50px;}
 	.content-block-1-container-block-1-text {margin:0 auto;}
 	.content-block-1-container-block-1-ssilka{margin: 0 auto; width:100%;}
+	.logo-img {width: 30%;}
+	.logo-img img{width: 100%;}
+	.header-text-mid{width: 40%;margin: 0 auto;font-size: 1.2em;}
 
 }
 @media only screen 
@@ -71,4 +74,10 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 {
 	.popup {max-width:75%;max-height: 400px;overflow: scroll;}
+}
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 768px)
+{
+.header-text-mid{width: 40%;margin: 0 auto;}
 }
