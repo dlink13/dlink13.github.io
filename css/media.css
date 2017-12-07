@@ -4,6 +4,7 @@ and (min-device-width : 220px)
 and (max-device-width : 992px) {
 .tabs > section {height: auto;}
 .content-block-2 .content-block-2-form .button{font-size: 1em;}
+.content-block-2 .content-block-2-form form input {margin-top: 25px;}
 }
 @media only screen 
 and (min-device-width : 992px) 
