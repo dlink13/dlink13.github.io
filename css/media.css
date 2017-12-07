@@ -3,16 +3,19 @@
 and (min-device-width : 220px) 
 and (max-device-width : 992px) {
 .tabs > section {height: auto;}
+.content-block-2 .content-block-2-form .button{font-size: 1em;}
 }
 @media only screen 
 and (min-device-width : 992px) 
 and (max-device-width : 1199px) {
 	.tabs > label {padding: 15px 10px; margin-right: 1px;}
 
+
 }
 @media only screen 
 and (min-device-width : 220px) 
 and (max-device-width : 767px) {
+	.header-text-mid ol li {font-size: 0.5em}
 	.logo-img{margin: 0 auto; width: 50%;margin-top: 50px;margin-bottom: 50px;}
 	.header-menu {margin-bottom: 20px;}
 	.header-text-top h1 {text-align: center;}
@@ -25,9 +28,12 @@ and (max-device-width : 767px) {
 	.content-block-2 .content-block-2-form form label {width: 100%;,margin-top: 20px;}
 	.content-block-2 .content-block-2-form .button {width: auto;margin-top: 20px;}
 	.bg-container-2-down .content-block-2-form{width: 80%; margin: 0 auto;}
+	.content-block-2 .content-block-2-form {width: 80%; margin: 0 auto; margin-bottom: 50px;}
 	.bg-container-2-down .content-block-2-form label {width: 100%!important;}
 	.bg-container-2-down .content-block-2-form .button {width: auto!important; margin: 0 auto;margin-top: 20px;margin-bottom: 20px;}
 	.foot-block-1 img{ margin: 0 auto;}
+	.row-down {display: none;}
+
 }
   @media screen and (max-width: 680px) {
             .tabs > label {
@@ -53,6 +59,8 @@ and (max-device-width : 425px){
 and (min-device-width : 425px) 
 and (max-device-width : 768px)
 {.popup {max-width:75%;max-height: 400px;overflow: scroll;}
+	.content-block-1-container-block-1-img {width: 50%;margin-bottom: 60px;margin: 0 auto;margin-top: 50px;}
+	.content-block-1-container-block-1-text {margin:0 auto;}
 
 }
 @media only screen 
