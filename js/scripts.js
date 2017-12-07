@@ -15,7 +15,7 @@ $(document).ready(function() {
 			var $form = $(this).parent(),
 				name = $('input[name="name"]', $form).val(),
 				phone = $('input[name="phone"]', $form).val(),
-				
+				email = $('input[name="email"]', $form).val(),
 				ques = $('input[name="ques"]', $form).val(),
 				sbt = $('.btn', $form).attr("data-name"),
 				submit = $('.btn', $form).text();

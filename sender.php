@@ -13,7 +13,7 @@ $ref = filter_input(INPUT_POST, 'ref' );
 $utm = filter_input(INPUT_POST, 'utm' );
 
 // список получателей(в нашем случае - один)
-$recepient  = "";
+$recepient  = "mail@boston.su";
 
 // Тема сообщения
 $subject = "Заявка с сайта ";
