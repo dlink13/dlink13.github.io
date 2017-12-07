@@ -17,6 +17,7 @@ and (max-device-width : 1199px) {
 @media only screen 
 and (min-device-width : 220px) 
 and (max-device-width : 767px) {
+	.vibor-img img {height: auto;}
 	.header-text-mid ol li {font-size: 0.5em}
 	.logo-img{margin: 0 auto; width: 50%;margin-top: 50px;margin-bottom: 50px;}
 	.header-menu {margin-bottom: 20px;}
