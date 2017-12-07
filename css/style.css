@@ -358,7 +358,7 @@ background-size: cover; width: 100%;}
     position:relative;
    width: 100%;background: url(../img/rab-1.png) center center no-repeat; height: 300px; margin-top: 35px;}
 .raboti-text{
-    display:none;
+display:none;
 background: #000000bf;
 padding-left: 30px;padding-right: 30px;
 padding-bottom: 30px;
@@ -372,8 +372,6 @@ z-index: 99;
 }
 .raboti-bg:hover .raboti-text{
     display:block;
-    position:absolute;
-   
     z-index:9999;
    
 }
@@ -401,7 +399,6 @@ footer {margin-top: 90px;}
 
 .tabs {
 
-    
     padding: 0px;
     margin: 0 auto;
         }
