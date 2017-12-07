@@ -312,7 +312,7 @@ background-size: cover;}
 .header-right-block-timer ol {display: flex;flex-direction: row;}
 .header-right-block-timer ol li {padding:8px; background: #FEA200; color: #fff;margin-right: 5px;font-size: 18px;}
 .header-right-block-timer ol .dvoet {background: transparent; color: #000;}
-.header-right-block-form form {width: 100%; margin-top: 35px;}
+.header-right-block-form form {width: 100%; margin-top: 15px;}
 .header-right-block-form form .name {width: 40%; margin-right: 12%; margin-top: 20px;}
 .header-right-block-form form .name input {width: 100%;}
 .header-right-block-form form .phone {width: 45%; margin-top: 20px;}
@@ -500,4 +500,33 @@ animation-name: fadeIn;
 .foot-block-4 i {color:#FEA200;padding-right: 10px;}
 .button:hover {background: #704646;color: #fff!important;}
 .btn:hover{background: #704646;color: #fff!important;}
+
+
+#countdown_dashboard{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	display: flex;
+flex-direction: row;
+}
+.dash {
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+.dash .digit {
+	background: #FEA200;
+	padding: 5% 10%;
+	margin-right: 4%;
+	color: #fff!important;
+	font-size: 2em;
+	font-weight:bold;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #555;
+}
+.dvoet p{margin-right: 5px;font-size: 2.5em;color: #000;}
+.vrem {display: inline-flex; margin: 0 auto;width: 100%;}
+.opi{display: flex;flex-direction: row;margin: 0 auto;}
+.opi p {text-align: center;width: 100%;margin-left: 30%;}
 

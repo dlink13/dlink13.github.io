@@ -106,6 +106,22 @@ function thx() {
 function scrollTo(id) {
 	var to = $('#'+id).offset().top - 60;
 	$("html, body").animate({scrollTop: to}, 500);
-};
+
+
+}
+function countdown() { 
+$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		29,
+						'month': 	12,
+						'year': 	2017,
+						'hour': 	23,
+						'min': 		59,
+						'sec': 		59,	
+						'utc':      true,
+						},
+					omitWeeks: true					
+				});}               
+
 
 
