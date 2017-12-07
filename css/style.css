@@ -428,7 +428,7 @@ background-size: cover; width: 100%;}
 .container-vibor h2 {text-align: center;margin-top: 60px;margin-bottom: 20px;font-family: lato-black;}
 .container-vibor {margin-bottom: 50px;}
 .vibor-img{width: 20%;margin: 0 auto;margin-bottom: 30px;}
-.vibor-img img {width: 100%;}
+.vibor-img img {width: 100%;height: 70px;}
 .vibor {margin-top: 35px;}
 .vibor-text {text-align: center;font-family: roboto-regular;}
 .container-raboti {margin-bottom: 30px;}
