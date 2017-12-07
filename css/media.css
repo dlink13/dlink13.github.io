@@ -5,6 +5,7 @@ and (max-device-width : 992px) {
 .tabs > section {height: auto;}
 .content-block-2 .content-block-2-form .button{font-size: 1em;}
 .content-block-2 .content-block-2-form form input {margin-top: 25px;}
+ .tabs > label {padding: 5px 5px;}
 }
 @media only screen 
 and (min-device-width : 992px) 
@@ -45,7 +46,12 @@ and (max-device-width : 767px) {
                 font-size: 18px;
             }
         }
-        
+        @media only screen 
+and (min-device-width : 680px) 
+and (max-device-width : 991px)
+{
+ .tabs > label {padding: 5px 5px;}
+}
         @media screen and (max-width: 400px) {
             .tabs > label {
                 padding: 5px;margin: 5px
