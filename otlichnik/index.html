@@ -63,11 +63,47 @@
   </div>
 </header>
 
-
+<div class="block-zahvat">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="block-zahvat-text">
+        <h3 class="h3">
+          ИНТЕНСИВНЫЙ КУРС <br>ПРЕПОДАВАТЕЛИ-ЭКСПЕРТЫ
+        </h3>
+        <p>Уже знаешь, как напишешь ЕГЭ / ОГЭ?<br>
+        Диагностика <span>до 26 января бесплатно!<span></p>
+      </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="block-zahvat-forma">
+          <div class="block-zahvat-forma-in">
+          <p>Бесплатная диагностика<br>
+<span>до 26 января,</span><br>
+количество мест ограничено!</p>
+<form>
+            
+            <label class="name required">
+              <input type="text" name="name" placeholder="Ваше имя">
+            </label><br/>
+            <label class="phone required">
+              <input type="text" name="phone" maxlength="10" placeholder="Ваш телефон">
+            </label><br/>
+         <input type="checkbox" name="checkme" id="agree"/> <span>Я согласен с условиями обработки
+персональных данных</span>
+          <input type="submit" id="continue" value="ЗАПИСАТЬСЯ"/> 
+      
+      </form>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="voprosi">
   <div class="container">
     <div class="row">
-                  <h3>ваши вопросы</h3>
+                  <h3 class="h3">ваши вопросы</h3>
                   <div class="col-md-10">
                     <a class="open-content" href="javascript:collapsElement('opencontent')" title="" rel="nofollow"><p>
                       <span>01.</span>Ваши преподаватели относительно молоды, точно ли они смогут подготовить меня к экзаменам?
@@ -137,6 +173,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, rem laudantium 
     </div>
   </div>
 </footer>
+<script type="text/javascript">
+$('#agree').prop('checked',false);
+$(document).ready(function(){
+$('#continue').prop('disabled', true);
+$('#agree').change(function() {
+$('#continue').prop('disabled', function(i, val) {
+return !val;
+})
+});
+})
+</script>
        <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
       <script type="text/javascript" src="js/validator.js"></script>

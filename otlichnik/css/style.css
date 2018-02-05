@@ -65,17 +65,34 @@ header {margin-top: 30px;}
 
 
 
+/**********block-zahvat*********/
+.block-zahvat {width: 100%;background: url(../img/block-zahvat.png) center center no-repeat;margin-top: 80px;
+-webkit-background-size: cover;
+background-size: cover;}
 
+.block-zahvat-text .h3 {margin-top: 160px;color: #fff;font-size: 35px;text-transform: uppercase;font-weight: bold;margin-bottom: 30px;}
+.block-zahvat-text p {color: #fff;font-size: 25px;}
+.block-zahvat-text p span {color: #FF9E00;}
+.block-zahvat-forma {width: 100%;background: #fff;border-radius: 15px;margin-top: 50px;}
+.block-zahvat-forma-in {padding:30px 20px 30px 20px }
+.block-zahvat-forma-in p{font-size: 20px;color:#004373; padding-bottom: 30px;}
+.block-zahvat-forma-in p span {color: #FF9E00;}
+.block-zahvat-forma-in form input,label {width: 100%;}
+.block-zahvat-forma-in form input {height: 35px;padding-left: 10px;border-radius: 15px;border:1px solid #ccc;margin-bottom: 25px;}
+#agree {height: 20px;width: 10%;margin-bottom: 0;border-radius: 15px;font-size: 5px;}
+form span {font-size: 10px;margin-left: 15px;}
+/**********block-zahvat*********/
 
 
 /***********voprosi*********/
-.voprosi h3 {margin-top: 80px;margin-bottom: 40px;font-weight: bold;font-size: 35px;color:#004373;text-transform: uppercase; }
+.voprosi .h3 {margin-top: 80px;margin-bottom: 40px;font-weight: bold;font-size: 35px;color:#004373;text-transform: uppercase; }
 .voprosi a:hover{text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 .open-content {font-weight: bold;text-transform: uppercase;color: #004373;}
 .open-content span {padding-right: 15px; color:#FF9B00;}
 .open-content:hover {text-decoration: none;}
 .open-content:active {text-decoration: none;}
 .open-text {margin-bottom: 25px;margin-left: 30px;font-size: 20px;font-weight: bold;color:#FF9B00;}
+/***********voprosi*********/
 
 /*******foooter******/
 footer {margin-top: 50px;background-color: #004373;}
