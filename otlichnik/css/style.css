@@ -64,6 +64,31 @@ header {margin-top: 30px;}
 /***********header**********/
 
 
+/**********top-slider***********/
+.top-slider {background: url(../img/top-slider.png) center center no-repeat;-webkit-background-size: cover;
+background-size: cover;}
+.top-slider-text {margin-top: 150px;margin-bottom: 150px;}
+.top-slider-text .h2 {font-weight: bold;font-size: 40px;color:#fff;}
+.top-slider-text a{background-color: #FFD877;font-size: 30px;color: #004373;border-radius: 25px;margin-top: 50px;display: block;width: 40%;text-align: center;}
+
+/**********top-slider***********/
+
+
+/**********Preimushestva*******/
+.preim-block {display: flex;flex-direction: row;align-items: center;}
+.preim-block img {width: 70px;height: 70px;margin-right: 15px;}
+.preim-block-text {display: flex;flex-direction: column;}
+.preim-block-text .h2 {color:#FF9E00;text-transform: uppercase;}
+/**********Preimushestva*******/
+
+/*********block-text**********/
+
+.block-text {width: 100%;margin-top: 50px;}
+.block-text-top {width: 100%;text-align: center;font-size: 20px;margin-bottom: 50px;}
+.block-text-second {
+font-size: 17px;
+}
+
 
 /**********block-zahvat*********/
 .block-zahvat {width: 100%;background: url(../img/block-zahvat.png) center center no-repeat;margin-top: 80px;
@@ -73,14 +98,15 @@ background-size: cover;}
 .block-zahvat-text .h3 {margin-top: 160px;color: #fff;font-size: 35px;text-transform: uppercase;font-weight: bold;margin-bottom: 30px;}
 .block-zahvat-text p {color: #fff;font-size: 25px;}
 .block-zahvat-text p span {color: #FF9E00;}
-.block-zahvat-forma {width: 100%;background: #fff;border-radius: 15px;margin-top: 50px;}
+.block-zahvat-forma {width: 100%;background: #fff;border-radius: 15px;margin-top: 50px;margin-bottom: 50px;}
 .block-zahvat-forma-in {padding:30px 20px 30px 20px }
 .block-zahvat-forma-in p{font-size: 20px;color:#004373; padding-bottom: 30px;}
 .block-zahvat-forma-in p span {color: #FF9E00;}
 .block-zahvat-forma-in form input,label {width: 100%;}
 .block-zahvat-forma-in form input {height: 35px;padding-left: 10px;border-radius: 15px;border:1px solid #ccc;margin-bottom: 25px;}
 #agree {height: 20px;width: 10%;margin-bottom: 0;border-radius: 15px;font-size: 5px;}
-form span {font-size: 10px;margin-left: 15px;}
+form span {font-size: 10px;margin-left: -5px;}
+#continue {margin-top: 30px; height: 40px;color:#004373;background-color:#FF9E00;font-weight: bold; }
 /**********block-zahvat*********/
 
 
