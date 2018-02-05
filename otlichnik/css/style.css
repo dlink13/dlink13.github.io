@@ -69,7 +69,8 @@ header {margin-top: 30px;}
 
 
 /***********voprosi*********/
-.voprosi h3 {margin-top: 80px;margin-bottom: 40px;}
+.voprosi h3 {margin-top: 80px;margin-bottom: 40px;font-weight: bold;font-size: 35px;color:#004373;text-transform: uppercase; }
+.voprosi a:hover{text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 .open-content {font-weight: bold;text-transform: uppercase;color: #004373;}
 .open-content span {padding-right: 15px; color:#FF9B00;}
 .open-content:hover {text-decoration: none;}
