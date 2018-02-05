@@ -61,14 +61,20 @@ header {margin-top: 30px;}
 .menu ul {height: 60px; margin: 0;display: flex; flex-direction: row;justify-content:space-around;align-items: center;}
 .menu ul li a{color: #fff;font-size: 16px; font-weight: bold;}
 .menu ul li a:hover{text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
+/***********header**********/
 
 
 
 
 
 
-
-
+/***********voprosi*********/
+.voprosi h3 {margin-top: 80px;margin-bottom: 40px;}
+.open-content {font-weight: bold;text-transform: uppercase;color: #004373;}
+.open-content span {padding-right: 15px; color:#FF9B00;}
+.open-content:hover {text-decoration: none;}
+.open-content:active {text-decoration: none;}
+.open-text {margin-bottom: 25px;margin-left: 30px;font-size: 20px;font-weight: bold;color:#FF9B00;}
 
 /*******foooter******/
 footer {margin-top: 50px;background-color: #004373;}
@@ -89,3 +95,4 @@ padding-top: 65px;padding-bottom: 65px;
 .footer-contacts ul li a:hover{text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 .footer-contacts ul li img {margin-right: 10px;}
 .footer-widget {width: 100%;margin-top: 45px;}
+/*******foooter******/
