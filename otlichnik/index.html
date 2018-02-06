@@ -246,17 +246,16 @@ ligula eget dolor. Aenean massa</p>
           <p>Бесплатная диагностика<br>
 <span>до 26 января,</span><br>
 количество мест ограничено!</p>
-<form>
+<form action="#">
             
-            <label class="name required">
-              <input type="text" name="name" placeholder="Ваше имя">
-            </label><br/>
+            <label class="name required" for="name">
+              <input type="text" name="name" placeholder="Ваше имя" id="name">
+            </label><br>
             <label class="phone required">
               <input type="text" name="phone" maxlength="10" placeholder="Ваш телефон">
-            </label><br/>
-         <input type="checkbox" name="checkme" id="agree"/> <span>Я согласен с условиями обработки
-персональных данных</span>
-          <input type="submit" id="continue" value="ЗАПИСАТЬСЯ"/> 
+            </label><br>
+         <input type="checkbox" name="checkme" id="agree"> <label for="agree">Согласен  с условиями ыфваыва</label>
+          <input type="submit"  value="ЗАПИСАТЬСЯ"> 
       
       </form>
       </div>
@@ -338,17 +337,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, rem laudantium 
     </div>
   </div>
 </footer>
-<script type="text/javascript">
-$('#agree').prop('checked',false);
-$(document).ready(function(){
-$('#continue').prop('disabled', true);
-$('#agree').change(function() {
-$('#continue').prop('disabled', function(i, val) {
-return !val;
-})
-});
-})
-</script>
+
        <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
       <script type="text/javascript" src="js/validator.js"></script>
