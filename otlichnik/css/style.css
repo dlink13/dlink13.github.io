@@ -75,6 +75,7 @@ background-size: cover;}
 
 
 /**********Preimushestva*******/
+.preimush {margin: 65px 0;}
 .preim-block {display: flex;flex-direction: row;align-items: center;}
 .preim-block img {width: 70px;height: 70px;margin-right: 15px;}
 .preim-block-text {display: flex;flex-direction: column;}
@@ -84,11 +85,26 @@ background-size: cover;}
 /*********block-text**********/
 
 .block-text {width: 100%;margin-top: 50px;}
-.block-text-top {width: 100%;text-align: center;font-size: 20px;margin-bottom: 50px;}
+.block-text-top {font-weight: bold; width: 100%;text-align: center;font-size: 20px;margin-bottom: 50px;}
 .block-text-second {
-font-size: 17px;
+font-size: 20px;width: 90%;
 }
+/**********block-ssilki*********/
+.block-ssilki {margin-top: 50px;margin-bottom: 85px;}
+.block-ssilki-left {margin-top: 1%;}
+.block-ssilki-left a {display: block;width: 100%;padding-top:150px;padding-bottom: 15px; background: url(../img/block-left.png) center center no-repeat;-webkit-background-size: cover;
+background-size: cover; color: #fff;text-decoration: none;}
+.block-ssilki-left a:hover {text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
+.block-ssilki-left a .h2{margin-left: 35px;}
+.block-ssilki-left a p {margin-left: 35px; width: 50%;padding-top: 28px;}
+.block-ssilki-right-main {margin-left: -20px;padding-left: ;}
+.block-ssilki-right {width: 49%;display: flex;float: left; padding: 1%;}
+.block-ssilki-right a{display: block;width: 100%;padding-top:80px;padding-bottom: 10px; background: url(../img/block-right.png) center center no-repeat;-webkit-background-size: cover;
+background-size: cover; color: #fff;text-decoration: none;}
+.block-ssilki-right a .h2 {font-weight: bold; font-size: 17px;margin-left: 15px;width: 80%;}
+.block-ssilki-right a:hover {text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 
+/**********block-ssilki*********/
 
 /**********block-zahvat*********/
 .block-zahvat {width: 100%;background: url(../img/block-zahvat.png) center center no-repeat;margin-top: 80px;
