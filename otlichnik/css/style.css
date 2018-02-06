@@ -89,21 +89,24 @@ background-size: cover;}
 .block-text-second {
 font-size: 20px;width: 90%;
 }
+.block-text-down {width: 90%;font-size: 20px;margin-top: 50px;}
 /**********block-ssilki*********/
 .block-ssilki {margin-top: 50px;margin-bottom: 85px;}
-.block-ssilki-left {margin-top: 1%;}
-.block-ssilki-left a {display: block;width: 100%;padding-top:150px;padding-bottom: 15px; background: url(../img/block-left.png) center center no-repeat;-webkit-background-size: cover;
-background-size: cover; color: #fff;text-decoration: none;}
+.block-ssilki-left {margin-top: 1%;background: url(../img/block-left.png) center center no-repeat;-webkit-background-size: cover;
+background-size: cover;}
+.block-ssilki-left a {display: block;width: 100%;padding-top:113px;padding-bottom: 15px;  color: #fff;text-decoration: none;background:rgba(89, 88, 88, 0.21);}
+.block-ssilki-left a:visited{text-decoration: none;}
 .block-ssilki-left a:hover {text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 .block-ssilki-left a .h2{margin-left: 35px;}
 .block-ssilki-left a p {margin-left: 35px; width: 50%;padding-top: 28px;}
 .block-ssilki-right-main {margin-left: -20px;padding-left: ;}
-.block-ssilki-right {width: 49%;display: flex;float: left; padding: 1%;}
-.block-ssilki-right a{display: block;width: 100%;padding-top:80px;padding-bottom: 10px; background: url(../img/block-right.png) center center no-repeat;-webkit-background-size: cover;
-background-size: cover; color: #fff;text-decoration: none;}
+.block-ssilki-right {width: 48%;display: flex;float: left; margin: 1%; background: url(../img/block-right.png) center center no-repeat;-webkit-background-size: cover;
+background-size: cover; }
+.block-ssilki-right a{display: block;width: 100%;padding-top:80px;padding-bottom: 10px;color: #fff;text-decoration: none;background:rgba(89, 88, 88, 0.21);}
 .block-ssilki-right a .h2 {font-weight: bold; font-size: 17px;margin-left: 15px;width: 80%;}
 .block-ssilki-right a:hover {text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
-
+.block-ssilki-right a:active {text-decoration: none;}
+.block-ssilki-right:visited {text-decoration: none;}
 /**********block-ssilki*********/
 
 /**********block-zahvat*********/
@@ -133,6 +136,7 @@ form span {font-size: 10px;margin-left: -5px;}
 .open-content span {padding-right: 15px; color:#FF9B00;}
 .open-content:hover {text-decoration: none;}
 .open-content:active {text-decoration: none;}
+.open-content:visited {text-decoration: none;}
 .open-text {margin-bottom: 25px;margin-left: 30px;font-size: 20px;font-weight: bold;color:#FF9B00;}
 /***********voprosi*********/
 
