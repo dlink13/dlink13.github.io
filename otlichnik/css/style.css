@@ -168,7 +168,7 @@ padding-top: 65px;padding-bottom: 65px;
 /*******foooter******/
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 980px)
+and (max-device-width : 992px)
 {
     .menu {height: auto;}
     .menu ul li {margin-top: 5px;}
@@ -189,6 +189,6 @@ and (max-device-width : 980px)
     .block-text-down {width: 100%;
         text-align: center;}
         .block-zahvat-text .h3 {margin-top: 25px;font-size: 25px;text-align: center;}
-        
+
 }
 
