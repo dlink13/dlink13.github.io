@@ -246,15 +246,17 @@ ligula eget dolor. Aenean massa</p>
           <p>Бесплатная диагностика<br>
 <span>до 26 января,</span><br>
 количество мест ограничено!</p>
-<form action="#">
+<form action="">
             
             <label class="name required" for="name">
               <input type="text" name="name" placeholder="Ваше имя" id="name">
             </label><br>
-            <label class="phone required">
-              <input type="text" name="phone" maxlength="10" placeholder="Ваш телефон">
+            <label class="phone required" for="phone">
+              <input type="text" name="phone" maxlength="10" id="phone" placeholder="Ваш телефон">
             </label><br>
-         <input type="checkbox" name="checkme" id="agree"> <label for="agree">Согласен  с условиями ыфваыва</label>
+         <input type="checkbox" name="checkme" id="agree"> 
+         <label for="agree" class="agree">Я согласен с <a href="">условиями обработки
+персональных данных</a></label>
           <input type="submit"  value="ЗАПИСАТЬСЯ"> 
       
       </form>
