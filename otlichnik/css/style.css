@@ -69,6 +69,7 @@ header {margin-top: 30px;}
 background-size: cover;}
 .top-slider-text {margin-top: 150px;margin-bottom: 150px;margin-left: 155px;width: 75%;}
 .top-slider-text .h2 {font-weight: bold;font-size: 40px;color:#fff;}
+.top-slider-text a:hover {color: #FF9E00;transition: .4s ease-out;text-decoration: none;}
 .top-slider-text a{background-color: #FFD877;font-size: 30px;color: #004373;border-radius: 25px;margin-top: 50px;display: block;width: 40%;text-align: center;}
 .carousel-control.right {background-image:none!important;}
 .carousel-control.left {background-image:none!important;}
