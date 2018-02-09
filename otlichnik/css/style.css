@@ -82,7 +82,7 @@ background-size: cover;}
 /**********Preimushestva*******/
 .preimush {margin: 65px 0;}
 .preim-block {display: flex;flex-direction: row;align-items: center; height: 135px;}
-.preim-block img {width: 70px;height: 70px;margin-right: 15px;}
+.preim-block img {margin-right: 15px;}
 .preim-block-text {display: flex;flex-direction: column;}
 .preim-block-text .h2 {color:#FF9E00;text-transform: uppercase;font-size: 20px;}
 /**********Preimushestva*******/
@@ -192,4 +192,39 @@ and (max-device-width : 992px)
         .block-zahvat-text .h3 {margin-top: 25px;font-size: 25px;text-align: center;}
 
 }
-
+/************Page-predmeti***********/
+.block-text-top-pages {width: 70%; text-align: left; color:#004373;font-weight: bold;font-size: 30px;}
+.top-slider-pages {background: #EBEBEB;padding-top: 25px;padding-bottom: 50px;}
+.top-slider-pages .h2 {color:#004373; margin-bottom: 50px;}
+.item .item-pages-text {
+    width: 100%;
+}
+.item .item-pages-text ul {
+display: flex;
+flex-direction: column;
+}
+.item .item-pages-text ul li p span {
+    color:#004373;
+}
+.top-slider-pages .carousel-control img {top: 25%;}
+.block-text-second-pages {font-weight: bold; text-align: center; width: 100%;}
+.programmi {
+    margin-top: 50px;
+}
+.programmi .h2 {margin-bottom: 50px;color:#004373;font-weight: bold; }
+.programmi .programmi-spisok ul {display: flex;flex-direction: column;}
+.programmi .programmi-spisok ul li{
+display: inline-flex;
+color:#FFD877;
+font-size: 30px
+}
+.programmi .programmi-spisok ul li img {width: 20px;height: 5px;margin-top: 1%;}
+.programmi .programmi-spisok ul li p {font-size: 20px;color: #000;}
+.programmi .programmi-spisok ul li p span {margin-left: 15px;margin-right: 15px;color: #000;font-size: 20px; font-weight: bold;}
+.counter {margin-top: 50px;margin-bottom: 50px;}
+.counter .h2 {color:#004373; width: 100%;text-align: center;font-weight: bold;}
+#countdown_dashboard{margin-top:15px;margin-bottom:15px;width:100%;display:flex;flex-direction:row;}
+.dash{display:flex;flex-direction:row;margin:0 auto;}
+.dash .digit{background:#F0F0F0;margin-right:10%;color:#004373!important;font-size:5em;font-family:roboto-regular;padding: 0 15px;}
+.vrem{display:inline-flex;margin:0 auto;width:100%;font-family:roboto-light; justify-content: space-around;font-weight: bold;font-size: 20px;text-transform: uppercase;color:#004373}
+/************Page-predmeti***********/
