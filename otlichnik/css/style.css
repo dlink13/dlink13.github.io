@@ -228,3 +228,18 @@ font-size: 30px
 .dash .digit{background:#F0F0F0;margin-right:10%;color:#004373!important;font-size:5em;font-family:roboto-regular;padding: 0 15px;}
 .vrem{display:inline-flex;margin:0 auto;width:100%;font-family:roboto-light; justify-content: space-around;font-weight: bold;font-size: 20px;text-transform: uppercase;color:#004373}
 /************Page-predmeti***********/
+/************pages-main**********/
+.block-text-second-main-pages {
+    text-align: left;}
+.block-text-second-color {
+    color: #FFD877;
+}
+.predmeti {margin-top: 50px;margin-bottom: 50px;}
+.predmet a {display: flex;flex-direction: column;width: 100%;justify-content: center;align-items: center;}
+.predmet a .predmet-img {padding: 15px 15px;border-radius: 50%;background-color: #004373;}
+.predmet a .predmet-img {align-items: center;}
+.predmet a .predmet-img img {height: 65px;padding: 5px;width: 100%;}
+.predmet a p {margin-top: 15px; font-weight: bold; text-align: center;}
+.predmet a:hover {text-decoration: none;}
+.predmet a:hover p {text-decoration: none; color: #FFD877;}
+.predmet a:hover .predmet-img {background-color: #FFD877; text-decoration: none;}
