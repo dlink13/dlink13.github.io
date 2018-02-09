@@ -222,7 +222,7 @@ font-size: 30px
 .programmi .programmi-spisok ul li p {font-size: 20px;color: #000;}
 .programmi .programmi-spisok ul li p span {margin-left: 15px;margin-right: 15px;color: #000;font-size: 20px; font-weight: bold;}
 .counter {margin-top: 50px;margin-bottom: 50px;}
-.counter .h2 {color:#004373; width: 100%;text-align: center;font-weight: bold;}
+.counter .h2 {color:#004373; width: 100%;text-align: center;font-weight: bold;margin-bottom: 50px;}
 #countdown_dashboard{margin-top:15px;margin-bottom:15px;width:100%;display:flex;flex-direction:row;}
 .dash{display:flex;flex-direction:row;margin:0 auto;}
 .dash .digit{background:#F0F0F0;margin-right:10%;color:#004373!important;font-size:5em;font-family:roboto-regular;padding: 0 15px;}
@@ -238,8 +238,11 @@ font-size: 30px
 .predmet a {display: flex;flex-direction: column;width: 100%;justify-content: center;align-items: center;}
 .predmet a .predmet-img {padding: 15px 15px;border-radius: 50%;background-color: #004373;}
 .predmet a .predmet-img {align-items: center;}
-.predmet a .predmet-img img {height: 65px;padding: 5px;width: 100%;}
+.predmet a .predmet-img img {height: 65px;padding: 5px;width: 65px;}
 .predmet a p {margin-top: 15px; font-weight: bold; text-align: center;}
 .predmet a:hover {text-decoration: none;}
-.predmet a:hover p {text-decoration: none; color: #FFD877;}
-.predmet a:hover .predmet-img {background-color: #FFD877; text-decoration: none;}
+.predmet a:hover p {text-decoration: none; color: #FFD877;transition: .3s ease-out;}
+.predmet a:hover .predmet-img {background-color: #FFD877; text-decoration: none;transition: .3s ease-out;}
+.block-text-kursi .block-text-second-pages {
+    text-align: left; font-weight: normal;
+}
