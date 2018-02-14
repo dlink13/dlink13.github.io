@@ -246,3 +246,74 @@ font-size: 30px
 .block-text-kursi .block-text-second-pages {
     text-align: left; font-weight: normal;
 }
+.otzivi{
+    
+    margin-bottom: 80px;
+}
+.otziv{
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    background: #EBEBEB;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.otziv ul {
+    display: flex;flex-direction: column;
+}
+.otziv ul li:first-child {
+    display: inline-flex;
+}
+.otziv ul li img{margin-right: 15px;margin-bottom: 15px;}
+.otziv ul li:first-child p {color:#004373;}
+.otziv ul li:first-child p span {color:#004373; font-weight: bold;font-size: 20px;}
+.otzivi .block-text-top-pages {font-size: 35px;margin-top: 25px;margin-bottom: 0;}
+.contakti{
+    margin-bottom: 400px;
+}
+.contakti .block-text-top-pages {
+    margin-top: 80px;margin-bottom: 40px;
+}
+.contakti .footer-contacts ul li{
+   color:#004373;
+   font-size: 20px;
+}
+.contakti .footer-contacts ul li a {
+    color:#004373;
+}
+.contakti .contacti-metro {display: flex;flex-direction: row;margin-top: 15px;}
+.contakti .contacti-metro .metro ul li{margin-top: 15px;}
+.contakti .contacti-metro .metro ul li p {font-size: 15px;}
+.contakti .contacti-img {width: 100%; margin-top: 50px;}
+.contakti .contacti-img img{width: 100%;}
+.ceni .block-text-top-pages{
+    margin: 0;
+}
+.ceni .block-text-top-pages{
+    margin-top: 50px;
+}
+.ceni .programmi {
+    margin-top: 20px;
+}
+.ceni .block-ceni {width: 100%;padding: 15px 10px 15px 10px;background: #E3E2E2; margin-top: 50px;margin-bottom: 50px;}
+.ceni .block-ceni ul{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ceni .block-ceni ul li {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.ceni .block-ceni ul li:first-child {
+    color:#004373;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+.ceni .block-ceni ul li:last-child {
+    padding-top: 25px;
+    border-top: 2px solid #FBB422;
+    color: #FBB422;
+}
