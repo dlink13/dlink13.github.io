@@ -11,36 +11,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-   <div class="popup_overlay" onClick="popup_out();"></div>
   
-  <div class="popup" id="thx">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Спасибо за заявку</div>
-    <div class="popup_h2">Наш менеджер свяжется с вами в ближайшее время</div>
-    <!-- <div class="btn" onClick="popup_out();">закрыть</div> -->
-  </div>
-  <div class="popup" id="skidka">
-    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
-    <div class="popup_h1">Оставить заявку</div>
-      <div class="header-right-block-form">
-        <form>
-            
-            <label class="name required">
-              <input type="text" name="name" placeholder="Ваше имя">
-            </label>
-            
-        
-            <label class="phone required phone">
-              <input type="text" name="phone" maxlength="20" placeholder="Номер телефона">
-            </label>
-          
-            <label class="text">
-              <input type="text" name="ques" placeholder="Опишите Вашу задачу">
-            </label><br/>
-                  <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div></form>
- 
-  
-  </div></div>
 <header>
   <div class="top">
     <div class="container">
@@ -100,21 +71,21 @@
             <div class="top-slider-text">
       <h2 class="h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit veniam error, at quos magnam eaque, asperiores obcaecati dicta, explicabo esse, odit corporis rem saepe placeat rerum! Quasi quo fuga sed.</h2>
     
-    <a href="#">Записаться</a>
+    <a onClick="popup('skidka','Блок «скидка»');">Записаться</a>
   </div>
           </div>
                 <div class="item ">
             <div class="top-slider-text">
       <h2 class="h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit veniam error, at quos magnam eaque, asperiores obcaecati dicta, explicabo esse, odit corporis rem saepe placeat rerum! Quasi quo fuga sed.</h2>
     
-    <a href="#">Записаться</a>
+    <a onClick="popup('skidka','Блок «скидка»');">Записаться</a>
   </div>
           </div>
                 <div class="item">
             <div class="top-slider-text">
       <h2 class="h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit veniam error, at quos magnam eaque, asperiores obcaecati dicta, explicabo esse, odit corporis rem saepe placeat rerum! Quasi quo fuga sed.</h2>
     
-    <a href="#">Записаться</a>
+    <a onClick="popup('skidka','Блок «скидка»');">Записаться</a>
   </div>
           </div>
           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -285,8 +256,9 @@ ligula eget dolor. Aenean massa</p>
             <label class="phone required phone">
               <input type="text" name="phone" maxlength="15" placeholder="Номер телефона">
             </label>
-         
-            
+         <input type="checkbox" name="checkme" id="agree" >
+         <label for="agree" class="agree required">Я согласен(на) с <a onClick="popup('rabota','Блок «скидка»');">условиями обработки
+персональных данных</a></label>
             <div data-name="request" class="button noselect btn" onClick="formname">Оставить заявку</div>
           </form>
       </div>
@@ -368,6 +340,66 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, rem laudantium 
     </div>
   </div>
 </footer>
+ <div class="popup_overlay" onClick="popup_out();"></div>
+  
+  <div class="popup" id="thx">
+    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+    <div class="popup_h1">Спасибо за заявку</div>
+    <div class="popup_h2">Наш менеджер свяжется с вами в ближайшее время</div>
+    <!-- <div class="btn" onClick="popup_out();">закрыть</div> -->
+  </div>
+  <div class="popup" id="skidka">
+    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+    <div class="popup_h1">Оставить заявку</div>
+      <div class="header-right-block-form">
+        <form>
+            
+            <label class="name required">
+              <input type="text" name="name" placeholder="Ваше имя">
+            </label>
+            
+        
+            <label class="phone required phone">
+              <input type="text" name="phone" maxlength="20" placeholder="Номер телефона">
+            </label>
+          
+            <label class="text">
+              <input type="text" name="ques" placeholder="Опишите Вашу задачу">
+            </label><br/>
+                  <div data-name="callback" class="button noselect btn" onClick="formname('Блок «Сделать заказ»');">Заказать звонок</div></form>
+ 
+  
+  </div></div>
+    <div class="popup" id="rabota">
+    <div class="popup_close noselect" onClick="popup_out();"><span>&nbsp;</span></div>
+     <div class="raboti">
+      <h2>Соглашение об обработке персональных данных сайтом</h2> 
+                                
+  
+  <div class="rab-text">
+    <h2>от 08 декабря 2017 года.</h2>
+    <p> 
+
+Сайт otlichnik (далее–Сайт) стремится всеми доступными способами обеспечить безопасность пользования Сайтом. Настоящим Соглашением Сайт информирует Пользователей Сайта о том, какие сведения о Пользователе могут быть доступны Сайту, а также о том, каким образом используется полученная Сайтом информация. 
+Присоединяясь к настоящему Соглашению и оставляя свои данные на Сайте, путем заполнения полей онлайн-заявки, пользователь: 
+• подтверждает, что все указанные им данные принадлежат лично ему; 
+• подтверждает и признает, что им внимательно и в полном объёме прочитано данное Соглашение и условия обработки его персональных данных, указываемых им в полях онлайн-заявки, текст соглашения и условия обработки персональных данных ему понятны; 
+• даёт согласие на обработку Сайтом предоставляемых в составе информации персональных данных в целях заключения между ним и Сайтом настоящего Соглашения, а также его последующего исполнения; 
+• выражает согласие с условиями обработки персональных данных без оговорок и ограничений. 
+Пользователь даёт свое согласие на обработку его персональных данных, а именно совершение действий, предусмотренных п.3 ч.1 ст.3 Федерального закона от 27.07.2006 года No152-ФЗ "О персональных данных", и подтверждает, что, давая такое согласие, он действует свободно, своей волей и в своём интересе. 
+Согласие Пользователя на обработку персональных данных является конкретным, информированным и сознательным. 
+Настоящее согласие Пользователя признаётся исполненным в простой письменной форме, на обработку следующих персональных данных: фамилии, имени, отчества; номеров телефонов; адресов электронной почты (E-mail). Пользователь предоставляет Сайту право осуществлять следующие действия (операции) с персональными данными: 
+• сбор и накопление; 
+• хранение в течение установленных нормативными документами сроков хранения отчетности, но не менее трех лет, с момента даты прекращения пользования услуг Пользователем; 
+• уточнение (обновление, изменение); 
+• использование; 
+• уничтожение; 
+• обезличивание; 
+• передача по требованию суда, в том числе третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного доступа. 
+Сайт не осуществляет сбор информации, направленной на идентификацию (определение) конкретных физических лиц—Пользователей Сайта.</p>
+    </div>
+    
+</div></div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
   <script type="text/javascript" src="js/validator.js"></script>

@@ -49,7 +49,7 @@ function openbox(id){
             }; 
 
 $(document).ready(function() {
-    
+ 
     $('.button').click(function() {
         $('body').find('form:not(this)').children('label').removeClass('red');
         var request_url = '\n'+$('input[name="ref_url"]');
@@ -59,7 +59,7 @@ $(document).ready(function() {
         {
             var $form = $(this).parent(),
                 name = $('input[name="name"]', $form).val(),
-                phone = $('input[name="phone1"]', $form).val()+' '+$('input[name="phone2"]', $form).val()+' '+$('input[name="phone3"]', $form).val(),
+                phone = $('input[name="phone"]', $form).val()+' '+$('input[name="phone2"]', $form).val()+' '+$('input[name="phone3"]', $form).val(),
                 email = $('input[name="email"]', $form).val(),
                 ques = $('textarea[name="ques"]', $form).val(),
                 sbt = $('.btn', $form).attr("data-name"),
