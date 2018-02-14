@@ -44,28 +44,16 @@ html, body {
 /******************************************************************
     This is the CSS Reset
 ******************************************************************/
-@font-face{font-family:'lato-black';src:url('../fonts/lato/Lato-Black.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-BlackItalic';src:url('../fonts/lato/Lato-BlackItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-Bold';src:url('../fonts/lato/Lato-Bold.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-BoldItalic';src:url('../fonts/lato/Lato-BoldItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-Hairline';src:url('../fonts/lato/Lato-Hairline.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-HairlineItalic';src:url('../fonts/lato/Lato-HairlineItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-Italic';src:url('../fonts/lato/Lato-Italic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-Light';src:url('../fonts/lato/Lato-Light.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-LightItalic';src:url('../fonts/lato/Lato-LightItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Lato-Regular';src:url('../fonts/lato/Lato-Regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-Black';src:url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-BlackItalic';src:url('../fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-Bold';src:url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-BoldItalic';src:url('../fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-Italic';src:url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-Light';src:url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-LightItalic';src:url('../fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-Medium';src:url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-MediumItalic';src:url('../fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-Regular';src:url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-Thin';src:url('../fonts/Roboto/Roboto-Thin.ttf') format('truetype');font-weight:normal;font-style:normal;}
-@font-face{font-family:'Roboto-ThinItalic';src:url('../fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProBlack';src:url('../fonts/GothamProBlack/GothamProBlack.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProBlackItalic';src:url('../fonts/GothamProBlackItalic/GothamProBlackItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProBold';src:url('../fonts/GothamProBold/GothamProBold.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProBoldItalic';src:url('../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProItalic';src:url('../fonts/GothamProItalic/GothamProItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProLight';src:url('../fonts/GothamProLight/GothamProLight.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProLightItalic';src:url('../fonts/GothamProLightItalic/GothamProLightItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProMedium';src:url('../fonts/GothamProMedium/GothamProMedium.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProMediumItalic';src:url('../fonts/GothamProMediumItalic/GothamProMediumItalic.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'GothamProRegular';src:url('../fonts/GothamProRegular/GothamProRegular.ttf') format('truetype');font-weight:normal;font-style:normal;}
 textarea::-moz-placeholder{opacity:1;color:#000;}
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder{color:#e1e1e1;}
@@ -188,7 +176,8 @@ background-size: cover;}
 .block-zahvat-forma-in form input {height: 35px;padding-left: 10px;border-radius: 15px;border:1px solid #ccc;margin-bottom: 25px;}
 #agree {height: 20px;width: 10%;margin-bottom: 0;border-radius: 15px;font-size: 5px;}
 form span {font-size: 10px;margin-left: -5px;}
-#continue {margin-top: 30px; height: 40px;color:#004373;background-color:#FF9E00;font-weight: bold; }
+.block-zahvat-forma-in .button {margin-top: 30px;color:#004373;background-color:#FBB422;font-weight: bold; width: 100%;font-size: 25px;text-transform: uppercase; border-radius: 15px;}
+
 .agree{width: 80%;}
 /**********block-zahvat*********/
 
@@ -225,31 +214,7 @@ padding-top: 65px;padding-bottom: 65px;
 .footer-widget {width: 100%;margin-top: 45px;}
 
 /*******foooter******/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 992px)
-{
-    .menu {height: auto;}
-    .menu ul li {margin-top: 5px;}
-    .top-slider-text {margin: 0 auto;width: 100%;}
-    .carousel-control.right img {right:10px;}
-    .menu ul {height: auto;flex-direction: column;margin-top: 25px;margin-bottom: 25px;}
-    .top-slider-text a{
-        width: 85%;margin: 0 auto; margin-bottom: 25px;margin-top: 25px;
-    }
-    .top-slider-text .h2 {text-align: center;}
-    .block-text-second {
-        text-align: center;
-        width: 100%;
-    }
-    .block-ssilki-right-main {
-        margin-left: 0;
-    }
-    .block-text-down {width: 100%;
-        text-align: center;}
-        .block-zahvat-text .h3 {margin-top: 25px;font-size: 25px;text-align: center;}
 
-}
 /************Page-predmeti***********/
 .block-text-top-pages {width: 70%; text-align: left; color:#004373;font-weight: bold;font-size: 30px;}
 .top-slider-pages {background: #EBEBEB;padding-top: 25px;padding-bottom: 50px;}
@@ -281,11 +246,19 @@ font-size: 30px
 .programmi .programmi-spisok ul li p span {margin-left: 15px;margin-right: 15px;color: #000;font-size: 20px; font-weight: bold;}
 .counter {margin-top: 50px;margin-bottom: 50px;}
 .counter .h2 {color:#004373; width: 100%;text-align: center;font-weight: bold;margin-bottom: 50px;}
-#countdown_dashboard{margin-top:15px;margin-bottom:15px;width:100%;display:flex;flex-direction:row;}
+#countdown_dashboard{margin-top: 15px;
+    max-height: 80px;
+    margin-bottom: 15px;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: row;}
 .dash{display:flex;flex-direction:row;margin:0 auto;}
-.dash .digit{background:#F0F0F0;margin-right:10%;color:#004373!important;font-size:5em;font-family:roboto-regular;padding: 0 15px;}
+.dash .digit{ border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.5);background:#F0F0F0;margin-right:10%;color:#004373!important;font-size:4em;font-family:roboto-regular;padding: 0 15px;}
 .vrem{display:inline-flex;margin:0 auto;width:100%;font-family:roboto-light; justify-content: space-around;font-weight: bold;font-size: 20px;text-transform: uppercase;color:#004373}
+.opi {margin-left: 5%;}
 /************Page-predmeti***********/
+
 /************pages-main**********/
 .block-text-second-main-pages {
     text-align: left;}
@@ -321,10 +294,11 @@ font-size: 30px
 .otziv ul li:first-child {
     display: inline-flex;
 }
-.otziv ul li img{margin-right: 15px;margin-bottom: 15px;}
+.otziv ul li img{margin-right: 15px;margin-bottom: 15px; width: 71px; border-radius: 50%;}
 .otziv ul li:first-child p {color:#004373;}
 .otziv ul li:first-child p span {color:#004373; font-weight: bold;font-size: 20px;}
 .otzivi .block-text-top-pages {font-size: 35px;margin-top: 25px;margin-bottom: 0;}
+.prepodovateli .otziv ul li img {width: auto;border-radius: 0;}
 .contakti{
     margin-bottom: 400px;
 }
@@ -375,3 +349,9 @@ font-size: 30px
     border-top: 2px solid #FBB422;
     color: #FBB422;
 }
+.popup form {margin-top: 25px; padding: 5%;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.popup form input,label {width: 100%;}
+.popup form input {height: 35px;padding-left: 10px;border-radius: 15px;border:1px solid #ccc;margin-bottom: 25px;}
+#agree {height: 20px;width: 10%;margin-bottom: 0;border-radius: 15px;font-size: 5px;}
+form span {font-size: 10px;margin-left: -5px;}
+.popup .button {margin-top: 30px;color:#004373;background-color:#FBB422;font-weight: bold; width: 100%;font-size: 25px;text-transform: uppercase; border-radius: 15px;}
