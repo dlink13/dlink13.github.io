@@ -9,6 +9,7 @@
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://vk.com/js/api/openapi.js?152" type="text/javascript"></script>
 </head>
 <body>
   
@@ -333,7 +334,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, rem laudantium 
     </div>
      <div class="col-lg-4 col-lg-offset-1">
        <div class="footer-widget">
-         <img src="img/widget-vk.png" alt="">
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 3,width:"auto"}, 74984782);
+</script>
        </div>
      </div>
       </div>
@@ -401,10 +406,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, rem laudantium 
     
 </div></div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+
 <script type="text/javascript" src="js/scripts.js"></script>
   <script type="text/javascript" src="js/validator.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.js"></script>
-    
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?152"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
