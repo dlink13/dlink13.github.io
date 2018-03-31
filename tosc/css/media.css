@@ -41,7 +41,24 @@ and (max-device-width:425px){.navbar-brand{width:60%;}
 .klienti_block{height:150px;}
 .mobile_menu{display:block;}
 .menu_desc{display:none}
+.header-main-left {margin-top: 100px;margin-bottom: 80px;text-align: center;}
+.heder-list {margin-top: 0;margin-bottom: 50px;}
+.main-block-2-list ul li {width: 100%;}
+.price-block .line {margin-bottom: 25px;}
+.footer-block-right form {margin-left: 0;}
+.footer-block-right form label {width: 100%;}
+.footer-block-right form .btn {width: 100%;}
 
+.study .h1 {font-size: 20px;}
+.study .header-main .header-main-left {margin-top: 80px;}
+.study .header-main .header-main-left-button {padding: 5px 20px;}
+.study-preimushestva .h3 {font-size: 25px;}
+.study-preimushestva .h4 {margin-top: 50px;}
+.otstup .h6 {margin-left: 0;}
+.after-course-text {margin-left: 0;}
+.glavbuh .h6 span {border: none;padding-left: 0;border-bottom: 1px solid red;padding-bottom: 0;}
+.glavbuh-img {margin-bottom: 0;}
+.study-footer-in {margin-top: 50px;}
 }
 @media only screen
 and (min-device-width:426px)
@@ -86,6 +103,25 @@ and (max-device-width:767px){.navbar-brand{width:50%;}
 .klienti_block{height:270px;}
 .mobile_menu{display:block;}
 .menu_desc{display:none}
+
+.header-main-left {margin-top: 100px;margin-bottom: 80px;text-align: center;}
+.heder-list {margin-top: 0;margin-bottom: 50px;}
+.main-block-2-list ul li {width: 100%;}
+.price-block .line {margin-bottom: 25px;}
+.footer-block-right form {margin-left: 0;}
+.footer-block-right form label {width: 100%;}
+.footer-block-right form .btn {width: 100%;}
+
+.study .h1 {font-size: 20px;}
+.study .header-main .header-main-left {margin-top: 80px;}
+.study .header-main .header-main-left-button {padding: 5px 20px;}
+.study-preimushestva .h3 {font-size: 25px;}
+.study-preimushestva .h4 {margin-top: 50px;}
+.otstup .h6 {margin-left: 0;}
+.after-course-text {margin-left: 0;}
+.glavbuh .h6 span {border: none;padding-left: 0;border-bottom: 1px solid red;padding-bottom: 0;}
+.glavbuh-img {margin-bottom: 0;}
+.study-footer-in {margin-top: 50px;}
 }
 @media only screen
 and (min-device-width:766px)
@@ -98,6 +134,18 @@ and (max-device-width:1023px){.O_kompanii p{line-height:1.5em;font-size:14px;}
 .left_menu img{width:60px;}
 .right_menu{font-size:0.9em;}
 .klienti_block{height:200px;}
+ .footer-block-right form {margin-left: 40px;}
+
+.study .h1 {font-size: 20px;}
+.study .header-main .header-main-left {margin-top: 150px;}
+.study .header-main .header-main-left-button {padding: 5px 20px;}
+.study-preimushestva .h3 {font-size: 25px;}
+.study-preimushestva .h4 {margin-top: 50px;}
+.otstup .h6 {margin-left: 0;}
+.after-course-text {margin-left: 0;}
+.glavbuh .h6 span {border: none;padding-left: 0;border-bottom: 1px solid red;padding-bottom: 0;}
+.glavbuh-img {margin-bottom: 0;}
+.study-footer-in {margin-top: 50px;}
 }
 @media only screen
 and (min-device-width:1024px)
