@@ -195,6 +195,7 @@ background-size: cover;}
 .price-block .line {margin-bottom: 120px;}
 .price-item {display: flex;flex-direction: row;justify-content: space-around;flex-wrap: wrap;}
 .price-block-item {flex-wrap: nowrap;background:#490000;padding:10px 10px 15px 10px;min-width: 234px; margin-right: 2%; margin-top: 25px;}
+.price-block-item:nth-child(5){margin-right: 0;}
 .price-block-item-main {border:1px solid #D59D6B;}
 .price-block-item-main-top p {text-align: center;padding-top: 35px;padding-bottom: 35px;color: #fff;font-size: 35px;border-bottom: 1px solid #8F472E;}
 .price-block-item-main-middle {text-align: center;color: #fff;font-size: 19px;margin-top: 65px;padding-bottom: 54px; padding-right: 20px; padding-left: 20px;}
@@ -244,10 +245,10 @@ background-size: cover;}
 .otstup{padding: 20px 5px;border:3px solid red;width: 80%; margin-bottom: 30px;margin-top: 50px;}
 .otstup .h6 {font-size: 32px;font-weight: bold;margin-left: -37px;}
 .after-course-text {margin-left: -37px;}
-.after-course-text p{font-size: 20px;margin-bottom: 40px; width: 80%;}
+.after-course-text p{font-size: 20px;margin-bottom: 40px; width: 100%;}
 .after-course-text .after-course-text-2 {font-size: 14px;}
-.after-course-img {width: 100%;margin-top: 100px;}
-.after-course-img img {width: 100%;}
+.after-course-img {width: 100%;}
+.after-course-img img {width: 100%;height: 575px;}
 .cost {background: #F6F9FB;}
 .cost .h5 {text-align: center;font-size: 33px;font-weight: bold; margin-top: 50px;margin-bottom: 105px;}
 .cost-item {padding: 40px 80px;background-color: #fff;width: 100%;margin-bottom: 65px;}
@@ -271,3 +272,19 @@ background-size: cover;}
 .study-footer-in .study-footer-in-text p {margin-top: 25px;}
 .study-footer-in .study-footer-in-button a {display: block;padding: 10px 30px;color: #000;border: 3px solid red;margin-top: 30px;margin-bottom: 30px;}
 .footer-study {background: rgba(42, 42, 42, 0.82);} 
+.price-block-item-main-top-big-text {font-size: 15px!important;}
+.smaller-text {font-size: 20px!important;}
+.uslugi-top{background: url(../img/uslugi.jpg) center center no-repeat;-webkit-background-size: cover;
+background-size: cover;padding-top: 158px;}
+.uslugi-top .h3 {font-size: 20px;text-decoration: underline;width: 45%;color: #fff;}
+.uslugi-top .uslugi-top-left {margin-top: 25px;margin-bottom: 150px;}
+.uslugi-top .uslugi-top-left ul li {margin-top: 20px;color: #fff;font-size: 16px;}
+.uslugi-top-right .h3 {font-size: 20px;text-decoration: underline; color: #fff;width: 100%;}
+.uslugi-top-right {margin-top: 25px;margin-bottom: 150px;}
+.uslugi-top-right ul li {margin-top: 5px;color: #fff;font-size: 16px;}
+.uslugi-block {background: url(../img/study-block-2.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; margin-top: 0;margin-bottom: 0;}
+.uslugi-block .h2{margin-top: 0;padding-top: 50px;}
+.uslugi-block .pereplata {text-align: left;padding-bottom: 50px;}
+.uslugi-block .price-item {padding-bottom: 50px;}

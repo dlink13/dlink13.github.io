@@ -93,7 +93,7 @@
         	Приобрети профессию, с которой ты всегда будешь <br>
         	иметь достойную работу 
         </p>
-        <a href="#" class="header-main-left-button">Заказать консультацию</a>
+        <a href="#contact_form_pop" data-fancybox class="header-main-left-button fancybox">Заказать консультацию</a>
       </div>
       </div>
     </div>
@@ -222,7 +222,7 @@
 	<div class="container">
 		
 	<div class="row">
-	<div class="col-md-6 col-lg-6">
+	<div class="col-md-5 col-lg-5">
 		<div class="otstup">
 		<h6 class="h6">После прохождения нашего <br> интенсивного курса</h6>
 		</div>
@@ -232,7 +232,7 @@
 		<p class="after-course-text-2">Наши преподаватели умные, современные, действующие главные бухгалтера с серьезным опытом работы в коммерческих предприятиях с различными видами деятельности (Строительство, производство, торговля, услуги, государственный заказ, ВЭД). Они расскажут Вам много секретов, о которых не пишут в учебниках и интернете, поэтому, кроме знаний бухгалтерского учета, Вы получите эксклюзивную информацию, которая поможет Вам стать сильным, уникальным и востребованным главным бухгалтером.</p>
 		</div>
 	</div>
-	<div class="col-md-6 col-lg-6">
+	<div class="col-md-7 col-lg-7">
 		<div class="after-course-img">
 			<img src="img/after-course-img.jpg" alt="">
 		</div>
@@ -253,33 +253,33 @@
 						<p><span>34 900</span><br>50 000р </p>
 					</div>
 						<div class="cost-item-button">
-							<a href="">Записаться на курс</a>
+							<a href="#contact_form_price1" data-fancybox class="fancybox">Записаться на курс</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="cost-item">
 					<div class="cost-item-top">
-						<p>Группа до 10 человек</p>
+						<p>Группа до 5 человек</p>
 					</div>
 					<div class="cost-item-middle">
-						<p><span>34 900</span><br>50 000р </p>
+						<p><span>75 000р</span><br>59 900р</p>
 					</div>
 						<div class="cost-item-button">
-							<a href="">Записаться на курс</a>
+							<a href="#contact_form_price2" data-fancybox class="fancybox">Записаться на курс</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="cost-item">
 					<div class="cost-item-top">
-						<p>Группа до 10 человек</p>
+						<p>Индивидуальный курс</p>
 					</div>
 					<div class="cost-item-middle">
-						<p><span>34 900</span><br>50 000р </p>
+						<p><span>110 000р</span><br>79 900р</p>
 					</div>
 						<div class="cost-item-button">
-							<a href="">Записаться на курс</a>
+							<a href="#contact_form_price3" data-fancybox class="fancybox">Записаться на курс</a>
 					</div>
 				</div>
 			</div>
@@ -328,7 +328,7 @@
 					и мы проконсультируем Вас по любым вопросам!</p>
 				</div>
 				<div class="study-footer-in-button">
-					<a href="">Заказать консультацию</a>
+					<a href="#contact_form_price4" data-fancybox class="fancybox">Заказать консультацию</a>
 				</div>
 			</div>
 		</div>
@@ -353,24 +353,83 @@
       <div class="col-md-4"> <div class="emeil emeil_mobile">mail@toscana-finance.com</div></div>
     </div>
 </div>
-
-		<div class="col-lg-4 svitok fancybox-hidden col-sm-4 col-md-4"  style="display:none" id="#feedback">
-	<div class="" id="contact_form_pop" style="text-align: center;">
-		<h2 class="first">Оставьте свой номер</h2>
-		<p class="second"><b>И мы бесплатно проконсультируем Вас по любому вопросу</b></p>
+ 
+    <div class="col-lg-4 svitok fancybox-hidden col-sm-4 col-md-4"  style="display:none" id="#feedback">
+    	 <div class="" id="contact_form_pop" style="text-align: center;">
+    <h2 class="first">Оставьте свой номер</h2>
+    <p class="second"><b>И мы бесплатно проконсультируем Вас по любому вопросу</b></p>
 <div id="contact_form_pop">
  
 <form class="form1" id='kon'>
-	<div class='FormInfo' style='display:none'></div>
+  <div class='FormInfo' style='display:none'></div>
+  <input type="form_name" name="email"  placeholder="form_name" class="name-form" value="Заказать консультацию" style="display: none;"> </br>
     <input type="name" name="name"  placeholder="Имя" class="name-form"> </br>
     <input type="phone" name="phone"   placeholder="Телефон" class="tel1"> </br>
     <button type="button" onclick="send();"  class="button-2 butt-form">Заказать консультацию</button> 
 </form>
 
 </div></div>
+<div class="" id="contact_form_price1" style="text-align: center;">
+    <h2 class="first">Оставьте свой номер</h2>
+    <p class="second"><b>И мы бесплатно проконсультируем Вас по Группе до 10 человек</b></p>
+<div id="contact_form_price1">
+ 
+<form class="form1" id='kon'>
+  <div class='FormInfo' style='display:none'></div>
+  <input type="form_name" name="email"  placeholder="ОСНО" class="name-form" value="Группа до 10 человек" style="display: none;"> </br>
+    <input type="name" name="name"  placeholder="Имя" class="name-form"> </br>
+    <input type="phone" name="phone"   placeholder="Телефон" class="tel1"> </br>
+    <button type="button" onclick="send();"  class="button-2 butt-form">Заказать консультацию</button> 
+</form>
 
-	</div>
+</div>
+</div>
+<div class="" id="contact_form_price2" style="text-align: center;">
+    <h2 class="first">Оставьте свой номер</h2>
+    <p class="second"><b>И мы бесплатно проконсультируем Вас по Группе до 5 человек/b></p>
+<div id="contact_form_price2">
+ 
+<form class="form1" id='kon'>
+  <div class='FormInfo' style='display:none'></div>
+  <input type="form_name" name="email"  placeholder="form_name" class="name-form" value="Группа до 5 человек" style="display: none;"> </br>
+    <input type="name" name="name"  placeholder="Имя" class="name-form"> </br>
+    <input type="phone" name="phone"   placeholder="Телефон" class="tel1"> </br>
+    <button type="button" onclick="send();"  class="button-2 butt-form">Заказать консультацию</button> 
+</form>
 
+</div>
+</div>
+<div class="" id="contact_form_price3" style="text-align: center;">
+    <h2 class="first">Оставьте свой номер</h2>
+    <p class="second"><b>И мы бесплатно проконсультируем Вас по Индивидуальному курсу </b></p>
+<div id="contact_form_price3">
+ 
+<form class="form1" id='kon'>
+  <div class='FormInfo' style='display:none'></div>
+  <input type="form_name" name="email"  placeholder="form_name" class="name-form" value="Индивидуальный курс" style="display: none;"> </br>
+    <input type="name" name="name"  placeholder="Имя" class="name-form"> </br>
+    <input type="phone" name="phone"   placeholder="Телефон" class="tel1"> </br>
+    <button type="button" onclick="send();"  class="button-2 butt-form">Заказать консультацию</button> 
+</form>
+
+</div>
+</div>
+<div class="" id="contact_form_price4" style="text-align: center;">
+    <h2 class="first">Оставьте свой номер</h2>
+    <p class="second"><b>И мы бесплатно проконсультируем Вас по любому вопросу </b></p>
+<div id="contact_form_price3">
+ 
+<form class="form1" id='kon'>
+  <div class='FormInfo' style='display:none'></div>
+  <input type="form_name" name="email"  placeholder="form_name" class="name-form" value="Заказать консультацию" style="display: none;"> </br>
+    <input type="name" name="name"  placeholder="Имя" class="name-form"> </br>
+    <input type="phone" name="phone"   placeholder="Телефон" class="tel1"> </br>
+    <button type="button" onclick="send();"  class="button-2 butt-form">Заказать консультацию</button> 
+</form>
+
+</div>
+</div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
