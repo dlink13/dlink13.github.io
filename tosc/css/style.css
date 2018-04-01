@@ -218,7 +218,7 @@ background-size: cover;}
 .price-block-item-bottom a:hover {transition: 0.4s ease;background:transparent;border: 3px solid #A86C33; text-decoration: none;color: #fff; }
 .left-left {margin-left: 10%;}
 .pereplata {font-family: 'Raleway-SemiBold';margin-top: 85px; text-align: center;font-size: 20px; font-weight: bold;}
-.citata {background: url(../img/block-2-bg.jpg)center center no-repeat;-webkit-background-size: cover;
+.citata {background: url(../img/study-block-2.jpg)center center no-repeat;-webkit-background-size: cover;
 background-size: cover;font-size: 23px;padding-top: 98px;}
 .citata p {text-align: center;}
 .cita{text-align: right!important; padding-right: 50px;}
@@ -229,10 +229,10 @@ background-size: cover;}
 .footer-block-left img {width: 100%;}
 .footer-block-right {font-weight: bold;text-transform: uppercase; text-align: center;margin-top: 120px;font-size: 21px; color: #fff;width: 100%;font-family: 'Raleway-Black';}
 .footer-block-right form {width: 100%;text-align: left; margin-left: 5%;}
-.footer-block-right form label {width: 60%;}
-.footer-block-right form label input {color: #6D6D6D; width: 100%;height: 40px;padding-left: 30px;background: #D8D8D8;}
-.footer-block-right form .button p{color: #000; background-color: #D59D6B;font-weight:bold; width: 100%; margin-top: 10px;padding: 10px 45px; }
-.footer-block-right form .btn {margin-top: 0;}
+
+.footer-block-right form input {color: #6D6D6D; width: 60%;height: 40px;padding-left: 30px;background: #D8D8D8;margin-right: 20px;margin-top: 15px;}
+.footer-block-right form .butt-form{color: #000; background-color: #D59D6B;font-weight:bold; margin-top: 15px;padding: 2px 30px;font-size: 18px;height: 40px;}
+
 .new-string {width: 100%;}
 .study .header-main {background: url(../img/study-top.jpg) left center no-repeat;-webkit-background-size: cover;
 background-size: cover;}

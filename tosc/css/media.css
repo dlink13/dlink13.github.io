@@ -69,6 +69,8 @@ and (max-device-width:425px){.navbar-brand{width:60%;}
 .glavbuh .h6 span {border: none;padding-left: 0;border-bottom: 1px solid red;padding-bottom: 0;}
 .glavbuh-img {margin-bottom: 0;}
 .study-footer-in {margin-top: 50px;}
+.footer-block-right form {display: flex;flex-direction: column;}
+.footer-block-right form input {width: 100%;}
 }
 @media only screen
 and (min-device-width:426px)
@@ -141,6 +143,8 @@ and (max-device-width:767px){.navbar-brand{width:50%;}
 .cost-item .cost-item-middle p {font-size: 30px;}
 .glavbuh-text .after-course-text-2 {text-align: center;}
 .main-block-2-list ul li {padding-left: 5%;}
+.footer-block-right form {display: flex;flex-direction: column;}
+.footer-block-right form input {width: 100%;}
 
 }
 @media only screen
