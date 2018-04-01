@@ -315,5 +315,5 @@ background-size: cover;padding-top: 158px;}
 .uslugi-block .price-item {padding-bottom: 50px;}
 .metro {display: flex;flex-direction:column;}
 .metro-item {display: flex;flex-direction: row;justify-content: center;}
-.metro-item .metro-item-text p {color:#fff;font-size: 19px;padding-left: 10%;font-weight: bold;font-family: 'Raleway-Black';}
+.metro-item .metro-item-text p {white-space: nowrap;color:#fff;font-size: 19px;padding-left: 10%;font-weight: bold;font-family: 'Raleway-Black';}
 .metro-map {width: 100%;}
