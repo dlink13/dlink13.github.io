@@ -305,3 +305,7 @@ background-size: cover;padding-top: 158px;}
 .uslugi-block .h2{margin-top: 0;padding-top: 50px;}
 .uslugi-block .pereplata {text-align: left;padding-bottom: 50px;}
 .uslugi-block .price-item {padding-bottom: 50px;}
+.metro {display: flex;flex-direction:column;}
+.metro-item {display: flex;flex-direction: row;justify-content: center;}
+.metro-item .metro-item-text p {color:#fff;font-size: 19px;padding-left: 10%;font-weight: bold;font-family: 'Raleway-Black';}
+.metro-map {width: 100%;}
