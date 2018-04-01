@@ -54,6 +54,16 @@ and (max-device-width:425px){.navbar-brand{width:60%;}
 .study .header-main .header-main-left-button {padding: 5px 20px;}
 .study-preimushestva .h3 {font-size: 25px;}
 .study-preimushestva .h4 {margin-top: 50px;}
+
+.study .main-block-2-text p {text-align: center;}
+.main-block-2 .main-block-2-text {text-align: center;}
+.after-course-text p{text-align: center;}
+.after-course-img img {height: auto;}
+.cost-item .cost-item-middle p span{font-size: 20px;}
+.cost-item .cost-item-middle p {font-size: 30px;}
+.glavbuh-text .after-course-text-2 {text-align: center;}
+.main-block-2-list ul li {padding-left: 5%;}
+
 .otstup .h6 {margin-left: 0;}
 .after-course-text {margin-left: 0;}
 .glavbuh .h6 span {border: none;padding-left: 0;border-bottom: 1px solid red;padding-bottom: 0;}
@@ -122,6 +132,16 @@ and (max-device-width:767px){.navbar-brand{width:50%;}
 .glavbuh .h6 span {border: none;padding-left: 0;border-bottom: 1px solid red;padding-bottom: 0;}
 .glavbuh-img {margin-bottom: 0;}
 .study-footer-in {margin-top: 50px;}
+
+.study .main-block-2-text p {text-align: center;}
+.main-block-2 .main-block-2-text {text-align: center;}
+.after-course-text p{text-align: center;}
+.after-course-img img {height: auto;}
+.cost-item .cost-item-middle p span{font-size: 20px;}
+.cost-item .cost-item-middle p {font-size: 30px;}
+.glavbuh-text .after-course-text-2 {text-align: center;}
+.main-block-2-list ul li {padding-left: 5%;}
+
 }
 @media only screen
 and (min-device-width:766px)
