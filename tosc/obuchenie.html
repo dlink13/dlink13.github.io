@@ -6,13 +6,13 @@
 <title>Бухгалтерская Компания "Toscana" </title>
 <!-- Load CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
 <link href="css/media.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 <script type="text/javascript" src="js/jquery.fancybox.js"></script>
@@ -83,7 +83,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-4">
-      <div class="header-main-left">
+      <div class="header-main-left animated slideInUp">
         <h1 class="h1">
          ПРОЙДИ ИНТЕНСИВНЫЙ КУРС <br>
          ПРАКТИЧЕСКОГО<br>
@@ -102,7 +102,7 @@
 <div class="main-block-2">
   <div class="container">
     <div class="row">
-      <h2 class="h2">
+      <h2 class="h2 wow animated slideInUp">
         Здравствуйте, дорогие друзья!
       </h2>
       <div class="line">
@@ -135,20 +135,20 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-6">
-			<div class="study-preimushestva">
+			<div class="study-preimushestva wow animated slideInUp">
 				<h3 class="h3">
 					Наши преимущества перед 
 					другими образовательными 
 					учреждениями:
 				</h3>
-				<h4 class="h4">
+				<h4 class="h4 wow animated slideInUp">
 					Наши выпускники зарабатывают от <br>
 					50000 до 150000 рублей в месяц
 				</h4>
 			</div>
 		</div>
 		<div class="col-lg-6">
-			<div class="study-preimushestva">
+			<div class="study-preimushestva" id="study-preimushestva">
 				<ul>
 					<li>- Мы выпускаем специалистов «под ключ»,<br> которые сразу приступают к работе</li>
 					<li>- Даем только практические знания. <br>
@@ -177,7 +177,7 @@
 <div class="container">
 	<div class="row">
 
-			<h5 class="h5">Всего 3 шага на пути к <br>
+			<h5 class="h5 wow animated slideInUp">Всего 3 шага на пути к <br>
 						новому уровню жизни:</h4>
 		
 		<div class="col-lg-6">
@@ -224,7 +224,7 @@
 	<div class="row">
 	<div class="col-md-5 col-lg-5">
 		<div class="otstup">
-		<h6 class="h6">После прохождения нашего <br> интенсивного курса</h6>
+		<h6 class="h6 wow animated slideInUp">После прохождения нашего <br> интенсивного курса</h6>
 		</div>
 		<div class="after-course-text">
 		<p>Вы получаете Диплом-Сертификат и начинаете <br> работать главным бухгалтером любого большого <br> или малого предприятия. </p>
@@ -243,7 +243,7 @@
 <div class="cost">
 	<div class="container">
 		<div class="row">
-			<h5 class="h5">СТОИМОСТЬ КУРСА</h5>
+			<h5 class="h5 wow animated slideInUp">СТОИМОСТЬ КУРСА</h5>
 			<div class="col-lg-4">
 				<div class="cost-item">
 					<div class="cost-item-top">
@@ -290,7 +290,7 @@
 	</div>
 </div>
 <div class="glavbuh">
-	<h6 class="h6"><span> Эксклюзивное предложение</span> Главбух – Куратор в любой точке мира</h6>
+	<h6 class="h6 wow animated slideInUp"><span> Эксклюзивное предложение</span> Главбух – Куратор в любой точке мира</h6>
  <div class="container">
  	<div class="row">
  		<div class="col-lg-12">
@@ -433,6 +433,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+
         <script type="text/javascript">
         $(document).ready(function () {
 				$( "#kon button" ).click(function() {
@@ -452,6 +454,7 @@
                     'transitionIn': 'none',
                     'transitionOut': 'none'
                 });
+                $("body").fadeIn(1000);
             });
         </script>
         <script>
@@ -465,6 +468,5 @@
                 $("a.gallery").fancybox();
             });
         </script>
-
-
+<script>new WOW().init();</script>
 </body>

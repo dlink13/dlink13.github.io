@@ -7,6 +7,7 @@
 <!-- Load CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/media.css" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
@@ -79,7 +80,7 @@
 		<div class="row">
 			<div class="col-lg-5">
 				<div class="uslugi-top-left">
-					<h3 class="h3">Полный перечень услуг</h3>
+					<h3 class="h3 wow animated slideInUp">Полный перечень услуг</h3>
 					<ul>
 						<li>- Организация, постановка и полное ведение бухгалтерского учета. </li>
 						<li>- Восстановление бухгалтерского учета.</li>
@@ -98,7 +99,7 @@
 			</div>
 			<div class="col-lg-5 col-lg-offset-2">
 				<div class="uslugi-top-right">
-					<h3 class="h3">Квалифицированная практическая <br>
+					<h3 class="h3 wow animated slideInUp">Квалифицированная практическая <br>
 помощь бухгалтерам</h3>
 					<ul>
 						<li>- красное сальдо в ОСВ;</li>
@@ -124,7 +125,7 @@
 	</div>
 </div>
 <div class="price-block uslugi-block">
-                <h2 class="h2">
+                <h2 class="h2 wow animated slideInUp">
                  Почему выбирают именно нас
                 </h2>
                 <div class="line">
@@ -198,7 +199,7 @@
                       </div>
                     </div>
               <div class="col-lg-4 ">
-              <div class="pereplata">
+              <div class="pereplata wow animated slideInUp">
 				 <p> - на бухгалтерское обслуживание фиксированная по договоренности <br>
             - адекватно оцениваем платежеспособность клиента. <br>
             - консультации 3000р./ 60 мин. <br>
@@ -323,25 +324,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function () {
-				$( "#kon button" ).click(function() {
- 					 $.ajax({
-						'url': "send.php",
-						'type': "POST",
-						'dataType': "html",
-						'data': $('#kon').serialize(), 
-						'success': function(html) {
-							$('#kon .FormInfo').html(html).fadeIn();	
-						}
-					});
-				});
-				
+        $( "#kon button" ).click(function() {
+           $.ajax({
+            'url': "send.php",
+            'type': "POST",
+            'dataType': "html",
+            'data': $('#kon').serialize(), 
+            'success': function(html) {
+              $('#kon .FormInfo').html(html).fadeIn();  
+            }
+          });
+        });
+        
                 $("#content").fancybox({
                     'titlePosition': 'inside',
                     'transitionIn': 'none',
                     'transitionOut': 'none'
                 });
+                $("body").fadeIn(500);
             });
         </script>
         <script>
@@ -355,6 +358,6 @@
                 $("a.gallery").fancybox();
             });
         </script>
-
+<script>new WOW().init();</script>
 
 </body>

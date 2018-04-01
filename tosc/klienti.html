@@ -129,7 +129,27 @@
 			<div class="col-md-4"> <div class="emeil emeil_mobile">mail@toscana-finance.com</div></div>
 		</div>
 	</div>
-
-
+        <script type="text/javascript">
+        $(document).ready(function () {
+				$( "#kon button" ).click(function() {
+ 					 $.ajax({
+						'url': "send.php",
+						'type': "POST",
+						'dataType': "html",
+						'data': $('#kon').serialize(), 
+						'success': function(html) {
+							$('#kon .FormInfo').html(html).fadeIn();	
+						}
+					});
+				});
+				
+                $("#content").fancybox({
+                    'titlePosition': 'inside',
+                    'transitionIn': 'none',
+                    'transitionOut': 'none'
+                });
+                $("body").fadeIn(500);
+            });
+        </script>
 
 </body>

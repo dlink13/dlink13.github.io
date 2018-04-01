@@ -7,6 +7,7 @@
 <!-- Load CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/media.css" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
@@ -77,11 +78,11 @@
 			</div>
 		</div>
 		</div>
-<div class="header-main">
+<div class="header-main ">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-      <div class="header-main-left">
+      <div class="header-main-left animated slideInUp">
         <h1 class="h1">
           НАДЕЖНАЯ БУХГАЛТЕРИЯ<br>
           ДЛЯ ВАШЕГО БИЗНЕСА<br>
@@ -92,7 +93,7 @@
       </div>
       </div>
       <div class="col-lg-5 col-lg-offset-1">
-        <div class="heder-list">
+        <div class="heder-list animated slideInUp">
           <ul>
             <li>
               <div class="heder-list-img">
@@ -143,7 +144,7 @@
 <div class="main-block-2">
   <div class="container">
     <div class="row">
-      <h2 class="h2">
+      <h2 class="h2 wow animated slideInUp">
         МИФ О ВОЛШЕБНОЙ КНОПКЕ
       </h2>
       <div class="line">
@@ -205,7 +206,7 @@
  <div class="container">
     <div class="row">
 
-         <h2 class="h2">
+         <h2 class="h2 wow animated slideInUp">
        Почему выбирают именно нас
       </h2>
       <div class="line">
@@ -268,7 +269,7 @@
 <div class="robota-block">
   <div class="container">
     <div class="row">
-        <h2 class="h2">
+        <h2 class="h2 wow animated slideInUp">
         Наша работа в цифрах
       </h2>
       <div class="line">
@@ -321,7 +322,7 @@
 </div>
 
 <div class="price-block">
-                <h2 class="h2">
+                <h2 class="h2 wow animated slideInUp">
                  Почему выбирают именно нас
                 </h2>
                 <div class="line">
@@ -400,14 +401,14 @@
             <p> ФИКСИРОВАННАЯ СТОИМОСТЬ УСЛУГ БЕЗ КАКИХ-ЛИБО ПЕРЕПЛАТ !</p>
           </div>
 </div>
-<div class="citata">
+<div class="citata ">
                   <div class="line">
                 <img src="img/line.png" alt="">
                       </div>
   <div class="container">
     <div class="row">
-      <p>Если   Вы   считаете, что  компетентность  стоит  слишком  дорого, 
-то  попробуйте  некомпетентность – она  обойдётся  вам  гораздо  дороже.</p> <br><p class="cita">Йохан  Стаель  фон  Хольстайн</p>
+      <p class="wow animated slideInUp">Если   Вы   считаете, что  компетентность  стоит  слишком  дорого, 
+то  попробуйте  некомпетентность – она  обойдётся  вам  гораздо  дороже.</p> <br><p class="cita wow animated slideInUp">Йохан  Стаель  фон  Хольстайн</p>
     </div>
                     <div class="line">
                 <img src="img/line.png" alt="">
@@ -425,10 +426,10 @@
       </div>
       <div class="col-lg-8">
         <div class="footer-block-right">
-        <p>
+        <p class="form wow animated slideInUp">
            Введите номер телефона и мы начинаем сотрудничество!
         </p>
-        <div class="form">
+        <div class="wow animated slideInUp">
         <form>
             <label class="phone required phone">
               <input type="text" name="phone3" maxlength="15" placeholder="Телефон">
@@ -557,25 +558,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function () {
-				$( "#kon button" ).click(function() {
- 					 $.ajax({
-						'url': "send.php",
-						'type': "POST",
-						'dataType': "html",
-						'data': $('#kon').serialize(), 
-						'success': function(html) {
-							$('#kon .FormInfo').html(html).fadeIn();	
-						}
-					});
-				});
-				
+        $( "#kon button" ).click(function() {
+           $.ajax({
+            'url': "send.php",
+            'type': "POST",
+            'dataType': "html",
+            'data': $('#kon').serialize(), 
+            'success': function(html) {
+              $('#kon .FormInfo').html(html).fadeIn();  
+            }
+          });
+        });
+        
                 $("#content").fancybox({
                     'titlePosition': 'inside',
                     'transitionIn': 'none',
                     'transitionOut': 'none'
                 });
+                $("body").fadeIn(1000);
             });
         </script>
         <script>
@@ -589,6 +592,6 @@
                 $("a.gallery").fancybox();
             });
         </script>
-
+<script>new WOW().init();</script>
 
 </body>

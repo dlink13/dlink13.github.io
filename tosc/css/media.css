@@ -134,7 +134,7 @@ and (max-device-width:1023px){.O_kompanii p{line-height:1.5em;font-size:14px;}
 .left_menu img{width:60px;}
 .right_menu{font-size:0.9em;}
 .klienti_block{height:200px;}
- .footer-block-right form {margin-left: 40px;}
+ .footer-block-right form {margin-left: 0;}
 
 .study .h1 {font-size: 20px;}
 .study .header-main .header-main-left {margin-top: 150px;}
