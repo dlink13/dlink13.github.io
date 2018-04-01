@@ -71,6 +71,7 @@ and (max-device-width:425px){.navbar-brand{width:60%;}
 .study-footer-in {margin-top: 50px;}
 .footer-block-right form {display: flex;flex-direction: column;}
 .footer-block-right form input {width: 100%;}
+
 }
 @media only screen
 and (min-device-width:426px)
