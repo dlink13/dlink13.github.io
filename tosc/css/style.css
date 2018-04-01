@@ -137,7 +137,7 @@ font-style: normal;
 .third{font-family: 'Century';}
 .third_footer{font-family: 'Century';}
 
-.cont-slide{font-family: 'Raleway';margin-top:5%;}
+.cont-slide{font-family: 'Raleway';}
 .svitok{font-family: 'Raleway';margin-top:50px;}
 .obertka{font-family: 'Raleway';width:100%;background:url(../img/svitok.png) center center no-repeat;-webkit-background-size:100%;background-size:100%;text-align:center;}
 .obertka .first{font-family: 'Raleway';padding-top:12%;font-size:15px;font-weight:bold;padding-top:12px;color:#000;}
