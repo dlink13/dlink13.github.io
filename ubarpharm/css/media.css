@@ -1,109 +1,132 @@
 @media only screen
 and (min-device-width:320px)
-and (max-device-width:425px){.navbar-brand{width:60%;}
-.navbar .left_menu img{width:60px;}
-.main_footer{position:absolute!important;background-color:rgba(0,0,0,0.5)!important;}
-.item_slide3 .center .zaglav .description{font-size:0.58em;}
-.item_slide3 .center .zaglav{}
-.center .zaglav p{font-size:1.5em;}
-.description{font-size:0.75em;}
-.content_o_kompnii{position:relative;}
-.O_kompanii{margin-top:30%;margin-bottom:30%;}
-.O_kompanii p{line-height:1.5em;}
-.content_uslugi{position:relative;min-height: 800px;}
-.link{text-align:center;margin-top:40%;margin-bottom:5%;}
-.text-3, .text-2, .text-1{margin-top:0;}
-.link .button-2{margin-left:15%;width:70%!important;}
-.content_klienti{position:relative;}
-.klienti_container{margin-top:0;}
-.klienti_block{margin-bottom:5px;margin-top:10%;}
-.content_klienti .cont-h{margin-top:30%;}
-.klienti_block{width:100%;}
-.content_obuchenie{position:relative;}
-.content_obuchenie .O_kompanii{margin-top:30%;}
-.content_contakti{position:relative;width:100%;min-height: 700px;}
-.content_contakti .cont-h{margin-top:30%;}
-.obertka {width: 100%;}
-.obertka .button_2{margin-bottom:5%;}
-.obertka .first{font-size:16px;}
-.content_contakti .svitok .obertka .button_2{margin-top:10px;font-size:0.9em!important;}
-.mobile_footer{display:block;width:100%;}
-.mobile_footer h1{font-weight:bold;width:100%;font-size:11px;text-align:center;margin-top:5px;color:#fff;}
-.mobile_footer h2{font-weight:bold;width:100%;font-size:11px;text-align:center;margin-top:5px;color:#fff;}
-.emeil_mobile{display:none;}
-.emeil_mobile{display:none;}
-/*-.third{display:none;}
-.fourth{display:none;}-*/
-.prava{width:100%;font-size:10px;text-align:center;}
-.obertka{margin-bottom:50px;}
-.footer{position:relative;height:auto;background-color:#000;}
-.svitok{margin:0 auto;padding:0;}
-.klienti_block{height:150px;}
-.mobile_menu{display:block;}
-.menu_desc{display:none}
+and (max-device-width:425px){
+	.menu {display: none;}
+	.mobile_menu {display: block;}
+	.header-text {margin-top: 100px;}
+	.header-text .h2 {font-size: 25px;margin-left: 0;}
+
+	.product-1-right {margin-left: auto;}
+	.our-droduct-2 .product-2 img {margin-top: 5px;margin-left: auto;width: 100%;}
+	.our-droduct-2 .product-2 {width: 100%;padding-bottom: 50px;}
+	.our-droduct-2 ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 .h3 {padding-left: 0;text-align: center;}
+	.our-droduct-2 ul {padding-left: 0;width: 100%;text-align: center;}
+	.our-droduct-2 ul li:nth-child(3) a {position: relative;}
+	.our-droduct-2 .line  {display: none;}
+	.product-4 {flex-direction: column;}
+	.product-4 img {width: 100%;}
+	.product-1-left .line {position: relative;}
+	.product-1-left .h3 {text-align: center;}
+	.product-1-left ul {width: 100%;}
+	.product-1-left ul li:nth-child(1) {text-align: center;}
+	.product-1-left ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.product-1-left ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul {margin-bottom: 0;}
+	.dostavka-left .line {display: none;}
+	.dostavka-left {height: auto;padding-bottom: 25px;}
+	.dostavka-left img {position: relative;width: 80%;margin: 0 auto;display: block;}
+	.dostavka ul {margin-top: 25px;}
+
+	.oplata {margin-top: 25px;}
+	.voprosy-top {height: auto;}
+	.voprosy-top .h5 {margin-left: auto;position: relative;}
+	.voprosy-middle ul li {text-align: center;}
+	.voprosy-bottom {flex-direction: column;margin-bottom: -80px;}
+	footer .footer-left form {width: 100%;}
+	footer .footer-left form button {width: 40%;}
+
+
+}
+
+
+@media only screen
+and (min-device-width:426px)
+and (max-device-width:767px)
+{
+	.menu {display: none;}
+	.mobile_menu {display: block;}
+	.header-text {margin-top: 100px;}
+	.header-text .h2 {font-size: 25px;margin-left: 0;}
+
+	.product-1-right {margin-left: auto;}
+	.our-droduct-2 .product-2 img {margin-top: 5px;margin-left: auto;width: 100%;}
+	.our-droduct-2 .product-2 {width: 100%;padding-bottom: 50px;}
+	.our-droduct-2 ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 .h3 {padding-left: 0;text-align: center;}
+	.our-droduct-2 ul {padding-left: 0;width: 100%;text-align: center;}
+	.our-droduct-2 ul li:nth-child(3) a {position: relative;}
+	.our-droduct-2 .line  {display: none;}
+	.product-4 {flex-direction: column;}
+	.product-4 img {width: 100%;}
+	.product-1-left .line {position: relative;}
+	.product-1-left .h3 {text-align: center;}
+	.product-1-left ul {width: 100%;}
+	.product-1-left ul li:nth-child(1) {text-align: center;}
+	.product-1-left ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.product-1-left ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul {margin-bottom: 0;}
+	.dostavka-left .line {display: none;}
+	.dostavka-left {height: auto;padding-bottom: 25px;}
+	.dostavka-left img {position: relative;width: 80%;margin: 0 auto;display: block;}
+	.dostavka ul {margin-top: 25px;}
+
+	.oplata {margin-top: 25px;}
+	.voprosy-top {height: auto;}
+	.voprosy-top .h5 {margin-left: auto;position: relative;}
+	.voprosy-middle ul li {text-align: center;}
+	.voprosy-bottom {flex-direction: column;margin-bottom: -80px;}
+	footer .footer-left form {width: 100%;}
+	footer .footer-left form button {width: 40%;}
+
+
+}
+
+
+@media only screen
+and (min-device-width:766px)
+and (max-device-width:1023px){
+	.menu {display: none;}
+	.mobile_menu {display: block;}
+	.header-text {margin-top: 100px;}
+	.header-text .h2 {font-size: 25px;margin-left: 0;}
+
+	.product-1-right {margin-left: auto;}
+	.our-droduct-2 .product-2 img {margin-top: 5px;margin-left: auto;width: 100%;}
+	.our-droduct-2 .product-2 {width: 100%;padding-bottom: 50px;}
+	.our-droduct-2 ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 .h3 {padding-left: 0;text-align: center;}
+	.our-droduct-2 ul {padding-left: 0;width: 100%;text-align: center;}
+	.our-droduct-2 ul li:nth-child(3) a {position: relative;}
+	.our-droduct-2 .line  {display: none;}
+	.product-4 {flex-direction: column;}
+	.product-4 img {width: 100%;}
+	.product-1-left .line {position: relative;}
+	.product-1-left .h3 {text-align: center;}
+	.product-1-left ul {width: 100%;}
+	.product-1-left ul li:nth-child(1) {text-align: center;}
+	.product-1-left ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.product-1-left ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul {margin-bottom: 0;}
+	.dostavka-left .line {display: none;}
+	.dostavka-left {height: auto;padding-bottom: 25px;}
+	.dostavka-left img {position: relative;width: 80%;margin: 0 auto;display: block;}
+	.dostavka ul {margin-top: 25px;}
+
+	.oplata {margin-top: 25px;}
+	.voprosy-top {height: auto;}
+	.voprosy-top .h5 {margin-left: auto;position: relative;}
+	.voprosy-middle ul li {text-align: center;}
+	.voprosy-bottom {flex-direction: column;margin-bottom: -80px;}
+	footer .footer-left form {width: 100%;}
+	footer .footer-left form button {width: 40%;}
+
 
 }
 @media only screen
-and (min-device-width:426px)
-and (max-device-width:767px){.navbar-brand{width:50%;}
-.navbar .left_menu img{width:70px;}
-.main_footer{position:absolute!important;background-color:rgba(0,0,0,0.5)!important;}
-.item_slide3 .center .zaglav .description{font-size:0.58em;}
-.item_slide3 .center .zaglav{}
-.center .zaglav p{font-size:2em;}
-.description{font-size:0.8em;}
-.content_o_kompnii{position:relative;}
-.O_kompanii{margin-top:25%;margin-bottom:50%;}
-.O_kompanii p{line-height:1.5em;}
-.content_uslugi{position:relative;min-height: 1000px;}
-.link{margin-top:30%;text-align:center;margin-bottom: 5%;}
-.link .button-2{margin-left:30%;text-align:center;width:40%!important;}
-.text-3{margin-top:0%;}
-.text-2{margin-top:0%;}
-.text-1{margin-top:0%;}
-.content_klienti{position:relative;}
-.klienti_container{margin-top:0;}
-.klienti_block{margin-bottom:5px;margin-top:10%;}
-.content_klienti .cont-h{margin-top:30%;}
-.klienti_block{width:80%;margin:0 auto;}
-.content_obuchenie{position:relative;}
-.content_obuchenie .O_kompanii{margin-top:15%;}
-.content_contakti{position:relative;}
-.content_contakti .cont-h{margin-top:30%;}
-.obertka .button_2{margin-bottom:5%;}
-.obertka .first{font-size:16px;}
-.mobile_footer{display:block;width:100%;}
-.mobile_footer h1{width:100%;font-size:13.5px;text-align:center;margin-top:5px;color:#fff;}
-.mobile_footer h2{width:100%;font-size:13.5px;text-align:center;margin-top:5px;color:#fff;}
-.emeil_mobile{display:none;}
-.emeil_mobile{display:none;}
-.third{display:none;}
-.fourth{display:none;}
-.prava{width:100%;font-size:10px;text-align:center;}
-.obertka{margin-bottom:50px;}
-.footer{position:relative;height:auto;background-color:#000;}
-.svitok{margin:0 auto;padding:0;margin-bottom:30%;}
-.klienti_block{height:270px;}
-.mobile_menu{display:block;}
-.menu_desc{display:none}
-}
-@media only screen
-and (min-device-width:766px)
-and (max-device-width:1023px){.O_kompanii p{line-height:1.5em;font-size:14px;}
-.open-content{font-size:20px;}
-.text-2{font-size:13px;}
-.menu_desc ul li a{white-space:normal;font-size:0.8em;}
-.menu_desc ul li{padding-left:0;}
-.left_menu p{padding-top:0;font-size:0.9em;}
-.left_menu img{width:60px;}
-.right_menu{font-size:0.9em;}
-.klienti_block{height:200px;}
-}
-@media only screen
 and (min-device-width:1024px)
-and (max-device-width:4200px){.klienti_block{height:200px;}
-.klienti_container{margin-top:15%;}
-.O_kompanii p{line-height:2em;}
-.content_obuchenie .O_kompanii p{line-height:1em;}
-.link{margin-top:16%;}
+and (max-device-width:4200px){
 }
