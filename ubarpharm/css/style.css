@@ -171,3 +171,5 @@ footer p {margin: 0;text-align: center;color: #000;font-size: 17px;margin-top: 5
 #producr-1-by  form button {margin:0 auto; margin-top: 20px;width: 50%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: transparent;font-size: 20px;}
 
 
+.fancybox-bg {
+    background: rgb(151, 203, 113)!important;}
