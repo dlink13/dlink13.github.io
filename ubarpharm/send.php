@@ -8,6 +8,8 @@ if ($_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') {return;}
 $name = filter_input(INPUT_POST, 'name' );
 $email = filter_input(INPUT_POST, 'email' );
 $phone = filter_input(INPUT_POST, 'phone' );
+$text = filter_input(INPUT_POST, 'text' );
+$select = filter_input(INPUT_POST, 'hero[]' );
 
 // список получателей(в нашем случае - один)
 $recepient  = "mail@toscana-finance.ru";
@@ -18,6 +20,10 @@ $subject = "Заявка с сайта";
 // Сообщение для более менее приглядного вида в HTML
 $message =   "Имя: " . $name . "\n";
 $message .=   "Телефон: " . $phone . "\n";
+$message .=   "Форма: " . $email . "\n";
+$message .=   "Продукт: " . $select . "\n";
+$message .=   "Комментарий: " . $text . "\n";
+
 
 
 
