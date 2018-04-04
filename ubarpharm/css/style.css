@@ -124,6 +124,7 @@ background-size: cover; margin-top: 70px;padding-top: 100px;}
 .voprosy-top .h5 {display: block;border: 5px solid #66cc33;padding: 49px;text-align: center;font-size: 32px; color: #000;font-weight: bold;margin-top: -20px;margin-left: -80px;position: absolute;width: 100%;}
 .voprosy-middle {margin-top: 80px;}
 .voprosy-middle ul li {margin-top: 25px;font-size: 20px;}
+.voprosy-middle .text-1 {padding:20px 0;text-align: center;}
 .voprosy-middle ul li a {outline: none!important;color: #000;text-decoration: none;}
 .voprosy-bottom {margin-top: 100px;margin-bottom: -100px;display: flex;flex-direction: row;}
 .voprosy-bottom p {font-size: 20px;}
