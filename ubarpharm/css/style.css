@@ -1,0 +1,128 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+body{line-height:1;background-color:#F5F6F8;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+html, body{width:100%;letter-spacing:0.025em;line-height:1.75;opacity:1;-webkit-font-smoothing:subpixel-antialiased;}
+body{margin-top:-60px;}
+
+@font-face{
+font-family: 'Century';
+
+src: url('../fonts/8483.eot');
+
+src: url('../fonts/8483.eot?iefix') format('eot');
+
+src:url('../fonts/8483.woff') format('woff');
+
+src:url('../fonts/8483.ttf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+
+.menu {width: 100%;}
+.menu ul {padding-top: 45px;padding-bottom: 60px; display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
+.menu ul li a{text-decoration: none;color: #66cc33;text-align: center;font-size: 18px;text-transform: uppercase;font-weight: bold;}
+.menu ul li a:hover {text-decoration: underline;color: #5eaa39;}
+.menu ul li:last-child a{color: #000;}
+.container {
+  position: relative;
+  width: 100%;
+}
+header {
+  display: block;
+  width: 100%;
+  background: url(../img/header-bg.png)center center no-repeat;-webkit-background-size: cover;
+  background-size: cover;
+}
+.header-text {padding: 90px 35px;border: 5px solid #65B32E;margin-bottom: 50px;}
+.header-text .h2 {font-size: 76px; font-weight: bold;margin-left: -200px;color: #000;}
+.header-text ul {margin-top: 60px;}
+.header-text ul li{margin-top:35px; font-size: 20px;}
+.header-text ul li:first-child {color: #66cc33; margin-top: 0;}
+.header-text ul li a {color: #66cc33; text-decoration: underline;}
+.mouse {margin-bottom: 150px;}
+.mouse img {margin-left: -100px;}
+.product-1-left {margin-bottom: 135px;}
+.our-droduct .h3 {margin-top: 50px;text-align: center;font-size: 32px;color: #000;margin-bottom: 80px;}
+.product-1-left .h3	{text-align: left;margin-top: 80px;margin-bottom: 30px;font-size: 24px;font-weight: bold;}
+.product-1-left .line {position: absolute;z-index: 100;border: 2px solid #66cc33;width: 100%;margin-bottom: 30px;}
+.product-1-left ul {width: 70%;margin-top: 50px;}
+.product-1-left ul li {font-size: 20px;color: #000;}
+.product-1-left ul li:nth-child(1) {margin-bottom: 5px;}
+.product-1-left ul li:nth-child(2) {margin-bottom: 15px;}
+.product-1-left ul li:nth-child(2) a {color: #000;border-bottom: 2px solid #ccc;}
+.product-1-left ul li:nth-child(3) a {color: #66cc33;border-bottom: 2px solid #66cc33;}
+.product-1-right {background: url(../img/tovar-1.png)center center no-repeat;-webkit-background-size: cover;
+background-size: cover;width: 100%;height: 340px;margin-left: -180px;}
+.our-droduct-2 .product-2 {border: 5px solid #66cc33;width: 85%;}
+.our-droduct-2 .product-2 img {margin-top: -50px;margin-left: 30px;position: relative;z-index: -1;}
+.our-droduct-2 .line {width: 150px;height: 450px;position:absolute;border-left: 2px solid #66cc33;border-top:2px solid #66cc33;right: 45%;margin-top: -100px;}
+.our-droduct-2 .h3	{padding-left: 40%;margin-top: 20px;margin-bottom: 30px;font-size: 22px;font-weight: bold;}
+.our-droduct-2 ul {padding-left: 40%;width: 100%;margin-top: 10px;text-align:left;margin-bottom: 150px;}
+.our-droduct-2 ul li {font-size: 20px;color: #000;}
+.our-droduct-2 ul li:nth-child(1) {margin-bottom: 5px;}
+.our-droduct-2 ul li:nth-child(2) {margin-bottom: 15px;}
+.our-droduct-2 ul li:nth-child(2) a {z-index: 2;position: absolute; color: #000;border-bottom: 2px solid #ccc;margin-top: 0px;}
+.our-droduct-2 ul li:nth-child(3) a {z-index: 2;position: absolute; color: #66cc33;border-bottom: 2px solid #66cc33;margin-top: 25px;}
+.product-3 .h3{margin-top:60px;}
+.product-3 ul {margin-bottom: 100px;}
+.product-3 img {width: 100%;}
+.product-3 .line {height: 520px;border-top: 0;margin-top: 0px;}
+.product-4 {margin-top: 110px;display: flex;flex-direction: row;}
+.product-4 .h3 {padding-left: 15%;}
+.product-4 ul{width: 100% ;padding-left: 15%;}
+.product-4 .line {right:0%;border-left: 0;width: 580px;margin-top: 5.5%;height: auto;}
+.product-4-text {padding-top: 17%;}
+.sertefikaty {background: url(../img/sertefikat.png)center center no-repeat;-webkit-background-size: cover;
+background-size: cover; margin-top: 70px;padding-top: 100px;}
+.sertefikaty .top .h4 {font-size: 32px;font-weight: bold;text-align: center;padding-bottom: 70px;}
+.sertefikaty .top p {font-size: 20px;text-align: center;padding-bottom: 77px;}
+.sertefikat-img img {width: 100%;min-height: 508px;}
+.bot p {font-size: 20px;text-align: center;padding-bottom: 150px;padding-top: 50px;}
+.dostavka {padding-top: 100px;}
+.dostavka .h5 {font-size: 32px;font-weight: bold;text-align: center;padding-bottom: 50px;}
+.dostavka-left {border: 10px solid #66cc33;height: 524px;}
+.dostavka-left img {width: 85%;margin-bottom: -50px;margin-left: 100px;z-index: -1;position: absolute;z-index: -1;}
+.dostavka-left .h6 {text-align: center;margin-top: 50px;font-size: 22px;color: #000;margin-bottom: 30px;}
+.dostavka-left .line {position: absolute;height: 312px;border-left: 3px solid #66cc33;left: 35%;top: 15%;}
+.dostavka ul {margin-top: 100px;}
+.dostavka ul li {margin-top: 25px; font-size: 17px;}
+.dostavka ul li:first-child a{font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.dostavka ul li:first-child a:hover {color: #000;text-decoration: none;cursor: default;}
+.dostavka ul li:nth-child(3) a {font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.dostavka ul li:nth-child(3) a:hover {color: #000;text-decoration: none;cursor: default;}
+
+.oplata {margin-top: 180px;}
+.oplata ul li {font-size: 17px; margin-top: 8px;}
+.oplata ul li:first-child a{font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.oplata ul li:first-child a:hover {color: #000;text-decoration: none;cursor: default;}
+.oplata ul li:nth-child(5) {margin-top: 40px;}
+.oplata ul li:nth-child(5) a {font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.oplata ul li:nth-child(5) a:hover {color: #000;text-decoration: none;cursor: default;}
+.oplata .h6 {padding-top: 5px;;font-weight: bold;font-size: 22px;display: block;height: 360px;width: 100px;position: absolute;top: -120px;left: 40%;border-left: 3px solid #66cc33; padding-left: 20px;z-index: 1;}
+.oplata img{width: 100%;}
+.voprosy-top {background: #F3F3F3;margin-top: 180px;height: 156px;}
+.voprosy-top .h5 {display: block;border: 5px solid #66cc33;padding: 49px;text-align: center;font-size: 32px; color: #000;font-weight: bold;margin-top: -20px;margin-left: -80px;position: absolute;width: 100%;}
+.voprosy-middle {margin-top: 80px;}
+.voprosy-middle ul li {margin-top: 25px;font-size: 20px;}
+.voprosy-middle ul li a {color: #000;text-decoration: none;}
+.voprosy-bottom {margin-top: 100px;margin-bottom: -100px;display: flex;flex-direction: row;}
+.voprosy-bottom p {font-size: 20px;}
+footer {background: url(../img/footer.png)center center no-repeat;-webkit-background-size: cover;
+background-size: cover;}
+footer .h6 {text-align: center;font-weight: bold;font-size: 32px;padding-top: 160px;padding-bottom: 90px;}
+footer .footer-left form{display: flex;flex-direction: column;width: 60%;margin-bottom: 80px;}
+footer .footer-left form input {border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:#F3F3F3;margin-top: 15px;}
+footer .footer-left form button {margin:0 auto; margin-top: 20px;width: 30%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: #F3F3F3;font-size: 20px;}
+footer .footer-left ul {padding-bottom: 50px;}
+footer .footer-left ul li {font-size: 20px;}
+footer .footer-left ul li span {font-weight: bold;}
+footer .footer-left ul li:first-child {margin-bottom: 35px;}
+footer .footer-left ul li:nth-child(5) {margin-top: 35px;}
+.footer-map {margin-top: 5%;}
+footer p {margin: 0;text-align: center;color: #000;font-size: 17px;margin-top: 50px;padding-bottom: 50px;}
