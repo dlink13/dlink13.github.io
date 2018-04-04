@@ -70,9 +70,9 @@ header {
 .product-1-left ul li:nth-child(2) a {outline: none!important;color: #000;border-bottom: 2px solid #ccc;}
 .product-1-left ul li:nth-child(3) a {outline: none!important;color: #66cc33;border-bottom: 2px solid #66cc33;}
 .product-1-right {background: url(../img/tovar-1.png)center center no-repeat;-webkit-background-size: cover;
-background-size: cover;width: 100%;height: 340px;margin-left: -180px;}
+background-size: cover;width: 80%;height: 340px;margin-left: -120px;}
 .our-droduct-2 .product-2 {border: 5px solid #66cc33;width: 85%;}
-.our-droduct-2 .product-2 img {margin-top: -50px;margin-left: 30px;position: relative;z-index: -1;}
+.our-droduct-2 .product-2 img {width: 100%;margin-top: -50px;margin-left: 30px;position: relative;z-index: -1;}
 .our-droduct-2 .line {width: 150px;height: 450px;position:absolute;border-left: 2px solid #66cc33;border-top:2px solid #66cc33;right: 45%;margin-top: -100px;}
 .our-droduct-2 .h3	{padding-left: 40%;margin-top: 20px;margin-bottom: 30px;font-size: 22px;font-weight: bold;}
 .our-droduct-2 ul {padding-left: 40%;width: 100%;margin-top: 10px;text-align:left;margin-bottom: 150px;}
@@ -83,13 +83,15 @@ background-size: cover;width: 100%;height: 340px;margin-left: -180px;}
 .our-droduct-2 ul li:nth-child(3) a {outline: none!important;z-index: 2;position: absolute; color: #66cc33;border-bottom: 2px solid #66cc33;margin-top: 25px;}
 .product-3 .h3{margin-top:60px;}
 .product-3 ul {margin-bottom: 100px;}
-.product-3 img {width: 100%;}
+.product-3 img {width: 80%;margin-left: 15%;}
 .product-3 .line {height: 520px;border-top: 0;margin-top: 0px;}
 .product-4 {margin-top: 110px;display: flex;flex-direction: row;}
 .product-4 .h3 {padding-left: 15%;}
 .product-4 ul{width: 100% ;padding-left: 15%;}
 .product-4 .line {right:0%;border-left: 0;width: 580px;margin-top: 5.5%;height: auto;}
 .product-4-text {padding-top: 17%;}
+.product-4-img {width: 100%;}
+.product-4-img img {width: 100%;}
 .sertefikaty {background: url(../img/sertefikat.png)center center no-repeat;-webkit-background-size: cover;
 background-size: cover; margin-top: 70px;padding-top: 100px;}
 .sertefikaty .top .h4 {font-size: 32px;font-weight: bold;text-align: center;padding-bottom: 70px;}
@@ -170,6 +172,8 @@ footer p {margin: 0;text-align: center;color: #000;font-size: 17px;margin-top: 5
 #producr-1-by  form select {outline: none!important;border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:transparent;margin-top: 15px;}
 #producr-1-by  form button {margin:0 auto; margin-top: 20px;width: 50%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: transparent;font-size: 20px;}
 
-
+.navbar-default .navbar-nav>.active>a {color:#66cc33!important;}
+.navbar-default .navbar-nav>li>a {color:#66cc33!important;}
 .fancybox-bg {
     background: rgb(151, 203, 113)!important;}
+ .mobile {display: none;}  

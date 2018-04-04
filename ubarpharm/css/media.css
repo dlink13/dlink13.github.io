@@ -38,6 +38,14 @@ and (max-device-width:425px){
 	footer .footer-left form button {width: 40%;}
 
 
+	.mobile {display: block;}
+	.desctop {display: none;}
+	.sertefikat-img img {height: auto;}
+	.oplata {margin-top: 150px;}
+	.oplata ul {margin-top: 50px;}
+
+
+
 }
 
 
@@ -81,6 +89,12 @@ and (max-device-width:767px)
 	footer .footer-left form {width: 100%;}
 	footer .footer-left form button {width: 40%;}
 
+	.mobile {display: block;}
+	.desctop {display: none;}
+	.sertefikat-img img {height: auto;}
+		.oplata {margin-top: 150px;}
+	.oplata ul {margin-top: 50px;}
+
 
 }
 
@@ -123,6 +137,11 @@ and (max-device-width:1023px){
 	.voprosy-bottom {flex-direction: column;margin-bottom: -80px;}
 	footer .footer-left form {width: 100%;}
 	footer .footer-left form button {width: 40%;}
+		.mobile {display: block;}
+	.desctop {display: none;}
+	.sertefikat-img img {height: auto;}
+		.oplata {margin-top: 150px;}
+	.oplata ul {margin-top: 50px;}
 
 
 }
