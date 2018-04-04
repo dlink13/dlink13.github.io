@@ -6,7 +6,7 @@ blockquote, q{quotes:none;}
 blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 html, body{width:100%;letter-spacing:0.025em;line-height:1.75;opacity:1;-webkit-font-smoothing:subpixel-antialiased;}
-body{margin-top:-60px;}
+body{margin-top:-60px;display: none;}
 
 @font-face{
 font-family: 'Century';
