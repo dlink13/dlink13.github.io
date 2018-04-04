@@ -53,7 +53,7 @@ header {
   background-size: cover;
 }
 .header-text {padding: 90px 35px;border: 5px solid #65B32E;margin-bottom: 50px;}
-.header-text .h2 {font-size: 76px; font-weight: bold;margin-left: -200px;color: #000;}
+.header-text .h2 {font-size: 50px; font-weight: bold;margin-left: -200px;color: #000;}
 .header-text ul {margin-top: 60px;}
 .header-text ul li{margin-top:35px; font-size: 20px;}
 .header-text ul li:first-child {color: #66cc33; margin-top: 0;}
