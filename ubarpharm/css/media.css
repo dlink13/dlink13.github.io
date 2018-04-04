@@ -129,4 +129,6 @@ and (max-device-width:1023px){
 @media only screen
 and (min-device-width:1024px)
 and (max-device-width:4200px){
+	#product-1,#product-2,#product-3 {width: auto;}
+#product-1 img ,#product-2 img ,#product-3 img {width: auto;}
 }
