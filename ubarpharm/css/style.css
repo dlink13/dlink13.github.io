@@ -7,21 +7,99 @@ blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 html, body{width:100%;letter-spacing:0.025em;line-height:1.75;opacity:1;-webkit-font-smoothing:subpixel-antialiased;}
 body{margin-top:-60px;display: none;}
+
 @font-face{
-font-family: 'Century';
+font-family: 'MyriadPro-Bold';
 
-src: url('../fonts/8483.eot');
-
-src: url('../fonts/8483.eot?iefix') format('eot');
-
-src:url('../fonts/8483.woff') format('woff');
-
-src:url('../fonts/8483.ttf') format('truetype');
+src:url('../fonts/MyriadPro-Bold.otf') format('truetype');
 
 font-weight: normal;
 
 font-style: normal;
 }
+@font-face{
+font-family: 'MyriadPro-BoldCond';
+
+src:url('../fonts/MyriadPro-BoldCond.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+@font-face{
+font-family: 'MyriadPro-BoldCondIt';
+
+src:url('../fonts/MyriadPro-BoldCondIt.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+@font-face{
+font-family: 'MyriadPro-BoldIt';
+
+src:url('../fonts/MyriadPro-BoldIt.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+@font-face{
+font-family: 'MyriadPro-Cond';
+
+src:url('../fonts/MMyriadPro-Cond.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+@font-face{
+font-family: 'MyriadPro-CondIt';
+
+src:url('../fonts/MyriadPro-CondIt.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+
+@font-face{
+font-family: 'MyriadPro-It';
+
+src:url('../fonts/MyriadPro-It.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+@font-face{
+font-family: 'MyriadPro-Regular';
+
+src:url('../fonts/MyriadPro-Regular.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+@font-face{
+font-family: 'MyriadPro-Semibold';
+
+src:url('../fonts/MyriadPro-Semibold.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+@font-face{
+font-family: 'MyriadPro-SemiboldIt';
+
+src:url('../fonts/MyriadPro-SemiboldIt.otf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+}
+
 .mobile_menu{display:none;}
 .mobile_menu{font-family: 'Raleway';z-index:101!important;width:100%!important;position:fixed!important;}
 .navbar{background-color:#E6E6E6!important;}
@@ -38,7 +116,7 @@ font-style: normal;
 
 .menu {width: 100%;}
 .menu ul {padding-top: 45px;padding-bottom: 60px; display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
-.menu ul li a{outline: none!important;text-decoration: none;color: #66cc33;text-align: center;font-size: 18px;text-transform: uppercase;font-weight: bold;}
+.menu ul li a{font-family: 'MyriadPro-Bold';outline: none!important;text-decoration: none;color: #66cc33;text-align: center;font-size: 18px;text-transform: uppercase;font-weight: bold;}
 .menu ul li a:hover {text-decoration: underline;color: #5eaa39;transition: 0.4s ease;}
 .menu ul li:last-child a{color: #000;}
 .container {
@@ -52,41 +130,41 @@ header {
   background-size: cover;
 }
 .header-text {padding: 90px 35px;border: 5px solid #65B32E;margin-bottom: 50px;}
-.header-text .h2 {font-size: 50px; font-weight: bold;margin-left: -200px;color: #000;}
+.header-text .h2 {font-family: MyriadPro-Semibold;font-size: 72px; font-weight: bold;margin-left: -140px;color: #000;}
 .header-text ul {margin-top: 60px;}
-.header-text ul li{margin-top:35px; font-size: 20px;}
-.header-text ul li:first-child {color: #66cc33; margin-top: 0;}
-.header-text ul li a {outline: none!important;color: #66cc33; text-decoration: underline;}
+.header-text ul li{font-family: 'MyriadPro-Regular';margin-top:35px; font-size: 20px;}
+.header-text ul li:first-child {font-family: 'MyriadPro-Bold';color: #66cc33; margin-top: 0;}
+.header-text ul li a {font-family: 'MyriadPro-Semibold';outline: none!important;color: #66cc33; text-decoration: underline;}
 .mouse {margin-bottom: 150px;}
 .mouse img {margin-left: -100px;}
 .product-1-left {margin-bottom: 135px;}
-.our-droduct .h3 {margin-top: 50px;text-align: center;font-size: 32px;color: #000;margin-bottom: 80px;}
-.product-1-left .h3	{text-align: left;margin-top: 80px;margin-bottom: 30px;font-size: 24px;font-weight: bold;}
+.our-droduct .h3 {font-family: 'MyriadPro-Bold';margin-top: 50px;text-align: center;font-size: 32px;color: #000;margin-bottom: 80px;}
+.product-1-left .h3	{font-family: 'MyriadPro-Semibold';text-align: left;margin-top: 80px;margin-bottom: 30px;font-size: 24px;font-weight: bold;}
 .product-1-left .line {position: absolute;z-index: 100;border: 2px solid #66cc33;width: 100%;margin-bottom: 30px;}
 .product-1-left ul {width: 70%;margin-top: 50px;}
 .product-1-left ul li {font-size: 20px;color: #000;}
-.product-1-left ul li:nth-child(1) {margin-bottom: 5px;}
-.product-1-left ul li:nth-child(2) {margin-bottom: 15px;}
-.product-1-left ul li:nth-child(2) a {outline: none!important;color: #000;border-bottom: 2px solid #ccc;}
-.product-1-left ul li:nth-child(3) a {outline: none!important;color: #66cc33;border-bottom: 2px solid #66cc33;}
+.product-1-left ul li:nth-child(1) {font-family: 'MyriadPro-Regular';margin-bottom: 5px;}
+.product-1-left ul li:nth-child(2) {font-family: 'MyriadPro-Regular';margin-bottom: 15px;}
+.product-1-left ul li:nth-child(2) a {font-family: 'MyriadPro-Regular';outline: none!important;color: #000;border-bottom: 2px solid #ccc;}
+.product-1-left ul li:nth-child(3) a {font-family: 'MyriadPro-Bold';outline: none!important;color: #66cc33;border-bottom: 2px solid #66cc33;}
 .product-1-right {background: url(../img/tovar-1.png)center center no-repeat;-webkit-background-size: cover;
 background-size: cover;width: 80%;height: 340px;margin-left: -120px;}
 .our-droduct-2 .product-2 {border: 5px solid #66cc33;width: 85%;}
 .our-droduct-2 .product-2 img {width: 100%;margin-top: -50px;margin-left: 30px;position: relative;z-index: -1;}
 .our-droduct-2 .line {width: 150px;height: 450px;position:absolute;border-left: 2px solid #66cc33;border-top:2px solid #66cc33;right: 45%;margin-top: -100px;}
-.our-droduct-2 .h3	{padding-left: 40%;margin-top: 20px;margin-bottom: 30px;font-size: 22px;font-weight: bold;}
+.our-droduct-2 .h3	{font-family: 'MyriadPro-Bold';padding-left: 40%;margin-top: 20px;margin-bottom: 30px;font-size: 22px;font-weight: bold;}
 .our-droduct-2 ul {padding-left: 40%;width: 100%;margin-top: 10px;text-align:left;margin-bottom: 150px;}
 .our-droduct-2 ul li {font-size: 20px;color: #000;}
-.our-droduct-2 ul li:nth-child(1) {margin-bottom: 5px;}
-.our-droduct-2 ul li:nth-child(2) {margin-bottom: 15px;}
-.our-droduct-2 ul li:nth-child(2) a {outline: none!important;z-index: 2;position: absolute; color: #000;border-bottom: 2px solid #ccc;margin-top: 0px;}
-.our-droduct-2 ul li:nth-child(3) a {outline: none!important;z-index: 2;position: absolute; color: #66cc33;border-bottom: 2px solid #66cc33;margin-top: 25px;}
-.product-3 .h3{margin-top:60px;}
+.our-droduct-2 ul li:nth-child(1) {font-family: 'MyriadPro-Regular';margin-bottom: 5px;}
+.our-droduct-2 ul li:nth-child(2) {font-family: 'MyriadPro-Regular';margin-bottom: 15px;}
+.our-droduct-2 ul li:nth-child(2) a {font-family: 'MyriadPro-Regular';outline: none!important;z-index: 2;position: absolute; color: #000;border-bottom: 2px solid #ccc;margin-top: 0px;}
+.our-droduct-2 ul li:nth-child(3) a {font-family: 'MyriadPro-Bold';outline: none!important;z-index: 2;position: absolute; color: #66cc33;border-bottom: 2px solid #66cc33;margin-top: 25px;}
+.product-3 .h3{font-family: 'MyriadPro-Semibold';margin-top:60px;}
 .product-3 ul {margin-bottom: 100px;}
 .product-3 img {width: 80%;margin-left: 15%;}
 .product-3 .line {height: 520px;border-top: 0;margin-top: 0px;}
 .product-4 {margin-top: 110px;display: flex;flex-direction: row;}
-.product-4 .h3 {padding-left: 15%;}
+.product-4 .h3 {padding-left: 15%;font-family: 'MyriadPro-Bold';}
 .product-4 ul{width: 100% ;padding-left: 15%;}
 .product-4 .line {right:0%;border-left: 0;width: 580px;margin-top: 5.5%;height: auto;}
 .product-4-text {padding-top: 17%;}
@@ -94,53 +172,53 @@ background-size: cover;width: 80%;height: 340px;margin-left: -120px;}
 .product-4-img img {width: 100%;}
 .sertefikaty {background: url(../img/sertefikat.png)center center no-repeat;-webkit-background-size: cover;
 background-size: cover; margin-top: 70px;padding-top: 100px;}
-.sertefikaty .top .h4 {font-size: 32px;font-weight: bold;text-align: center;padding-bottom: 70px;}
-.sertefikaty .top p {font-size: 20px;text-align: center;padding-bottom: 77px;}
+.sertefikaty .top .h4 {font-family: 'MyriadPro-Bold';font-size: 32px;font-weight: bold;text-align: center;padding-bottom: 70px;}
+.sertefikaty .top p {font-family: 'MyriadPro-Regular';font-size: 20px;text-align: center;padding-bottom: 77px;}
 .sertefikat-img img {width: 100%;min-height: 508px;}
-.bot p {font-size: 20px;text-align: center;padding-bottom: 150px;padding-top: 50px;}
+.bot p {font-family: 'MyriadPro-Regular';font-size: 20px;text-align: center;padding-bottom: 150px;padding-top: 50px;}
 .dostavka {padding-top: 100px;}
-.dostavka .h5 {font-size: 32px;font-weight: bold;text-align: center;padding-bottom: 50px;}
+.dostavka .h5 {font-family: 'MyriadPro-Bold';font-size: 32px;font-weight: bold;text-align: center;padding-bottom: 50px;}
 .dostavka-left {border: 10px solid #66cc33;height: 524px;}
 .dostavka-left img {width: 85%;margin-bottom: -50px;margin-left: 100px;z-index: -1;position: absolute;z-index: -1;}
-.dostavka-left .h6 {text-align: center;margin-top: 50px;font-size: 22px;color: #000;margin-bottom: 30px;}
+.dostavka-left .h6 {font-family: 'MyriadPro-Semibold';text-align: center;margin-top: 50px;font-size: 22px;color: #000;margin-bottom: 30px;}
 .dostavka-left .line {position: absolute;height: 312px;border-left: 3px solid #66cc33;left: 35%;top: 15%;}
 .dostavka ul {margin-top: 100px;}
-.dostavka ul li {margin-top: 25px; font-size: 17px;}
-.dostavka ul li:first-child a{outline: none!important;font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.dostavka ul li {font-family: 'MyriadPro-Regular';margin-top: 25px; font-size: 17px;}
+.dostavka ul li:first-child a{font-family: 'MyriadPro-Semibold';outline: none!important;font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
 .dostavka ul li:first-child a:hover {color: #000;text-decoration: none;cursor: default;}
-.dostavka ul li:nth-child(3) a {outline: none!important;font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.dostavka ul li:nth-child(3) a {font-family: 'MyriadPro-Semibold';outline: none!important;font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
 .dostavka ul li:nth-child(3) a:hover {color: #000;text-decoration: none;cursor: default;}
 
 .oplata {margin-top: 180px;}
-.oplata ul li {font-size: 17px; margin-top: 8px;}
-.oplata ul li:first-child a{foutline: none!important;ont-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.oplata ul li {font-family: 'MyriadPro-Regular';font-size: 17px; margin-top: 8px;}
+.oplata ul li:first-child a{font-family: 'MyriadPro-Semibold';outline: none!important;font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
 .oplata ul li:first-child a:hover {color: #000;text-decoration: none;cursor: default;}
 .oplata ul li:nth-child(5) {margin-top: 40px;}
-.oplata ul li:nth-child(5) a {outline: none!important;font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
+.oplata ul li:nth-child(5) a {font-family: 'MyriadPro-Semibold';outline: none!important;font-weight: bold;border-bottom: 2px solid #ccc;text-decoration: none;cursor: default;color: #000;}
 .oplata ul li:nth-child(5) a:hover {color: #000;text-decoration: none;cursor: default;}
-.oplata .h6 {padding-top: 5px;;font-weight: bold;font-size: 22px;display: block;height: 360px;width: 100px;position: absolute;top: -120px;left: 40%;border-left: 3px solid #66cc33; padding-left: 20px;z-index: 1;}
+.oplata .h6 {font-family: 'MyriadPro-Semibold';padding-top: 5px;;font-weight: bold;font-size: 22px;display: block;height: 360px;width: 100px;position: absolute;top: -120px;left: 40%;border-left: 3px solid #66cc33; padding-left: 20px;z-index: 1;}
 .oplata img{width: 100%;}
 .voprosy-top {background: #F3F3F3;margin-top: 180px;height: 156px;}
-.voprosy-top .h5 {display: block;border: 5px solid #66cc33;padding: 49px;text-align: center;font-size: 32px; color: #000;font-weight: bold;margin-top: -20px;margin-left: -80px;position: absolute;width: 100%;}
+.voprosy-top .h5 {font-family: 'MyriadPro-Bold';display: block;border: 5px solid #66cc33;padding: 49px;text-align: center;font-size: 32px; color: #000;font-weight: bold;margin-top: -20px;margin-left: -80px;position: absolute;width: 100%;}
 .voprosy-middle {margin-top: 80px;}
-.voprosy-middle ul li {margin-top: 25px;font-size: 20px;}
+.voprosy-middle ul li {font-family: 'MyriadPro-Regular';margin-top: 25px;font-size: 20px;}
 .voprosy-middle .text-1 {padding:20px 0;text-align: center;}
 .voprosy-middle ul li a {outline: none!important;color: #000;text-decoration: none;}
 .voprosy-bottom {margin-top: 100px;margin-bottom: -100px;display: flex;flex-direction: row;}
-.voprosy-bottom p {font-size: 20px;}
+.voprosy-bottom p {font-family: 'MyriadPro-Regular';font-size: 20px;}
 footer {background: url(../img/footer.png)center center no-repeat;-webkit-background-size: cover;
 background-size: cover;}
-footer .h6 {text-align: center;font-weight: bold;font-size: 32px;padding-top: 160px;padding-bottom: 90px;}
+footer .h6 {font-family: 'MyriadPro-Bold';text-align: center;font-weight: bold;font-size: 32px;padding-top: 160px;padding-bottom: 90px;}
 footer .footer-left form{display: flex;flex-direction: column;width: 60%;margin-bottom: 80px;}
-footer .footer-left form input {border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:#F3F3F3;margin-top: 15px;}
-footer .footer-left form button {margin:0 auto; margin-top: 20px;width: 30%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: #F3F3F3;font-size: 20px;}
+footer .footer-left form input {font-family: 'MyriadPro-Regular';border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:#F3F3F3;margin-top: 15px;}
+footer .footer-left form button {font-family: 'MyriadPro-Regular';margin:0 auto; margin-top: 20px;width: 30%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: #F3F3F3;font-size: 20px;}
 footer .footer-left ul {padding-bottom: 50px;}
-footer .footer-left ul li {font-size: 20px;}
-footer .footer-left ul li span {font-weight: bold;}
+footer .footer-left ul li {font-size: 20px;font-family: 'MyriadPro-Regular';}
+footer .footer-left ul li span {font-family: 'MyriadPro-Semibold';font-weight: bold;}
 footer .footer-left ul li:first-child {margin-bottom: 35px;}
 footer .footer-left ul li:nth-child(5) {margin-top: 35px;}
 .footer-map {margin-top: 5%;}
-footer p {margin: 0;text-align: center;color: #000;font-size: 17px;margin-top: 50px;padding-bottom: 50px;}
+footer p {font-family: 'MyriadPro-Regular';margin: 0;text-align: center;color: #000;font-size: 17px;margin-top: 50px;padding-bottom: 50px;}
 #product-1,#product-2,#product-3,#sertefikat-3,#sertefikat-2,#sertefikat-1 {width: 100%;}
 #product-1 img ,#product-2 img ,#product-3 img,#sertefikat-3 img ,#sertefikat-2 img ,#sertefikat-1 img {width: 100%;}
 #contact_form_pop {padding: 3% 2%;}
