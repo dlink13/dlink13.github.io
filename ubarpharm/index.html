@@ -40,28 +40,29 @@
     
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="menu2">
       <ul class="nav navbar-nav">
-          <li><a href="o_kompanii.html">КАТАЛОГ</a></li>
-          <li><a href="uslugi.html"> СЕРТИФИКАТЫ</a></li>
-          <li><a href="klienti.html">ДОСТАВКА И ОПЛАТА</a></li>
-          <li><a href="obuchenie.html">КОНТАКТЫ</a></li>
+    <li><a href="#katalog">КАТАЛОГ</a></li>
+    <li><a href="#sertefikaty">СЕРТИФИКАТЫ </a></li>
+    <li><a href="#dost">ДОСТАВКА И ОПЛАТА</a></li>
+    <li><a href="#vopros">ВОПРОСЫ И ОТВЕТЫ</a></li>
+    <li><a href="#contac">КОНТАКТЫ</a></li>
       </ul>
      
       </div>
     </div>
     </nav>
   </div></nav></div>
-  <div class="menu">
+  <div class="menu" id="menu">
     <ul>
       <li>
         <a href=""><img src="img/logo.png" alt=""></a>
       </li>
-    <li><a href="#">КАТАЛОГ</a></li>
-    <li><a href="">СЕРТИФИКАТЫ </a></li>
-    <li><a href="">ДОСТАВКА И ОПЛАТА</a></li>
-    <li><a href="">вопросы и ответы</a></li>
-    <li><a href="">КОНТАКТЫ</a></li>
+    <li><a href="#katalog">КАТАЛОГ</a></li>
+    <li><a href="#sertefikaty">СЕРТИФИКАТЫ </a></li>
+    <li><a href="#dost">ДОСТАВКА И ОПЛАТА</a></li>
+    <li><a href="#vopros">вопросы и ответы</a></li>
+    <li><a href="#contac">КОНТАКТЫ</a></li>
     <li><a href="tel:+7 (708) 678-15-83">+7 (708) 678-15-83</a> <br><p>info@u-pharm.kz</p></li>
     </ul>
   </div>
@@ -86,7 +87,7 @@
     </div>
   </div>
   </header>
-<div class="our-droduct wow animated fadeInUp">
+<div class="our-droduct wow animated fadeInUp" id="katalog">
   <div class="container">
     <div class="row">
 <div class="h3">НАША ПРОДУКЦИЯ</div>
@@ -163,7 +164,7 @@
 </div>
 </div>
 </div>
-<div class="sertefikaty wow animated fadeInUp">
+<div class="sertefikaty wow animated fadeInUp" id="sertefikaty">
   <div class="container">
     <div class="row">
       <div class="top">
@@ -192,7 +193,7 @@
       <p>Вся продукция, представленная на сайте, является сертифицированной!</p>
       </div>
 </div>
-<div class="dostavka wow animated fadeInUp">
+<div class="dostavka wow animated fadeInUp" id="dost">
   <div class="container">
     <div class="row">
       <h5 class="h5">ОПЛАТА И ДОСТАВКА</h5>
@@ -241,7 +242,7 @@
     </div>
   </div>
 </div>
-<div class="voprosy wow animated fadeInUp">
+<div class="voprosy wow animated fadeInUp" id="vopros">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
@@ -319,7 +320,7 @@
           </ul>
         </div>
 
-          <div class="col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
+          <div class="col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1" id="contac">
            <div class="voprosy-bottom wow animated fadeInUp">
             <div class="voprosy-bottom-text">
             <p>На всех этапах заказа консультант поможет <br>
@@ -632,5 +633,42 @@ function openbox(id){
                 else alert("Элемент с id: " + element_id + " не найден!"); 
             }   
 </script>
+<script>
+   
+$(document).ready(function(){
+  $("#menu").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+</script>
+<script>
+   
+$(document).ready(function(){
+  $("#menu2").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+</script>
+
 
 </body></html>

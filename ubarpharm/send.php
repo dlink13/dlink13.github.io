@@ -12,7 +12,7 @@ $text = filter_input(INPUT_POST, 'text' );
 $select = filter_input(INPUT_POST, 'hero[]' );
 
 // список получателей(в нашем случае - один)
-$recepient  = "mail@toscana-finance.ru";
+$recepient  = "info@u-pharm.kz";
 
 // Тема сообщения
 $subject = "Заявка с сайта";
