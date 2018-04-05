@@ -118,7 +118,7 @@ font-style: normal;
 .menu {width: 100%;}
 .menu ul {padding-top: 45px;padding-bottom: 60px; display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
 .menu ul li a img{width: 80%;}
-.menu ul li a{font-family: 'MyriadPro-Bold';outline: none!important;text-decoration: none;color: #66cc33;text-align: center;font-size: 18px;text-transform: uppercase;font-weight: bold;}
+.menu ul li a{font-family: 'MyriadPro-Regular';outline: none!important;text-decoration: none;color: #66cc33;text-align: center;font-size: 18px;text-transform: uppercase;}
 .menu ul li a:hover {text-decoration: underline;color: #5eaa39;transition: 0.4s ease;}
 .menu ul li:last-child a{color: #000;}
 .menu ul li:last-child p{color: #000;text-align: center;font-size: 15px;font-weight: bold}
@@ -136,8 +136,8 @@ header {
 .header-text .h2 {font-family: MyriadPro-Semibold;font-size: 72px; font-weight: bold;margin-left: -140px;color: #000;}
 .header-text ul {margin-top: 60px;}
 .header-text ul li{font-family: 'MyriadPro-Regular';margin-top:35px; font-size: 20px;}
-.header-text ul li:first-child {font-family: 'MyriadPro-Bold';color: #66cc33; margin-top: 0;}
-.header-text ul li a {font-family: 'MyriadPro-Semibold';outline: none!important;color: #66cc33; text-decoration: underline;}
+.header-text ul li:first-child {font-family: 'MyriadPro-Regular';color: #66cc33; margin-top: 0;}
+.header-text ul li a {font-family: 'MyriadPro-Regular';outline: none!important;color: #66cc33; text-decoration: underline;}
 .mouse {margin-bottom: 150px;}
 .mouse img {margin-left: -100px;}
 .product-1-left {margin-bottom: 135px;}
