@@ -104,6 +104,7 @@ font-style: normal;
 .mobile_menu{font-family: 'Raleway';z-index:101!important;width:100%!important;position:fixed!important;}
 .navbar{background-color:#E6E6E6!important;}
 .navbar .left_menu{width:100%;margin-top:0;padding-top:0;}
+.navbar .left_menu img {width: 40%;}
 .navbar-brand{width:40%;margin-top:0;padding-top:0!important;float: none!important;}
 .navbar ul li{text-align:center;color:#fff;font-weight:bold;color:#fff;}
 .navbar-default{border-color:#E6E6E6!important;}
@@ -116,6 +117,7 @@ font-style: normal;
 
 .menu {width: 100%;}
 .menu ul {padding-top: 45px;padding-bottom: 60px; display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
+.menu ul li a img{width: 80%;}
 .menu ul li a{font-family: 'MyriadPro-Bold';outline: none!important;text-decoration: none;color: #66cc33;text-align: center;font-size: 18px;text-transform: uppercase;font-weight: bold;}
 .menu ul li a:hover {text-decoration: underline;color: #5eaa39;transition: 0.4s ease;}
 .menu ul li:last-child a{color: #000;}
@@ -146,7 +148,9 @@ header {
 .product-1-left ul li {font-size: 20px;color: #000;}
 .product-1-left ul li:nth-child(1) {font-family: 'MyriadPro-Regular';margin-bottom: 5px;}
 .product-1-left ul li:nth-child(2) {font-family: 'MyriadPro-Regular';margin-bottom: 15px;}
+.product-1-left ul li:nth-child(2) a:hover {text-decoration: none;color: #4c8032;transition: 0.4s ease}
 .product-1-left ul li:nth-child(2) a {font-family: 'MyriadPro-Regular';outline: none!important;color: #000;border-bottom: 2px solid #ccc;}
+.product-1-left ul li:nth-child(3) a:hover {text-decoration: none;color: #4c8032;transition: 0.4s ease}
 .product-1-left ul li:nth-child(3) a {font-family: 'MyriadPro-Bold';outline: none!important;color: #66cc33;border-bottom: 2px solid #66cc33;}
 .product-1-right {background: url(../img/tovar-1.png)center center no-repeat;-webkit-background-size: cover;
 background-size: cover;width: 80%;height: 340px;margin-left: -120px;}
@@ -158,7 +162,9 @@ background-size: cover;width: 80%;height: 340px;margin-left: -120px;}
 .our-droduct-2 ul li {font-size: 20px;color: #000;}
 .our-droduct-2 ul li:nth-child(1) {font-family: 'MyriadPro-Regular';margin-bottom: 5px;}
 .our-droduct-2 ul li:nth-child(2) {font-family: 'MyriadPro-Regular';margin-bottom: 15px;}
+.our-droduct-2 ul li:nth-child(2) a:hover {text-decoration: none;color: #4c8032;transition: 0.4s ease}
 .our-droduct-2 ul li:nth-child(2) a {font-family: 'MyriadPro-Regular';outline: none!important;z-index: 2;position: absolute; color: #000;border-bottom: 2px solid #ccc;margin-top: 0px;}
+.our-droduct-2 ul li:nth-child(3) a:hover {text-decoration: none;color: #4c8032;transition: 0.4s ease}
 .our-droduct-2 ul li:nth-child(3) a {font-family: 'MyriadPro-Bold';outline: none!important;z-index: 2;position: absolute; color: #66cc33;border-bottom: 2px solid #66cc33;margin-top: 25px;}
 .product-3 .h3{font-family: 'MyriadPro-Semibold';margin-top:60px;}
 .product-3 ul {margin-bottom: 100px;}
@@ -210,20 +216,20 @@ background-size: cover; margin-top: 70px;padding-top: 100px;}
 footer {background: url(../img/footer.png)center center no-repeat;-webkit-background-size: cover;
 background-size: cover;}
 footer .h6 {font-family: 'MyriadPro-Bold';text-align: center;font-weight: bold;font-size: 32px;padding-top: 160px;padding-bottom: 90px;}
-footer .footer-left form{display: flex;flex-direction: column;width: 60%;margin-bottom: 80px;}
+footer .footer-left form{display: flex;flex-direction: column;width: 60%;margin-bottom: 40px;}
 footer .footer-left form input {font-family: 'MyriadPro-Regular';border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:#F3F3F3;margin-top: 15px;}
 footer .footer-left form button {font-family: 'MyriadPro-Regular';margin:0 auto; margin-top: 20px;width: 30%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: #F3F3F3;font-size: 20px;}
 footer .footer-left ul {padding-bottom: 50px;}
-footer .footer-left ul li {font-size: 20px;font-family: 'MyriadPro-Regular';}
+footer .footer-left ul li {font-size: 15px;font-family: 'MyriadPro-Regular';}
 footer .footer-left ul li span {font-family: 'MyriadPro-Semibold';font-weight: bold;}
-footer .footer-left ul li:first-child {margin-bottom: 35px;}
-footer .footer-left ul li:nth-child(5) {margin-top: 35px;}
+footer .footer-left ul li:first-child {margin-bottom: 15px;}
+footer .footer-left ul li:nth-child(5) {margin-top: 15px;}
 .footer-map {margin-top: 5%;}
-footer p {font-family: 'MyriadPro-Regular';margin: 0;text-align: center;color: #000;font-size: 17px;margin-top: 50px;padding-bottom: 50px;}
+footer p {font-family: 'MyriadPro-Regular';margin: 0;text-align: center;color: #000;font-size: 14px;margin-top: 30px;padding-bottom: 20px;}
 #product-1,#product-2,#product-3,#sertefikat-3,#sertefikat-2,#sertefikat-1 {width: 100%;}
 #product-1 img ,#product-2 img ,#product-3 img,#sertefikat-3 img ,#sertefikat-2 img ,#sertefikat-1 img {width: 100%;}
 #contact_form_pop {padding: 3% 2%;}
-#contact_form_pop  form{display: flex;flex-direction: column;width: 100%;margin-bottom: 80px;}
+#contact_form_pop  form{display: flex;flex-direction: column;width: 100%;}
 #contact_form_pop  form input {outline: none!important;border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:transparent;margin-top: 15px;}
 #contact_form_pop  form select {outline: none!important;border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:transparent;margin-top: 15px;}
 #contact_form_pop  form button {margin:0 auto; margin-top: 20px;width: 50%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: transparent;font-size: 20px;}
@@ -256,4 +262,5 @@ footer p {font-family: 'MyriadPro-Regular';margin: 0;text-align: center;color: #
 .navbar-default .navbar-nav>li>a {color:#66cc33!important;}
 .fancybox-bg {
     background: rgb(151, 203, 113)!important;}
- .mobile {display: none;}  
+ .mobile {display: none;}
+ .sert-marg {margin-left: 12%!important;}

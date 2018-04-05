@@ -3,14 +3,14 @@ and (min-device-width:320px)
 and (max-device-width:425px){
 	.menu {display: none;}
 	.mobile_menu {display: block;}
-	.header-text {margin-top: 100px;}
-	.header-text .h2 {font-size: 25px;margin-left: 0;}
+	.header-text {margin-top: 80px;}
+	.header-text .h2 {font-size: 35px;margin-left: 0; text-align: center;}
 
 	.product-1-right {margin-left: auto;}
 	.our-droduct-2 .product-2 img {margin-top: 5px;margin-left: auto;width: 100%;}
 	.our-droduct-2 .product-2 {width: 100%;padding-bottom: 50px;}
-	.our-droduct-2 ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
-	.our-droduct-2 ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul li:nth-child(2) a {width: 35%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.our-droduct-2 ul li:nth-child(3) a {width: 35%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
 	.our-droduct-2 .h3 {padding-left: 0;text-align: center;}
 	.our-droduct-2 ul {padding-left: 0;width: 100%;text-align: center;}
 	.our-droduct-2 ul li:nth-child(3) a {position: relative;}
@@ -21,8 +21,8 @@ and (max-device-width:425px){
 	.product-1-left .h3 {text-align: center;}
 	.product-1-left ul {width: 100%;}
 	.product-1-left ul li:nth-child(1) {text-align: center;}
-	.product-1-left ul li:nth-child(2) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
-	.product-1-left ul li:nth-child(3) a {width: 50%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.product-1-left ul li:nth-child(2) a {width: 35%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
+	.product-1-left ul li:nth-child(3) a {width: 35%;margin: 0 auto;display: block;margin-top: 20px;text-align: center; position: relative;}
 	.our-droduct-2 ul {margin-bottom: 0;}
 	.dostavka-left .line {display: none;}
 	.dostavka-left {height: auto;padding-bottom: 25px;}
@@ -33,7 +33,7 @@ and (max-device-width:425px){
 	.voprosy-top {height: auto;}
 	.voprosy-top .h5 {margin-left: auto;position: relative;}
 	.voprosy-middle ul li {text-align: center;}
-	.voprosy-bottom {flex-direction: column;margin-bottom: -80px;}
+	.voprosy-bottom {flex-direction: column;margin-bottom: -90px;}
 	footer .footer-left form {width: 100%;}
 	footer .footer-left form button {width: 40%;}
 
@@ -43,8 +43,9 @@ and (max-device-width:425px){
 	.sertefikat-img img {height: auto;}
 	.oplata {margin-top: 150px;}
 	.oplata ul {margin-top: 50px;}
-
-
+	.sert-marg {margin: 0 auto}
+	.sert-margg {margin-left: 12%!important;}
+	.sertefikat-img img {height: auto;}
 
 }
 
@@ -55,8 +56,8 @@ and (max-device-width:767px)
 {
 	.menu {display: none;}
 	.mobile_menu {display: block;}
-	.header-text {margin-top: 100px;}
-	.header-text .h2 {font-size: 25px;margin-left: 0;}
+	.header-text {margin-top: 80px;}
+	.header-text .h2 {font-size: 45px;margin-left: 0; text-align: center}
 
 	.product-1-right {margin-left: auto;}
 	.our-droduct-2 .product-2 img {margin-top: 5px;margin-left: auto;width: 100%;}
@@ -85,7 +86,7 @@ and (max-device-width:767px)
 	.voprosy-top {height: auto;}
 	.voprosy-top .h5 {margin-left: auto;position: relative;}
 	.voprosy-middle ul li {text-align: center;}
-	.voprosy-bottom {flex-direction: column;margin-bottom: -80px;}
+	.voprosy-bottom {flex-direction: column;margin-bottom: -70px;}
 	footer .footer-left form {width: 100%;}
 	footer .footer-left form button {width: 40%;}
 
@@ -94,7 +95,9 @@ and (max-device-width:767px)
 	.sertefikat-img img {height: auto;}
 		.oplata {margin-top: 150px;}
 	.oplata ul {margin-top: 50px;}
-
+	.sert-marg {margin: 0 auto}
+	.sert-margg {margin-left: 12%!important;}
+.sertefikat-img img {height: auto;}
 
 }
 
@@ -104,8 +107,8 @@ and (min-device-width:766px)
 and (max-device-width:1023px){
 	.menu {display: none;}
 	.mobile_menu {display: block;}
-	.header-text {margin-top: 100px;}
-	.header-text .h2 {font-size: 25px;margin-left: 0;}
+	.header-text {margin-top: 125px;}
+	.header-text .h2 {font-size: 45px;margin-left: 0;text-align: center;}
 
 	.product-1-right {margin-left: auto;}
 	.our-droduct-2 .product-2 img {margin-top: 5px;margin-left: auto;width: 100%;}
@@ -142,8 +145,8 @@ and (max-device-width:1023px){
 	.sertefikat-img img {height: auto;}
 		.oplata {margin-top: 150px;}
 	.oplata ul {margin-top: 50px;}
-
-
+	 .sert-marg {margin-left: auto!important;}
+.sertefikat-img img {height: auto;}
 }
 @media only screen
 and (min-device-width:1024px)
