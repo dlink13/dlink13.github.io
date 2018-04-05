@@ -141,8 +141,8 @@ footer .footer-left ul li:first-child {margin-bottom: 35px;}
 footer .footer-left ul li:nth-child(5) {margin-top: 35px;}
 .footer-map {margin-top: 5%;}
 footer p {margin: 0;text-align: center;color: #000;font-size: 17px;margin-top: 50px;padding-bottom: 50px;}
-#product-1,#product-2,#product-3 {width: 100%;}
-#product-1 img ,#product-2 img ,#product-3 img {width: 100%;}
+#product-1,#product-2,#product-3,#sertefikat-3,#sertefikat-2,#sertefikat-1 {width: 100%;}
+#product-1 img ,#product-2 img ,#product-3 img,#sertefikat-3 img ,#sertefikat-2 img ,#sertefikat-1 img {width: 100%;}
 #contact_form_pop {padding: 3% 2%;}
 #contact_form_pop  form{display: flex;flex-direction: column;width: 100%;margin-bottom: 80px;}
 #contact_form_pop  form input {outline: none!important;border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:transparent;margin-top: 15px;}
