@@ -45,7 +45,7 @@ and (max-device-width:425px){
 	.oplata ul {margin-top: 50px;}
 	.sert-marg {margin: 0 auto}
 	.sert-margg {margin-left: 12%!important;}
-	.sertefikat-img img {height: auto;}
+	.sertefikat-img img {height: auto; margin: 20px 0;}
 
 }
 
@@ -97,7 +97,7 @@ and (max-device-width:767px)
 	.oplata ul {margin-top: 50px;}
 	.sert-marg {margin: 0 auto}
 	.sert-margg {margin-left: 12%!important;}
-.sertefikat-img img {height: auto;}
+.sertefikat-img img {height: auto;  margin: 20px 0;}
 
 }
 
@@ -146,7 +146,7 @@ and (max-device-width:1023px){
 		.oplata {margin-top: 150px;}
 	.oplata ul {margin-top: 50px;}
 	 .sert-marg {margin-left: auto!important;}
-.sertefikat-img img {height: auto;}
+.sertefikat-img img {height: auto;  margin: 20px 0;}
 }
 @media only screen
 and (min-device-width:1024px)
