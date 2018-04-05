@@ -153,6 +153,12 @@ footer .footer-left ul li a {color: #66cc33;font-size: 20px;}
 }
 @media only screen
 and (min-device-width:1024px)
+and (max-device-width:1124px)
+{
+.menu ul li a {font-size: 15px;}
+}
+@media only screen
+and (min-device-width:1024px)
 and (max-device-width:4200px){
 	#product-1,#product-2,#product-3,#sertefikat-3,#sertefikat-2,#sertefikat-1 {width: auto;}
 #product-1 img ,#product-2 img ,#product-3 img,#sertefikat-3 img ,#sertefikat-2 img ,#sertefikat-1 img  {width: auto;}
