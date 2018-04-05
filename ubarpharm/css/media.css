@@ -46,6 +46,7 @@ and (max-device-width:425px){
 	.sert-marg {margin: 0 auto}
 	.sert-margg {margin-left: 12%!important;}
 	.sertefikat-img img {height: auto; margin: 20px 0;}
+	footer .footer-left ul li a {color: #66cc33;font-size: 20px;}
 
 }
 
@@ -98,6 +99,7 @@ and (max-device-width:767px)
 	.sert-marg {margin: 0 auto}
 	.sert-margg {margin-left: 12%!important;}
 .sertefikat-img img {height: auto;  margin: 20px 0;}
+footer .footer-left ul li a {color: #66cc33;font-size: 20px;}
 
 }
 
@@ -147,6 +149,7 @@ and (max-device-width:1023px){
 	.oplata ul {margin-top: 50px;}
 	 .sert-marg {margin-left: auto!important;}
 .sertefikat-img img {height: auto;  margin: 20px 0;}
+footer .footer-left ul li a {color: #66cc33;font-size: 20px;}
 }
 @media only screen
 and (min-device-width:1024px)
