@@ -46,7 +46,8 @@ function openbox(id){
                 //Если элемент с id-шником element_id не найден, то выводим сообщение
                 else alert("Элемент с id: " + element_id + " не найден!"); 
             };
-             var prices = [
+
+var prices = [
         [3500, 5000],
         [9500, 13500]
     ];
