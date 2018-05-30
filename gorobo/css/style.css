@@ -432,4 +432,53 @@ margin-left: 100px;
 }
 .contacts__info {
 	margin-bottom: 100px;
+
+}
+.contacts__info .contacts__info__text {
+	margin-left: 25%;
+}
+.contacts__info .contacts__info__text p span {
+	font-size: 24px;
+	color: #999900;
+}
+.contacts__info .contacts__info__text p:nth-child(2) {
+	text-decoration: underline;
+}
+.contacts__info .contacts__info__text p:nth-child(2) span {
+	font-size: 28px;
+	color: #000;
+}
+.contacts__info .contacts__info__text p:nth-child(3) {
+	font-weight: bold;
+}
+#vk {
+	color: #ccc;
+	font-size: 20px;
+	border-radius:5px;
+	padding: 2px;
+
+}
+#vk:hover{
+	color: #fff;
+	background: #669999;
+	border-color: #669999;
+}
+#insta {
+	color: #ccc;
+	font-size: 20px;
+}
+#insta:hover {
+	padding: 2px;
+	border-radius:5px;
+	 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+   /* change this to change the size*/
+}
+
+.calc__item {
+	margin-bottom: 80px;
 }
