@@ -410,7 +410,12 @@ margin-left: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 
+}
+.rasspis__links___open  .about-us__title p {
+	font-size: 20px;
+	text-align: center;
 }
 .rasspis__links___open #opencontent_rasp img {
 	width: 100%;
