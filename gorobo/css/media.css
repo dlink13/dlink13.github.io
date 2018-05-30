@@ -192,3 +192,10 @@ height: auto;
 	margin: 0 auto;
 }
 }
+@media only screen
+and (min-device-width:860px)
+and (max-device-width:1198px){
+.dop__img img {
+	height: auto;
+}
+}

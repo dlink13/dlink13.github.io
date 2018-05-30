@@ -46,8 +46,7 @@ function openbox(id){
                 //Если элемент с id-шником element_id не найден, то выводим сообщение
                 else alert("Элемент с id: " + element_id + " не найден!"); 
             };
-
-    var prices = [
+             var prices = [
         [3500, 5000],
         [9500, 13500]
     ];
@@ -128,7 +127,3 @@ function openbox(id){
     // Отрабатывае ативируем событие для первого пересчета
      $lessionSlider.slider('option', 'slide').call(null, null, {value:0});
      $monthSlider.slider('option', 'slide').call(null, null, {value:0});
-      var prices = [
-        [3500, 5000],
-        [9500, 13500]
-    ];
