@@ -13,6 +13,7 @@
 <link href="css/calc.css" rel="stylesheet" type="text/css" />
 <link href="css/media.css" rel="stylesheet" type="text/css" />
 <link href="css/animate.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -20,7 +21,7 @@
 
 
 </head>
-<body>
+<body class="mCustomScrollbar" data-mcs-theme="rounded-dark">
 	<div id="before-load">
     <img src="img/logo.png" alt="">
 </div>
@@ -190,7 +191,7 @@
 </div>
 					<div id="opencontent">
 <p>
-Мы разработали специальную программу “От простого к сложному”, где дети с 5-ти лет начинают знакомиться с простыми механизмами посредством работы на специальных конструкторах LEGO сввввввввввверии EDUCATION, которая состоит из 5-ти этапов: 
+Мы разработали специальную программу “От простого к сложному”, где дети с 5-ти лет начинают знакомиться с простыми механизмами посредством работы на специальных конструкторах LEGO серии EDUCATION, которая состоит из 5-ти этапов: 
 </p>
 <p>
 1. Сборка и программирование по образцу (инструкции); <br>
@@ -731,12 +732,20 @@
   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
   crossorigin="anonymous"></script>
+
  <script src="js/jquery.color-RGBa-patch.js"></script>
  <script type="text/javascript" src="js/wow.min.js"></script>
-
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 <script>new WOW().init();</script>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 
 
 </body>
