@@ -547,7 +547,7 @@ margin-left: 100px;
             background: #fff; /*цвет заднего фона блока*/
             z-index: 1001; /*располагаем его над всеми элементами на странице*/
         }
-        #before-load i {
+        #before-load img {
             font-size: 140px;
             position: absolute;
             left: 50%;

@@ -97,5 +97,5 @@ $monthSlider.slider({
 $lessionSlider.slider('option', 'slide').call(null, null, {value: 0});
 $monthSlider.slider('option', 'slide').call(null, null, {value: 0});
 $(function() {
-        $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+        $('#before-load').find('img').fadeOut().end().delay(600).fadeOut('slow');
     });
