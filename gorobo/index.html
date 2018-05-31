@@ -12,6 +12,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/calc.css" rel="stylesheet" type="text/css" />
 <link href="css/media.css" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
@@ -33,18 +34,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-      <a class="navbar-brand" href="#"><div class="left_menu"><img src="img/logo.png" alt=""></div></a>
+      <a class="navbar-brand" href="#top-slider"><div class="left_menu"><img src="img/logo.png" alt=""></div></a>
     
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="menu2">
       <ul class="nav navbar-nav">
-    <li><a href="#katalog">О НАС</a></li>
-    <li><a href="#sertefikaty">КУРСЫ </a></li>
-    <li><a href="#dost">ФОТОГАЛЕРЕЯ</a></li>
-    <li><a href="#vopros">ДОСТИЖЕНИЯ</a></li>
-    <li><a href="#contac">РАСПИСАНИЕ</a></li>
-    <li><a href="#">КОНТАКТЫ</a></li>
+    <li><a href="#about-us">О НАС</a></li>
+    <li><a href="#courses">КУРСЫ </a></li>
+    <li><a href="#photo">ФОТОГАЛЕРЕЯ</a></li>
+    <li><a href="#dostig">ДОСТИЖЕНИЯ</a></li>
+    <li><a href="#rasspis">РАСПИСАНИЕ</a></li>
+    <li><a href="#contacts">КОНТАКТЫ</a></li>
       </ul>
      
       </div>
@@ -54,16 +55,16 @@
 
 <section id="header">
 	<div class="header">
-		<div class="nav-wrap">
+		<div class="nav-wrap" id="menu">
 		<ul class="header__menu menu group" id="example-one">
-			<li ><img src="img/logo.png" alt=""></li>
-			<li class="current_page_item"><a href="#">О НАС</a></li>
-			<li><a href="#">КУРСЫ </a></li>
-			<li><a href="#">ФОТОГАЛЕРЕЯ </a></li>
-			<li><a href="#">ДОСТИЖЕНИЯ </a></li>
-			<li><a href="#">РАСПИСАНИЕ</a></li>
-			<li><a href="#">КОНТАКТЫ</a></li>
-			<p><a href="#">+7 (812) 900-73-05</a>
+			<li ><a href="#top-slider"><img src="img/logo.png" alt=""></a></li>
+			<li class="current_page_item"><a href="#about-us">О НАС</a></li>
+			<li><a href="#courses">КУРСЫ </a></li>
+			<li><a href="#photo">ФОТОГАЛЕРЕЯ </a></li>
+			<li><a href="#dostig">ДОСТИЖЕНИЯ </a></li>
+			<li><a href="#rasspis">РАСПИСАНИЕ</a></li>
+			<li><a href="#contacts">КОНТАКТЫ</a></li>
+			<p><a href="tel:+7 (812) 900-73-05">+7 (812) 900-73-05</a>
 				
 					ТК Парнас <br>
 					2 этаж, секция 216-А
@@ -123,7 +124,7 @@
 	</div>
 	
 </section>
-<section id="about-us">
+<section id="about-us" class="wow animated fadeInUp">
 	<div class="about-us__title">
 		<img src="img/lightbulb.png" alt="">
 		<p>О НАС</p>
@@ -157,7 +158,7 @@
 		</div>
 	</div>
 </section>
-<section id="courses">
+<section id="courses" class="wow animated fadeInUp">
 	<div class="about-us__title">
 		<img src="img/Gear.png" alt="">
 		<p>КУРСЫ ДЛЯ ЮНЫХ ГЕНИЕВ</p>
@@ -234,7 +235,7 @@
 	</div>
 	</div>
 </section>
-<section id="calc">
+<section id="calc" class="wow animated fadeInUp">
 	<div class="about-us__title">
 		
 		<p>КАЛЬКУЛЯТОР СТОИМОСТИ АБОНЕМЕНТА</p>
@@ -268,7 +269,7 @@
 	</div>
 	
 </section>
-<section id="photo">
+<section id="photo" class="wow animated fadeInUp">
 		<div class="about-us__title">
 		
 		<p>ФОТОГРАФИИ НАШИХ ЗАНЯТИЙ</p>
@@ -372,7 +373,7 @@
 		</div>
 	</div>
 </section>
-<section id="dostig">
+<section id="dostig" class="wow animated fadeInUp">
 	<div class="about-us__title">
 		
 		<p>НАШИ ДОСТИЖЕНИЯ</p>
@@ -436,7 +437,7 @@
 	</div>
 
 </section>
-<section id="why">
+<section id="why" class="wow animated fadeInUp">
 	<div class="about-us__title">
 		
 		<p>ПОЧЕМУ МЫ ЛУЧШИЕ <br>
@@ -485,7 +486,7 @@
 	</div>
 	
 </section>
-<section id="dop">
+<section id="dop" class="wow animated fadeInUp">
 		<div class="about-us__title">
 		
 		<p>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</p>
@@ -557,7 +558,7 @@
 	 </div>
 </section>
 
-<section id="rasspis">
+<section id="rasspis" class="wow animated fadeInUp">
 	<div class="about-us__title">
 		
 		<p>РАСПИСАНИЕ ЗАНЯТИЙ</p>
@@ -614,7 +615,7 @@
 			</div>
 	</div>
 </section>
-<section id="contacts">
+<section id="contacts" class="wow animated fadeInUp">
 	<div class="about-us__title">
 		
 		<p>КОНТАКТЫ</p>
@@ -674,8 +675,10 @@
   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
   crossorigin="anonymous"></script>
  <script src="js/jquery.color-RGBa-patch.js"></script>
+ <script type="text/javascript" src="js/wow.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
+<script>new WOW().init();</script>
 
 
 </body>
