@@ -1,6 +1,9 @@
 @media only screen
 and (min-device-width:320px)
 and (max-device-width:425px){
+	.item-inside .h1 {
+		padding-top: 100px;
+	}
 	.menu {display: none;}
 	.mobile_menu {display: block;}
 	.why__container__inner {
@@ -116,10 +119,25 @@ height: auto;
 .fcalcp1 {
 	margin: 0 auto;
 }
+#myCarousel2 .carousel-control{
+	width: 15%;
+
+}
+#myCarousel3 .carousel-control{
+	width: 15%;
+
+}
+#myCarousel4 .carousel-control{
+	width: 15%;
+
+}
 }
 @media only screen
 and (min-device-width:320px)
 and (max-device-width:860px){
+		.item-inside .h1 {
+		padding-top:250px;
+	}
 	.menu {display: none;}
 	.mobile_menu {display: block;}
 	.why__container__inner {
@@ -244,6 +262,18 @@ height: auto;
 }
 .fcalcp1 {
 	margin: 0 auto;
+}
+#myCarousel2 .carousel-control{
+	width: 15%;
+
+}
+#myCarousel3 .carousel-control{
+	width: 15%;
+
+}
+#myCarousel4 .carousel-control{
+	width: 15%;
+
 }
 }
 @media only screen
