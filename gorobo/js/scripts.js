@@ -96,3 +96,6 @@ $monthSlider.slider({
 // Отрабатывае ативируем событие для первого пересчета
 $lessionSlider.slider('option', 'slide').call(null, null, {value: 0});
 $monthSlider.slider('option', 'slide').call(null, null, {value: 0});
+$(function() {
+        $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+    });
