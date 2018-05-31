@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	margin-top: -100px!important;
 	background: url(../img/back.png) 0% 15% no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -59,9 +58,10 @@ font-style: normal;
 .header{
 	width: 100%;
 	position: fixed;
-
+	height: 120px;
 	z-index: 5;
 	background: #fff;
+	padding-bottom: 50px;
 }
 .header__menu{
 	display: flex;
@@ -74,47 +74,54 @@ font-style: normal;
 
 
 }
+.header__menu p  {
+	display: flex;
+	flex-direction: column;
+}
+.header__menu p a {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
 .header__menu li a {
 	font-size: 15px;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-family: raleway;
 	color: #000;text-decoration: none;
+	display: block;
+	padding: 0 30px;
 }
-.header__menu li:last-child a {
-
+.header__menu p a  {
 	font-family: comicbd;
 	font-size: 17px;
 	color: #3366cc;
 }
-.header__menu li:last-child p {
+.header__menu ul li:nth-child(8) p {
 	margin-top: 5px;
 }
-.carousel {
-	margin-top: 100px;
+#top-slider {
 	width: 100%;
 }
 .carousel .item {
 	width: 100%;
-	height: 620px;
 	}
 .carousel .item1 {
 background: url(../img/slider1.jpg) center center no-repeat fixed;
--webkit-background-size: 100% 100%;
-background-size: 100% 100%;
-height: 620px;
+-webkit-background-size: 100% ;
+background-size: 100% ;
+
 }
 .carousel .item2 {
 background: url(../img/slider2.jpg) center center no-repeat fixed;
--webkit-background-size: 100% 100%;
-background-size: 100% 100%;
-height: 620px;
+-webkit-background-size: 100% ;
+background-size: 100% ;
+
 }
 .carousel .item3 {
 background: url(../img/slider3.jpg) center center no-repeat fixed;
--webkit-background-size: 100% 100%;
-background-size: 100% 100%;
-height: 620px;
+-webkit-background-size: 100% ;
+background-size: 100% ;
+
 }
 .carousel-control.right {
 	background-image: none!important;
@@ -132,7 +139,6 @@ height: 620px;
 }
 .carousel .item .item-inside {
 	background: rgba(33, 31, 31, 0.5);
-	height: 620px;
 }
 h1 {
 
@@ -141,8 +147,8 @@ h1 {
 	color: #fff;
 	font-size: 35px;
 	text-align: center;
-	padding-top: 200px;
-	padding-bottom: 50px;
+	padding-top: 250px;
+	padding-bottom: 100px;
 }
 .item-inside .h1 span {
 	color: #99cc00;
@@ -160,7 +166,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 150px;
+	padding-bottom: 200px;
 }
 .item-inside .button a {
 	padding: 10px 15px;
@@ -513,3 +519,22 @@ margin-left: 100px;
 .navbar-toggle .icon-bar{height:2.5px!important;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color:transparent!important;transition: 0.4s ease}
 .navbar-default .navbar-nav>li>a{color:#fff!important;}
+
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#magic-line {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px;
+    height: 5px;
+    background: #6699ff;
+} 
