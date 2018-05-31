@@ -92,8 +92,8 @@ table {
 .header__menu{
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	max-width: 1280px;
+	justify-content: space-around;
+	max-width: 1100px;
 	margin: 0 auto;
 	margin-top: 15px;
 	height: 80px;
@@ -103,20 +103,23 @@ table {
 .header__menu p  {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	font-weight: bold;
 }
 .header__menu li a {
 	font-size: 15px;
-	
 	text-transform: uppercase;
-	font-family: Raleway regular;
+	font-family: Raleway bold;
 	color: #000;text-decoration: none;
 	display: block;
-	padding: 30px 30px;
+	font-weight: bold;
+	
 }
 .header__menu p a  {
 	font-family: 'ComicSansMS-Bold';
 	font-size: 17px;
-	color: #3366cc;
+	color: #4f8ae9;
 	font-weight: bold;
 	text-decoration: none;
 	margin-bottom: 5px;
@@ -167,8 +170,8 @@ background-size: 100% ;
 	color: #fff;
 	font-size: 35px;
 	text-align: center;
-	padding-top: 250px;
-	padding-bottom: 100px;
+	padding-top: 350px;
+	
 	font-family: 'ComicSansMS-Bold';
 
 }
@@ -176,7 +179,7 @@ background-size: 100% ;
 	color: #99cc00;
 }
 .item-inside .h1 span:nth-child(2){
-	color: #6699ff;
+	color: #4f8ae9;
 	font-family: 'ComicSansMS-Bold';
 }
 .item-inside p {
@@ -193,9 +196,9 @@ background-size: 100% ;
 	padding-bottom: 200px;
 }
 .item-inside .button a {
-	padding: 10px 15px;
+	padding: 15px 25px;
 	color: #fff;
-	background: #6699ff;
+	background: #4f8ae9;
 	border-radius: 15px;
 	font-family: Raleway Medium;
 }
@@ -218,12 +221,11 @@ background-size: 100% ;
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 50px;
-
 }
 .about-us__title p {
 	margin: 0 0 0;
 	font-size: 35px;
-	color: #6699ff;
+	color: #4f8ae9;
 	padding: 0 15px;
 	font-weight: bold;
 	
@@ -255,7 +257,7 @@ background-size: 100% ;
 }
 .courses__links .active{
 	text-decoration: none;
-	color: #6699ff;
+	color: #4f8ae9;
 	box-shadow: inset -2px 4px 0px rgba(0,0,0,0.5);
 	margin-top: 50px;
 	padding: 10px 0px;
@@ -268,13 +270,13 @@ background-size: 100% ;
 }
 .courses__links a:hover {
 	text-decoration: none;
-	color: #6699ff;
-	box-shadow: inset -2px 4px 0px rgba(0,0,0,0.5);
+	color: #4f8ae9;
+	
 
 }
 .courses__links a:focus {
 	text-decoration: none;
-	color: #6699ff;
+	color: #4f8ae9;
 
 	box-shadow: inset -2px 4px 0px rgba(0,0,0,0.5);
 }
@@ -315,12 +317,13 @@ background-size: 100% ;
 }
 .courses__form form button {
 	padding: 12px 25px;
-	background: #6699ff;
+	background: #4f8ae9;
 	outline: none;
-	border: #6699ff;
+	border: #4f8ae9;
 	border-radius: 20px;
 	margin-left: -45px;
 	color: #fff;
+	font-weight: bold;
 }
 .courses__form__text {
 	margin-top: 50px;
@@ -380,6 +383,7 @@ background-size: 100% ;
 .why__container {
 	display: flex;
 	flex-direction: column;
+	font-size: 18px;
 }
 .why__container__inner {
 	display: flex;
@@ -427,7 +431,7 @@ margin-left: 100px;
 	
 }
 .dop__text p span {
-	color: #3399cc;
+	color: #4f8ae9;;
 }
 .dop__text .courses__form__text p {
 	font-size: 12px;
@@ -491,7 +495,7 @@ margin-left: 100px;
 
 }
 .rasspis__links___open #opencontent_rasp3 img {
-	width: 100%;
+	width: 80%;
 
 }
 .contacts__map img {
@@ -503,13 +507,13 @@ margin-left: 100px;
 }
 .contacts__info .contacts__info__text {
 	margin-left: 25%;
+	font-size: 18px;
 }
 .contacts__info .contacts__info__text p span {
 	font-size: 24px;
 	color: #999900;
 }
 .contacts__info .contacts__info__text p:nth-child(2) {
-	text-decoration: underline;
 }
 .contacts__info .contacts__info__text p:nth-child(2) span {
 	font-size: 28px;
@@ -520,7 +524,7 @@ margin-left: 100px;
 }
 #vk {
 	color: #ccc;
-	font-size: 20px;
+	font-size: 35px;
 	border-radius:5px;
 	padding: 2px;
 
@@ -532,10 +536,9 @@ margin-left: 100px;
 }
 #insta {
 	color: #ccc;
-	font-size: 20px;
+	font-size: 35px;
 }
 #insta:hover {
-	padding: 2px;
 	border-radius:5px;
 	 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
@@ -580,7 +583,7 @@ margin-left: 100px;
     left: 0;
     width: 100px;
     height: 5px;
-    background: #6699ff;
+    background: #4f8ae9;
 } 
 #before-load {
             position: fixed; /*фиксированное положение блока*/
@@ -608,6 +611,7 @@ margin-left: 100px;
 .courses__texts {
 	margin-top: 50px;
 		font-family: Raleway Medium;
+		font-size: 18px;
 }
 #contact_form_pop {padding: 3% 2%;}
 #contact_form_pop  form{display: flex;flex-direction: column;width: 100%;}
@@ -640,4 +644,28 @@ margin-left: 100px;
 #photo .imglist a img {
 	width: 100%;
 	height: 250px;
+}
+#myCarousel2 .carousel-control{
+	width: auto;
+
+}
+#myCarousel3 .carousel-control{
+	width: auto;
+
+}
+#myCarousel4 .carousel-control{
+	width: auto;
+
+}
+#rasspis {
+	margin-top: 80px;
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.email {
+
 }
