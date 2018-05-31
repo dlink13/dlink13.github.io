@@ -406,9 +406,15 @@ margin-left: 100px;
 	margin-top: 80px;
 }
 .dop__img {margin-top: 50px;}
-.dop__img img {
-	width: 100%;
-	height: 250px;
+
+.dop__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dop__img a {
+	width: 30%;
+	margin: 20px 20px;
 }
 .dop__text {
 	width: 70%;
@@ -602,4 +608,36 @@ margin-left: 100px;
 .courses__texts {
 	margin-top: 50px;
 		font-family: Raleway Medium;
+}
+#contact_form_pop {padding: 3% 2%;}
+#contact_form_pop  form{display: flex;flex-direction: column;width: 100%;}
+#contact_form_pop  form input {outline: none!important;border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:transparent;margin-top: 15px;}
+#contact_form_pop  form select {outline: none!important;border: none;border-bottom: 2px solid #66cc33;padding-bottom: 5px;background:transparent;margin-top: 15px;}
+#contact_form_pop  form button {margin:0 auto; margin-top: 20px;width: 50%;color:#66cc33;border: none;border-bottom: 2px solid #66cc33;background: transparent;font-size: 20px;}
+
+
+#dostig .item p {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#dostig .item .imglist a img{
+	height:400px;
+	margin: 20px 50px;
+}
+#photo .imglist {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#photo .imglist a {
+	width: 30%;
+	margin: 20px 20px;
+}
+#photo .imglist a img {
+	width: 100%;
+	height: 250px;
 }

@@ -89,6 +89,33 @@ height: auto;
 .dostig__img__in {
 	margin: 0 auto;
 }
+#photo .imglist {
+	flex-direction: column;
+}
+#photo .imglist a {
+	width: 90%;
+}
+#photo .imglist a img {
+	height: auto;
+}
+#dostig .item p {
+	flex-direction: column;
+}
+.dop__img {
+	flex-direction: column;
+}
+.dop__img a {
+	width: 90%;
+}
+.dop__img a img{
+	width: 100%;
+}
+.header {
+	height: auto;
+}
+.fcalcp1 {
+	margin: 0 auto;
+}
 }
 @media only screen
 and (min-device-width:320px)
@@ -191,11 +218,54 @@ height: auto;
 	width: 50%;
 	margin: 0 auto;
 }
+#photo .imglist {
+	flex-direction: column;
+}
+#photo .imglist a {
+	width: 90%;
+}
+#photo .imglist a img {
+	height: auto;
+}
+#dostig .item p {
+	flex-direction: column;
+}
+.dop__img {
+	flex-direction: column;
+}
+.dop__img a {
+	width: 90%;
+}
+.dop__img a img{
+	width: 100%;
+}
+.header {
+	height: auto;
+}
+.fcalcp1 {
+	margin: 0 auto;
+}
 }
 @media only screen
 and (min-device-width:860px)
 and (max-device-width:1198px){
 .dop__img img {
 	height: auto;
+	width: 100%;
 }
+.header__menu li a {
+	font-size: 10px;
+	padding: 10px;
+
+}
+.fcalcp1 {
+	margin: 0 auto;
+}
+}
+@media only screen
+and (min-device-width:768px)
+and (max-device-width:1023px) {
+	.fcalcp5 {
+		width: 95%;
+	}
 }
