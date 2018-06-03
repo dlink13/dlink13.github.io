@@ -148,7 +148,7 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 .courses__texts{margin-top:50px;font-family:Raleway Medium;font-size:18px;}
 #contact_form_pop{padding:3% 2%;}
 #contact_form_pop form{display:flex;flex-direction:column;width:100%;}
-#contact_form_pop form input{outline:none!important;border:none;border-bottom:2px solid #66cc33;padding-bottom:5px;background:transparent;margin-top:15px;}
+#contact_form_pop form input{outline:none!important;border-bottom:2px solid #66cc33;padding-bottom:5px;background:transparent;margin-top:15px;}
 #contact_form_pop form select{outline:none!important;border:none;border-bottom:2px solid #66cc33;padding-bottom:5px;background:transparent;margin-top:15px;}
 #contact_form_pop form button{margin:0 auto;margin-top:20px;width:50%;color:#66cc33;border:none;border-bottom:2px solid #66cc33;background:transparent;font-size:20px;}
 #dostig .item p{display:flex;flex-direction:row;justify-content:center;align-items:center;}
@@ -194,4 +194,8 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 50px;
+}
+.form-control {
+	display: unset!important;
+	width: auto!important;
 }

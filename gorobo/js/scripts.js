@@ -150,3 +150,44 @@ $(function(){
     $('body,html').animate({scrollTop: top}, 1500);
   });
 });
+(function ($) {
+    var $form = $('form#contact_form');
+    var is_empty = function (value) {
+        return !value.trim();
+    };
+    var is_email = function (value) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(value).trim().toLowerCase());
+    };
+    var has_errors = false;
+    var $input_elements = $form.find('input[type=text], input[type=email], textarea');
+    $input_elements.change(function (event) {
+        var $target = $(event.target);
+        var $parent = $target.parent();
+        var $helper = $parent.find('.help-block');
+        var type = $target.attr('type');
+        var value = $target.val();
+        var is_valid = false;
+        if (type === 'email') {
+            is_valid = is_email(value);
+        } else {
+            is_valid = !is_empty(value);
+        }
+        $parent.removeClass('has-success has-warning has-error');
+        if (is_valid) {
+            $parent.addClass('has-success');
+            $helper.hide();
+        } else {
+            $parent.addClass('has-error');
+            $helper.show();
+            has_errors = true;
+        }
+    });
+    $form.submit(function (event) {
+        has_errors = false;
+        $input_elements.change();
+        if (has_errors) {
+            event.preventDefault();
+        }
+    });
+})(jQuery);
