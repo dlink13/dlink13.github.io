@@ -112,7 +112,8 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 .rasspis__links___open #opencontent_rasp2 img{width:100%;margin-top:25px;}
 .rasspis__links___open #opencontent_rasp3{width:75%;margin:0 auto;}
 .rasspis__links___open #opencontent_rasp3 img{width:80%;}
-.contacts__map img{width:100%;}
+.contacts__map img{width:40%;position: absolute;top: 100px;right: 0; }
+.contacts__map__mobile img{width:40%;position: absolute;top: 100px;right: 0; }
 .contacts__info{margin-bottom:100px;}
 .contacts__info .contacts__info__text{margin-left:25%;font-size:18px;margin-top: 25px;}
 .contacts__info .contacts__info__text p span{font-family:'ComicSansMS-Bold';font-weight: bold; font-size:24px;color:#999900;}
@@ -187,4 +188,10 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 	margin: 0 auto;
 	font-size: 	18px;
 
+}
+.contacts__map__mobile {
+	display: none;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }

@@ -310,4 +310,23 @@ and (max-device-width:990px)
 #courses {
 	display: none;
 }
+body {
+	-webkit-background-size: auto;
+	background-size: auto;
+}
+.contacts__map {
+	display: none;
+}
+.contacts__map__mobile {
+	display: block;
+}
+}
+
+@media only screen
+and (min-device-width:992px)
+and (max-device-width:1198px)
+{
+.courses__form form {
+	display: flex;
+}
 }
