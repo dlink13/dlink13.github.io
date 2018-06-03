@@ -2,6 +2,9 @@
 and (min-device-width:320px)
 and (max-device-width:425px){
 	.item-inside .h1 {
+		font-size: 25px;
+	}
+	.item-inside .h1 {
 		padding-top: 100px;
 	}
 	.menu {display: none;}
