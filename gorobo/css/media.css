@@ -137,6 +137,14 @@ height: auto;
 }
 @media only screen
 and (min-device-width:320px)
+and (max-device-width:460px){
+.carousel .item1{background:url(../img/slider1_mobile.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
+.carousel .item2{background:url(../img/slider2_mobile.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
+.carousel .item3{background:url(../img/slider3_mobile.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
+
+}
+@media only screen
+and (min-device-width:320px)
 and (max-device-width:860px){
 		.item-inside .h1 {
 		padding-top:250px;
