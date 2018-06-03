@@ -31,10 +31,10 @@ url('../fonts/Montserrat-Black.svg#Montserrat-Black') format('svg');font-weight:
 @font-face{font-family:'Montserrat';src:url('../fonts/Montserrat.eot'),
 url('../fonts/Montserrat.woff2') format('woff2'),
 url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:normal;font-style:normal;}
-.header{width:100%;position:fixed;height:120px;z-index:5;background:#fff;padding-bottom:50px;}
-.header__menu{display:flex;align-items:center;justify-content:space-around;max-width:1100px;margin:0 auto;margin-top:15px;height:80px;}
-.header__menu p{display:flex;flex-direction:column;align-items:center;font-weight:bold; padding: 0 0 0 10px;}
-.header__menu li:first-child {margin-right: 2%;}
+.header{width:100%;position:fixed;height:90px;z-index:5;background:#fff;padding-bottom:50px;}
+.header__menu{display:flex;align-items:center;justify-content:space-around;max-width:1170px;margin:0 auto;margin-top:15px;height:80px;}
+.header__menu p{display:flex;flex-direction:column;align-items:center;font-weight:bold; padding: 0 0 0 3%;}
+.header__menu li:first-child {margin-right: 3%;}
 .header__menu li a{ font-size:15px;text-transform:uppercase;font-family:Raleway SemiBold;color:#000;text-decoration:none;display:block;font-weight:bold;}
 .header__menu li a:hover {color:#4f8ae9;transition: 0.4s ease; }
 .header__menu p a{font-family:'ComicSansMS-Bold';font-size:17px;color:#4f8ae9;font-weight:bold;text-decoration:none;margin-bottom:5px;}
