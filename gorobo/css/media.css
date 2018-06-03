@@ -114,7 +114,7 @@ height: auto;
 	width: 100%;
 }
 .header {
-	height: auto;
+	color: #ccc;
 }
 .fcalcp1 {
 	margin: 0 auto;
@@ -256,9 +256,6 @@ height: auto;
 }
 .dop__img a img{
 	width: 100%;
-}
-.header {
-	height: auto;
 }
 .fcalcp1 {
 	margin: 0 auto;
