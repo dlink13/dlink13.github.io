@@ -33,8 +33,9 @@ url('../fonts/Montserrat.woff2') format('woff2'),
 url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:normal;font-style:normal;}
 .header{width:100%;position:fixed;height:120px;z-index:5;background:#fff;padding-bottom:50px;}
 .header__menu{display:flex;align-items:center;justify-content:space-around;max-width:1100px;margin:0 auto;margin-top:15px;height:80px;}
-.header__menu p{display:flex;flex-direction:column;text-align:center;align-items:center;font-weight:bold;}
-.header__menu li a{font-size:15px;text-transform:uppercase;font-family:Raleway bold;color:#000;text-decoration:none;display:block;font-weight:bold;}
+.header__menu p{display:flex;flex-direction:column;align-items:center;font-weight:bold; padding: 0 0 0 10px;}
+.header__menu li:first-child {margin-right: 2%;}
+.header__menu li a{ font-size:15px;text-transform:uppercase;font-family:Raleway SemiBold;color:#000;text-decoration:none;display:block;font-weight:bold;}
 .header__menu li a:hover {color:#4f8ae9;transition: 0.4s ease; }
 .header__menu p a{font-family:'ComicSansMS-Bold';font-size:17px;color:#4f8ae9;font-weight:bold;text-decoration:none;margin-bottom:5px;}
 #top-slider{width:100%;}
@@ -50,14 +51,14 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 .item-inside .h1{color:#fff;font-size:35px;text-align:center;padding-top:350px;font-family:'ComicSansMS-Bold';}
 .item-inside .h1 span{color:#99cc00;}
 .item-inside .h1 span:nth-child(2){color:#4f8ae9;font-family:'ComicSansMS-Bold';}
-.item-inside p{text-align:center;color:#fff;font-size:20px;padding-bottom:50px;font-family:Raleway Medium;}
-.item-inside .button{display:flex;flex-direction:column;align-items:center;padding-bottom:200px;}
-.item-inside .button a{padding:15px 25px;color:#fff;background:#4f8ae9;border-radius:15px;font-family:Raleway Medium;}
+.item-inside p{text-align:center;color:#fff;font-size:20px;padding-bottom:50px;font-family:Raleway Medium;margin-top: 100px;}
+.item-inside .button{display:flex;flex-direction:column;align-items:center;padding-bottom:100px;}
+.item-inside .button a{padding:15px 25px;color:#fff;background:#4f8ae9;border-radius:15px;font-family:Raleway Medium;font-size: 18px;}
 .item-inside .button a:hover{text-decoration:none; background: #99cc00;color: #fff; transition: 0.4s ease;}
 #about-us{margin-top:100px;margin-bottom:100px;}
 .about-us__left img{width:80%;margin:0 auto;border:10px solid #99cc00;border-radius:20px;}
-.about-us__title{display:flex;flex-direction:row;align-items:center;justify-content:center;padding-bottom:50px;}
-.about-us__title p{margin:0 0 0;font-size:35px;color:#4f8ae9;padding:0 15px;font-weight:bold;}
+.about-us__title{ display:flex;flex-direction:row;align-items:center;justify-content:center;padding-bottom:50px;}
+.about-us__title p{font-family:'Montserrat-Black'; margin:0 0 0;font-size:35px;color:#4f8ae9;padding:0 15px;font-weight:bold;}
 .about-us__right p{font-size:18px;font-family:Raleway Medium;}
 #courses{margin-bottom:50px;}
 .courses__links{display:flex;flex-direction:column;align-items:center;}
@@ -73,7 +74,7 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 .courses__form form input:nth-child(1){border-right:none;border-top-left-radius:20px;border-bottom-left-radius:20px;box-shadow:0 0 10px rgba(0,0,0,0.5);}
 .courses__form form input:nth-child(2){margin-left:-5px;border-top-right-radius:20px;border-bottom-right-radius:20px;border-left:none;box-shadow:0 0 10px rgba(0,0,0,0.5);}
 .courses__form form button:hover {background: #99cc00;transition: 0.4s ease;}
-.courses__form form button{padding:12px 25px;background:#4f8ae9;outline:none;border:#4f8ae9;border-radius:20px;margin-left:-45px;color:#fff;font-weight:bold;}
+.courses__form form button{font-size: 18px; padding:12px 25px;background:#4f8ae9;outline:none;border:#4f8ae9;border-radius:20px;margin-left:-45px;color:#fff;font-weight:bold;}
 .courses__form__text{margin-top:50px;display:flex;flex-direction:row;justify-content:flex-end;text-align:right;color:#ccc;font-size:12px;font-family:Raleway Medium;}
 .courses__form__text span{font-size:18px;}
 .item__photo__container{display:flex;flex-direction:row;width:100%;}
@@ -94,7 +95,7 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 .why__container .why__container__inner:nth-child(6) img{margin-left:100px;}
 #dop .about-us__title{margin-top:80px;}
 .dop__img{margin-top:50px;}
-.dop__img{display:flex;justify-content:center;align-items:center;}
+.dop__img{display:flex;justify-content:center;align-items:center;margin-right: 15px;}
 .dop__img a{width:30%;margin:20px 20px;}
 .dop__text{width:70%;margin:0 auto;margin-top:50px;font-family:Raleway Medium;}
 .dop__text p{font-size:18px;}
@@ -113,13 +114,13 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 .rasspis__links___open #opencontent_rasp3 img{width:80%;}
 .contacts__map img{width:100%;}
 .contacts__info{margin-bottom:100px;}
-.contacts__info .contacts__info__text{margin-left:25%;font-size:18px;}
-.contacts__info .contacts__info__text p span{font-size:24px;color:#999900;}
+.contacts__info .contacts__info__text{margin-left:25%;font-size:18px;margin-top: 25px;}
+.contacts__info .contacts__info__text p span{font-family:'ComicSansMS-Bold';font-weight: bold; font-size:24px;color:#999900;}
 .contacts__info .contacts__info__text p:nth-child(2){}
 .contacts__info .contacts__info__text p:nth-child(2) span{font-size:28px;color:#000;}
 .contacts__info .contacts__info__text p:nth-child(3){font-weight:bold;}
 #vk{color:#ccc;font-size:35px;border-radius:5px;padding:2px;}
-#vk:hover{color:#fff;background:#669999;border-color:#669999;}
+#vk:hover{color:#669999;}
 #insta{color:#ccc;font-size:35px;}
 #insta:hover{border-radius:5px;background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
 .calc__item{margin-bottom:80px;}
@@ -158,5 +159,5 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 #myCarousel3 .carousel-control{width:auto;}
 #myCarousel4 .carousel-control{width:auto;}
 #rasspis{margin-top:80px;}
-.footer{display:flex;flex-direction:row;align-items:center;justify-content:space-around;}
-.email{}
+.footer{max-width: 1100px;margin: 0 auto; display:flex;flex-direction:row;align-items:center;justify-content:space-around;}
+.email{}#contacts {margin-top: 80px;}

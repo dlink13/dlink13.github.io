@@ -218,11 +218,11 @@
 
 		</div>
 		<div class="courses__form">
-					<form action="post">
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Ваш телефон">
-						<button>Записаться</button>
-					</form>
+            <form id="form">
+            <input type="name" name="name" placeholder="Ваше имя" required>
+            <input type="phone" name="phone" placeholder="Ваш телефон" required>
+            <button >Записаться</button>
+          </form>
 				</div>
 	<div class="courses__form__text">
 			
@@ -399,6 +399,18 @@
     </div>
      <div class="item">
     	<p class="imglist">
+  <a href="img/dip4.jpg" data-fancybox="images2">
+    <img src="img/dip4.jpg" />
+  </a>
+  <a href="img/dip5.jpg" data-fancybox="images2">
+    <img src="img/dip5.jpg" />
+  </a>
+  <a href="img/dip6.jpg" data-fancybox="images2">
+    <img src="img/dip6.jpg" />
+  </a></p>
+    </div>
+         <div class="item">
+    	<p class="imglist">
   <a href="img/dip7.jpg" data-fancybox="images2">
     <img src="img/dip7.jpg" />
   </a>
@@ -409,7 +421,7 @@
     <img src="img/dip9.jpg" />
   </a></p>
     </div>
-         <div class="item">
+             <div class="item">
     	<p class="imglist">
   <a href="img/dip10.jpg" data-fancybox="images2">
     <img src="img/dip10.jpg" />
@@ -421,41 +433,15 @@
     <img src="img/dip12.jpg" />
   </a></p>
     </div>
-             <div class="item">
+                 <div class="item">
     	<p class="imglist">
-  <a href="img/dip13.jpg" data-fancybox="images2">
-    <img src="img/dip13.jpg" />
-  </a>
   <a href="img/dip14.jpg" data-fancybox="images2">
     <img src="img/dip14.jpg" />
   </a>
   <a href="img/dip15.jpg" data-fancybox="images2">
     <img src="img/dip15.jpg" />
-  </a></p>
-    </div>
-                 <div class="item">
-    	<p class="imglist">
-  <a href="img/dip4.jpg" data-fancybox="images2">
-    <img src="img/dip4.jpg" />
   </a>
-  <a href="img/dip5.jpg" data-fancybox="images2">
-    <img src="img/dip5.jpg" />
-  </a>
-  <a href="img/dip6.jpg" data-fancybox="images2">
-    <img src="img/dip6.jpg" />
-  </a></p>
-    </div>
-                     <div class="item">
-    	<p class="imglist">
-  <a href="img/dip16.jpg" data-fancybox="images2">
-    <img src="img/dip16.jpg" />
-  </a>
-  <a href="img/dip17.jpg" data-fancybox="images2">
-    <img src="img/dip17.jpg" />
-  </a>
-  <a href="img/dip19.jpg" data-fancybox="images2">
-    <img src="img/dip19.jpg" />
-  </a></p>
+  </p>
     </div>
 
     
@@ -565,11 +551,11 @@
 				<p><span>Выездные корпоративы:</span></p>
 				<p>Хотите устроить незабываемый праздник для сотрудников компании? Закажите выездное мероприятие от GoRobo! Ваши сотрудники смогут поближе познакомиться с основами программирования и робототехники, узнать современные тенденции развития роботизированных систем, освоить основы 3д-печати и поиграть в робоигры!</p>
 				<div class="courses__form">
-					<form action="post">
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Ваш телефон">
-						<button>Записаться</button>
-					</form>
+          <form id="form">
+            <input type="name" name="name" placeholder="Ваше имя" required>
+            <input type="phone" name="phone" placeholder="Ваш телефон" required>
+            <button >Записаться</button>
+          </form>
 				</div>
 				<div class="courses__form__text">
 			
@@ -670,11 +656,11 @@
 						<a href="https://vk.com/gorobo" target="_blanck"><i class="fab fa-vk" id="vk"></i></a>
 						<a href="https://www.instagram.com/gorobo.club" target="_blanck"><i class="fab fa-instagram" id="insta"></i></a>
 					</div>
-									<div class="courses__form">
-					<form action="post">
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Ваш телефон">
-						<button>Записаться</button>
+					<div class="courses__form">
+					<form id="form">
+						<input type="name" name="name" placeholder="Ваше имя" required>
+						<input type="phone" name="phone" placeholder="Ваш телефон" required>
+						<button >Записаться</button>
 					</form>
 				</div>
 								<div class="courses__form__text">
@@ -716,12 +702,10 @@
     <p class="second"><b>И МЫ СВЯЖЕМСЯ С ВАМИ <br>
 В БЛИЖАЙШЕЕ ВРЕМЯ</b></p>
 <div id="contact_form_pop">
-<form class="form1" id='kon'>
-  <div class='FormInfo' style='display:none'></div>
-  <input type="form_name" name="email"  placeholder="form_name" class="name-form" value="Заказать в шапке" style="display: none;"> </br>
-    <input type="name" name="name"  placeholder="Имя" class="name-form"> </br>
-    <input type="phone" name="phone"   placeholder="Телефон" class="tel1"> </br>
-    <button type="button" onclick="send();"  class="button-2 butt-form">Заказать</button> 
+<form id="form">
+  <input type="text" name="name" placeholder="Ваше имя" required /><br />
+    <input type="text" name="phone" placeholder="Ваш телефон" required /><br />
+    <button >Заказать</button> 
 </form>
 </div>
 </div>
