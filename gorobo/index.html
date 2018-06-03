@@ -785,13 +785,29 @@
 <div >
 <form action="" id="contact_form" method="post">
    <div class="form-group">
-   <input type="text" class="form-control" id="text1" placeholder="Ваше имя">
-    <input type="phone" class="form-control" id="email" autocomplete="email" placeholder="Ваш телефон">
-    <button type="submit" class="btn bnt-default">Заказать</button> 
+  <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя">
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ваш телефон">
+    <input type="submit" value="Отправить" class="btn bnt-default">
   </div>
 </form>
 </div>
 </div>
+<div id="send_result" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Отправка сообщения</h4>
+        </div>
+        <div class="modal-body">
+          <p> </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Ок</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script

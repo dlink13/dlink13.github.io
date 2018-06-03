@@ -152,42 +152,94 @@ $(function(){
 });
 (function ($) {
     var $form = $('form#contact_form');
+    var $input_elements = $form.find('input[type=text], input[type=email], input[type=tel], textarea');
+
     var is_empty = function (value) {
         return !value.trim();
     };
+    var is_simple_text = function (value) {
+        var re = /^[0-9A-zА-я_\. ]+$/;
+        return re.test(value);
+    };
+    var is_complex_text = function (value){
+        var re = /^[0-9A-zА-я\s\r\n\-\+\.,?!@$_#№=\(\)%:]+$/;
+        return re.test(value);
+    };
+    var is_phone = function (value) {
+        var re = /^\+?\d[\d\(\)\ -]{4,20}\d$/;
+        return re.test(value);
+    };
     var is_email = function (value) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(value).trim().toLowerCase());
+        return re.test(String(value).toLowerCase());
     };
+    var strip_tags = function(value){
+        return value.replace(/<\/?[^>]+>/gi, '');
+    };
+    
     var has_errors = false;
-    var $input_elements = $form.find('input[type=text], input[type=email], textarea');
     $input_elements.change(function (event) {
         var $target = $(event.target);
         var $parent = $target.parent();
         var $helper = $parent.find('.help-block');
         var type = $target.attr('type');
-        var value = $target.val();
-        var is_valid = false;
-        if (type === 'email') {
-            is_valid = is_email(value);
-        } else {
-            is_valid = !is_empty(value);
-        }
-        $parent.removeClass('has-success has-warning has-error');
-        if (is_valid) {
+        var value = $target.val(strip_tags($target.val().trim())).val();
+        if (
+            (type === 'email' && is_email(value)) || 
+            (type === 'tel' && is_phone(value)) ||
+            (type === 'text' && is_simple_text(value)) ||
+            ($target.is('textarea') && value)
+        ) {
+            $parent.removeClass('has-error');
             $parent.addClass('has-success');
             $helper.hide();
         } else {
+            $parent.removeClass('has-success');
             $parent.addClass('has-error');
             $helper.show();
             has_errors = true;
         }
     });
+
+    //modal
+    $modal = $('#send_result');
+    $mbody = $modal.find('.modal-body > p');
+    var on_error = function(data){
+        $mbody.text('Не удалось отправить сообщение!');
+        $modal.modal('show');
+    }
+    var on_success = function(data){
+        if (data.status === 'success'){
+            $mbody.text('Сообщение отправлено!');
+            $modal.modal('show');
+        } else {
+            on_error(data);
+        }
+    }
+
     $form.submit(function (event) {
         has_errors = false;
         $input_elements.change();
-        if (has_errors) {
-            event.preventDefault();
+        event.preventDefault();
+        if (!has_errors) {
+            $.ajax({
+                type: 'post',
+                url: 'callback.php',
+                data: {
+                    'name': $('#name').val(),
+                    'phone': $('#phone').val(),
+                    'email': $('#email').val(),
+                    'subject': $('#subject').val()
+                },
+                dataType: 'json',
+                success: on_success,
+                error: on_error,
+            });
         }
     });
+
+
+
+
+
 })(jQuery);
