@@ -161,3 +161,30 @@ url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype');font-weight:no
 #rasspis{margin-top:80px;}
 .footer{max-width: 1100px;margin: 0 auto; display:flex;flex-direction:row;align-items:center;justify-content:space-around;}
 .email{}#contacts {margin-top: 80px;}
+#coursesmobile {
+	display: none;
+}
+#opencontentmobile {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 	18px;
+
+}
+#opencontentmobile1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 	18px;
+
+}
+#opencontentmobile2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 	18px;
+
+}
