@@ -17,24 +17,6 @@ and (max-device-width:425px){
 	.why__container__inner {
 		flex-direction: column;
 	}
-.carousel .item1 {
-background: url(../img/slider1.jpg) center center no-repeat fixed;
--webkit-background-size: cover;
-background-size: cover;
-height: auto;
-}
-.carousel .item2 {
-background: url(../img/slider2.jpg) center center no-repeat fixed;
--webkit-background-size: cover;
-background-size: cover;
-height: auto;
-}
-.carousel .item3 {
-background: url(../img/slider3.jpg) center center no-repeat fixed;
--webkit-background-size: cover;
-background-size: cover;
-height: auto;
-}
 .about-us__left {
 	display: flex;
 	justify-content: center;
