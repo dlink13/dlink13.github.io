@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="КЛУБ РОБОТОТЕХНИКИ, ПРОГРАММИРОВАНИЯ
  И 3-Д МОДЕЛИРОВАНИЯ">
-<title>GOROBO</title>
+<title>GOROBO,КЛУБ РОБОТОТЕХНИКИ, ПРОГРАММИРОВАНИЯ
+ И 3-Д МОДЕЛИРОВАНИЯ</title>
 <!-- Load CSS -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -15,15 +16,17 @@
 <link href="css/animate.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-
-
 </head>
 <body>
 	<div id="before-load">
     <img src="img/logo.png" alt="">
 </div>
+  <div id="successMessage" style="display: none">
+      <p>Сообщение отправлено,спасибо</p>
+    </div>
+  <div id="vb" style="display: none">
+      <p>Сообщение не отправлено</p>
+    </div>
 	<div class="mobile_menu">
           <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -218,14 +221,13 @@
                   			</div>
 
               		</div>
-              		<div class="courses__form">
-            <form action="" id="contact_form" method="post">
-             <input type="text" class="form-control" id="text1" placeholder="Ваше имя">
-            <input type="phone" class="form-control" id="email" autocomplete="phone" placeholder="Ваш телефон">
-            <button type="submit" class="btn bnt-default">Записаться</button>
-          </form>
-                        </form>
-              				</div>
+ <div class="courses__form">
+            <form action="" class="contact_form" method="post">
+              <input type="text" class="form-control" name="name" placeholder="Ваше имя">
+              <input type="phone" class="form-control" name="phone" autocomplete="phone" placeholder="Ваш телефон">
+              <button type="submit" class="btn bnt-default">Записаться</button>
+            </form>
+          </div>
               	<div class="courses__form__text">
               			
               		<p> <span>Запишитесь на пробное занятие!</span>
@@ -291,15 +293,13 @@
         </div>
 
       </div>
-
-                  <div class="courses__form">
-            <form action="" id="contact_form" method="post">
-             <input type="text" class="form-control" id="text1" placeholder="Ваше имя">
-            <input type="phone" class="form-control" id="email" autocomplete="phone" placeholder="Ваш телефон">
-            <button type="submit" class="btn bnt-default">Записаться</button>
-          </form>
-                        </form>
-                      </div>
+ <div class="courses__form">
+            <form action="" class="contact_form" method="post">
+              <input type="text" class="form-control" name="name" placeholder="Ваше имя">
+              <input type="phone" class="form-control" name="phone" autocomplete="phone" placeholder="Ваш телефон">
+              <button type="submit" class="btn bnt-default">Записаться</button>
+            </form>
+          </div>
                 <div class="courses__form__text">
                     
                   <p> <span>Запишитесь на пробное занятие!</span>
@@ -626,13 +626,13 @@
 				</p>
 				<p><span>Выездные корпоративы:</span></p>
 				<p>Хотите устроить незабываемый праздник для сотрудников компании? Закажите выездное мероприятие от GoRobo! Ваши сотрудники смогут поближе познакомиться с основами программирования и робототехники, узнать современные тенденции развития роботизированных систем, освоить основы 3д-печати и поиграть в робоигры!</p>
-				<div class="courses__form">
-          <form action="" id="contact_form" method="post">
-             <input type="text" class="form-control" id="text1" placeholder="Ваше имя">
-            <input type="phone" class="form-control" id="email" autocomplete="phone" placeholder="Ваш телефон">
-            <button type="submit" class="btn bnt-default">Записаться</button>
-          </form>
-				</div>
+ <div class="courses__form">
+            <form action="" class="contact_form" method="post">
+              <input type="text" class="form-control" name="name" placeholder="Ваше имя">
+              <input type="phone" class="form-control" name="phone" autocomplete="phone" placeholder="Ваш телефон">
+              <button type="submit" class="btn bnt-default">Записаться</button>
+            </form>
+          </div>
 				<div class="courses__form__text">
 			
 		<p> <span>Оставьте заявку и мы свяжемся <br>с Вами в скором времени!</span>
@@ -737,13 +737,13 @@
 						<a href="https://vk.com/gorobo" target="_blanck"><i class="fab fa-vk" id="vk"></i></a>
 						<a href="https://www.instagram.com/gorobo.club" target="_blanck"><i class="fab fa-instagram" id="insta"></i></a>
 					</div>
-					<div class="courses__form">
-					<form action="" id="contact_form" method="post">
-						 <input type="text" class="form-control" id="text1" placeholder="Ваше имя">
-						<input type="phone" class="form-control" id="email" autocomplete="phone" placeholder="Ваш телефон">
-						<button type="submit" class="btn bnt-default">Записаться</button>
-					</form>
-				</div>
+ <div class="courses__form">
+            <form action="" class="contact_form" method="post">
+              <input type="text" class="form-control" name="name" placeholder="Ваше имя">
+              <input type="phone" class="form-control" name="phone" autocomplete="phone" placeholder="Ваш телефон">
+              <button type="submit" class="btn bnt-default">Записаться</button>
+            </form>
+          </div>
 								<div class="courses__form__text">
 			
 		<p> <span>Запишитесь на бесплатное пробное занятие!</span>
@@ -777,37 +777,24 @@
 	</div>
 </footer>
 
-<div class="col-lg-4 svitok fancybox-hidden col-sm-4 col-md-4"  style="display:none" id="#feedback">
-  <div class="" id="contact_form_pop" style="text-align: center;">
-    <h2 class="first">ОСТАВЬТЕ ЗАЯВКУ</h2>
-    <p class="second"><b>И МЫ СВЯЖЕМСЯ С ВАМИ <br>
-В БЛИЖАЙШЕЕ ВРЕМЯ</b></p>
-<div >
-<form action="" id="contact_form" method="post">
-   <div class="form-group">
-  <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя">
-    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ваш телефон">
-    <input type="submit" value="Отправить" class="btn bnt-default">
+<div class="col-lg-4 svitok fancybox-hidden col-sm-4 col-md-4" style="display:none" id="#feedback">
+    <div class="" id="contact_form_pop" style="text-align: center;">
+      <h2 class="first">ОСТАВЬТЕ ЗАЯВКУ</h2>
+      <p class="second">
+        <b>И МЫ СВЯЖЕМСЯ С ВАМИ
+          <br> В БЛИЖАЙШЕЕ ВРЕМЯ</b>
+      </p>
+      <div>
+        <form action="" class="contact_form" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя">
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ваш телефон">
+            <button type="submit" class="btn bnt-default">Записаться</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-</form>
-</div>
-</div>
-<div id="send_result" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Отправка сообщения</h4>
-        </div>
-        <div class="modal-body">
-          <p> </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Ок</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script

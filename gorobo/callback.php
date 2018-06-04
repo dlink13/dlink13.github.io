@@ -1,22 +1,4 @@
 <?php
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'mailer/SMTP.php';
-require 'mailer/Exception.php';
-require 'mailer/PHPMailer.php';
-
-$err = false;
-$msg = '';
-$email = '';
-
-if (array_key_exists('subject', $_POST)) {
-    $subject = substr(strip_tags($_POST['subject']), 0, 255);
-} else {
-    $subject = 'No subject given';
-}
-
 if (array_key_exists('name', $_POST)) {
     $name = substr(strip_tags($_POST['name']), 0, 255);
 } else {
@@ -28,50 +10,28 @@ if (array_key_exists('phone', $_POST)) {
 } else {
     $phone = '';
 }
-
-if (array_key_exists('email', $_POST) and PHPMailer::validateAddress($_POST['email'])) {
-    $email = $_POST['email'];
-} else {
-    $msg .= "Error: invalid email address provided";
-    $err = true;
+if( empty( $phone ) && empty( $name ) ){
+	echo json_encode( array(
+		'status' => "error",
+		'err'	=> "empty field"
+	));
 }
-
-$templateHTML = 'С сайта отправлено сообщение! <br/>Имя: <b>%s</b><br/>Телефон: <b>%s</b><br/>Email: <b>%s</b><br/>Сообщение: <br/><i>%s</i>';
-$templateAlt = 'С сайта отправлено сообщение! Имя: %s, Телефон: %s, Email: %s, Сообщение: %s';
-
-if (!$err) {
-    $mail = new PHPMailer;
-    $mail->CharSet = 'utf-8';   
+else{
+	// Настройки
+	$from = "azrieil.g@gmail.com"; // От кого
+	$to = "aaron94@mail.ru"; // Кому
+	$subject = "Сообщение с сайта";
+	$body = sprintf("Имя %s, телефон %s", $name, $phone );
 	
-    $mail->isSMTP();                             
-    $mail->Port = 25;  
-    $mail->SMTPAuth = true;                        
-    $mail->SMTPSecure = 'tls';                         
-    $mail->Host = 'smtp.example.com'; //адрес сервера                        
-    $mail->Username = 'username@example.com'; //имя пользователя              
-    $mail->Password = 'your_password'; //пароль                         
-    
-                      
-    $mail->setFrom('username@example.com', 'Обратная связь'); //источник
-    $mail->addAddress('username@example.com'); //Назначение
-    $mail->addReplyTo($email, $name);
-
-    $mail->isHTML(true);                                
-    $mail->Subject = 'Сообщение с сайта';
-    $mail->Body    =  sprintf($templateHTML, $name, $phone, $email, $subject);
-    $mail->AltBody = sprintf($templateAlt, $name, $phone, $email, $subject);
-
-    $is_ok = $mail->send();
+	// Не трогать
+	$headers  = "MIME-Version: 1.0\r\n";
+	$headers .= "Content-type: text/html; charset=UTF-8\r\n";
+	$headers .= "From: ".$from."\r\n";
+	$headers .= "Reply-To: ".$from."\r\n";
+	
+	$result = mail( $to, $subject, $body, $headers );
+	$result ? $status = "success" : $status = "error";
+	echo json_encode( array(
+		'status' => $status
+	));
 }
-
-// if(!$err && $is_ok){
-//     include_once 'success.html';
-// } else {
-//     include_once 'error.html';
-// }
-$data = [
-    'status' => ($is_ok ? 'success': 'error')
-];
-
-header('Content-type: application/json');
-echo json_encode( $data );

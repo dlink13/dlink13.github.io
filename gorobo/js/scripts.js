@@ -150,10 +150,9 @@ $(function(){
     $('body,html').animate({scrollTop: top}, 1500);
   });
 });
-(function ($) {
-    var $form = $('form#contact_form');
-    var $input_elements = $form.find('input[type=text], input[type=email], input[type=tel], textarea');
 
+
+(function ($) {   
     var is_empty = function (value) {
         return !value.trim();
     };
@@ -177,69 +176,69 @@ $(function(){
         return value.replace(/<\/?[^>]+>/gi, '');
     };
     
-    var has_errors = false;
-    $input_elements.change(function (event) {
-        var $target = $(event.target);
-        var $parent = $target.parent();
-        var $helper = $parent.find('.help-block');
-        var type = $target.attr('type');
-        var value = $target.val(strip_tags($target.val().trim())).val();
-        if (
-            (type === 'email' && is_email(value)) || 
-            (type === 'tel' && is_phone(value)) ||
-            (type === 'text' && is_simple_text(value)) ||
-            ($target.is('textarea') && value)
-        ) {
-            $parent.removeClass('has-error');
-            $parent.addClass('has-success');
-            $helper.hide();
-        } else {
-            $parent.removeClass('has-success');
-            $parent.addClass('has-error');
-            $helper.show();
-            has_errors = true;
-        }
-    });
-
-    //modal
-    $modal = $('#send_result');
-    $mbody = $modal.find('.modal-body > p');
-    var on_error = function(data){
-        $mbody.text('Не удалось отправить сообщение!');
-        $modal.modal('show');
+    var on_error = function(data, form){
+        var $fail = $("#failMessage").clone(false).show();
+        form.replaceWith( $fail );
     }
-    var on_success = function(data){
+    var on_success = function(data, form){
         if (data.status === 'success'){
-            $mbody.text('Сообщение отправлено!');
-            $modal.modal('show');
+            var $success = $("#successMessage").clone(false).show();
+            form.replaceWith( $success );
         } else {
-            on_error(data);
+            on_error(data, form);
         }
     }
+    var $forms = $('form.contact_form');
 
-    $form.submit(function (event) {
-        has_errors = false;
-        $input_elements.change();
-        event.preventDefault();
-        if (!has_errors) {
-            $.ajax({
-                type: 'post',
-                url: 'callback.php',
-                data: {
-                    'name': $('#name').val(),
-                    'phone': $('#phone').val(),
-                    'email': $('#email').val(),
-                    'subject': $('#subject').val()
-                },
-                dataType: 'json',
-                success: on_success,
-                error: on_error,
-            });
-        }
+    $forms.each(function(index, element){
+        var $form = $(element);
+        var $input_elements = $form.find('input[type=text], input[type=email], input[type=tel], textarea, input[type=phone]');
+        var has_errors = false;
+        $input_elements.change(function (event) {
+            var $target = $(event.target);
+            var type = $target.attr('type');
+            var value = $target.val(strip_tags($target.val().trim())).val();
+            if (
+                (type === 'email' && is_email(value)) || 
+                ((type === 'phone' || type =="tel") && is_phone(value)) ||
+                (type === 'text' && is_simple_text(value)) ||
+                ($target.is('textarea') && value)
+            ) {
+                $target.removeClass('has-error');
+                $target.addClass('has-success');
+            } else {
+                $target.removeClass('has-success');
+                $target.addClass('has-error');
+                has_errors = true;
+            }
+        });
+
+        $form.submit(function (event) {
+            
+            has_errors = false;
+            $input_elements.change();
+            event.preventDefault();
+            var form = this;
+            
+            if (!has_errors) {
+                $.ajax({
+                    type: 'post',
+                    url: 'callback.php',
+                    data: {
+                        'name': $(form).find('[name=name]').val(),
+                        'phone': $(form).find('[name=phone]').val()
+                    },
+                    dataType: 'json',
+                    success: function( data ){
+                        on_success( data, $form );
+                    },
+                    error: function( x, j, s ){
+                        
+                        console.log( x,j,s );
+                        on_error( null, $form );
+                    },
+                });
+            }
+        });
     });
-
-
-
-
-
 })(jQuery);
