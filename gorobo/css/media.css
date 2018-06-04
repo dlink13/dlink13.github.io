@@ -122,14 +122,7 @@ and (max-device-width:425px){
 
 }
 }
-@media only screen
-and (min-device-width:320px)
-and (max-device-width:460px){
-.carousel .item1{background:url(../img/slider1_mobile.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
-.carousel .item2{background:url(../img/slider2_mobile.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
-.carousel .item3{background:url(../img/slider3_mobile.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
 
-}
 @media only screen
 and (min-device-width:320px)
 and (max-device-width:860px){
@@ -145,19 +138,19 @@ and (max-device-width:860px){
 	margin: 0 auto;
 }
 .carousel .item1 {
-background: url(../img/slider1.jpg) center center no-repeat fixed;
+background:url(../img/slider1mobile.jpg) center center no-repeat fixed;
 -webkit-background-size: cover;
 background-size: cover;
 height: auto;
 }
 .carousel .item2 {
-background: url(../img/slider2.jpg) center center no-repeat fixed;
+background:url(../img/slider1mobile.jpg) center center no-repeat fixed;
 -webkit-background-size: cover;
 background-size: cover;
 height: auto;
 }
 .carousel .item3 {
-background: url(../img/slider3.jpg) center center no-repeat fixed;
+background:url(../img/slider1mobile.jpg) center center no-repeat fixed;
 -webkit-background-size: cover;
 background-size: cover;
 height: auto;
