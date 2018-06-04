@@ -45,9 +45,9 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .header__menu p a{font-family:'ComicSansMS-Bold';font-size:17px;color:#4f8ae9;font-weight:bold;text-decoration:none;margin-bottom:5px;margin-left: 22px;}
 #top-slider{width:100%;}
 .carousel .item{width:100%;}
-.carousel .item1{background:url(../img/slider1.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
-.carousel .item2{background:url(../img/slider2.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
-.carousel .item3{background:url(../img/slider3.jpg) center center no-repeat fixed;-webkit-background-size:100%;background-size:100%;}
+.carousel .item1{background:url(../img/slider1.jpg) center center no-repeat fixed;-webkit-background-size:100% 100%;background-size:100% 100%;}
+.carousel .item2{background:url(../img/slider2.jpg) center center no-repeat fixed;-webkit-background-size:100% 100%;background-size:100% 100%;}
+.carousel .item3{background:url(../img/slider3.jpg) center center no-repeat fixed;-webkit-background-size:100% 100%;background-size:100% 100%;}
 .carousel-control.right{background-image:none!important;}
 .carousel-control.left{background-image:none!important;}
 .glyphicon-chevron-right:before{color:#99cc00;}

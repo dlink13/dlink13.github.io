@@ -3,20 +3,20 @@ and (min-device-width:320px)
 and (max-device-width:425px){
 	.carousel .item1 {
 background:url(../img/slider1mobile.jpg) center center no-repeat fixed;
--webkit-background-size: cover;
-background-size: cover;
+-webkit-background-size: 100% 100%;
+background-size: 100% 100%;
 height: auto;
 }
 .carousel .item2 {
 background:url(../img/slider2mobile.jpg) center center no-repeat fixed;
--webkit-background-size: cover;
-background-size: cover;
+-webkit-background-size: 100% 100%;
+background-size: 100% 100%;
 height: auto;
 }
 .carousel .item3 {
 background:url(../img/slider3mobile.jpg) center center no-repeat fixed;
--webkit-background-size: cover;
-background-size: cover;
+-webkit-background-size: 100% 100%;
+background-size: 100% 100%;
 height: auto;
 }
 
