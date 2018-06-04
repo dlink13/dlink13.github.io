@@ -1,6 +1,11 @@
 @media only screen
 and (min-device-width:320px)
 and (max-device-width:425px){
+	.courses__form__text {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 	.item-inside .h1 {
 		font-size: 25px;
 	}
