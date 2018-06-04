@@ -18,8 +18,8 @@ if( empty( $phone ) && empty( $name ) ){
 }
 else{
 	// Настройки
-	$from = "azrieil.g@gmail.com"; // От кого
-	$to = "aaron94@mail.ru"; // Кому
+	$from = "denisemelyanenko@gmail.com"; // От кого
+	$to = "denisemelyanenko@gmail.com"; // Кому
 	$subject = "Сообщение с сайта";
 	$body = sprintf("Имя %s, телефон %s", $name, $phone );
 	
