@@ -53,10 +53,10 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .glyphicon-chevron-right:before{color:#99cc00;}
 .glyphicon-chevron-left:before{color:#99cc00;}
 .carousel .item .item-inside{background:rgba(33, 31, 31, 0.5);}
-.item-inside .h1{color:#fff;font-size:35px;text-align:center;padding-top:350px;font-family:'ComicSansMS-Bold';}
+.item-inside .h1{color:#fff;font-size:40px;text-align:center;padding-top:300px;font-family:'ComicSansMS-Bold';}
 .item-inside .h1 span{color:#99cc00;}
 .item-inside .h1 span:nth-child(2){color:#4f8ae9;font-family:'ComicSansMS-Bold';}
-.item-inside p{text-align:center;color:#fff;font-size:20px;padding-bottom:50px;font-family:Raleway Medium;margin-top: 100px;}
+.item-inside p{text-align:center;color:#fff;font-size:25px;padding-bottom:50px;font-family:Raleway Medium;margin-top: 50px;}
 .item-inside .button{display:flex;flex-direction:column;align-items:center;padding-bottom:100px;}
 .item-inside .button a{padding:15px 25px;color:#fff;background:#4f8ae9;border-radius:15px;font-family:Raleway Medium;font-size: 18px;}
 .item-inside .button a:hover{text-decoration:none; background: #99cc00;color: #fff; transition: 0.4s ease;}
