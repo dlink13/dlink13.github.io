@@ -102,6 +102,7 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .dop__img{margin-top:50px;}
 .dop__img{display:flex;justify-content:center;align-items:center;margin-right: 15px;}
 .dop__img a{width:30%;margin:20px 20px;}
+.dop__img a img {width: 100%;}
 .dop__text{width:70%;margin:0 auto;margin-top:50px;font-family:Raleway Medium;}
 .dop__text p{font-size:18px;}
 .dop__text p span{color:#4f8ae9;;}
@@ -124,9 +125,9 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .contacts__info .contacts__info__text p:nth-child(2){}
 .contacts__info .contacts__info__text p:nth-child(2) span{font-size:28px;color:#000;}
 .contacts__info .contacts__info__text p:nth-child(3){font-weight:bold;}
-#vk{color:rgb(234, 89, 20);font-size:45px;border-radius:5px;padding:2px;}
+#vk{color:#4f8ae9;font-size:45px;border-radius:5px;padding:2px;}
 #vk:hover{color:#669999;}
-#insta{color:rgb(234, 89, 20);font-size:45px;}
+#insta{color:#4f8ae9;font-size:45px;}
 #insta:hover{border-radius:5px;background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
 .calc__item{margin-bottom:80px;}
 .mobile_menu{display:none;}
