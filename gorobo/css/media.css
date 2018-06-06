@@ -145,6 +145,9 @@ height: auto;
 @media only screen
 and (min-device-width:320px)
 and (max-device-width:860px){
+	.navbar .left_menu img {
+		margin-left: 5%;
+	}
 .dop__img a img {
 	height: auto;
 }
