@@ -62,7 +62,8 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .about-us__title{ display:flex;flex-direction:row;align-items:center;justify-content:center;padding-bottom:50px;}
 .about-us__title p{font-family: 'MADEWaffleSoft'; margin:0 0 0;font-size:35px;color:#4f8ae9;padding:0 15px;font-weight:bold;}
 .about-us__right p{font-size:18px;font-family:Raleway Medium;}
-#courses{margin-top: 25px;}
+#courses{margin-top: 100px;}
+#dop #courses {margin-top: 25px;}
 .courses__links{display:flex;flex-direction:column;align-items:center;}
 .courses__links a{margin-top:50px;padding:15px 35px;background:#99cc00;border-radius:20px;color:#fff;text-align:center;font-size:20px;box-shadow:0 0 10px rgba(0,0,0,0.5);font-family: 'MADEWaffleSoft';}
 .courses__links .active{text-decoration:none;color: #4F8AE9 ;box-shadow:2px 2px 17px 8px rgba(0,0,0,0.5);margin-top:50px;padding:15px 35px;background:#99cc00;border-radius:20px;text-align:center;font-size:20px;}

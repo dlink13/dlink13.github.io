@@ -307,6 +307,9 @@ and (max-device-width:990px)
 #photo {display: none;}
 #dostig__mobile {display: block;}
 #dostig {display: none;}
+.why__container .why__container__inner:nth-child(4) img {
+	margin: 0 auto;
+}
 body {
 	-webkit-background-size: auto;
 	background-size: auto;
