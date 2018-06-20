@@ -297,8 +297,9 @@ and (max-device-width:1023px) {
 and (min-device-width:320px)
 and (max-device-width:990px)
 {
-	#coursesmobile {
+#coursesmobile {
 	display: block;
+	margin-top: 80px;
 }
 #courses {
 	display: none;
@@ -320,6 +321,10 @@ body {
 .contacts__map__mobile {
 	display: block;
 }
+.imglist {
+	width: 80%;
+	margin: 0 auto;
+}
 }
 
 @media only screen
@@ -329,4 +334,5 @@ and (max-device-width:1198px)
 .courses__form form {
 	display: flex;
 }
+
 }
