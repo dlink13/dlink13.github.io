@@ -127,12 +127,7 @@ $(function(){
             left: leftPos,
             width: newWidth
         });
-    }, function() {
-        $magicLine.stop().animate({
-            left: $magicLine.data("origLeft"),
-            width: $magicLine.data("origWidth")
-        });    
-    });
+    })
     
 });
 $(function(){
@@ -242,3 +237,15 @@ $(function(){
         });
     });
 })(jQuery);
+$("[data-fancybox]").fancybox({
+// Скорость анимации
+speed : 330,
+opacity : 'auto',
+loop : true,
+smallBtn : 'auto',})
+
+
+ $(".navbar-nav").click(function(){
+    $(".navbar-collapse") .removeClass("in")
+ })
+

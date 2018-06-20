@@ -62,7 +62,7 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .about-us__title{ display:flex;flex-direction:row;align-items:center;justify-content:center;padding-bottom:50px;}
 .about-us__title p{font-family: 'MADEWaffleSoft'; margin:0 0 0;font-size:35px;color:#4f8ae9;padding:0 15px;font-weight:bold;}
 .about-us__right p{font-size:18px;font-family:Raleway Medium;}
-#courses{margin-top: 100px;}
+#courses{margin-top: 25px;}
 .courses__links{display:flex;flex-direction:column;align-items:center;}
 .courses__links a{margin-top:50px;padding:15px 35px;background:#99cc00;border-radius:20px;color:#fff;text-align:center;font-size:20px;box-shadow:0 0 10px rgba(0,0,0,0.5);font-family: 'MADEWaffleSoft';}
 .courses__links .active{text-decoration:none;color: #4F8AE9 ;box-shadow:2px 2px 17px 8px rgba(0,0,0,0.5);margin-top:50px;padding:15px 35px;background:#99cc00;border-radius:20px;text-align:center;font-size:20px;}
@@ -125,7 +125,7 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 #vk{color:#4f8ae9;font-size:45px;border-radius:5px;padding:2px;}
 #vk:hover{color:#669999;}
 #insta{font-size:45px;background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
-#insta:hover{border-radius:5px;color:#fff;}
+#insta:hover{border-radius:5px;background:#ccc;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;transition: 0.4s ease;}
 #calc {margin-top: 100px;}
 #photo {margin-top: 100px;}
 .mobile_menu{display:none;}
@@ -217,3 +217,15 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 	width: 100%;
 }
 .navbar-nav {margin-top: 0!important;margin-bottom: 0!important;background:rgba(0, 0, 0, 0.52);}
+#photo__mobile {display: none; margin-top: 80px;}
+#photo__mobile .about-us__title {padding-bottom: 15px;}
+#photo__mobile a img {
+	width: 100%;
+	margin-top: 15px;
+}
+#dostig__mobile{display: none; margin-top: 80px;}
+#dostig__mobile .about-us__title {padding-bottom: 15px;}
+#dostig__mobile a img {
+	width: 100%;
+	margin-top: 15px;
+}

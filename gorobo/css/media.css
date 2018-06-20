@@ -1,25 +1,12 @@
 @media only screen
 and (min-device-width:320px)
 and (max-device-width:425px){
-	.carousel .item1 {
+ .item1 {
 background:url(../img/slider1mobile.jpg) center center no-repeat;
 -webkit-background-size: cover;
 background-size: cover;
 height: auto;
 }
-.carousel .item2 {
-background:url(../img/slider2mobile.jpg) center center no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-height: auto;
-}
-.carousel .item3 {
-background:url(../img/slider3mobile.jpg) center center no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-height: auto;
-}
-
 	.courses__form__text {
 		justify-content: center;
 		align-items: center;
@@ -316,7 +303,10 @@ and (max-device-width:990px)
 #courses {
 	display: none;
 }
-
+#photo__mobile {display: block;}
+#photo {display: none;}
+#dostig__mobile {display: block;}
+#dostig {display: none;}
 body {
 	-webkit-background-size: auto;
 	background-size: auto;
