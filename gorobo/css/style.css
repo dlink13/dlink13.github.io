@@ -124,7 +124,7 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .contacts__info .contacts__info__text p:nth-child(2) span{font-size:28px;color:#000;}
 .contacts__info .contacts__info__text p:nth-child(3){font-weight:bold;}
 #vk{color:#4f8ae9;font-size:45px;border-radius:5px;padding:2px;}
-#vk:hover{color:#669999;}
+#vk:hover{color:#ccc; transition: 0.4s ease;}
 #insta{font-size:45px;background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
 #insta:hover{border-radius:5px;background:#ccc;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;transition: 0.4s ease;}
 #calc {margin-top: 100px;}
@@ -229,4 +229,7 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 #dostig__mobile a img {
 	width: 100%;
 	margin-top: 15px;
+}
+.navbar-toggle {
+	margin-top: 23px!important;
 }
