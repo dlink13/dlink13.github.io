@@ -123,15 +123,23 @@ height: auto;
 	width: 15%;
 
 }
+
 #myCarousel4 .carousel-control{
 	width: 15%;
 
 }
 }
-
+@media only screen
+and (min-device-width:425px)
+and (max-device-width:500px){
+.item-inside .h1 {
+	font-size: 30px;
+}
+}
 @media only screen
 and (min-device-width:250px)
 and (max-device-width:860px){
+
 	.navbar .left_menu img {
 		margin-left: 5%;
 		width:40%;
