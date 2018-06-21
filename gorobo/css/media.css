@@ -1,5 +1,5 @@
 @media only screen
-and (min-device-width:320px)
+and (min-device-width:250px)
 and (max-device-width:425px){
  .item1 {
 background:url(../img/slider1mobile.jpg) center center no-repeat;
@@ -130,10 +130,11 @@ height: auto;
 }
 
 @media only screen
-and (min-device-width:320px)
+and (min-device-width:250px)
 and (max-device-width:860px){
 	.navbar .left_menu img {
 		margin-left: 5%;
+		width:40%;
 	}
 .dop__img a img {
 	height: auto;
@@ -294,7 +295,7 @@ and (max-device-width:1023px) {
 	}
 }
 @media only screen
-and (min-device-width:320px)
+and (min-device-width:250px)
 and (max-device-width:990px)
 {
 #coursesmobile {
