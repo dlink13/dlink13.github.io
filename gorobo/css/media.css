@@ -1,6 +1,10 @@
 @media only screen
 and (min-device-width:250px)
 and (max-device-width:425px){
+    	.navbar .left_menu img {
+		margin-left: 5%;
+	
+	}
  .item1 {
 background:url(../img/slider1mobile.jpg) center center no-repeat;
 -webkit-background-size: cover;
@@ -123,32 +127,22 @@ height: auto;
 	width: 15%;
 
 }
-
 #myCarousel4 .carousel-control{
 	width: 15%;
 
 }
 }
-@media only screen
-and (min-device-width:425px)
-and (max-device-width:500px){
-.item-inside .h1 {
-	font-size: 30px;
-}
-}
+
 @media only screen
 and (min-device-width:250px)
 and (max-device-width:860px){
 
-	.navbar .left_menu img {
-		margin-left: 5%;
-		width:40%;
-	}
 .dop__img a img {
 	height: auto;
 }
 		.item-inside .h1 {
 		padding-top:250px;
+	
 	}
 	.menu {display: none;}
 	.mobile_menu {display: block;}
@@ -212,7 +206,7 @@ and (max-device-width:860px){
 	margin-left: 0
 }
 .about-us__title p {
-	font-size: 28px;
+	font-size: 20px;
 }
 .rasspis__links___open #opencontent_rasp {
 	width: 100%;
@@ -344,4 +338,11 @@ and (max-device-width:1198px)
 	display: flex;
 }
 
+}
+@media only screen
+and (min-device-width:425px)
+and (max-device-width:500px){
+.item-inside .h1 {
+	font-size: 30px;
+}
 }

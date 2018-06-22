@@ -10,7 +10,6 @@ var bind_link_to_text = function (link_selector, text_selector) {
         $links.removeClass('active');
         show_id($(event.target).addClass('active').data('toggle'));
     });
-
 }
 
 bind_link_to_text('.courses__links > a', '.courses__texts > div' );
@@ -249,3 +248,4 @@ smallBtn : 'auto',})
  $(".navbar-nav").click(function(){
     $(".navbar-collapse") .removeClass("in")
  })
+
