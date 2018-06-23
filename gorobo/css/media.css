@@ -136,6 +136,18 @@ height: auto;
 @media only screen
 and (min-device-width:250px)
 and (max-device-width:860px){
+#coursess_mob {
+	display: block;
+}
+#coursess_mob .dop__text,#coursess_mob .courses__texts {
+	margin-top: 10px;
+}
+#coursess_mob .dop__text {
+	width: 90%;
+}
+#coursess {
+	display: none;
+}
 
 .dop__img a img {
 	height: auto;
@@ -302,7 +314,7 @@ and (max-device-width:990px)
 {
 #coursesmobile {
 	display: block;
-	margin-top: 80px;
+	padding-top: 90px;
 }
 #courses {
 	display: none;

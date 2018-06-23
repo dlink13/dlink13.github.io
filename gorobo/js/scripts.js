@@ -5,15 +5,24 @@ var bind_link_to_text = function (link_selector, text_selector) {
         $texts.hide();
         $(_id).show();
     }
+
     $links.click(function (event) {
         event.preventDefault();
-        $links.removeClass('active');
-        show_id($(event.target).addClass('active').data('toggle'));
+
+        if ($(this).hasClass('active')) {
+            $links.removeClass('active');
+            $texts.hide();
+        } else {
+            $links.removeClass('active');
+            show_id($(event.target).addClass('active').data('toggle'));
+        }
+        
     });
 }
 
 bind_link_to_text('.courses__links > a', '.courses__texts > div' );
 bind_link_to_text('.rasspis__links > a', '.rasspis__links___open > div' );
+
 
 var prices = [
     [3500, 5000],
@@ -249,3 +258,8 @@ smallBtn : 'auto',})
     $(".navbar-collapse") .removeClass("in")
  })
 
+ $(".active").click(function(){
+    $(".open-content") .removeClass("active")
+ })
+
+  
