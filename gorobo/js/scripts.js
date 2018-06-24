@@ -257,9 +257,3 @@ smallBtn : 'auto',})
  $(".navbar-nav").click(function(){
     $(".navbar-collapse") .removeClass("in")
  })
-
- $(".active").click(function(){
-    $(".open-content") .removeClass("active")
- })
-
-  
