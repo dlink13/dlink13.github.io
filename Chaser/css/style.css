@@ -349,9 +349,9 @@ font-weight: bold;
 	background-size: 100% 100%;
 }
 .geography-left h3 {
-	margin-top: 130px;
+	margin-top: 90px;
 	font-size: 80px;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	color: #fff;
 }
 .geography-left p:nth-child(2) {
@@ -387,7 +387,7 @@ font-weight: bold;
 }
 
 .geography-right p:nth-child(1) {
-margin-top: 300px;
+margin-top: 240px;
 	font-size: 25px;
 	color: #fff;
 	padding-top: 10px;
@@ -416,6 +416,7 @@ margin-top: 300px;
 	font-size: 60px;
 	font-weight: bold;
 	margin-bottom: 80px;
+	color: #000;
 }
 .team_in {
 	display: flex;
