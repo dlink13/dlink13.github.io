@@ -13,6 +13,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
+.block-text-second {
+text-align: left!important;
+}
+
 body {
     font-family: 'agora_regular';
     line-height: 1;
@@ -105,7 +109,7 @@ header {margin-top: 30px;}
 .telefon a:hover{text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 .menu{width: 100%;background-color: #004373; height: 60px;}
 .menu ul {height: 60px; margin: 0;display: flex; flex-direction: row;justify-content:space-around;align-items: center;}
-.menu ul li a{color: #fff;font-size: 16px; font-weight: bold;font-family:'GothamProBlack'; }
+.menu ul li a{color: #fff;font-size: 18px; font-weight: bold;font-family:'GothamProBlack'; }
 .menu ul li a:hover{text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 /***********header**********/
 
@@ -115,8 +119,10 @@ header {margin-top: 30px;}
 background-size: cover;}
 .top-slider-text {margin-top: 150px;margin-bottom: 150px;margin-left: 155px;width: 75%;font-family:'GothamProBlack'; }
 .top-slider-text .h2 {font-weight: bold;font-size: 40px;color:#fff;}
-.top-slider-text a:hover {color: #FF9E00;transition: .4s ease-out;text-decoration: none;}
-.top-slider-text a{font-family:'GothamProBlack'; background-color: #FFD877;font-size: 30px;color: #004373;border-radius: 25px;margin-top: 50px;display: block;width: 40%;text-align: center;}
+.top-slider-text a:hover {color: #FBB422;transition: .4s ease-out;text-decoration: none;cursor:pointer;background-color: #004373;}
+.top-slider-text a{font-family:'GothamProBlack';color: #004373;
+    background-color: #FBB422;font-size: 30px;border-radius: 25px;margin-top: 50px;display: block;width: 40%;text-align: center;}
+
 .carousel-control.right {background-image:none!important;}
 .carousel-control.left {background-image:none!important;}
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{right:12%!important;}
@@ -128,7 +134,7 @@ background-size: cover;}
 /**********Preimushestva*******/
 .preimush {margin: 65px 0;}
 .preim-block {display: flex;flex-direction: row;align-items: center; height: 135px;}
-.preim-block img {margin-right: 15px;}
+.preim-block img {margin-right: 5px;width:60px;}
 .preim-block-text {display: flex;flex-direction: column;}
 .preim-block-text p {font-family:'GothamProRegular'; }
 .preim-block-text .h2 {color:#FF9E00;text-transform: uppercase;font-size: 20px;font-family:'GothamProBlack'; }
@@ -139,12 +145,12 @@ background-size: cover;}
 .block-text {width: 100%;margin-top: 50px;}
 .block-text-top {font-family:'GothamProBlack';font-weight: bold; width: 100%;text-align: center;font-size: 20px;margin-bottom: 50px;}
 .block-text-second {
-font-size: 20px;width: 90%;font-family:'GothamProRegular'; 
+font-size: 20px;width: 100%;font-family:'GothamProRegular'; 
 }
-.block-text-down {width: 90%;font-size: 20px;margin-top: 50px;font-family:'GothamProRegular'; }
+.block-text-down {width: 100%;font-size: 20px;margin-top: 50px;font-family:'GothamProRegular'; }
 /**********block-ssilki*********/
 .block-ssilki {margin-top: 50px;margin-bottom: 85px;}
-.block-ssilki-left {margin-top: 1%;background: url(../img/block-left.png) center center no-repeat;-webkit-background-size: cover;
+.block-ssilki-left {margin-top: 1%; background: url(../img/bl.jpg) center center no-repeat;-webkit-background-size: cover;height: 311px;
 background-size: cover;}
 .block-ssilki-left a {display: block;width: 100%;padding-top:113px;padding-bottom: 15px;  color: #fff;text-decoration: none;background:rgba(89, 88, 88, 0.21);}
 .block-ssilki-left a:visited{text-decoration: none;}
@@ -152,13 +158,21 @@ background-size: cover;}
 .block-ssilki-left a .h2{margin-left: 35px; font-family:'GothamProBlack';}
 .block-ssilki-left a p {font-family:'GothamProRegular';margin-left: 35px; width: 50%;padding-top: 28px;}
 .block-ssilki-right-main {margin-left: -20px;padding-left: ;}
-.block-ssilki-right {width: 48%;display: flex;float: left; margin: 1%; background: url(../img/block-right.png) center center no-repeat;-webkit-background-size: cover;
-background-size: cover; }
+.block-ssilki-right {width: 48%;display: flex;float: left; margin: 1%; background: url(../img/12.jpg) center center no-repeat;-webkit-background-size: cover;
+background-size: cover; height: 150px;}
 .block-ssilki-right a{display: block;width: 100%;padding-top:80px;padding-bottom: 10px;color: #fff;text-decoration: none;background:rgba(89, 88, 88, 0.21);}
 .block-ssilki-right a .h2 {font-family:'GothamProBlack';font-weight: bold; font-size: 17px;margin-left: 15px;width: 80%;}
 .block-ssilki-right a:hover {text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
 .block-ssilki-right a:active {text-decoration: none;}
 .block-ssilki-right:visited {text-decoration: none;}
+.block-ssilki-right-main :nth-child(1) {background: url(../img/br1.jpg) center center no-repeat;-webkit-background-size: cover;
+background-size: cover;}
+.block-ssilki-right-main :nth-child(2) {background: url(../img/br2.jpg) center center no-repeat;-webkit-background-size: cover;
+background-size: cover;}
+.block-ssilki-right-main :nth-child(3) {background: url(../img/br3.jpg) center center no-repeat;-webkit-background-size: cover;
+background-size: cover;}
+.block-ssilki-right-main :nth-child(4) {background: url(../img/br4.jpg) center center no-repeat;-webkit-background-size: cover;
+background-size: cover;}
 /**********block-ssilki*********/
 
 /**********block-zahvat*********/
@@ -178,24 +192,30 @@ background-size: cover;}
 #agree {font-family:'GothamProRegular';height: 20px;width: 10%;margin-bottom: 0;border-radius: 15px;font-size: 5px;}
 form span {font-size: 10px;margin-left: -5px;}
 .block-zahvat-forma-in .button {font-family:'GothamProBlack';margin-top: 30px;color:#004373;background-color:#FBB422;font-weight: bold; width: 100%;font-size: 25px;text-transform: uppercase; border-radius: 15px;}
-
+.block-zahvat-forma-in .button:hover{color:#FBB422; background:#004373; transition: .3s ease-out;}
 .agree{width: 80%;}
 /**********block-zahvat*********/
 
 
 /***********voprosi*********/
 .voprosi .h3 {font-family:'GothamProRegular';margin-top: 80px;margin-bottom: 40px;font-weight: bold;font-size: 35px;color:#004373;text-transform: uppercase; }
-.voprosi a:hover{text-decoration: none;color: #FF9E00;transition: .4s ease-out;}
-.open-content {font-family:'GothamProRegular';font-weight: bold;text-transform: uppercase;color: #004373;}
+#faq {
+padding-bottom: 50px;
+}
+.voprosi a:hover{text-decoration: none;color: #000;transition: .4s ease-out;}
+.open-content {font-family:'GothamProRegular';font-weight: bold;text-transform: uppercase;color: #000;text-align:center;}
+.open-content p {
+text-align: left;
+}
 .open-content span {padding-right: 15px; color:#FF9B00;}
 .open-content:hover {text-decoration: none;}
 .open-content:active {text-decoration: none;}
 .open-content:visited {text-decoration: none;}
-.open-text {margin-bottom: 25px;margin-left: 30px;font-size: 20px;font-weight: bold;color:#FF9B00;}
+.open-text {margin-bottom: 25px;margin-left: 30px;font-size: 18px;font-weight: bold;color:#5e5e5e;text-align:justify;width:95%; margin:0 auto;}
 /***********voprosi*********/
 
 /*******foooter******/
-footer {margin-top: 50px;background-color: #004373;}
+footer {background-color: #004373;}
 .footer{
 padding-top: 65px;padding-bottom: 65px;
 }
@@ -228,6 +248,7 @@ padding-top: 65px;padding-bottom: 65px;
 display: flex;
 flex-direction: column;
 }
+.item img {width: 100%;}
 .item .item-pages-text ul li p span {
     color:#004373;
 }
@@ -244,7 +265,7 @@ display: inline-flex;
 color:#FFD877;
 font-size: 30px
 }
-.programmi .programmi-spisok ul li img {width: 20px;height: 5px;margin-top: 1%;}
+.programmi .programmi-spisok ul li img {width: 20px;height: 5px;margin-top: 1%;margin-right: 1%;}
 .programmi .programmi-spisok ul li p {font-size: 20px;color: #000;}
 .programmi .programmi-spisok ul li p span {margin-left: 15px;margin-right: 15px;color: #000;font-size: 20px; font-weight: bold;}
 .counter {margin-top: 50px;margin-bottom: 50px;}
@@ -266,17 +287,18 @@ font-size: 30px
 .block-text-second-main-pages {
     text-align: left;}
 .block-text-second-color {
-    color: #FFD877;
+    color: #FF9A00;
 }
 .predmeti {margin-top: 50px;margin-bottom: 50px;}
+.predmet {height: 180px;}
 .predmet a {display: flex;flex-direction: column;width: 100%;justify-content: center;align-items: center;}
 .predmet a .predmet-img {padding: 15px 15px;border-radius: 50%;background-color: #004373;}
 .predmet a .predmet-img {align-items: center;}
 .predmet a .predmet-img img {height: 65px;padding: 5px;width: 65px;}
-.predmet a p {font-family:'GothamProBold';margin-top: 15px; font-weight: bold; text-align: center;}
+.predmet a p {text-transform: uppercase; font-family:'GothamProBold';margin-top: 15px; font-weight: bold; text-align: center;}
 .predmet a:hover {text-decoration: none;}
-.predmet a:hover p {text-decoration: none; color: #FFD877;transition: .3s ease-out;}
-.predmet a:hover .predmet-img {background-color: #FFD877; text-decoration: none;transition: .3s ease-out;}
+.predmet a:hover p {text-decoration: none; color: #FF9A00;transition: .3s ease-out;}
+.predmet a:hover .predmet-img {background-color: #FF9A00; text-decoration: none;transition: .3s ease-out;}
 .block-text-kursi .block-text-second-pages {
     text-align: left; font-weight: normal;
 }
@@ -291,21 +313,30 @@ font-size: 30px
     border-radius: 10px;
     margin-top: 25px;
 }
+.otziv-prepod {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    background: #EBEBEB;
+    border-radius: 10px;
+    margin-top: 25px;
+    height: 820px;
+}
 .otziv ul {
     display: flex;flex-direction: column;
+}
+.otziv p {
+width: 100%;
 }
 .otziv ul li:first-child {
     display: inline-flex;
 }
-.otziv ul li img{margin-right: 15px;margin-bottom: 15px; width: 71px; border-radius: 50%;}
+.otziv ul li img{margin-right: 15px;margin-bottom: 15px; width: 150px; border-radius: 50%;}
 .otziv ul li:first-child p {color:#004373; font-family:'GothamProBold';}
 .otziv ul li:first-child p span {font-family:'GothamProRegular';color:#004373; font-weight: bold;font-size: 20px;}
 .otzivi .block-text-top-pages {font-size: 35px;margin-top: 25px;margin-bottom: 0;}
-.prepodovateli .otziv ul li img {width: auto;border-radius: 0;}
+.prepodovateli .otziv ul li img {width: auto;border-radius: 0;width: 50%;max-height:450px;}
 .prepodovateli .otziv ul li {font-family:'GothamProRegular';}
-.contakti{
-    margin-bottom: 400px;
-}
+
 .contakti .block-text-top-pages {
     margin-top: 80px;margin-bottom: 40px;
 }
@@ -316,7 +347,8 @@ font-size: 30px
 .contakti .footer-contacts ul li a {
     color:#004373;
 }
-.contakti .contacti-metro {display: flex;flex-direction: row;margin-top: 15px;}
+.contakti .footer-contacts {margin-top: 80px;}
+.contakti .contacti-metro {display: flex;flex-direction: row;margin-top: 95px;}
 .contakti .contacti-metro .metro ul li{margin-top: 15px;}
 .contakti .contacti-metro .metro ul li p {font-size: 15px;}
 .contakti .contacti-img {width: 100%; margin-top: 50px;}
@@ -330,7 +362,7 @@ font-size: 30px
 .ceni .programmi {
     margin-top: 20px;
 }
-.ceni .block-ceni {width: 100%;padding: 15px 10px 15px 10px;background: #E3E2E2; margin-top: 50px;margin-bottom: 50px;}
+.ceni .block-ceni {height: 220px; width: 100%;padding: 15px 10px 15px 10px;background: #E3E2E2; margin-top: 50px;margin-bottom: 50px;}
 .ceni .block-ceni ul{
 
     display: flex;
@@ -361,3 +393,9 @@ font-size: 30px
 #agree {height: 20px;width: 10%;margin-bottom: 0;border-radius: 15px;font-size: 5px;}
 form span {font-size: 10px;margin-left: -5px;}
 .popup .button {margin-top: 30px;color:#004373;background-color:#FBB422;font-weight: bold; width: 100%;font-size: 25px;text-transform: uppercase; border-radius: 15px;}
+.ceni-spisok ul li img {margin-top: 2%!important;}
+.counter-predmet {margin-top:20%;margin-bottom: 50px;}
+.counter-predmet .h2 {color:#fff;}
+#rabota {max-height: 400px;overflow: scroll; width: 75%;}
+#vk_groups{width:100%!important;}
+.contakti .contacti-img img {height: 350px;}

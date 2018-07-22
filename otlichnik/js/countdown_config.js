@@ -2,12 +2,12 @@ $(document).ready(function() {
     
 $('#countdown_dashboard').countDown({
 					targetDate: {
-						'day': 		30,
+						'day': 		1,
 						'month': 	06,
-						'year': 	2018,
-						'hour': 	23,
-						'min': 		59,
-						'sec': 		59,	
+						'year': 	2019,
+						'hour': 	10,
+						'min': 		00,
+						'sec': 		00,	
 						'utc':      true,
 						},
 					omitWeeks: true					

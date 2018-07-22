@@ -1,5 +1,13 @@
 <?php
 
+if(!empty($_POST['telephone'] ))
+{
+$to = "admin@otl-ege.ru";
+$from = 'admin@otl-ege.ru';
+$subject = "Заявка с сайта";
+$message = 'Имя: '.$_POST['name'].'; Телефон: '.$_POST['telephone'].';';
+
+
 //нас интересуют исключительно AJAX запросы
 if ($_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') {return;}
 
@@ -11,9 +19,12 @@ $ques = filter_input(INPUT_POST, 'ques' );
 $formname = filter_input(INPUT_POST, 'formname' );
 $ref = filter_input(INPUT_POST, 'ref' );
 $utm = filter_input(INPUT_POST, 'utm' );
+$to = "admin@otl-ege.ru";
+$from = 'admin@otl-ege.ru';
+
 
 // список получателей(в нашем случае - один)
-$recepient  = "mail@boston.su";
+$recepient  = "admin@otl-ege.ru";
 
 // Тема сообщения
 $subject = "Заявка с сайта ";
