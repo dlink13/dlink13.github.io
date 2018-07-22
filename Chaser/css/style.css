@@ -85,11 +85,17 @@ font-style:normal;}
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	font-size: 21px;
+	font-size: 20px;
 
 }
 .header .header__menu li a {
 	color: #2a49aa;
+	transition: 0.4s ease;
+}
+.header .header__menu li a:hover {
+	color: #99f7ff;
+	transition: 0.4s ease;
+	text-decoration: none;
 }
 .button_top {
 	display: flex;
@@ -124,7 +130,7 @@ font-style:normal;}
 }
 .top_blck_in h2 {
 	font-size: 80px;
-	margin-top: 220px;
+	margin-top: 150px;
 	margin-bottom: 110px;
 	color: #fff;
 	font-weight: medium;
