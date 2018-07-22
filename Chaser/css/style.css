@@ -241,8 +241,12 @@ font-weight: bold;
 	flex-direction: column;
 }
 .services_features {
-
+	
 	margin-top: 50px;
+}
+.services_features_in {
+	display: flex;
+	flex-direction: row;
 }
 .services_features p {
 	font-size: 30px;
@@ -252,8 +256,9 @@ font-weight: bold;
 .services_features_right {
 	margin-left: 80px;
 }
-.services_features img {
-	max-width: 50px;
+.services_features_in  img {
+	max-width: 60px;
+	height: 60px;
 	margin-right: 60px;
 }
 
