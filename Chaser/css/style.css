@@ -267,7 +267,7 @@ font-weight: bold;
 .services_features_in {
 	display: flex;
 	flex-direction: row;
-	margin-top: 35px;
+	margin-top: 50px;
 }
 .services_features p {
 	font-size: 30px;
