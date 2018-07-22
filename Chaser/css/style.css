@@ -300,7 +300,8 @@ font-weight: bold;
 	color: #333399;
 }
 .features_bottom {
-	margin-top: 115px;
+	margin-top: 25px;
+	margin-bottom: 50px;
 }
 .features_bottom img {
 	width: 100%;
