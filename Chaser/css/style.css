@@ -279,6 +279,7 @@ font-weight: bold;
 #features {
 	margin-top: 115px;
 	padding-bottom: 50px;
+	font-family:'Montserrat';
 
 }
 #features h3 {
@@ -307,6 +308,7 @@ font-weight: bold;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	font-family:'Montserrat';
 }
 .geography-left{
 	padding-left: 250px;
@@ -475,6 +477,7 @@ margin-top: 300px;
 #contacts {
 	margin-top: 110px;
 	margin-bottom: 35px;
+	font-family:'Montserrat';
 }
 #contacts .container {
 	background: url(../img/contactsbg.png) center center no-repeat;
