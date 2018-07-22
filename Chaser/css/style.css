@@ -102,12 +102,13 @@ font-style:normal;}
 	font-size: 21px;
 	padding:16px 35px;
 	background: #99f7ff;
+	transition: 0.4s ease;
 }
 .button_top a:hover {
 	text-decoration: none;
 	color: #fff;
 	background: #23236D;
-	transition: 0.4 ease;
+	transition: 0.4s ease;
 }
 .top_blck {
 	background: url(../img/headerbg.png) center center no-repeat;
@@ -140,11 +141,13 @@ font-style:normal;}
 .top_blck_in .button_top a {
 	padding: 25px 89px;
 	white-space: nowrap;
+	transition: 0.4s ease;
 
 }
 .top_blck_in .button_top a:hover {
 	color: #000;
 	background: #fff;
+	transition: 0.4s ease;
 }
 #skills {
 	margin-top: 100px;
