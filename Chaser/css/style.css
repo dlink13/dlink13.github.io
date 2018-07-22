@@ -79,7 +79,7 @@ font-style:normal;}
 	justify-content: flex-start;
 	align-items: center;
 }
-.header .header__menu{
+.header .header__menu {
 	padding:16px 0;
 	display: flex;
 	flex-direction: row;
@@ -88,17 +88,20 @@ font-style:normal;}
 	font-size: 21px;
 
 }
+.header .header__menu li a {
+	color: #2a49aa;
+}
 .button_top {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .button_top a {
-	color: #333399;
+	color: #2a49aa;
 	font-weight: bold;
 	font-size: 21px;
 	padding:16px 35px;
-	background: #8DE4EB;
+	background: #99f7ff;
 }
 
 .top_blck {
