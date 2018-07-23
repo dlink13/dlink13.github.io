@@ -73,23 +73,40 @@ font-style:normal;}
 .skills_in {
 	position:relative;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family:'Montserrat';
     
 }
 .top span {
 	animation-duration: 20s;
     animation-iteration-count: infinite;
+     -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    font-family:'Montserrat';
 }
  .bottom span {
 	animation-duration: 24s;
     animation-iteration-count: infinite;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-iteration-count: infinite;
+    font-family:'Montserrat';
 }
  .pre-middle span {
 	animation-duration: 15s;
     animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    font-family:'Montserrat';
 }
  .middle span {
 	animation-duration: 22s;
     animation-iteration-count: infinite;
+    -webkit-animation-duration: 22s;
+    -webkit-animation-iteration-count: infinite;
+    font-family:'Montserrat';
 }
 .skills_in .next {
 	 position: absolute;
@@ -97,15 +114,19 @@ font-style:normal;}
 }
 .skills_in .im-1 {
 	animation-name: fadeIm-1;
+	-webkit-animation-name: fadeIm-1;
 }
 .skills_in .im-2 {
 	animation-name: fadeIm-2;
+	-webkit-animation-name: fadeIm-2;
 }
 .skills_in .im-3 {
 	animation-name: fadeIm-3;
+	-webkit-animation-name: fadeIm-3;
 }
 .skills_in .im-4 {
 	animation-name: fadeIm-4;
+	-webkit-animation-name: fadeIm-4;
 }
 
 
@@ -115,6 +136,14 @@ font-style:normal;}
 }
 
 @keyframes fadeIm-1
+{
+    from    { opacity: 1; }
+    16%     { opacity: 1; }
+    25%     { opacity: 0; }
+    91%     { opacity: 0; }
+    to      { opacity: 1; }
+}
+@-webkit-keyframes fadeIm-1
 {
     from    { opacity: 1; }
     16%     { opacity: 1; }
@@ -132,7 +161,16 @@ font-style:normal;}
     50%     { opacity: 0; }
     to      { opacity: 0; }
 }
- 
+@-webkit-keyframes fadeIm-2
+{
+    from    { opacity: 0; }
+    16%     { opacity: 0; }
+    25%     { opacity: 1; }
+    41%     { opacity: 1; }
+    50%     { opacity: 0; }
+    to      { opacity: 0; }
+} 
+
 @keyframes fadeIm-3
 {
     from    { opacity: 0; }
@@ -142,7 +180,16 @@ font-style:normal;}
     75%     { opacity: 0; }
     to      { opacity: 0; }
 }
- 
+@-webkit-keyframes fadeIm-3
+{
+    from    { opacity: 0; }
+    41%     { opacity: 0; }
+    50%     { opacity: 1; }
+    66%     { opacity: 1; }
+    75%     { opacity: 0; }
+    to      { opacity: 0; }
+} 
+
 @keyframes fadeIm-4
 {
     from    { opacity: 0; }
@@ -151,18 +198,29 @@ font-style:normal;}
     91%     { opacity: 1; }
     to      { opacity: 0; }
 }
-
-
-.skills_in .JavaScript{
-	font-size: 24px;
+@-webkit-keyframes fadeIm-4
+{
+    from    { opacity: 0; }
+    66%     { opacity: 0; }
+    75%     { opacity: 1; }
+    91%     { opacity: 1; }
+    to      { opacity: 0; }
 }
-.skills_in .NET {
+
+.skills_in span {
+	width: 100%;
+}
+.JavaScript{
+	font-size: 24px;
+} 
+.NET {
 	font-size: 37px;
 	
 }
-.skills_in .Android {
-	font-size: 25px;
+.Android {
+	font-size: 30px;
 }
+
 .Python {
 	font-size: 37px;
 }
@@ -189,7 +247,7 @@ font-style:normal;}
 	font-size: 24px;
 }
 .node {
-	font-size: 41px;
+	font-size: 35px;
 }
 .scala {
 	font-size: 30px;
@@ -200,22 +258,7 @@ font-style:normal;}
 .lisp {
 	font-size: 30px;
 }
-.ceo {
-	font-size: 30px;
-}
-.cc {
-	font-size: 39px;
-}
-.cto {
-	font-size: 30px;
-}
-.ccc {
-	font-size: 30px;
-}
 
-.rd{
-	font-size: 30px;
-}
 
 .middle {
 	margin-top: 120px;
