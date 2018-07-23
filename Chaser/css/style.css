@@ -597,7 +597,7 @@ color: #fff;
 }
 
 .mobile_menu{display:none;}
-.mobile_menu{font-family:'Raleway Medium';z-index:101!important;width:100%!important;position:fixed!important;}
+.mobile_menu{font-family:'Montserrat';z-index:101!important;width:100%!important;position:fixed!important;}
 .navbar{background-color:rgba(255, 255, 255, 0)!important;border:none!important;}
 .navbar .left_menu{width:100%;margin-top:0;padding-top:0;}
 
@@ -612,15 +612,67 @@ color: #fff;
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color:transparent!important;transition:0.4s ease}
 .navbar-default .navbar-nav>li>a{color:#fff!important;}
 
-#contact_form_pop{padding:3% 2%;}
-#contact_form_pop form{display:flex;flex-direction:column;width:100%;}
-#contact_form_pop form input{outline:none!important;border-bottom:2px solid #66cc33;padding-bottom:5px;background:transparent;margin-top:15px;}
+#contact_form_pop{padding:5% 2%;background: #23236D;}
+#contact_form_pop form{display:flex;flex-direction:column;width:60%;justify-content: center;margin: 0 auto;}
+#contact_form_pop form input{color: #fff; font-size: 30px; height: 80px; outline:none!important;border-bottom:2px solid #66cc33;padding-bottom:5px;background:transparent;margin-top:15px;}
 #contact_form_pop form select{outline:none!important;border:none;border-bottom:2px solid #66cc33;padding-bottom:5px;background:transparent;margin-top:15px;}
-#contact_form_pop form button{margin:0 auto;margin-top:20px;width:50%;color:#66cc33;border:none;border-bottom:2px solid #66cc33;background:transparent;font-size:20px;}
-
+#contact_form_pop form button{
+	margin:0 auto;
+	margin-top:20px;
+	width:50%;
+	color: #2a49aa;
+	border:none;
+	border-bottom:2px solid #66cc33;
+	background: #99f7ff;
+	font-size:25px;
+	transition: 0.4s ease;
+	padding:13px 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#contact_form_pop form button:hover {
+	background: #fff;
+	color: #000;
+}
+color: #2a49aa;
+	font-size: 16px;
+	padding:13px 25px;
+	background: #99f7ff;
+	transition: 0.4s ease;
 
 .navbar-nav {margin-top: 0!important;margin-bottom: 0!important;background:rgba(0, 0, 0, 0.52);}
 
 .navbar-toggle {
 	margin-top: 23px!important;
+}
+.full{
+	width: 100%;
+}
+#contact_form_pop .first {
+	font-family:'Montserrat';
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #fff;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff!important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff!important;
+}
+#contact_form_pop form input {
+	border:1.5px solid #99F7FF;
+}
+.fancybox-close-small {
+	color: #fff!important;
+}
+.fancybox-content {
+	width: 85%;
 }
