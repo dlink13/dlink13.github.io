@@ -110,3 +110,8 @@ speed : 330,
 opacity : 'auto',
 loop : true,
 smallBtn : 'auto',})
+
+var typed = new Typed('.tem','.tem2', {
+  strings: ["First sentence.", "Second sentence."],
+  typeSpeed: 150
+});
