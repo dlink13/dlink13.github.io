@@ -19,6 +19,7 @@ blockquote, q{quotes:none;}
 blockquote:before, blockquote:after,
 q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
+a:focus {text-decoration: none;}
 
 
 
@@ -100,6 +101,9 @@ font-style:normal;}
 	transition: 0.4s ease;
 	text-decoration: none;
 }
+.header .header__menu li a:focus{
+	text-decoration: none;
+}
 .button_top {
 	display: flex;
 	justify-content: center;
@@ -117,6 +121,9 @@ font-style:normal;}
 	color: #fff;
 	background: #23236D;
 	transition: 0.4s ease;
+}
+.button_top a:focus{
+	text-decoration: none;
 }
 .top_blck {
 	background: url(../img/headerbg.png) center center no-repeat;
@@ -156,6 +163,10 @@ font-style:normal;}
 	color: #000;
 	background: #fff;
 	transition: 0.4s ease;
+}
+.top_blck_in .button_top a:focus {
+	text-decoration: none;
+	
 }
 #skills {
 	margin-top: 100px;
@@ -334,7 +345,7 @@ font-weight: bold;
 }
 .features_bottom img {
 	width: 100%;
-	margin: 0 50px;
+	margin: 0 auto;
 }
 
 #geography {
@@ -553,6 +564,9 @@ margin-top: 240px;
 	background: #fff;
 	transition: 0.4s ease;
 }
+.contacts  .contacts-bottom .button_top a:focus{
+	text-decoration: none;
+}
 .contacts .contacts-bottom .contacts-right {
 	width: 30%;
 }
@@ -592,8 +606,8 @@ color: #fff;
 .navbar ul li{text-align:center;color:#fff;font-weight:bold;color:#fff;}
 .navbar-default{border-color:#E6E6E6!important;}
 .navbar-default .navbar-nav>.link>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{transition:0.4s ease;background-color:transparent!important;color:#fff;}
-.navbar-default .navbar-toggle{border:1.5px solid #66cc33!important;border-radius:50px;padding:13px 10px;}
-.navbar-default .navbar-toggle .icon-bar{color:#66cc33!important;background-color:#66cc33!important;}
+.navbar-default .navbar-toggle{border:1.5px solid #23236D!important;border-radius:50px;padding:13px 10px;}
+.navbar-default .navbar-toggle .icon-bar{color:#23236D!important;background-color:#23236D!important;}
 .navbar-toggle .icon-bar{height:2.5px!important;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color:transparent!important;transition:0.4s ease}
 .navbar-default .navbar-nav>li>a{color:#fff!important;}
