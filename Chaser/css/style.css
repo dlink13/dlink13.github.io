@@ -81,9 +81,9 @@ font-style:normal;}
     
 }
 .top span {
-	animation-duration: 25s;
+	animation-duration: 35s;
     animation-iteration-count: infinite;
-     -webkit-animation-duration: 25s;
+     -webkit-animation-duration: 35s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
@@ -95,16 +95,16 @@ font-style:normal;}
     font-family:'Montserrat';
 }
  .pre-middle span {
-	animation-duration: 25s;
+	animation-duration: 28s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 25s;
+    -webkit-animation-duration: 33s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
  .middle span {
-	animation-duration: 22s;
+	animation-duration: 25s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 22s;
+    -webkit-animation-duration: 38s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
