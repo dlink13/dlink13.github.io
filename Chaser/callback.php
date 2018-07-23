@@ -32,7 +32,7 @@ else{
 	$from = "gorobo.spb@gmail.com"; // От кого
 	$to = "gorobo.spb@gmail.com"; // Кому
 	$subject = "Сообщение с сайта";
-	$body = sprintf("Имя %s, Email %s, Компания %s, Вакансия %s ", $name, $email, $company, $vacancy );
+	$body = sprintf(" Имя %s\n Email %s\n Компания %s\n Вакансия %s\n ", $name, $email, $company, $vacancy );
 	
 	// Не трогать
 	$headers  = "MIME-Version: 1.0\r\n";
