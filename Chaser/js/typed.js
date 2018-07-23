@@ -814,7 +814,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  /**
 	   * @property {number} backSpeed backspacing speed in milliseconds
 	   */
-	  backSpeed: 50,
+	  backSpeed: 20,
 	
 	  /**
 	   * @property {boolean} smartBackspace only backspace what doesn't match the previous string
