@@ -798,13 +798,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @property {array} strings strings to be typed
 	   * @property {string} stringsElement ID of element containing string children
 	   */
-	  strings: [ 'We are Chaser', 'We are Chaser Team!', ],
+	  strings: [ ' Chaser', ' Chaser Team!', ],
 	  stringsElement: null,
 	
 	  /**
 	   * @property {number} typeSpeed type speed in milliseconds
 	   */
-	  typeSpeed: 50,
+	  typeSpeed: 100,
 	
 	  /**
 	   * @property {number} startDelay time before typing starts in milliseconds
@@ -814,7 +814,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  /**
 	   * @property {number} backSpeed backspacing speed in milliseconds
 	   */
-	  backSpeed: 20,
+	  backSpeed: 50,
 	
 	  /**
 	   * @property {boolean} smartBackspace only backspace what doesn't match the previous string
