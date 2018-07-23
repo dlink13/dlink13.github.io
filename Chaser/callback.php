@@ -4,11 +4,22 @@ if (array_key_exists('name', $_POST)) {
 } else {
     $name = '';
 }
-
-if (array_key_exists('phone', $_POST)) {
-    $phone = substr(strip_tags($_POST['phone']), 0, 255);
+if (array_key_exists('email', $_POST)) {
+    $email = substr(strip_tags($_POST['email']), 0, 255);
 } else {
-    $phone = '';
+    $email = '';
+}
+
+if (array_key_exists('company', $_POST)) {
+    $company = substr(strip_tags($_POST['company']), 0, 255);
+} else {
+    $company = '';
+}
+
+if (array_key_exists('vacancy', $_POST)) {
+    $vacancy = substr(strip_tags($_POST['vacancy']), 0, 255);
+} else {
+    $vacancy = '';
 }
 if( empty( $phone ) && empty( $name ) ){
 	echo json_encode( array(
@@ -21,7 +32,7 @@ else{
 	$from = "gorobo.spb@gmail.com"; // От кого
 	$to = "gorobo.spb@gmail.com"; // Кому
 	$subject = "Сообщение с сайта";
-	$body = sprintf("Имя %s, телефон %s", $name, $phone );
+	$body = sprintf("Имя %s, Email %s, Компания %s, Вакансия %s ", $name, $email, $company, $vacancy );
 	
 	// Не трогать
 	$headers  = "MIME-Version: 1.0\r\n";

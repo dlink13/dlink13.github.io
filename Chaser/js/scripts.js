@@ -88,7 +88,9 @@ $(function(){
                     url: 'callback.php',
                     data: {
                         'name': $(form).find('[name=name]').val(),
-                        'phone': $(form).find('[name=phone]').val()
+                        'company': $(form).find('[name=company]').val(),
+                        'email': $(form).find('[name=email]').val(),
+                        'vacancy': $(form).find('[name=vacancy]').val()
                     },
                     dataType: 'json',
                     success: function( data ){
