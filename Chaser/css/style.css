@@ -95,16 +95,16 @@ font-style:normal;}
     font-family:'Montserrat';
 }
  .pre-middle span {
-	animation-duration: 15s;
+	animation-duration: 25s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 25s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
  .middle span {
-	animation-duration: 13s;
+	animation-duration: 12s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 13s;
+    -webkit-animation-duration: 12s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
@@ -137,7 +137,7 @@ font-style:normal;}
 
 @keyframes fadeIm-1
 {
-    from    { opacity: 1; }
+    from    { opacity: 0; }
     16%     { opacity: 1; }
     25%     { opacity: 0; }
     91%     { opacity: 0; }
@@ -145,7 +145,7 @@ font-style:normal;}
 }
 @-webkit-keyframes fadeIm-1
 {
-    from    { opacity: 1; }
+    from    { opacity: 0; }
     16%     { opacity: 1; }
     25%     { opacity: 0; }
     91%     { opacity: 0; }
@@ -156,7 +156,7 @@ font-style:normal;}
 {
     from    { opacity: 0; }
     16%     { opacity: 0; }
-    25%     { opacity: 1; }
+    25%     { opacity: 0; }
     41%     { opacity: 1; }
     50%     { opacity: 0; }
     to      { opacity: 0; }
@@ -165,7 +165,7 @@ font-style:normal;}
 {
     from    { opacity: 0; }
     16%     { opacity: 0; }
-    25%     { opacity: 1; }
+    25%     { opacity: 0; }
     41%     { opacity: 1; }
     50%     { opacity: 0; }
     to      { opacity: 0; }
@@ -175,7 +175,7 @@ font-style:normal;}
 {
     from    { opacity: 0; }
     41%     { opacity: 0; }
-    50%     { opacity: 1; }
+    50%     { opacity: 0; }
     66%     { opacity: 1; }
     75%     { opacity: 0; }
     to      { opacity: 0; }
@@ -184,7 +184,7 @@ font-style:normal;}
 {
     from    { opacity: 0; }
     41%     { opacity: 0; }
-    50%     { opacity: 1; }
+    50%     { opacity: 0; }
     66%     { opacity: 1; }
     75%     { opacity: 0; }
     to      { opacity: 0; }
@@ -194,7 +194,7 @@ font-style:normal;}
 {
     from    { opacity: 0; }
     66%     { opacity: 0; }
-    75%     { opacity: 1; }
+    75%     { opacity: 0; }
     91%     { opacity: 1; }
     to      { opacity: 0; }
 }
@@ -202,7 +202,7 @@ font-style:normal;}
 {
     from    { opacity: 0; }
     66%     { opacity: 0; }
-    75%     { opacity: 1; }
+    75%     { opacity: 0; }
     91%     { opacity: 1; }
     to      { opacity: 0; }
 }
