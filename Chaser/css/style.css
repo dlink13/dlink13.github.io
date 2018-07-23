@@ -146,6 +146,9 @@ font-style:normal;}
 	height: 264px;
 
 }
+.mb_show {
+	display: none;
+}
 .top_blck_in p {
 	color: #fff;
 	font-size: 21px;

@@ -105,6 +105,18 @@ and (max-device-width:860px){
 		background-color: #99F7FF;
 	}
 
+.mb_show {
+	display: block;
+	text-align: center;
+}
+.mb_hide {
+	display: none;
+
+}
+.top_blck_in h2 {
+	font-size: 85px;
+	height: auto;
+}
 	}
 	@media only screen
 and (min-device-width:765px)
