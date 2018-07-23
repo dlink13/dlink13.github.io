@@ -798,7 +798,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @property {array} strings strings to be typed
 	   * @property {string} stringsElement ID of element containing string children
 	   */
-	  strings: [ 'We are a dedicated, highly skilled group of professionals', 'We are Chaser Team!', ],
+	  strings: [ 'We are Chaser', 'We are Chaser Team!', ],
 	  stringsElement: null,
 	
 	  /**
@@ -819,7 +819,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  /**
 	   * @property {boolean} smartBackspace only backspace what doesn't match the previous string
 	   */
-	  smartBackspace: true,
+	  smartBackspace: false,
 	
 	  /**
 	   * @property {boolean} shuffle shuffle the strings
