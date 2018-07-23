@@ -13,13 +13,124 @@
 <link href="css/animate.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+.header #menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-family:'Montserrat';
+
+}
+.top_logo {
+  padding:16px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top_logo img {
+  width: 150px;
+}
+.header .header__menu {
+  padding:16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+
+}
+.header .header__menu li a {
+  color: #2a49aa;
+  transition: 0.4s ease;
+}
+.header .header__menu li a:hover {
+  color: #99f7ff;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+.header .header__menu li a:focus{
+  text-decoration: none;
+}
+.button_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_top a {
+  color: #2a49aa;
+  font-size: 16px;
+  padding:13px 25px;
+  background: #99f7ff;
+  transition: 0.4s ease;
+}
+.button_top a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #23236D;
+  transition: 0.4s ease;
+}
+.button_top a:focus{
+  text-decoration: none;
+}
+.top_blck {
+  background: url(img/headerbg.png) center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+
+}
+.top_blck_in {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family:'Montserrat';
+  
+}
+.top_blck_in h2 {
+  font-size: 80px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  color: #fff;
+  height: 264px;
+
+}
+.mb_show {
+  display: none;
+}
+.top_blck_in p {
+  color: #fff;
+  font-size: 21px;
+}
+.top_blck_in .button_top {
+  align-self: flex-start;
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+.top_blck_in .button_top a {
+  padding: 25px 89px;
+  white-space: nowrap;
+  transition: 0.4s ease;
+
+}
+.top_blck_in .button_top a:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.4s ease;
+}
+.top_blck_in .button_top a:focus {
+  text-decoration: none;
+  
+}
+  
+</style>
 </head>
 <body>
   <div id="successMessage" style="display: none">
-      <p>Сообщение отправлено,спасибо</p>
+      <p>Massege send,Thank You</p>
     </div>
   <div id="vb" style="display: none">
-      <p>Сообщение не отправлено</p>
+      <p>Massege does'not send,call us please</p>
     </div>
 	<div class="mobile_menu">
           <nav class="navbar navbar-default" role="navigation">
@@ -38,11 +149,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="menu2">
       <ul class="nav navbar-nav">
-      <li><a href="#Services ">Services </a></li>
-      <li><a href="#Geography">Geography </a></li>
-      <li><a href="#Approach">Approach to work </a></li>
-      <li><a href="#Features">Features </a></li>
-      <li><a href="#Features">Team </a></li>
+      <li><a href="#services">Services </a></li>
+       <li><a href="#appr">Approach to work </a></li>
+       <li><a href="#features">Features </a></li>
+      <li><a href="#geography">Geography </a></li>
+      <li><a href="#team">Team </a></li>
       </ul>
 
       <div class="button_top">

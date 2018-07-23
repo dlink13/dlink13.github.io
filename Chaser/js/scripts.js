@@ -115,3 +115,6 @@ var typed = new Typed('.tem','.tem2', {
   strings: ["First sentence.", "Second sentence."],
   typeSpeed: 150
 });
+ $(".navbar-nav").click(function(){
+    $(".navbar-collapse") .removeClass("in")
+ })

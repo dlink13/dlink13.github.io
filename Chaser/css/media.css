@@ -11,7 +11,7 @@ and (max-device-width:425px){
 @media only screen
 and (min-device-width:250px)
 and (max-device-width:860px){
-	.header #menu {display: none;}
+	.header #menu {display: none!important;}
 	.mobile_menu {display: block;}
 	.contacts {
 		padding:0px;
@@ -85,7 +85,7 @@ and (max-device-width:860px){
 		margin-top: 50px;
 	}
 	.approa .top_blck_in h2 {
-		font-size: 35px;
+		font-size: 35px!important;
 		text-align: center;
 	}
 	.top_blck_in .button_top {
@@ -106,16 +106,16 @@ and (max-device-width:860px){
 	}
 
 .mb_show {
-	display: block;
-	text-align: center;
+	display: block!important;
+	text-align: center!important;
 }
 .mb_hide {
-	display: none;
+	display: none!important;
 
 }
 .top_blck_in h2 {
-	font-size: 85px;
-	height: auto;
+	font-size: 85px!important;
+	height: auto!important;
 }
 	}
 	@media only screen
@@ -126,7 +126,7 @@ and (max-device-width:3500px){
 
 }
 .header #menu {
-	display: block;
+	display: block!important;
 }
 }
 
