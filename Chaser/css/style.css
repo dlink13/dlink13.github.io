@@ -81,23 +81,23 @@ font-style:normal;}
     
 }
 .top span {
-	animation-duration: 35s;
+	animation-duration: 40s;
     animation-iteration-count: infinite;
-     -webkit-animation-duration: 35s;
+     -webkit-animation-duration: 40s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
  .bottom span {
-	animation-duration: 30s;
+	animation-duration: 35s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 30s;
+    -webkit-animation-duration: 35s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
  .pre-middle span {
-	animation-duration: 28s;
+	animation-duration: 30s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 28s;
+    -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
