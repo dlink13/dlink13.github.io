@@ -544,9 +544,9 @@ margin-top: 240px;
 	font-family:'Montserrat';
 }
 #contacts .container {
-	background: url(../img/bgm.jpg) center center no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
+	background: url(../img/contbg.png) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .contacts {
 	display: flex;
