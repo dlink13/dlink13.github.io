@@ -324,9 +324,6 @@ font-weight: bold;
 
 }
 .approa {
-	background: url(../img/aprbg.png) center center no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
 }
 .approa .top_blck_in h2 {
 	font-size: 60px;
@@ -383,9 +380,6 @@ font-weight: bold;
 	padding-left: 250px;
 	padding-bottom: 110px;
 	width: 50%;
-	background: url(../img/geographbg.png) center center no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
 }
 .geography-left h3 {
 	margin-top: 90px;
@@ -420,9 +414,6 @@ font-weight: bold;
 	padding-left: 15px;
 	padding-bottom: 110px;
 	width: 50%;
-	background: url(../img/geographbg2.png) center center no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
 }
 
 .geography-right p:nth-child(1) {
@@ -550,9 +541,6 @@ margin-top: 240px;
 	font-family:'Montserrat';
 }
 #contacts .container {
-	background: url(../img/contactsbg.png) center center no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
 }
 .contacts {
 	display: flex;
