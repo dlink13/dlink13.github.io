@@ -301,7 +301,10 @@ font-weight: bold;
 .services_features_in {
 	display: flex;
 	flex-direction: row;
-	margin-top: 50px;
+	margin-top: 162px;
+}
+.services_features .services_features_in:first-child {
+margin-top: 100px;
 }
 .services_features p {
 	font-size: 30px;
@@ -315,7 +318,7 @@ font-weight: bold;
 	height: 60px;
 	margin-right: 60px;
 }
-.anal {margin-top: 85px;}
+.anal {margin-top: 195px;}
 
 .prov p {
 	font-family:'Montserrat';
