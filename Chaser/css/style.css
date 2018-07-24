@@ -542,6 +542,8 @@ margin-top: 240px;
 	margin-top: 110px;
 	margin-bottom: 35px;
 	font-family:'Montserrat';
+	display: flex;
+	flex-direction: row;
 }
 #contacts .container {
 	background: url(../img/contbg.png) center center no-repeat;
@@ -556,9 +558,9 @@ margin-top: 240px;
 	padding-bottom: 90px;
 }
 .contacts  h3 {
-	font-size: 70px;
+	font-size: 60px;
 	margin-top: 90px;
-	margin-bottom: 95px;
+	margin-bottom: 50px;
 	color: #fff;
 
 }
@@ -568,14 +570,13 @@ margin-top: 240px;
 	width: 100%;
 }
 .contacts  .contacts-bottom .button_top {
-	width: 50%;
 	margin-top: 25px;
 	justify-content: flex-start;
 
 }
 .contacts  .contacts-bottom .button_top a {
 	transition: 0.4s ease;
-	padding: 18px 25px;
+	padding: 18px 100px;
 	font-size: 21px;
 }
 .contacts  .contacts-bottom .button_top a:hover {
@@ -586,21 +587,26 @@ margin-top: 240px;
 .contacts  .contacts-bottom .button_top a:focus{
 	text-decoration: none;
 }
-.contacts .contacts-bottom .contacts-right {
-	width: 30%;
+.contacts .contacts-right {
+	margin-top: 80px
 }
 .contacts .contacts-bottom .contacts-right p {
+	margin-top: 40px;
 font-size: 22px;
 color: #fff;
 }
-.contacts .contacts-bottom .contacts-right p:nth-child(1) {
+.contacts .contacts-bottom .contacts-right p:nth-child(2) {
 	padding-bottom: 35px;
 	font-weight: bold;
 }
-.contacts .contacts-bottom .contacts-right p:nth-child(2) {
+.contacts .contacts-bottom .contacts-right img {
+	width: 80%;
+}
+.contacts .contacts-bottom .contacts-right p:nth-child(3) {
 	padding: 25px 0;
 	border-bottom: 1.5px solid #fff897;
 	border-top: 1.5px solid #fff897;
+	margin-top: 0;
 }
 .copyright {
 	display: flex;
