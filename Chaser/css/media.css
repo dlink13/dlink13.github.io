@@ -43,12 +43,19 @@ and (max-device-width:860px){
 		width: 100%;
 		justify-content: center;
 		align-self: center;
+		margin-top: 50px;
+	}
+	.member-center {
+		margin-top: 50px;
 	}
 	.member-right-top {
 		margin-top: 50px;
 	}
 	#team h3 {
 		text-align: center;
+	}
+	.top_blck_in .button_top {
+		align-self: center!important;
 	}
 	.geography-right {
 		padding-left: 0px;
@@ -114,9 +121,20 @@ and (max-device-width:860px){
 
 }
 .top_blck_in h2 {
-	font-size: 85px!important;
-	height: auto!important;
+	font-size: 80px!important;
+	
 }
+.fancybox-content {
+	width: auto;
+}
+#contact_form_pop form button {
+	width: 100%;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	background: #23236D;
+	padding-bottom: 15px;
+}
+
 	}
 	@media only screen
 and (min-device-width:765px)

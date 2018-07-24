@@ -120,3 +120,5 @@ var typed = new Typed('.tem','.tem2', {
  $(".navbar-nav").click(function(){
     $(".navbar-collapse") .removeClass("in")
  })
+
+ 
