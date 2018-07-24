@@ -636,7 +636,7 @@ color: #fff;
 	color: #2a49aa;
 	border:none;
 	border-bottom:2px solid #66cc33;
-	background: #99f7ff;
+	background: #fff897;
 	font-size:25px;
 	transition: 0.4s ease;
 	padding:13px 25px;
@@ -650,7 +650,7 @@ color: #fff;
 color: #2a49aa;
 	font-size: 16px;
 	padding:13px 25px;
-	background: #99f7ff;
+	background: #fff897;
 	transition: 0.4s ease;
 
 .navbar-nav {margin-top: 0!important;margin-bottom: 0!important;background:rgba(0, 0, 0, 0.52);}
@@ -695,7 +695,7 @@ color: #2a49aa;
     color: #fff!important;
 }
 #contact_form_pop form input {
-	border:1.5px solid #99F7FF;
+	border:1.5px solid #fff897;
 }
 .fancybox-close-small {
 	color: #fff!important;
