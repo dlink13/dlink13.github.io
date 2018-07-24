@@ -315,6 +315,7 @@ font-weight: bold;
 	height: 60px;
 	margin-right: 60px;
 }
+.anal {margin-top: 85px;}
 
 .prov p {
 	font-family:'Montserrat';
@@ -540,6 +541,9 @@ margin-top: 240px;
 	font-family:'Montserrat';
 }
 #contacts .container {
+	background: url(../img/bgm.jpg) center center no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .contacts {
 	display: flex;
