@@ -286,7 +286,7 @@ font-weight: bold;
 }
 .services_top p {
 	margin-top: 55px;
-	color: #333399;
+	color: #a738b7;
 	font-size: 30px;
 	margin-bottom: 90px;
 }
@@ -305,7 +305,7 @@ font-weight: bold;
 }
 .services_features p {
 	font-size: 30px;
-	color: #333399;
+	color: #a738b7;
 	font-family:'Montserrat';
 }
 .services_features_right {
@@ -359,7 +359,7 @@ font-weight: bold;
 .features_top p {
 	margin-top: 50px;
 	font-size: 30px;
-	color: #333399;
+	color: #a738b7;
 }
 .features_bottom {
 	margin-top: 25px;
@@ -392,15 +392,15 @@ font-weight: bold;
 	color: #fff;
 	padding-top: 10px;
 	padding-bottom: 40px;
-	border-top: 1.5px solid #8DE4EB;
-	border-bottom: 1.5px solid #8DE4EB;
+	border-top: 1.5px solid #fff897;
+	border-bottom: 1.5px solid #fff897;
 }
 .geography-left p:nth-child(3) {
 	font-size: 25px;
 	color: #fff;
 	padding-top: 32px;
 	padding-bottom: 35px;
-	border-bottom: 1.5px solid #8DE4EB;
+	border-bottom: 1.5px solid #fff897;
 }
 .geography-left p:nth-child(4){
 	font-size: 25px;
@@ -422,15 +422,15 @@ margin-top: 240px;
 	color: #fff;
 	padding-top: 10px;
 	padding-bottom: 40px;
-	border-top: 1.5px solid #8DE4EB;
-	border-bottom: 1.5px solid #8DE4EB;
+	border-top: 1.5px solid #fff897;
+	border-bottom: 1.5px solid #fff897;
 }
 .geography-right p:nth-child(2) {
 	font-size: 25px;
 	color: #fff;
 	padding-top: 32px;
 	padding-bottom: 35px;
-	border-bottom: 1.5px solid #8DE4EB;
+	border-bottom: 1.5px solid #fff897;
 }
 .geography-right p:nth-child(3){
 	font-size: 25px;
@@ -473,7 +473,7 @@ margin-top: 240px;
 }
 .member-left p:nth-child(3) {
 	font-size: 13px;
-	color: #333399;
+	color: #a738b7;
 	margin-bottom: 25px;
 
 }
@@ -499,7 +499,7 @@ margin-top: 240px;
 }
 .member-right p:nth-child(3) {
 	font-size: 13px;
-	color: #333399;
+	color: #a738b7;
 	margin-bottom: 25px;
 
 }
@@ -531,7 +531,7 @@ margin-top: 240px;
 }
 .member-center p:nth-child(3) {
 	font-size: 13px;
-	color: #333399;
+	color: #a738b7;
 	margin-bottom: 25px;
 
 }
@@ -593,8 +593,8 @@ color: #fff;
 }
 .contacts .contacts-bottom .contacts-right p:nth-child(2) {
 	padding: 25px 0;
-	border-bottom: 1.5px solid #8DE4EB;
-	border-top: 1.5px solid #8DE4EB;
+	border-bottom: 1.5px solid #fff897;
+	border-top: 1.5px solid #fff897;
 }
 .copyright {
 	display: flex;
