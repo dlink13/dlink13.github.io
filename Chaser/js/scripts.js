@@ -1,18 +1,3 @@
-$(function(){
-  $("#example-one").on("click","a", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
-    event.preventDefault();
-
-    //забираем идентификатор бока с атрибута href
-    var id  = $(this).attr('href'),
-
-    //узнаем высоту от начала страницы до блока на который ссылается якорь
-      top = $(id).offset().top;
-    
-    //анимируем переход на расстояние - top за 1500 мс
-    $('body,html').animate({scrollTop: top}, 1500);
-  });
-});
 
 (function ($) {   
     var is_empty = function (value) {
@@ -50,7 +35,9 @@ $(function(){
             on_error(data, form);
         }
     }
-    var $forms = $('form.contact_form');
+    var $forms = $('form');
+
+    console.log($forms);
 
     $forms.each(function(index, element){
         var $form = $(element);
@@ -76,23 +63,26 @@ $(function(){
         });
 
         $form.submit(function (event) {
-            
+            event.preventDefault();
+
             has_errors = false;
             $input_elements.change();
-            event.preventDefault();
-            var form = this;
+
+            var formname = $(this).attr('id')
+            curr_form = $(this)[0];
+            myform = new FormData(curr_form);
+            // var form = this;
+
+            console.log(myform);
             
             if (!has_errors) {
                 $.ajax({
-                    type: 'post',
-                    url: 'callback.php',
-                    data: {
-                        'name': $(form).find('[name=name]').val(),
-                        'company': $(form).find('[name=company]').val(),
-                        'email': $(form).find('[name=email]').val(),
-                        'vacancy': $(form).find('[name=vacancy]').val()
-                    },
-                    dataType: 'json',
+                    type: 'POST',
+                    enctype: 'multipart/form-data',
+                    url: 'send.php',
+                    data: myform,
+                    processData: false,
+                    contentType: false,
                     success: function( data ){
                         on_success( data, $form );
                     },
@@ -102,6 +92,8 @@ $(function(){
                         on_error( null, $form );
                     },
                 });
+            } else {
+                alert(has_errors);
             }
         });
     });
@@ -120,5 +112,29 @@ var typed = new Typed('.tem','.tem2', {
  $(".navbar-nav").click(function(){
     $(".navbar-collapse") .removeClass("in")
  })
+$(".form-group2") .addClass("hide_form2");
+$(".form-group3") .addClass("hide_form3");
+$(".form-group") .removeClass("hide_form1")
 
+ $(".navbar-nav").click(function(){
+    $(".navbar-collapse") .removeClass("in")
+ })
+ $(".form_active_button_1").click(function(){
+    $(".form-group2") .addClass("hide_form2");
+    $(".form-group3") .addClass("hide_form3");
+    $(".form-group") .removeClass("hide_form1")
+ })
+  $(".form_active_button_2").click(function(){
+    $(".form-group") .addClass("hide_form1");
+    $(".form-group3") .addClass("hide_form3");
+    $(".form-group2") .removeClass("hide_form2")
+
+ })
+    $(".form_active_button_3").click(function(){
+    $(".form-group") .addClass("hide_form1");
+    $(".form-group2") .addClass("hide_form2");
+    $(".form-group3") .removeClass("hide_form3")
+
+ })
+ 
  
