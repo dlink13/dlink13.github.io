@@ -450,16 +450,22 @@ margin-top: 238px;
 .team_in {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 
 }
 .member-left {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
+		height: 362px;
 }
 .member-left img {
 	align-self: center;
+	border-radius: 50%;
+	width:70%;
 }
 .member-left p {
 	text-align: center;
@@ -469,22 +475,58 @@ margin-top: 238px;
 	margin-bottom: 15px;
 	font-size: 24px;
 	color: #333;
+
 }
 .member-left p:nth-child(3) {
 	font-size: 13px;
 	color: #a738b7;
-	margin-bottom: 25px;
 
+}
+.team_in .soc {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.team_in .soc a {
+font-size: 30px;
+text-decoration: none;
+
+}
+.team_in .soc a:nth-child(1) {
+	color:#0077B5;
+	#01AEF0
+}
+.team_in .soc a:nth-child(2) {
+	color: #01AEF0;
+	
+}
+.team_in .soc a:nth-child(3) {
+	color: #1E96C8;
+}
+.team_in .soc a:hover {
+	color: #A738B7;
+	text-decoration: none;
+}
+.team_in .soc a:focus {
+	color: #A738B7;
+	text-decoration: none;
 }
 
 .member-right {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-self: flex-end;
+	 width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 362px;
+    margin-top: 85px;
+    width: 100%;
+
 }
 .member-right img {
-	align-self: flex-end;
+	align-self: center;
+	border-radius: 50%;
+	width:70%;
 }
 .member-right p {
 	text-align: center;
@@ -499,15 +541,12 @@ margin-top: 238px;
 .member-right p:nth-child(3) {
 	font-size: 13px;
 	color: #a738b7;
-	margin-bottom: 25px;
 
 }
 .member-right-top {
-	margin-top: 133px;
+
 }
-.member-left-top {
-	margin-top: 115px;
-}
+
 .member-center {
 	margin-top: 100px;
 	width: 100%;
