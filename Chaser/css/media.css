@@ -3,6 +3,7 @@ and (min-device-width:250px)
 and (max-device-width:425px){
     	.navbar .left_menu img {
 		margin-left: 5%;
+		width: 50%;
 	
 	}
  
@@ -11,6 +12,11 @@ and (max-device-width:425px){
 @media only screen
 and (min-device-width:250px)
 and (max-device-width:860px){
+	.navbar .left_menu img {
+		margin-left: 5%;
+		width: 50%;
+	
+	}
 	.header #menu {display: none!important;}
 	.mobile_menu {display: block;}
 	.contacts {
@@ -183,6 +189,15 @@ and (max-device-width:860px){
 
 
 	}
+	@media only screen
+and (min-device-width:425px)
+and (max-device-width:760px){
+.navbar .left_menu img {
+		margin-left: 5%;
+		width: 30%;
+	
+	}
+}
 		@media only screen
 and (min-device-width:320px)
 and (max-device-width:620px){
