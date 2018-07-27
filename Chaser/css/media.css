@@ -115,7 +115,7 @@ and (max-device-width:860px){
 		display: none;
 	}
 	.navbar-header{
-		background-color: #02AEF0;
+		background-color: #fff;
 	}
 
 .mb_show {
@@ -137,7 +137,7 @@ and (max-device-width:860px){
 	width: 100%;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	background: #02AEF0;
+	background: #fff;
 	padding-bottom: 15px;
 }
 #services {
