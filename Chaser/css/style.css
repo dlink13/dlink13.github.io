@@ -27,7 +27,7 @@ a:focus {text-decoration: none;}
 src:
 url('../fonts/Montserrat-Medium.woff') format('woff'),
 url('../fonts/Montserrat-Medium.woff2') format('woff2'),
-url('../fonts/Montserrat-Medium.svg') format('svg'),
+url('../fonts/Montserrat-Medium.svg#svgMontserratMedium') format('svg'),
 font-weight:normal;
 font-style:normal;}
 
@@ -35,17 +35,30 @@ font-style:normal;}
 src:
 url('../fonts/Montserrat-Regular.woff2') format('woff2'),
 url('../fonts/Montserrat-Regular.woff') format('woff'),
-url('../fonts/Montserrat-Regular.svg') format('svg'),
+url('../fonts/Montserrat-Regular.svg#MontserratRegular') format('svg'),
 font-weight:normal;
 font-style:normal;}
 
-
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg'),
+       font-weight:normal;
+font-style:normal; /* Legacy iOS */
+}
 
 @font-face{font-family:'Montserrat';
 src:
 url('../fonts/Montserrat-Bold.woff2') format('woff2'),
 url('../fonts/Montserrat-Bold.woff') format('woff'),
-url('../fonts/Montserrat-Bold.svg') format('svg'),
+url('../fonts/Montserrat-Bold.svg#svgMontserratBold') format('svg'),
 font-weight:normal;
 font-style:normal;}
 
@@ -53,7 +66,7 @@ font-style:normal;}
 src:
 url('../fonts/Montserrat-Black.woff2') format('woff2') ,
 url('../fonts/Montserrat-Black.woff') format('woff') ,
-url('../fonts/Montserrat-Black.svg') format('svg') ,
+url('../fonts/Montserrat-Black.svg#svgMontserratBlack') format('svg') ,
 font-weight:normal;
 font-style:normal;}
 
