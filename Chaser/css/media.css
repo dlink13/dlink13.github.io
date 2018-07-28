@@ -186,6 +186,9 @@ and (max-device-width:860px){
 .contacts .contacts-bottom .contacts-right img {
 	width: 40%;
 }
+.copyright img {
+	display: none;
+}
 
 
 	}
