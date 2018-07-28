@@ -27,6 +27,7 @@ a:focus {text-decoration: none;}
 src:
 url('../fonts/Montserrat-Medium.woff') format('woff'),
 url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+url('../fonts/Montserrat-Medium.svg') format('svg'),
 font-weight:normal;
 font-style:normal;}
 
@@ -34,6 +35,7 @@ font-style:normal;}
 src:
 url('../fonts/Montserrat-Regular.woff2') format('woff2'),
 url('../fonts/Montserrat-Regular.woff') format('woff'),
+url('../fonts/Montserrat-Regular.svg') format('svg'),
 font-weight:normal;
 font-style:normal;}
 
@@ -43,6 +45,7 @@ font-style:normal;}
 src:
 url('../fonts/Montserrat-Bold.woff2') format('woff2'),
 url('../fonts/Montserrat-Bold.woff') format('woff'),
+url('../fonts/Montserrat-Bold.svg') format('svg'),
 font-weight:normal;
 font-style:normal;}
 
@@ -50,6 +53,7 @@ font-style:normal;}
 src:
 url('../fonts/Montserrat-Black.woff2') format('woff2') ,
 url('../fonts/Montserrat-Black.woff') format('woff') ,
+url('../fonts/Montserrat-Black.svg') format('svg') ,
 font-weight:normal;
 font-style:normal;}
 
