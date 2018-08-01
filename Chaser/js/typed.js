@@ -798,7 +798,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @property {array} strings strings to be typed
 	   * @property {string} stringsElement ID of element containing string children
 	   */
-	  strings: [ ' Chaser', ' Chaser Team!', ],
+	  strings: [ ' CHASER', '  IT RECRUITMENT TEAM ! ', ],
 	  stringsElement: null,
 	
 	  /**
