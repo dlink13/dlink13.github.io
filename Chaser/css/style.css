@@ -116,7 +116,8 @@ a:focus {text-decoration: none;}
 	justify-content: center;
 	align-items: center;
 	font-family:'Montserrat';
-	color:#6f6f6f;
+	color:#a7a5a5;
+	font-weight: bold;
     
 }
 .top span {
@@ -314,7 +315,7 @@ a:focus {text-decoration: none;}
 	border-bottom: 2px solid #000;
 }
 .main_skl {
-	color: #000;
+	color: #a738b7;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px black, 0 0 0.1em #000;
 }
