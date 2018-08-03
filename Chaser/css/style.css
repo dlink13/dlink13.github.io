@@ -844,6 +844,7 @@ margin-top: 50px;
 cursor: pointer;
 padding: 15px 35px;
 background-color: #FFF897;
+border: 5px solid #fff;
 }
 .form_active_buttons a:hover {
 	text-decoration: none;
