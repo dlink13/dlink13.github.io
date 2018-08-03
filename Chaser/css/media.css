@@ -12,6 +12,9 @@ and (max-device-width:425px){
 @media only screen
 and (min-device-width:250px)
 and (max-device-width:860px){
+	#team h3 {
+		font-size: 35px;
+	}
 	.navbar .left_menu img {
 		margin-left: 5%;
 		width: 50%;
