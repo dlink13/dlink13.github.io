@@ -221,7 +221,7 @@ and (max-device-width:620px){
 }
 		@media only screen
 and (min-device-width:620px)
-and (max-device-width:761px){
+and (max-device-width:766.5px){
 
 	.team_in {
 	width: 70%;
