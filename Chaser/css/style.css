@@ -19,7 +19,8 @@ blockquote, q{quotes:none;}
 blockquote:before, blockquote:after,
 q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
-a:focus {text-decoration: none;}
+a:focus {text-decoration: none; }
+
 
 
 
@@ -574,6 +575,10 @@ text-decoration: none;
 .team_in .soc a:focus {
 	color: #A738B7;
 	text-decoration: none;
+	
+}
+.team_in .soc a:visited {
+	outline: none;
 }
 
 .member-right {
@@ -684,6 +689,10 @@ text-decoration: none;
 }
 .contacts  .contacts-bottom .button_top a:focus{
 	text-decoration: none;
+	outline: none;
+}
+.contacts  .contacts-bottom .button_top a:visited {
+	outline: none;
 }
 .contacts .contacts-right {
 	margin-top: 80px
@@ -856,6 +865,10 @@ border: 5px solid #fff;
 	text-decoration: none;
 	color: #000;
 	background: #fff;
+	outline: none;
+}
+.form_active_buttons a:visited {
+	outline: none;
 }
 .contact_form  form p {
 	font-size: 20px;
@@ -906,6 +919,7 @@ border: 5px solid #fff;
 }
 .checkbox:focus + label:before {
   box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+
 }
 
 .sv {
