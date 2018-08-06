@@ -173,7 +173,7 @@ a:focus {text-decoration: none; }
 
 #skills {
 	padding-bottom: 60px;
-	border-bottom: 2px solid #000;
+	
 }
 
 @keyframes fadeIm-1
@@ -351,10 +351,10 @@ font-weight: bold;
 	flex-direction: column;
 		justify-content: center;
 	align-items: center;
-	margin-top: 162px;
+	margin-top: 100px;
 }
 .services_features .services_features_in:first-child {
-margin-top: 100px;
+margin-top: 50px;
 }
 .services_features p {
 	text-align: left;
@@ -370,7 +370,7 @@ margin-top: 100px;
 
 	width: 15%;
 }
-.anal {margin-top: 180px;}
+.anal {margin-top: 70px;}
 .anal img {
 	width: 10%;
 }
@@ -378,7 +378,7 @@ margin-top: 100px;
 	margin-top: 50px;
 }
 .anal .serv_text_down {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .prov p {
@@ -455,7 +455,7 @@ margin-top: 100px;
 .geography-left p:nth-child(2) {
 	font-size: 25px;
 	color: #fff;
-	padding-top: 10px;
+	padding-top: 32px;
 	padding-bottom: 40px;
 	border-top: 1.5px solid #fff897;
 	border-bottom: 1.5px solid #fff897;
@@ -486,7 +486,7 @@ margin-top: 100px;
 margin-top: 238px;
 	font-size: 25px;
 	color: #fff;
-	padding-top: 10px;
+	padding-top: 32px;
 	padding-bottom: 40px;
 	border-top: 1.5px solid #fff897;
 	border-bottom: 1.5px solid #fff897;
