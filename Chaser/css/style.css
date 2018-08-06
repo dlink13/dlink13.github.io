@@ -370,12 +370,15 @@ margin-top: 100px;
 
 	width: 15%;
 }
-.anal {margin-top: 150px;}
+.anal {margin-top: 180px;}
 .anal img {
-	width: 30%;
+	width: 10%;
 }
 .anal p {
-	margin-top: 45px;
+	margin-top: 50px;
+}
+.anal .serv_text_down {
+	margin-top: 50px;
 }
 
 .prov p {
