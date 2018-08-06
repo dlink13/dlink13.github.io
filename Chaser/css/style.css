@@ -356,7 +356,7 @@ font-weight: bold;
 margin-top: 100px;
 }
 .services_features p {
-	text-align: center;
+	text-align: left;
 	margin-top: 25px;
 	font-size: 30px;
 	color: #a738b7;
@@ -644,7 +644,7 @@ text-decoration: none;
 	flex-direction: row;
 }
 #contacts .container {
-	background: url(../img/contbg.png) center center no-repeat;
+	
 	-webkit-background-size: cover;
 	background-size: cover;
 }
