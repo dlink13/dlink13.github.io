@@ -440,12 +440,13 @@ margin-top: 100px;
 	padding-left: 250px;
 	padding-bottom: 110px;
 	width: 50%;
+	background-color: rgba(23, 22, 22, 0.5019607843137255);
 }
 .geography-left h3 {
 	margin-top: 90px;
 	font-size: 80px;
 	margin-bottom: 60px;
-	color: #fff;
+	color: #ffff;
 }
 .geography-left p:nth-child(2) {
 	font-size: 25px;
@@ -474,6 +475,7 @@ margin-top: 100px;
 	padding-left: 15px;
 	padding-bottom: 110px;
 	width: 50%;
+	background: rgba(23, 22, 22, 0.5019607843137255);
 }
 
 .geography-right p:nth-child(1) {
