@@ -122,30 +122,30 @@ a:focus {text-decoration: none; }
     
 }
 .top span {
-	animation-duration: 40s;
+	animation-duration: 35s;
     animation-iteration-count: infinite;
-     -webkit-animation-duration: 40s;
+     -webkit-animation-duration: 35s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
  .bottom span {
+	animation-duration: 36s;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-iteration-count: infinite;
+    font-family:'Montserrat';
+}
+ .pre-middle span {
 	animation-duration: 35s;
     animation-iteration-count: infinite;
     -webkit-animation-duration: 35s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
- .pre-middle span {
-	animation-duration: 30s;
-    animation-iteration-count: infinite;
-    -webkit-animation-duration: 30s;
-    -webkit-animation-iteration-count: infinite;
-    font-family:'Montserrat';
-}
  .middle span {
-	animation-duration: 25s;
+	animation-duration: 36s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 25s;
+    -webkit-animation-duration: 36s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
@@ -165,10 +165,7 @@ a:focus {text-decoration: none; }
 	animation-name: fadeIm-3;
 	-webkit-animation-name: fadeIm-3;
 }
-.skills_in .im-4 {
-	animation-name: fadeIm-4;
-	-webkit-animation-name: fadeIm-4;
-}
+
 
 
 #skills {
@@ -178,7 +175,7 @@ a:focus {text-decoration: none; }
 
 @keyframes fadeIm-1
 {
-    from    { opacity: 0; }
+    from    { opacity: 0 }
     16%     { opacity: 1; }
     25%     { opacity: 0; }
     91%     { opacity: 0; }
@@ -231,73 +228,57 @@ a:focus {text-decoration: none; }
     to      { opacity: 0; }
 } 
 
-@keyframes fadeIm-4
-{
-    from    { opacity: 0; }
-    66%     { opacity: 0; }
-    75%     { opacity: 0; }
-    91%     { opacity: 1; }
-    to      { opacity: 0; }
-}
-@-webkit-keyframes fadeIm-4
-{
-    from    { opacity: 0; }
-    66%     { opacity: 0; }
-    75%     { opacity: 0; }
-    91%     { opacity: 1; }
-    to      { opacity: 0; }
-}
 
 .skills_in span {
 	width: 100%;
 }
 .JavaScript{
-	font-size: 24px;
+	font-size: 21px;
 } 
 .NET {
-	font-size: 37px;
+	font-size: 30px;
 	
 }
 .Android {
-	font-size: 30px;
+	font-size: 26px;
 }
 
 .Python {
-	font-size: 37px;
+	font-size: 30px;
 }
 .Dart {
-	font-size: 30px;
+	font-size: 26px;
 }
 .Ruby {
-	font-size: 27px;
+	font-size: 24px;
 }
 .ui {
-	font-size: 30px;
+	font-size: 26px;
 }
 .go {
-	font-size: 30px;
+	font-size: 24px;
 }
 .ios {
-	font-size: 40px;
+	font-size: 28px;
 }
 .php {
-	font-size: 30px;
+	font-size: 24px;
 	margin-top: 110px;
 }
 .java {
 	font-size: 24px;
 }
 .node {
-	font-size: 35px;
+	font-size: 26px;
 }
 .scala {
-	font-size: 30px;
+	font-size: 24px;
 }
 .qa	{
-	font-size: 33px;
+	font-size: 26px;
 }
 .lisp {
-	font-size: 30px;
+	font-size: 24px;
 }
 
 
