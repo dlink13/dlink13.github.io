@@ -129,23 +129,23 @@ a:focus {text-decoration: none; }
     font-family:'Montserrat';
 }
  .bottom span {
-	animation-duration: 36s;
+	animation-duration: 30s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
+    -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
  .pre-middle span {
-	animation-duration: 35s;
+	animation-duration: 33s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 35s;
+    -webkit-animation-duration: 33s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
  .middle span {
-	animation-duration: 36s;
+	animation-duration: 30s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
+    -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     font-family:'Montserrat';
 }
