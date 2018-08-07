@@ -793,6 +793,9 @@ input[type=checkbox] {
 	display: inline-block !important;
 	height: auto !important;
 }
+input[type=file] {
+	margin-top: 15px!important;
+}
 
 label {
 	display: inline-block !important;
