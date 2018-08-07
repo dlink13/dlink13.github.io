@@ -224,8 +224,8 @@ a:focus {text-decoration: none; }
     41%     { opacity: 0; }
     50%     { opacity: 0; }
     66%     { opacity: 1; }
-    75%     { opacity: 0; }
-    to      { opacity: 0; }
+    75%     { opacity: 1; }
+    to      { opacity: 1; }
 } 
 
 
