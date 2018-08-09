@@ -703,6 +703,9 @@ color: #fff;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 20px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 
 }
 .copyright p {
@@ -710,6 +713,25 @@ color: #fff;
 	font-size: 20px;
 	color: #808080;
 	font-family:'Montserrat';
+}
+.copyright p img {
+	margin-right: 25px;
+}
+.copyright a {
+	font-size: 18px;
+	color: #000;
+}
+.copyright a:focus {
+	outline: none;
+	text-decoration: none;
+}
+.copyright a:visited{
+	outline: none;
+	text-decoration: none;
+}
+#privacy p {
+	font-size: 25px;
+
 }
 
 .mobile_menu{display:none;}
