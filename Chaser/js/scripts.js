@@ -47,6 +47,7 @@ $(function(){
             form.replaceWith( $success );
         } else {
             on_error(data, form);
+            alert('error on success');
         }
     }
     var $forms = $('form');

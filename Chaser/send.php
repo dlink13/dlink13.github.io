@@ -12,9 +12,10 @@ $labels = array(
 	'source' => 'Источник'
 );
 
-$to = 'dl.com'; //Кому
-$from_mail = 'mail.com'; //От кого
-$replyto = 'ail.com'; //Отвечать на этот адрес
+// $to = 'chaser.mail@chaser.one'; //Кому
+$to = 'tyomanikart@gmail.com'; //Кому
+$from_mail = 'chaser.mail@chaser.one'; //От кого
+$replyto = 'chaser.mail@chaser.one'; //Отвечать на этот адрес
 $from_name = 'Имя отправителя'; 
 
 //просто объявляем переменную, дальше подставится значение
@@ -23,6 +24,7 @@ $message = '';
 $file_name = '';
 $file_new_name = '';
 $file_size = '';
+$file_type = '';
 
 
 
@@ -59,20 +61,21 @@ if(!empty($_FILES && isset($_FILES['cv']))) {
 	$file_name = $_FILES['cv']['tmp_name'];
 	$file_new_name = $_FILES['cv']['name'];
 	$file_size = $_FILES['cv']['size'];
+	$file_type = $_FILES['cv']['type'];
 }
 
 
 
 
-sendMail($to,$from_mail,$from_name,$subject,$message,$file_name,$file_new_name,$file_size);
+sendMail($to,$from_mail,$from_name,$subject,$message,$file_name,$file_new_name,$file_size,$file_type);
 
 
-function sendMail($to,$from_mail,$from_name,$subject,$message,$file_name,$file_new_name,$file_size) {
+function sendMail($to,$from_mail,$from_name,$subject,$message,$file_name,$file_new_name,$file_size,$file_type) {
 
 
 		
 		//Capture POST data from HTML form and Sanitize them, 
-		$sender_name    = filter_var($_POST["sender_name"], FILTER_SANITIZE_STRING); //sender name
+		// $sender_name    = filter_var($_POST["sender_name"], FILTER_SANITIZE_STRING); //sender name
 
 		
 		/* //don't forget to validate empty fields 
@@ -82,7 +85,7 @@ function sendMail($to,$from_mail,$from_name,$subject,$message,$file_name,$file_n
 		*/
 		
 
-		if($file_error > 0)
+		if(isset($file_error) && $file_error > 0)
 		{
 			die('Upload error or No files uploaded');
 		}
@@ -120,14 +123,15 @@ function sendMail($to,$from_mail,$from_name,$subject,$message,$file_name,$file_n
 				$body .= $encoded_content; 
 			}
 		
-		$sentMail = @mail($to, $subject, $body, $headers);
+		$sentMail = mail($to, $subject, $body, $headers);
 
 
 		if($sentMail) //output success or failure messages
 		{       
 		    die('Thank you for your email');
 		}else{
-		    die(print_r($_POST));  
+			$errorMessage = error_get_last()['message'];
+		    die($errorMessage . ' php error');  
 		}
 
 
