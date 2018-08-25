@@ -166,7 +166,7 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 #myCarousel4 .carousel-control{width:auto;}
 #rasspis{margin-top:100px;}
 .footer{max-width: 1100px;margin: 0 auto; display:flex;flex-direction:row;align-items:center;justify-content:space-around;}
-.email{}#contacts {padding-top: 90px;}
+.email{}#contacts {margin-top: 80px;}
 #coursesmobile {
 	display: none;
 }
@@ -218,13 +218,13 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 	width: 100%;
 }
 .navbar-nav {margin-top: 0!important;margin-bottom: 0!important;background:rgba(0, 0, 0, 0.52);}
-#photo__mobile {display: none; padding-top: 90px;}
+#photo__mobile {display: none; margin-top: 80px;}
 #photo__mobile .about-us__title {padding-bottom: 15px;}
 #photo__mobile a img {
 	width: 100%;
 	margin-top: 15px;
 }
-#dostig__mobile{display: none; padding-top: 90px;}
+#dostig__mobile{display: none; margin-top: 80px;}
 #dostig__mobile .about-us__title {padding-bottom: 15px;}
 #dostig__mobile a img {
 	width: 100%;

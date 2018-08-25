@@ -314,7 +314,7 @@ and (max-device-width:990px)
 {
 #coursesmobile {
 	display: block;
-	padding-top: 90px;
+	margin-top: 80px;
 }
 #courses {
 	display: none;

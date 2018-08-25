@@ -13,9 +13,9 @@ $labels = array(
 );
 
 // $to = 'chaser.mail@chaser.one'; //Кому
-$to = 'tyomanikart@gmail.com'; //Кому
-$from_mail = 'chaser.mail@chaser.one'; //От кого
-$replyto = 'chaser.mail@chaser.one'; //Отвечать на этот адрес
+$to = ''; //Кому
+$from_mail = ''; //От кого
+$replyto = ''; //Отвечать на этот адрес
 $from_name = 'Имя отправителя'; 
 
 //просто объявляем переменную, дальше подставится значение

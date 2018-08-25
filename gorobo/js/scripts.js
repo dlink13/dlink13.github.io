@@ -23,7 +23,6 @@ var bind_link_to_text = function (link_selector, text_selector) {
 bind_link_to_text('.courses__links > a', '.courses__texts > div' );
 bind_link_to_text('.rasspis__links > a', '.rasspis__links___open > div' );
 
-
 var prices = [
     [3500, 5000],
     [9500, 13500]
@@ -257,3 +256,4 @@ smallBtn : 'auto',})
  $(".navbar-nav").click(function(){
     $(".navbar-collapse") .removeClass("in")
  })
+
