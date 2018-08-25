@@ -135,9 +135,13 @@ height: auto;
 
 @media only screen
 and (min-device-width:250px)
-and (max-device-width:860px){
+and (max-device-width:880px){
 #coursess_mob {
 	display: block;
+}
+	.header__menu p {
+	display: none;
+	font-size: 15px;
 }
 #coursess_mob .dop__text,#coursess_mob .courses__texts {
 	margin-top: 10px;
@@ -156,7 +160,6 @@ and (max-device-width:860px){
 		padding-top:250px;
 	
 	}
-	.menu {display: none;}
 	.mobile_menu {display: block;}
 	.why__container__inner {
 		flex-direction: column;
@@ -357,4 +360,18 @@ and (max-device-width:500px){
 .item-inside .h1 {
 	font-size: 30px;
 }
+}
+@media only screen
+and (min-device-width:250px)
+and (max-device-width:	767px) {
+	.menu{
+		display:none;
+	}
+}
+@media only screen
+and (min-device-width:768px)
+and (max-device-width:	8000px) {
+	.mobile_menu {
+		display: none;
+	}
 }

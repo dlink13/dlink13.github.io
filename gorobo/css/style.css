@@ -100,7 +100,7 @@ url('../fonts/comicbd.eot?#iefix') format('embedded-opentype');font-weight:norma
 .dop__img{margin-top:50px;}
 .dop__img{display:flex;justify-content:center;align-items:center;margin-right: 15px;}
 .dop__img a{width:30%;margin:20px 20px;}
-.dop__img a img {width: 100%;height: 230px;}
+.dop__img a img {width: 100%;}
 .dop__text{width:70%;margin:0 auto;margin-top:50px;font-family:Raleway Medium;}
 .dop__text p{font-size:18px;}
 .dop__text p span{color:#4f8ae9;;}
