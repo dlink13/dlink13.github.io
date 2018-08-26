@@ -350,8 +350,17 @@ body {
 and (min-device-width:992px)
 and (max-device-width:1198px)
 {
+.contacts__info .courses__form form button {
+	width: 100%;
+	margin-left: auto;
+	margin-top: 25px;
+}
+.contacts__info .courses__form form label {
+	margin-left: auto;
+}
+
 .courses__form form {
-	display: flex;
+	display: block;
 }
 
 }
